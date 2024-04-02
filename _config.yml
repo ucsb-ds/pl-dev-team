@@ -1,0 +1,71 @@
+# remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
+
+incremental: true
+
+course: "CMPSC 156"
+title: "CS156 s24"
+quarter: "Spring 2024"
+QXX: s24
+qxx: s24
+baseurl: "/s24"
+
+ta_list_full: Andrew, Anika
+la_list_full: Sai, Sangita, Sanil, William
+discussion_section_day: Wednesday
+discussion_section_times: 4pm, 5pm
+
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "9.1.3"
+
+# Aux links for the upper right navigation
+aux_links:
+  "CS156 main website":
+    - "https://ucsb-cs156.github.io/"
+  "Canvas":
+    - "https://ucsb.instructure.com/courses/20058"
+
+# Footer last edited timestamp
+last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
+last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https://ruby-doc.org/stdlib-2.7.0/libdoc/time/rdoc/Time.html
+
+# Footer "Edit this page on GitHub" link text
+gh_edit_link: true # show or hide edit this page link
+gh_edit_link_text: "Edit this page on GitHub."
+gh_edit_repository: "https://github.com/ucsb-cs156/s24" # the github URL for your repo
+gh_edit_branch: "main" # the branch that your docs is served from
+gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
+
+help_macos_link: https://ucsb-cs156-s24.slack.com/
+help_windows_link: https://ucsb-cs156-s24.slack.com/
+
+# Collections for website data
+collections:
+  modules:
+  staffers:
+    permalink: "/:path/"
+    output: true
+  lectures:
+    permalink: "/lectures/:path/"
+    output: true
+  hwk:
+    permalink: "/hwk/:path/"
+    output: true
+# Default layouts for each collection type
+defaults:
+  - scope:
+      type: lectures
+    values:
+      layout: default
+  - scope:
+      type: hwk
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: staffers
+    values:
+      layout: staffer
+      subpath: "/assets/images/"
