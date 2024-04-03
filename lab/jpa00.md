@@ -56,7 +56,7 @@ Most large Java frameworks only target *Long Term Support (LTS)* versions of Jav
 
 The next Java LTS version will be Java 21 which is scheduled for Fall 2023; it may take some time after that version is released for Spring to be ready to move to it.  So I expect we'll be using Java 17 for this course at least through Fall 2023.
 
-More info here: <https://github.com/ucsb-cs156/ucsb-cs156.github.io/blob/main/topics/java/java_versions.md>
+More info here: <https://ucsb-cs156.github.io/topics/java/java_versions.html>
 
 # How to install Java 17 and Maven on your own machine
 
