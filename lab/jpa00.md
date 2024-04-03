@@ -650,5 +650,26 @@ git push origin main
 
 Then submit to Gradescope again.
 
+
 Once you see that you have a score of 100 for {{page.title}} on Gradescope, you are *done* with the *required* work for {{page.title}}. However, you are encouraged to look at the README.md file in your lab00 repo and go through the explanation of the files in the repo.  Some of this may be review, but some if it may be new to you, especially if you have not used Maven before.   We'll be using Maven throughout the course, so it's good to get familiar with how Maven works in this very small `Hello World` program before we see a more complex example.
 
+
+
+# Staff Info
+
+<details markdown="1">
+<summary markdown="1">Information in this section is for staff.  You can click on the triangle to see the staff info if you like.</summary>
+
+## Before this lab
+
+* Set up STARTER-jpa00
+* Set up autograder on Gradescope
+* Create jpa00 student repos (student access is admin, visibility is private as shown below)
+
+<img width="343" alt="image" src="https://github.com/ucsb-cs156/s24/assets/1119017/8562f4e8-fbe0-4fa4-8fe4-016e9d548d75">
+
+# Common issues
+
+* Disk quota issues.  Refer them to <https://ucsb-cs156.github.io/topics/CSIL/csil_disk_quota.html>
+  
+</details>
