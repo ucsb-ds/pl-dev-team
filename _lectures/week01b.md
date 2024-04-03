@@ -31,4 +31,5 @@ java Hello
 
 But for professional java development, we use a build system such as Maven or Gradle. In this course, we use Maven.  jpa00 introduces you to that, as well as submitting via Gradescope.
 
+Here's a link to the instructions: <https://ucsb-cs156.github.io/s24/lab/jpa00.html>
 
