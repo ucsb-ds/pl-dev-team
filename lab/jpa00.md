@@ -658,7 +658,9 @@ Once you see that you have a score of 100 for {{page.title}} on Gradescope, you 
 # Staff Info
 
 <details markdown="1">
-<summary markdown="1">Information in this section is for staff.  You can click on the triangle to see the staff info if you like.</summary>
+<summary markdown="1">
+Information in this section is for staff.  You can click on the triangle to see the staff info if you like.
+</summary>
 
 ## Before this lab
 
