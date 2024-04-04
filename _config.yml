@@ -4,14 +4,14 @@ theme: just-the-docs
 incremental: true
 
 course: "CMPSC 156"
-title: "CS156 s24"
-quarter: "Spring 2024"
-QXX: s24
-qxx: s24
-baseurl: "/s24"
+title: "CS156 f24"
+quarter: "Fall 2024"
+QXX: f24
+qxx: f24
+baseurl: "/f24"
 
-ta_list_full: Andrew, Anika
-la_list_full: Sai, Sangita, Sanil, William
+ta_list_full: TBD
+la_list_full: TBD
 discussion_section_day: Wednesday
 discussion_section_times: 4pm, 5pm
 
@@ -25,7 +25,10 @@ aux_links:
   "CS156 main website":
     - "https://ucsb-cs156.github.io/"
   "Canvas":
-    - "https://ucsb.instructure.com/courses/20058"
+    - "https://www.canvas.ucsb.edu"
+
+# TODO: replace canvas link above with specific one
+# such as https://www.canvas.ucsb.edu/courses/12345
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -34,12 +37,12 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/ucsb-cs156/s24" # the github URL for your repo
+gh_edit_repository: "https://github.com/ucsb-cs156/f24" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
 
-help_macos_link: https://ucsb-cs156-s24.slack.com/
-help_windows_link: https://ucsb-cs156-s24.slack.com/
+help_macos_link: https://ucsb-cs156-f24.slack.com/
+help_windows_link: https://ucsb-cs156-f24.slack.com/
 
 # Collections for website data
 collections:

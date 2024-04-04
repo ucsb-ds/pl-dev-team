@@ -1,5 +1,5 @@
 ---
-title: CS156 s24
+title: CS156 f24
 permalink: "/"
 layout: default
 nav_order: 0

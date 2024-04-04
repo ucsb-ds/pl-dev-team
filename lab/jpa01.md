@@ -8,9 +8,9 @@ nav_order: 101
 ready: false
 parent: lab
 layout: default
-course_org: https://github.com/ucsb-cs156-s24
-course_org_name: ucsb-cs156-s24
-starter_repo: https://github.com/ucsb-cs156-s24/STARTER-jpa01
+course_org: https://github.com/ucsb-cs156-f24
+course_org_name: ucsb-cs156-f24
+starter_repo: https://github.com/ucsb-cs156-f24/STARTER-jpa01
 ---
 
 <style>

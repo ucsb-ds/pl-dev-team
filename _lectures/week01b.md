@@ -7,7 +7,7 @@ layout: default
 parent: lectures
 slides: https://docs.google.com/presentation/d/1wgslCL34ZYflyEfyNJaUnOozni9zICl0uVORpmF1UOw/edit?usp=sharing
 video: TBD
-slack_help_lecture_discussion: https://ucsb-cs156-s24.slack.com/archives/C06RGNTV7E2
+slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C06RGNTV7E2
 link_to_self_intro_activity: https://ucsb.instructure.com/courses/20058/assignments/236291
 link_to_team_first_day_activity: https://ucsb.instructure.com/courses/20058/assignments/236292
 ---
@@ -31,5 +31,5 @@ java Hello
 
 But for professional java development, we use a build system such as Maven or Gradle. In this course, we use Maven.  jpa00 introduces you to that, as well as submitting via Gradescope.
 
-Here's a link to the instructions: <https://ucsb-cs156.github.io/s24/lab/jpa00.html>
+Here's a link to the instructions: <https://ucsb-cs156.github.io/f24/lab/jpa00.html>
 

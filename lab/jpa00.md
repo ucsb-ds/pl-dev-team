@@ -9,11 +9,11 @@ ready: false
 layout: default
 parent: lab
 signup_app: https://ucsb-cs-github-linker.herokuapp.com/
-slack: https://ucsb-cs156-s24.slack.com
-course_org: https://github.com/ucsb-cs156-s24
-course_org_name: ucsb-cs156-s24
-starter_repo: https://github.com/ucsb-cs156-s24/STARTER-jpa00
-course_software: https://ucsb-cs156.github.io/s24/info/software.html
+slack: https://ucsb-cs156-f24.slack.com
+course_org: https://github.com/ucsb-cs156-f24
+course_org_name: ucsb-cs156-f24
+starter_repo: https://github.com/ucsb-cs156-f24/STARTER-jpa00
+course_software: https://ucsb-cs156.github.io/f24/info/software.html
 ---
 
 This assignment is `jpa00`, i.e "Java Programming Assignment 00".
@@ -64,7 +64,7 @@ More info here: <https://ucsb-cs156.github.io/topics/java/java_versions.html>
 
 # How to install Java 17 and Maven on your own machine
 
-Note: these instructions were current as of S24.   Things change every quarter&mdash;sometimes even from day to day&mdash;and the only way we find out is when students try things and tell us.  (We don't have the bandwidth to try all of the instructions on every possible OS version combination.)
+Note: these instructions were current as of f24.   Things change every quarter&mdash;sometimes even from day to day&mdash;and the only way we find out is when students try things and tell us.  (We don't have the bandwidth to try all of the instructions on every possible OS version combination.)
 
 * For MacOS, this is fairly straightfoward; see instructions [here]({{ page.course_software }}).  If you need help, ask on the `#help-macos` channel on the Slack.
 * For Windows, we recommend installing the Windows Subsystem for Linux (WSL), and then following the instructions for installation of Java 17 from [this page]( {{ page.course_software }} ).
@@ -250,7 +250,7 @@ OS name: "linux", version: "5.15.12-100.fc34.x86_64", arch: "amd64", family: "un
 
 ## Step 2: Get setup with github and add yourself to our organization
 
-I'm commenting this step out, because for s24 all students have already done this step.
+I'm commenting this step out, because for f24 all students have already done this step.
 
 <!--   COMMENTED OUT !!!!
 

@@ -25,20 +25,37 @@ Basic Facts
   * {{site.discussion_section_day}} {{site.discussion_section_times}}
   * Attendance/Participation is expected/required.
   * You must participate the section for which you are registered, since teams are assigned by section.
-* Office Hours: See: [https://ucsb-cs156.github.io/s24/office-hours.html](https://ucsb-cs156.github.io/s24/office-hours.html)
+* Office Hours: See: [https://ucsb-cs156.github.io/f24/office-hours.html](https://ucsb-cs156.github.io/f24/office-hours.html)
 
 
-Course website: <https://ucsb-cs156.github.io/s24/>
+Course website: <https://ucsb-cs156.github.io/f24/>
 
-About the Course
-----------------
+## Synchronous Participation Requirement
 
--   Our goal is to learn how Advanced Application Development works.
--   We will learn some aspects of Java and JavaScript--but not just to learn Java and JavaScript for the sake of learning another language.
--   Our bigger goals are:
-    -   to practice using APIs and frameworks to get stuff done--a very relevant real world job skill!
-    -   to learn how to learn a new language or technology--something you'll do a lot in your career
-    -   to learn some professional-level, real-world programming practices.
+The title of this course is _Advanced Application Development_, a practice that in both industry and academia is *typically done in teams*.  Therefore the entire course is oriented around team work; we organize students into teams before the first day of course, and work in teams from the very first class meeting.
+
+It is therefore unfair for students to "hold a spot in the class" while not actually participating in the class, especially when:
+
+* this impacts the other members of the student's assigned team
+* this denies opportunities to students on the waitlist for the course
+
+As a result:
+
+* In order to remain in the course, students must ensure that they do not have any conflicts on GOLD with the lecture or their assigned discussion section. Even a 5-10 minute overlap is problematic, as it means that the student may arrive late (missing important instructions), or leave early (potentially abandoning their team before a task is complete.)   Students are responsible for taking care of this before the quarter starts.  The instructor will try to help with section changes where possible, but ultimately, it is the students responsibilty to either drop the conflicting course, or drop CMPSC 156 if the situation cannot be resolved. (See ["Conflicts Between Courses"](#conflicts-between-courses) below.)
+* In order to remain in the course, students need to monitor their emails starting at least a week before the course begins, and respond to messages from the instructor requiring set up steps, such as joining the course slack, the course github organization, a brief survey used to organize studnets into teams, and providing information such as their CSIL username and github id.   Collectively, these activities require no more than about 15-30 minutes of time.
+* Students must show up in-person for the first meeting of both lecture and discussion sections.
+* If circumstances make this impossible, the student must *communicate with the instructor in advance* and take whatever steps the instructor outlines to mitigate the impact on the other members of the students team and the course logistics.  This may include completing some work in advance, and/or participating synchronously in the first lecture via teleconference software (e.g. zoom).
+
+Failure to comply with these requirements after repeated notice from the instructor will make the student subject to removal from the course for non-participation; their spot will be filled with a student from the waitlist.
+
+## About the Course
+
+* Our goal is to learn how Advanced Application Development works.
+* We will learn some aspects of Java and JavaScript--but not just to learn Java and JavaScript for the sake of learning another language.
+* Our bigger goals are:
+  * to practice using APIs and frameworks to get stuff done--a very relevant real world job skill!
+  * to learn how to learn a new language or technology--something you'll do a lot in your career
+  * to learn some professional-level, real-world programming practices.
 
 The way I'm planning to teach the course is a bit different from what
 you may have experienced before--I'm trying to create a learning
@@ -47,17 +64,16 @@ than is the case is traditionally structured courses.
 
 So, the emphasis will be on:
 
--   open source, and sharing code, not keeping code secret
--   collaboration
--   writing code, that, where possible is actually useful and usable.
+* open source, and sharing code, not keeping code secret
+* collaboration
+* writing code, that, where possible is actually useful and usable.
 
 Note that "sharing code" doesn't mean "stealing code". We still don't
 take credit for other people's work---academic honesty still
 applies. It just 'looks different' in this course.
 
 
-Final Course Grades
-===================
+## Final Course Grades
 
 Your grade will be made up of activities from the following categories:
 
@@ -73,10 +89,10 @@ Your grade will be made up of activities from the following categories:
   responsible for all of them.   This may include individual assignments (such as jpa00), pair assignments, and/or team assignments.
 
 * Exams (25 %) - If conditions permit, we will have two in-person written exams; a midterm and an final. There are two contingencies in case conditions change:
-  - The instructor may substitute a "take-home" exam on an online assessment
+  * The instructor may substitute a "take-home" exam on an online assessment
     for either of the in-person exams.
-  - If only one exam is offered, it will be worth 25% of your grade.
-  - If is not possible to hold any exams, these points will be distributed instead among the other course components.
+  * If only one exam is offered, it will be worth 25% of your grade.
+  * If is not possible to hold any exams, these points will be distributed instead among the other course components.
 
 * Project Grade:  (25%) - Your project grade will be based on your contributions during the Project phase of the course.
 
@@ -91,10 +107,10 @@ Your grade will be made up of activities from the following categories:
 
     Your grade here may be a team based grade, an individual grade, or a combination
     of these.  Examples of these include, but are not limited to:
-    - The quality of commit messages (inspected by spot checking)
-    - The quality of descriptions on pull requests and issues
-    - The extent to which you and your team keep your Kanban board up-to-date
-    - Your team's presentations to the course.
+    * The quality of commit messages (inspected by spot checking)
+    * The quality of descriptions on pull requests and issues
+    * The extent to which you and your team keep your Kanban board up-to-date
+    * Your team's presentations to the course.
 
   In addition, we'll be using peer evaluations through a tool called CATME to assess your individual contributions to the project's success.
   The peer evaluation may apply a multiplier to your project grade, increasing it or decreasing it, per your team's assessment
@@ -123,16 +139,17 @@ Finally:
 
 A+ grades: These may be awarded to the very best performing students in the class—but the cutoff for A+ grades will be determined at the end of the course at the discretion of the instructor (there is no pre-determined cutoff).   Students earning an A+ grade must be in the top 10% of each of the five components of the grade in the class.  The instructor may decide, at their discretion, to not award any A+ grades.
 
-Missing homework/in-class activities: Drop the lowest n grades
--------------------------------------------------------
+## Missing homework/in-class activities: Drop the lowest n grades
 
 If you miss a participation assignment, you miss the opportunity for the points on that participation assignment, or homework that was due.
 
 Rather than providing a makeup opportunity, I will drop:
+
 * the lowest n participation assignments
 * the lowest k homework/quiz grades
 
 Where both n and k are a function of the number of assignments in that category:
+
 * <= 2 assignments, no dropped assignments
 * 2 to 5 assignments: 1 dropped grades
 * 6 to 8 assignments: 2 dropped grades
@@ -144,8 +161,7 @@ This should be sufficient to allow for occaisional personal situations that may 
 
 Each homework and in-class-activity will be of equal value (100 pts).
 
-Project Points
-==============
+## Project Points
 
 Project points will be earned by contributing to one of several open source legacy code projects.  You'll be
 assigned to a project team, and the project team will be assigned to a set of bug fixes and feature requests.
@@ -171,8 +187,7 @@ If you accumulate more than 100 project points, the additional points may count 
 
 Your final project grade is maxed out at 110 total project points--any points in excess of 110 will not count towards your grade (though you'll probably learn a lot from having under taken the work to earn them.)
 
-Late Programming Assignments
-----------------------------
+## Late Programming Assignments
 
 The policy is simple, and is based on the idea that the primary
 purpose of the deadlines is to allow the TA manage his/her
@@ -183,14 +198,13 @@ keep up with the workload.
 
 So:
 
--   If you want your work to be graded without penalty, turn it in on time.
--   If you turn in your lab late, you RISK GETTING A ZERO.
--   We will grade late labs ONLY if it creates no extra inconvenience for the graders, and we WILL impose a penalty between 10-20% (see the individual grading rubrics for the labs.)
--   There is NO GUARANTEE that late labs will be graded at all. The TA will simply start work at some point after the deadline, and grade until he/she is finished. At that time, he/she will "close the books" on that particular lab, and any work not submitted at that time will NOT be considered.
+* If you want your work to be graded without penalty, turn it in on time.
+* If you turn in your lab late, you RISK GETTING A ZERO.
+* We will grade late labs ONLY if it creates no extra inconvenience for the graders, and we WILL impose a penalty between 10-20% (see the individual grading rubrics for the labs.)
+* There is NO GUARANTEE that late labs will be graded at all. The TA will simply start work at some point after the deadline, and grade until he/she is finished. At that time, he/she will "close the books" on that particular lab, and any work not submitted at that time will NOT be considered.
 
 
-Questions about grades
-----------------------
+## Questions about grades
 
 **Summary: regrade requests must be made only on GradeScope, and always within one week.**
 
@@ -223,8 +237,7 @@ accepting that the instructor, TA and grader have been given
 responsibility for determining course standards, and applying those in
 a fair way to all students.
 
-Conflicts between Courses
--------------------------
+## Conflicts between Courses
 
 If you are enrolled in another class that overlaps with either your
 assigned lecture or discussion section for CMPSC 156, you *must* obtain
@@ -240,41 +253,33 @@ The only time I will consider an exception is when the instructor of record of t
 
 If you fail to get this permission, and remain enrolled, you are subject to receiving a failing grade in the course.
 
-Use of a laptop is required
----------------------------
+## Use of a laptop is required
 
 While the first couple of assignments can be completed on CSIL, for the bulk of the assignments in the class (starting with team01), you will
 need your own computing platform (i.e. your own laptop).
 
 You should try to pivot from working on CSIL to working on your own machine as soon as possible.  The software you will need
 to install is listed here:
-* <https://ucsb-cs156.github.io/s24/info/software.html>
+* <https://ucsb-cs156.github.io/f24/info/software.html>
 
 
-Accommodations for disabilities
--------------------------------
+## Accommodations for disabilities
 
 Students with disabilities may request academic accommodations for exams online through the UCSB Disabled Students Program at http://dsp.sa.ucsb.edu/. Please make your requests for exam accommodations through the online system as early in the quarter as possible to ensure proper arrangement.
 
-Managing stress
----------------
+## Managing stress
 
 Personal concerns such as stress, anxiety, relationships, depression, cultural differences, can interfere with the ability of students to succeed and thrive. For helpful resources, please contact UCSB Counseling & Psychological Services (CAPS) at 805-893-4411 or visit http://counseling.sa.ucsb.edu/ .
 
-Responsible scholarship
------------------------
+## Responsible scholarship
 
 Honesty and integrity in all academic work is essential for a valuable educational experience.  The Office of Judicial Affairs has policies, tips, and resources for proper citation use, recognizing actions considered to be cheating or other forms of academic theft, and students’ responsibilities, available on their website at: http://judicialaffairs.sa.ucsb.edu.  Students are responsible for educating themselves on the policies and to abide by them.
 
 Furthermore, for general academic support, students are encouraged to visit Campus Learning Assistance Services (CLAS) early and often. CLAS offers instructional groups, drop-in tutoring, writing and ESL services, skills workshops and one-on-one consultations. CLAS is located on the third floor of the Student Resource Building, or visit http://clas.sa.ucsb.edu
 
-Standard Disclaimer
--------------------
+## Standard Disclaimer
 
 This syllabus is as accurate as possible, but is subject to change at
 the instructor's discretion, within the bounds of UC policy.
 
 (end of syllabus)
-
-
-
