@@ -8,15 +8,14 @@ nav_order: 1
 # Syllabus, {{site.title}}
 
 
-Basic Facts
------------
+## Basic Facts
 
 * **Instructor**:  [Phill Conrad](https://pconrad.github.io) (contact via Slack)
-   * Use the "instructor messsage" feature to contact Prof. Conrad, as well as all TAs, Readers and Mentors
+  * Use the "instructor messsage" feature to contact Prof. Conrad, as well as all TAs, Readers and Mentors
 * **Lecture**:
-   * Tue/Thu 5pm-6:15pm @ ILP 2211
-   * You are expected to participate synchronously.  The mode of instruction is "in-person".  Having said that: accomodations will be made if students need to stay away due to illness: please *do not come to class* if you are sick.  Instead, contact the course staff for remote participation options.
-   * While there will be *some* lecture material (recorded and made available asynchronously over Zoom), in most class meetings there will be some
+  * Tue/Thu 5pm-6:15pm @ ILP 2211
+  * You are expected to participate synchronously.  The mode of instruction is "in-person".  Having said that: accomodations will be made if students need to stay away due to illness: please *do not come to class* if you are sick.  Instead, contact the course staff for remote participation options.
+  * While there will be *some* lecture material (recorded and made available asynchronously over Zoom), in most class meetings there will be some
      activities that are done in teams during the class meeting time.  There is no meaningful way these activities can be
      "recorded", done asynchronously, or "made up" after the fact, since the skills we are teaching and learning are *team* skills.
 * **TAs**: {{site.ta_list_full}} (contact via Slack)
@@ -71,7 +70,6 @@ So, the emphasis will be on:
 Note that "sharing code" doesn't mean "stealing code". We still don't
 take credit for other people's work---academic honesty still
 applies. It just 'looks different' in this course.
-
 
 ## Final Course Grades
 
