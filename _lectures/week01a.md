@@ -112,7 +112,7 @@ Here:
 
 * You can access Gradescope through Canvas
 * Link to Canvas is on the course website: <https://ucsb-cs156.github.io/f24>
-* There will be reading assignments in the textbooks for each homework assignment.
+* There may be reading assignments that go along with each homework assignment.
 
 # What will we learn in this class:
 
