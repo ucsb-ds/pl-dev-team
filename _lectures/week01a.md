@@ -108,7 +108,7 @@ Here:
 
   The point of reading this paper is to try to understand *why* this course is structured the way it is.
 
-# Other Homework will be on Gradescope
+# Other Homework will be on Canvas/Gradescope
 
 * You can access Gradescope through Canvas
 * Link to Canvas is on the course website: <https://ucsb-cs156.github.io/f24>
