@@ -1,15 +1,15 @@
 ---
-title: "Week 01a - 04.02 Tues"
-lecture_date: 2024-04-02
+title: "Week 00a - 09.26 Thu"
+lecture_date: 2024-09-26
 description: "Introduction to CS156"
 ready: true
 layout: default
 parent: lectures
 slides: https://docs.google.com/presentation/d/1wgslCL34ZYflyEfyNJaUnOozni9zICl0uVORpmF1UOw/edit?usp=sharing
 video: TBD
-slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C06RGNTV7E2
-link_to_self_intro_activity: https://ucsb.instructure.com/courses/20058/assignments/236291
-link_to_team_first_day_activity: https://ucsb.instructure.com/courses/20058/assignments/236292
+slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C07P9T925KL
+link_to_self_intro_activity: 
+link_to_team_first_day_activity: 
 ---
 
 Link to [Slides]({{page.slides}}) and [Video]({{page.video}})
