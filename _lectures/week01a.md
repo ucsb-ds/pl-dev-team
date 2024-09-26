@@ -8,8 +8,8 @@ parent: lectures
 slides: https://docs.google.com/presentation/d/1wgslCL34ZYflyEfyNJaUnOozni9zICl0uVORpmF1UOw/edit?usp=sharing
 video: TBD
 slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C07P9T925KL
-link_to_self_intro_activity: 
-link_to_team_first_day_activity: 
+link_to_self_intro_activity: https://ucsb.instructure.com/courses/21167/assignments/262222
+link_to_team_first_day_activity: https://ucsb.instructure.com/courses/21167/assignments/262223
 ---
 
 Link to [Slides]({{page.slides}}) and [Video]({{page.video}})
