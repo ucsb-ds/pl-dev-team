@@ -113,7 +113,20 @@ If you're using a Linux distribution that is not Ubuntu (or a similar Debian-bas
 
 If you have questions about this section, please ask on the [`#help-macos`]({{site.help_macos_link}}) channel on the Slack
 
-1. Command Line Tools XCode for MacOS, including `git`
+1. MacOS version: If you have a MacOS version that is really old (e.g. 12.x), you should consider upgrading to a later version.
+
+   I know for sure that 12.x results in this command later on when you try to install Java 21, so folks on version 12.x will *need* to upgrade.
+   (Folks with later versions *might* be able to delay upgrading.  But if you get a message like this, then you know what you need to do.)
+
+   ```
+   Warning: You are using macOS 12.
+   We (and Apple) do not provide support for this old version.
+   It is expected behaviour that some formulae will fail to build in this old version.
+   ...
+   ```
+
+
+2. Command Line Tools XCode for MacOS, including `git`
 
    On MacOS, `git` typically gets installed as part of the "Command Line XCode Tools" the first time you ask to use it.  To be sure that `git` is installed,
    try typing:
