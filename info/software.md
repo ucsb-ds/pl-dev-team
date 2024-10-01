@@ -39,7 +39,7 @@ Instructions on installing these follow below.
 
 3. VSCode Text Editor for your local computer
 
-   [Download link](https://code.visualstudio.com/download)
+   Download it here: <https://code.visualstudio.com/download>
 
    While `vim` and `emacs` are perfectly fine for the work you may have done in CS16/24/32, when it comes to 
    professional level application development, it's time to graduate to some more professional tools.
@@ -56,8 +56,6 @@ Instructions on installing these follow below.
    * Search and replace across multiple files
    * and much much more...
    
-   Download it here: <https://code.visualstudio.com/download>
-
    Note: If you have **already** tried using VSCode and genuinely feel like you are more of a pro at `vim`, `nano`, `neovim`, or other project/code/text editors, feel free to use whatever is convenient for you. We are suggesting VSCode for ease of all-round use.
   
    Some additional hints for using VSCode:
