@@ -45,7 +45,32 @@ Instructions on installing these follow below.
 
    Where to get Pulse Secure:  <https://www.it.ucsb.edu/pulse-secure-campus-vpn/get-connected-vpn>
 
-3. Samba Access to your CSIL home directory (Optional)
+
+3. VSCode Text Editor for your local computer
+
+   While `vim` and `emacs` are perfectly fine for the work you may have done in CS16/24/32, when it comes to 
+   professional level application development, it's time to graduate to some more professional tools.
+   
+   We have found that VSCode (a free download for Windows/Mac/Linux) is in the sweet spot between too few features, and too complicated.
+  
+   If you haven't worked with it before, we suggest you download it and start getting used to it.
+   
+   What it does for you:
+   * Autocompletion
+   * Syntax highlighting and checking
+   * Automatic import detection
+   * Ability to see an entire directory tree at once
+   * Search and replace across multiple files
+   * and much much more...
+   
+   Download it here: <https://code.visualstudio.com/download>
+  
+  
+3. Install Java 21 on your local system.  **Please install Java 21**, and NOT Java 8, Java 11, Java 17 or a preview version of Java 22, 23, etc.   It won't matter for the `"Hello World"` program in the first week, but when we move on to complex Java applications involving third-party libraries, it will definitely matter.
+   
+For Mac users, instructions for installing with Homebrew appear below.
+
+4. Samba Access to your CSIL home directory (Optional)
 
    What it does:
 
@@ -68,30 +93,7 @@ Instructions on installing these follow below.
      | Linux | (ask staff) | |
      {:.table .table-sm .table-striped .table-bordered}
 
-4. VSCode Text Editor for your local computer
 
-   While `vim` and `emacs` are perfectly fine for the work you may have done in CS16/24/32, when it comes to 
-   professional level application development, it's time to graduate to some more professional tools.
-   
-   We have found that VSCode (a free download for Windows/Mac/Linux) is in the sweet spot between too few features, and too complicated.
-  
-   If you haven't worked with it before, we suggest you download it and start getting used to it.
-   
-   What it does for you:
-   * Autocompletion
-   * Syntax highlighting and checking
-   * Automatic import detection
-   * Ability to see an entire directory tree at once
-   * Search and replace across multiple files
-   * and much much more...
-   
-   Download it here: <https://code.visualstudio.com/download>
-  
-  
-5. Install Java 17 on your local system.  **Please install Java 17**, and NOT Java 8, Java 11, or a preview version of Java 18, 19 or 20.   It won't matter for the `"Hello World"` program in the first week, but when we move on to complex Java applications involving third-party libraries, it will definitely matter.
-   
-For Mac users, instructions for installing with Homebrew appear below.
-  
 <!-- 6. Docker
 
    Docker provides a way for you to run a standardized Linux environment inside another platform (whether that be Windows, Mac, or Linux).  It gives us the ability
