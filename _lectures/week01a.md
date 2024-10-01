@@ -25,7 +25,7 @@ Also note that you can get started on some of this *before* class and you are en
    * If you get stuck, check your slack channel to see which team members have the same platform as you.  Try to get help from them first.
    * If the folks are your team don't know, then try the `#help-macos` or `#help-windows` channels. Before posting your question, see if it's already been answered by someone else.
    * If you post a question that has no answer, then copy a link to your Slack post, and post that *again* on `#help-lecture-discussion`.  Include your table number along with the link to your question on either `#help-macos` or `#help-windows`
-3. When you are all finished, go through the checklist at:  <https://ucsb-cs156.github.io/f24/info/install_check.html> to ensure that each item works as expected.  If it doesn't, then ask for help (using the same order as in step 2: (1) team slack channel and live people (2) `#help-macos` or `#help-windows` (3) `#help-lecture-discussion` with table/team number and link to your post on `#help-macos` or `#help-windows`.
+3. When you are all finished, go through the checklist at:  <https://ucsb-cs156.github.io/f24/info/install_checklist.html> to ensure that each item works as expected.  If it doesn't, then ask for help (using the same order as in step 2: (1) team slack channel and live people (2) `#help-macos` or `#help-windows` (3) `#help-lecture-discussion` with table/team number and link to your post on `#help-macos` or `#help-windows`.
 
 4. When all items work as expected, make a post on your slack channel that says: "Installation steps for P04: installation check complete", and post that link to Canvas.
 5. **IF YOU RUN OUT OF TIME**, i.e. it's 6:05 and it doesn't look like you'll finish:
