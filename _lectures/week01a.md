@@ -10,7 +10,7 @@ slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C06RGNT
 
 # {{page.title}} - {{page.description}}
 
-Today's activity is Participation Activity P04 on Canvas.
+Today's activity is [Participation Activity P04 on Canvas](https://ucsb.instructure.com/courses/21167/assignments/286595)
 * You are encouraged to come to class to do it, because it's easier to get help and to help others.
 * Having said that, remote participation via zoom is acceptable.  Note that you'll need a good internet connection, since we'll be downloading stuff today.
 
