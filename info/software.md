@@ -104,13 +104,15 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
 
    ![image](https://github.com/user-attachments/assets/8e37dd9c-afb0-4a64-8611-86e4b03b6409)
 
-   In that case, please just follow the instructions given in the message.  When you are done, you should be able to type `git --version` at a command prompt and see something like:
+   In that case, please just follow the instructions given in the message.  Don't worry if it says it will take 72 hours for the install; if you start it and let it run for a minute or two, that estimate should come down to something reasonable quickly, but it still make take 10-15 minutes.
+
+   When you are done, you should be able to type `git --version` at a command prompt and see something like:
 
    ```
    git version 2.24.3 (Apple Git-128)
    ```
 
-2. Brew (package manager)
+3. Brew (package manager)
 
    For MacOS, we'll be installing several packages for Java and JavaScript (node) development.  
    In many cases, installing those is easier if you *first* install the brew package manager.
