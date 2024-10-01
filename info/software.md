@@ -17,7 +17,18 @@ Instructions on installing these follow below.
 
 ## Recommmended for Everyone
 
-1. Updated Zoom Client 
+
+1. Slack Client
+
+   Be sure you have a slack client installed on your devices.  I strongly encourage you to have Slack installed on your phone as well so that you can stay
+   in touch with your team and news about the course, though that's a personal decision.
+
+   * Mac: <https://slack.com/downloads/mac>
+   * Windows: <https://slack.com/downloads/mac>
+   * iOS: <https://slack.com/downloads/ios>
+   * Android: <https://slack.com/downloads/android>
+
+2. Updated Zoom Client 
 
    Be sure that you have the *latest* version of the Zoom client.  Older versions may not have some of the features we'll need for this course.
     
@@ -25,7 +36,7 @@ Instructions on installing these follow below.
    
    Download it here: <https://zoom.us/download>
 
-2. VSCode Text Editor for your local computer
+3. VSCode Text Editor for your local computer
 
    [Download link](https://code.visualstudio.com/download)
 
@@ -48,7 +59,10 @@ Instructions on installing these follow below.
 
    Note: If you have **already** tried using VSCode and genuinely feel like you are more of a pro at `vim`, `nano`, `neovim`, or other project/code/text editors, feel free to use whatever is convenient for you. We are suggesting VSCode for ease of all-round use.
   
-  
+   Some additional hints for using VSCode:
+   1. Install the command line command so that at the Mac or WSL command line you can type
+   2. Note that you *might* need to install VSCode separately 
+
 4. Install Java 21, Maven, and nvm on your local system.
 
    
