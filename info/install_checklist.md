@@ -14,7 +14,7 @@ npm_lts: v10.8.2
 
 **{{page.description}}**
 
-After you complete the [software installation steps here](https://ucsb-cs156.github.io/f24/software.html), you can use this checklist to make sure that you've done everything properly.
+After you complete the [software installation steps here](https://ucsb-cs156.github.io/f24/info/software.html), you can use this checklist to make sure that you've done everything properly.
 
 There are separate checklists for Mac and Windows/WSL.  For Linux, use the WSL checklist and adapt as needed.
 
