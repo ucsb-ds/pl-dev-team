@@ -167,6 +167,10 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
 
    It is important to run these command to complete the brew installation.
 
+4. Install XCode.  We *do not use* XCode in this course, but we *need it to install Java21 using `brew`*.
+
+   
+   
 5. Install Java 21 with `brew`: first part
    
    To install Java with homebrew, use:
@@ -174,6 +178,16 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    ```
    brew update
    brew install openjdk@21
+   ```
+
+   Note that if you skipped the Xcode installation step above, you may find get an error like this (some parts removed); in that case, go back to the XCode installation step.
+
+   ```
+   openjdk@21: A full installation of Xcode.app is required to compile
+   this software. Installing just the Command Line Tools is not sufficient.
+
+   Xcode can be installed from the App Store.
+   Error: openjdk@21: An unsatisfied requirement failed this build.
    ```
    
    When the command finishes, **you are not finished**.  Keep that terminal window open and do the next part
