@@ -27,6 +27,7 @@ Instructions on installing these follow below.
    * Windows: <https://slack.com/downloads/windows>
    * iOS: <https://slack.com/downloads/ios>
    * Android: <https://slack.com/downloads/android>
+   * Linux: <https://slack.com/downloads/linux>
 
 2. Updated Zoom Client 
 
