@@ -15,7 +15,7 @@ Instructions on installing these follow below.
 * nvm (node version manager)
 * Current LTS version of Node available through nvm (currently node v20.17.0, and npm v10.8.2)
 
-When you are finished, check <https://ucsb-cs156.github.io/f24/info/install_check.html> to double check that you completed every step successfully.
+When you are finished, check <https://ucsb-cs156.github.io/f24/info/install_checklist.html> to double check that you completed every step successfully.
 
 ## Recommmended for Everyone
 
