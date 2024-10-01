@@ -116,22 +116,31 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    git --version
    ```
    
-   If it shows something like this, you are good:
+   If it shows something like this you are good (version number may vary, and is not important as far as we know):
    
    ```
    git version 2.24.3 (Apple Git-128)
    ```
 
-   Otherwise, you might get a message that you need to install the XCode Command Line Tools.  In that case, please just follow the instructions given.
+   Otherwise, you might get a message that you need to install the XCode Command Line Tools, i.e. something like this:
 
-2. Brew (package manager)
+   ![image](https://github.com/user-attachments/assets/8e37dd9c-afb0-4a64-8611-86e4b03b6409)
+
+   In that case, please just follow the instructions given in the message.  When you are done, you should be able to type `git --version` at a command prompt and see something like:
+
+   ```
+   git version 2.24.3 (Apple Git-128)
+   ```
+  
+
+3. Brew (package manager)
 
    For MacOS, we'll be installing several packages for Java and JavaScript (node) development.  
    In many cases, installing those is easier if you *first* install the brew package manager.
    
    To install `brew`, visit <https://brew.sh/> and follow the instructions.
    
-3. Java 17
+4. Java 17
    
    To install Java with homebrew, use:
    
@@ -164,7 +173,7 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    OpenJDK 64-Bit Server VM Homebrew (build 17.0.1+1, mixed mode, sharing)
    ```
 
-4. Maven
+5. Maven
 
    After installing Java 17, you can use `brew` to install Maven:
 
