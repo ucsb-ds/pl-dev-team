@@ -59,10 +59,23 @@ Instructions on installing these follow below.
    Note: If you have **already** tried using VSCode and genuinely feel like you are more of a pro at `vim`, `nano`, `neovim`, or other project/code/text editors, feel free to use whatever is convenient for you. We are suggesting VSCode for ease of all-round use.
   
    Some additional hints for using VSCode:
-   1. Install the command line command so that at the Mac or WSL command line you can type
-   2. Note that you *might* need to install VSCode separately 
+   1. Note that you *might* need to install VSCode separately under Windows and the WSL partition.
+   2. Install the command line command so that at the Mac or WSL command line you can type `code .` at the command line and it will open VSCode in that directory.
+      * Access the VS Code Command Palette via either `shift + Command + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux).
+      * Type `shell` and two commands should pop up:
 
-4. Install Java 21, Maven, and nvm on your local system.
+        ![image](https://github.com/user-attachments/assets/d0243bbf-c15b-4071-8bf2-4a05d03a4b64)
+        
+        Choose `Shell Command: Install 'code' command in PATH` and follow the prompts.
+
+   3. We strongly encouage you to turn on autosave.  If you need to get back to your original code, you can do that using git commands, so there's no real downside, and a *lot* of time saved when you don't waste time wondering why your change didn't work, and realize it's because you forgot to save your changes. Here's how:
+      * Look under the file menu for an option called `Autosave`.  It will either have a check beside it or not.
+      * If it doesn't, select it, and the check should appear.  Now you are autosaving.
+
+   4. When using VSCode with a github project, get in the habit of opening VSCode *in the directory where the repo lives*.  This is important because when you do it this way, VSCode can integrate with the structure of a git directory, as well as the structure of a Maven or React project, and give you additional hints and support that are extraordinarily helpful.   
+
+
+5. Install Java 21, Maven, and nvm on your local system.
 
    
    * For Mac users, instructions for installing with Homebrew appear below.   
