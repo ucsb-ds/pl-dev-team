@@ -24,7 +24,7 @@ Instructions on installing these follow below.
    in touch with your team and news about the course, though that's a personal decision.
 
    * Mac: <https://slack.com/downloads/mac>
-   * Windows: <https://slack.com/downloads/mac>
+   * Windows: <https://slack.com/downloads/windows>
    * iOS: <https://slack.com/downloads/ios>
    * Android: <https://slack.com/downloads/android>
 
