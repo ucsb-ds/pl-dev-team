@@ -144,12 +144,30 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
 
    For MacOS, we'll be installing several packages for Java and JavaScript (node) development.  
    In many cases, installing those is easier if you *first* install the brew package manager.
-   
-   To install `brew`, visit <https://brew.sh/> and follow the instructions.
 
-   If `brew` is already installed, use `brew update` to update brew before continuing.
+   To see if `brew` is already installed, type `brew update` at the command line.  If it is already installed, this will update your installation.
    
-4. Install Java 21 with `brew`: first part
+   If you see the following, that it isn't installed, so visit <https://brew.sh/> and follow the instructions to install it.
+   ```
+   zsh: command not found: brew
+
+   When the command to install brew finishes, **you are not finished** so keep that terminal window open and do the next part
+   immediately.
+
+   There will be some commands at the end of the output; those will look something like this (but they may not look *exactly* like this,
+   since they will be tailored to your OS version and machine architecture.  Copy from *your* terminal window, not this web page.)
+
+   ```
+   ==> Next steps:
+   - Run these commands in your terminal to add Homebrew to your PATH:
+    echo >> /Users/pconrad/.zprofile
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/pconrad/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+   ```
+
+   It is important to run these command to complete the brew installation.
+
+5. Install Java 21 with `brew`: first part
    
    To install Java with homebrew, use:
    
@@ -160,6 +178,7 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    
    When the command finishes, **you are not finished**.  Keep that terminal window open and do the next part
    immediately.
+
 
 3. Install Java 21 with `brew`: **important second part**
    
@@ -180,7 +199,7 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    export CPPFLAGS="-I/opt/homebrew/opt/openjdk@21/include"
    ```
 
-   You will need to find theses line in the text outputted by `brew install openjdk@21`
+   You will need to find these lines in the text outputted by `brew install openjdk@21`
    and run it in the terminal. It should be near the end of the output. 
   
    Make sure you copy the commands from **your terminal output**, and **not** from this web page, since they
