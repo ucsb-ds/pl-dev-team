@@ -24,11 +24,6 @@ If you find typos or problems with the lab instructions, please report these via
   - `#help-macos`
   - `#help-windows`
 
-# Disk Quota Problems?
-
-A common problem that CS156 students run into when working on CSIL is the error `disk quota exceeded`.  If you run into that, 
-this article can help: <https://ucsb-cs156.github.io/topics/CSIL/csil_disk_quota.html>
-
 # Goals
 
 This lab checks that you can succesfully edit, compile, run and submit a simple
@@ -483,8 +478,6 @@ We may include details about configuring your VSCode installation for Github Cop
 
 * Test that you can submit on Gradescope. You may have to do the step where you authorize Gradescope to access the Github organization. [This may help](https://ucsb-cs156.github.io/topics/gradescope/gradescope_organization_access.html)
 
-# Common issues
 
-* Disk quota issues.  Refer them to <https://ucsb-cs156.github.io/topics/CSIL/csil_disk_quota.html>
   
 </details>
