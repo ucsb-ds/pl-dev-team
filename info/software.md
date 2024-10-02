@@ -163,8 +163,10 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    To see if `brew` is already installed, type `brew update` at the command line.  If it is already installed, this will update your installation.
    
    If you see the following, that it isn't installed, so visit <https://brew.sh/> and follow the instructions to install it.
+
    ```
    zsh: command not found: brew
+   ```
 
    When the command to install brew finishes, **you are not finished** so keep that terminal window open and do the next part
    immediately.
