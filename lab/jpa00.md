@@ -138,9 +138,7 @@ Open a web browser and login to GitHub, then navigate to the course organization
 You should see that there is a private repo in this organization called `jpa00-yourGithubId`, where `yourGithubId` is replaced with your GitHub id.  This is the repo
 that you'll be using for this assignment.
 
-This is currently an empty repo.  In the next step, we'll clone this empty repo into a directory, either on your CSIL account, or on your local system.
-
-Note that the repo is public.  That's normal in this course.  Academic honesty works diffferently in CMPSC 156; you often *do* have the ability to see other students work.   But you are still expected to do your own work.  We'll talk more about this as the course continues.
+This is currently an empty private repo.  In the next step, we'll clone this empty repo into a directory, either on your CSIL account, or on your local system.
 
 ## Step 5: Cloning the repo
 
