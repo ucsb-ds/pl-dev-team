@@ -455,6 +455,17 @@ Then submit to Gradescope again.
 
 Once you see that you have a score of 100 for {{page.title}} on Gradescope, you are *done* with the *required* work for {{page.title}}. However, you are encouraged to look at the README.md file in your lab00 repo and go through the explanation of the files in the repo.  Some of this may be review, but some if it may be new to you, especially if you have not used Maven before.   We'll be using Maven throughout the course, so it's good to get familiar with how Maven works in this very small `Hello World` program before we see a more complex example.
 
+# Step 12: Bonus Step: GitHub Student Developer Pack
+
+The GitHub Student Developer Pack is a package of free stuff that you can get if you are a university student.
+
+One of those is access to **Github CoPilot**
+
+Create a GitHub account on the free plan, then visit <https://education.github.com/students> to sign up.
+
+You may need those additional benefits for some of the assignments in this course.
+
+We may include details about configuring your VSCode installation for Github Copilot in a future lab; it's a very useful tool, especially for large code bases, and working with complex frameworks such as Spring Boot and React.
 
 
 # Staff Info
