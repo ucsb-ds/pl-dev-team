@@ -478,7 +478,10 @@ We may include details about configuring your VSCode installation for Github Cop
 * Set up autograder on Gradescope
 * Create jpa00 student repos (student access is admin, visibility is private as shown below)
 
-<img width="343" alt="image" src="https://github.com/ucsb-cs156/s24/assets/1119017/8562f4e8-fbe0-4fa4-8fe4-016e9d548d75">
+
+  <img width="343" alt="image" src="https://github.com/ucsb-cs156/s24/assets/1119017/8562f4e8-fbe0-4fa4-8fe4-016e9d548d75">
+
+* Test that you can submit on Gradescope. You may have to do the step where you authorize Gradescope to access the Github organization.
 
 # Common issues
 
