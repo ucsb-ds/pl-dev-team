@@ -471,7 +471,8 @@ We may include details about configuring your VSCode installation for Github Cop
 # Staff Info
 
 <details markdown="1">
-<summary markdown="1">Information in this section is for staff.  You can click on the triangle to see the staff info if you like.</summary>
+<summary markdown="1">Information in this section is for staff.  You can click on the triangle to see the staff info if you like.
+</summary>
 
 ## Before this lab
 
