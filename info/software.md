@@ -303,9 +303,11 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    by the time you are reading these instructions:
 
    ```
-   vim /opt/homebrew/Cellar/maven/3.9.9/bin/mvn
+   vim `which mvn`
    ```
 
+   The `which mvn` part determines the name of the script or binary that the `mvn` command brings up, and `vim` opens that file for editing.
+   
    In that file, change the line that starts with `JAVA_HOME=` to this:
 
    ```
