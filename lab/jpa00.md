@@ -481,7 +481,7 @@ We may include details about configuring your VSCode installation for Github Cop
 
   <img width="343" alt="image" src="https://github.com/ucsb-cs156/s24/assets/1119017/8562f4e8-fbe0-4fa4-8fe4-016e9d548d75">
 
-* Test that you can submit on Gradescope. You may have to do the step where you authorize Gradescope to access the Github organization.
+* Test that you can submit on Gradescope. You may have to do the step where you authorize Gradescope to access the Github organization. [This may help](https://ucsb-cs156.github.io/topics/gradescope/gradescope_organization_access.html)
 
 # Common issues
 
