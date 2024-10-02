@@ -33,7 +33,7 @@ Throughout, "command prompt" means "Terminal Window" or "Shell Window".
 6. Java version {{page.java_version}} is installed.
    * To test this, type `java --version` at a WSL command prompt; you should get version {{page.java_version}} of Java (not a later or earlier one, but exactly {{page.java_version}}  point something).
 8. Maven version {{page.maven_version}} is installed.
-   * To test this, type type `mvn` at a command prompt, and you get a message that Maven is version {{page.maven_version}} and that it is using version {{page.java_version}} of Java (not a later or earlier one, but exactly {{page.java_version}}  point something).
+   * To test this, type type `mvn --version` at a command prompt, and you get a message that Maven is version {{page.maven_version}} and that it is using version {{page.java_version}} of Java (not a later or earlier one, but exactly {{page.java_version}}  point something).
 10. Node Version Manager is installed
    * To test this, type `nvm --version` at a command prompt; you should see version {{page.nvm_version}}
 11. Node Version Manager can install the latest lts version of node and npm.  Note the difference between [nvm (node version manager)](https://ucsb-cs156.github.io/topics/node/node_nvm.html) and [npm (node package manager)](https://ucsb-cs156.github.io/topics/node/node_npm.html).
@@ -53,7 +53,7 @@ Throughout, "command prompt" means a **WSL** "Terminal Window" or "Shell Window"
 6. Java version {{page.java_version}} is installed.
    * To test this, type `java --version` at a WSL command prompt; you should get version {{page.java_version}} of Java (not a later or earlier one, but exactly {{page.java_version}}  point something).
 8. Maven version {{page.maven_version}} is installed.
-   * To test this, type type `mvn` at a command prompt, and you get a message that Maven is version {{page.maven_version}} and that it is using version {{page.java_version}} of Java (not a later or earlier one, but exactly {{page.java_version}}  point something).
+   * To test this, type type `mvn --version` at a command prompt, and you get a message that Maven is version {{page.maven_version}} and that it is using version {{page.java_version}} of Java (not a later or earlier one, but exactly {{page.java_version}}  point something).
 10. Node Version Manager is installed
    * To test this, type `nvm --version` at a command prompt; you should see version {{page.nvm_version}}
 11. Node Version Manager can install the latest lts version of node and npm.  Note the difference between [nvm (node version manager)](https://ucsb-cs156.github.io/topics/node/node_nvm.html) and [npm (node package manager)](https://ucsb-cs156.github.io/topics/node/node_npm.html).
