@@ -1,7 +1,7 @@
 ---
 title: "Week 01c - 10.03 Thu"
 lecture_date: 2024-10-03
-description: "P05 - divide up LTD"
+description: "P05 - divide up LTD, jpa01 (Spring Boot/Dokku), H01 (LTD)"
 ready: true
 layout: default
 parent: lectures
