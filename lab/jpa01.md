@@ -233,18 +233,22 @@ In this step, we'll deploy our Spring Boot application to the public internet us
 
 You can follow the instructions here to create a new app. Use the name `jpa01-yourgithubid`
 
-* <https://ucsb-cs156.github.io/topics/dokku/deploying_an_app.html#deploying-an-app>
+* <https://ucsb-cs156.github.io/topics/dokku/deploying_simple_app.html>
 
-This should result in an app at the address `http://jpa01-yourgithubid.dokku-xx.cs.ucsb.edu`
-
-
-## Step 6: Use the dokku commands
+This should result in an app running at the addresses:
+* `http://jpa01-yourgithubid.dokku-xx.cs.ucsb.edu`
+* `https://jpa01-yourgithubid.dokku-xx.cs.ucsb.edu`
+  
+## Step 6: Learning some the dokku commands
 
 On your dokku machine, you should now be able to try a few commands. Use your app name in place of: `jpa01-cgaucho`
 
 * `dokku apps:list`
+   - This shows all of the apps on your dokku instance.
+   - Note that you share your dokku instance with all of the members of your team
 * `dokku logs --tail jpa01-cgaucho`
-
+  - This shows the console output (including error messages and log messages) of your running app.
+  - See what the app shows if you try to navigate to pages that exist, and pages that don't exist (e.g. put `/foobar` in the url bar of the browser after your host url)
 
 ## Step 7: Adding links to running web app in the README.md
 
@@ -254,7 +258,9 @@ All quarter long, we want you to develop the habit of adjusting the
 README.md in your repo to include a link to your running web app, and sometimes
 other things as well.
 
-Follow the instructions
+Follow the instructions in the README.md, including removing the `TODOs` after you take care of each one.
+
+Use the `https` link when you put a link to your running app in your README.md file.
 
 ## Step 8: Submitting your work for grading
 
@@ -264,6 +270,6 @@ link to **your repo**.
 For full credit:
 
 * The link should be something like : `https://github.com/ucsb-cs156-s24/jpa01-cgaucho`
-* It should NOT be:  `http://jpa01-cgaucho.dokku-01.cs.ucsb.edu`
+* It should NOT be:  `https://jpa01-cgaucho.dokku-01.cs.ucsb.edu`
 * BUT: the README at the link should contain a link to your running app on dokku.
 
