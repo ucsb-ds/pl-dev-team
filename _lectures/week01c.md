@@ -20,5 +20,5 @@ Today's Agenda:
   * One submission per team on Canvas
 
 * When the team is finished with P05:
-  * Start on {{jpa01}}
-  * If you finish that, start on {{H01}}
+  * Start on {{page.jpa01}}
+  * If you finish that, start on {{page.H01}}
