@@ -8,7 +8,7 @@ parent: lectures
 slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C06RGNTV7E2
 ---
 
-# {{page.title} -- {{page.description}}
+# {{page.title}} -- {{page.description}}
 
 Today's Agenda:
 * VSCode (brief remarks):
