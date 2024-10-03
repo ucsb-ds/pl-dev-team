@@ -10,6 +10,6 @@ table * td,th {
 
 </style>
 
-| Team | Slack | NOTES repo | 
-|------|---------|-----|-------|-------|----------|-----------|{% for t in site.teams %}
-| {{ t.team }} | [Slack]({{t.slack}}) | [NOTES-{{t.team}}](https://github.com/ucsb-cs156-f24/NOTES-{{t.team}}) |{% endfor %}
+| Team |  NOTES repo | Slack |
+|------|-------------|-------|{% for t in site.teams %}
+| {{ t.team }} | [{{t.team}}-NOTES](https://github.com/ucsb-cs156-f24/{{t.team}}-NOTES) | [Slack]({{t.slack}}) |{% endfor %}
