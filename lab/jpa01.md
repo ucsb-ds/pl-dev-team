@@ -254,13 +254,30 @@ On your dokku machine, you should now be able to try a few commands. Use your ap
 
 Edit your README.md.  You'll find some TODO items inside indicating what edits you need to make.
 
-All quarter long, we want you to develop the habit of adjusting the
+There are two ways to do it: 
+1. You can edit the README.md file in VSCode on your machine and then push a change to Github with:
+   ```
+   git add README.md
+   git commit -m "xy - customize README.md for jpa01"
+   git push origin main
+   ```
+2. OR: you can edit the README.md file directly in the Github web interface.
+   
+   But if you do it that way, then immediately do:
+   ```
+   git pull origin main
+   ```
+   on your laptop to pull in the latest changes to your local repo (the one on your laptop.)
+
+
+In general, all quarter long, we want you to develop the habit of adjusting the
 README.md in your repo to include a link to your running web app, and sometimes
 other things as well.
 
 Follow the instructions in the README.md, including removing the `TODOs` after you take care of each one.
 
 Use the `https` link when you put a link to your running app in your README.md file.
+
 
 ## Step 8: Submitting your work for grading
 
