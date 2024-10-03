@@ -72,6 +72,39 @@ You should then be able to log in to dokku without specifying a username, like t
 ssh dokku-xx.cs.ucsb.edu
 ```
 
+
+Here's what logging in should look like:
+
+```
+pconrad@Phillips-Mac-mini-2 .ssh % ssh pconrad@csil.cs.ucsb.edu
+csilvm-03.cs.ucsb.edu
+Last login: Thu Oct  3 15:41:25 2024 from 128.111.27.247
+pconrad@csilvm-03:~$ ssh dokku-03.cs.ucsb.edu
+Welcome to Ubuntu 22.04.4 LTS (GNU/Linux 6.8.8-4-pve x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+Last login: Thu Jun  6 00:47:58 2024 from 128.111.30.204
+pconrad@dokku-03:~$ 
+```
+
+You will need to type `exit` *twice* to get back to your machine:
+* Once to log out of the dokku machine
+* Another time to log out of csil
+
+Like this:
+
+```
+pconrad@dokku-03:~$ exit
+logout
+Connection to dokku-03.cs.ucsb.edu closed.
+pconrad@csilvm-03:~$ exit
+logout
+Connection to csil.cs.ucsb.edu closed.
+pconrad@Phillips-Mac-mini-2 .ssh % 
+```
+
 If you are able to login to your dokku-xx machine successfully, you may log out for now, and move on to the next step.  
 
 But if you were *not* able to log in to the dokku-xx machine successfully, please post to `#help-jpa01` now, with a main post of "trouble loggin into dokku", and then in the reply thread, include screenshots of the problems you are seeing.
