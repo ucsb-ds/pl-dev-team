@@ -5,8 +5,8 @@ description: "P05 - divide up LTD"
 ready: true
 layout: default
 parent: lectures
-jpa01:"[jpa01](https://ucsb-cs156.github.io/f24/lab/jpa01)"
-H01:"[H01](https://ucsb-cs156.github.io/f24/hwk/h01)"
+jpa01: "[jpa01](https://ucsb-cs156.github.io/f24/lab/jpa01)"
+H01: "[H01](https://ucsb-cs156.github.io/f24/hwk/h01)"
 ---
 
 
