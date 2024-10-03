@@ -12,4 +12,4 @@ table * td,th {
 
 | Team |  Dokku | 
 |------|-------------|{% for t in site.teams %}
-| {{ t.team }} | `dokku-{{t.dokku}}.cs.ucsb.edu` |
+| {{ t.team }} | `dokku-{{t.dokku}}.cs.ucsb.edu` |{% endfor %}
