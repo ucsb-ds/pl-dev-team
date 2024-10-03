@@ -1,7 +1,7 @@
 ---
 description: Spring Boot Hello World
-assigned: 2024-10-02
-due: 2024-10-07 23:59
+assigned: 2024-10-03
+due: 2024-10-08 23:59
 layout: default
 title: jpa01
 nav_order: 100
@@ -19,19 +19,11 @@ teams_link: "<https://bit.ly/cs156-f24-teams>"
 
 {% include drop_down_style.html %}
 
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-
-# Please do not start this lab yet.
-# Please do not start this lab yet.
-# Please do not start this lab yet.
-# Please do not start this lab yet.
-
 # {{page.title}} - {{page.description}}
 
 Canvas Link: <{{page.canvas_link}}>
+
+See Canvas for due dates.
 
 ## Individual lab, but you may help one another
 
