@@ -175,7 +175,7 @@ git push origin main
 
 The application should be ready to go out of the box; it
 starts up a web server that brings up a page with the message
-`Greetings from Spring Boot!`
+`Hello, World`
 
 We are going to run a command
 to start up this web server
@@ -195,7 +195,7 @@ a browser.
 Now, if you are running on your own machine, connecting with a browser is quite simple;
 the web server is running on the local machine (`localhost`) on port
 8080, so putting the address <http://localhost:8080> in your browser
-will just work.  If you are successful, you should see the message `Greetings from Spring Boot` appear in your browser.
+will just work.  If you are successful, you should see the message `Hello, World` appear in your browser.
 
 
 
