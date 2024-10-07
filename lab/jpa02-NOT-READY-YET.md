@@ -57,6 +57,12 @@ Because there are so many new concepts here, the programming will again be prett
 **Don't worry; there will be plenty of difficult programming challenges ahead**.  Right now, while there is so much new stuff going on, I don't also want to
 overwhelm you with tricky programming problems *on top* of all of that.
 
+## Do you need a Unix tutorial/refresher?
+
+Throughout these labs, we'll assume a basic knowledge of Unix commands such as `ls`, `cd`, `mkdir`, `rm`, `mv`, `cp`, `chmod`, `pwd`, `cat`, `more`, `less`, and many others.
+
+If you are rusty on these, or perhaps never learned them (because you transferred from a school that didn't use Unix), tThis video tutorial by Ryan He](https://mail.google.com/mail/u/0/#inbox/FMfcgzQXJZpvpSRrSndPZwfqqkrBCmXq?projector=1) was developed under the supervision of Prof. Ziad Matni, and is a nice introduction to basic Unix commands.
+
 ## What you are going to do
 
 We've divided the work into these parts:
