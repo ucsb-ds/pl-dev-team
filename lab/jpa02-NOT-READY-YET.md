@@ -61,7 +61,9 @@ overwhelm you with tricky programming problems *on top* of all of that.
 
 Throughout these labs, we'll assume a basic knowledge of Unix commands such as `ls`, `cd`, `mkdir`, `rm`, `mv`, `cp`, `chmod`, `pwd`, `cat`, `more`, `less`, and many others.
 
-If you are rusty on these, or perhaps never learned them (because you transferred from a school that didn't use Unix), tThis video tutorial by Ryan He](https://mail.google.com/mail/u/0/#inbox/FMfcgzQXJZpvpSRrSndPZwfqqkrBCmXq?projector=1) was developed under the supervision of Prof. Ziad Matni, and is a nice introduction to basic Unix commands.
+* [This video tutorial by Ryan He](https://youtu.be/1W5V4GHPO4E?si=aBcPXImlZIhethnz) was developed under the supervision of Prof. Ziad Matni, and is a nice introduction to basic Unix commands if you need a refresher, or if you are joining CS156 as a transfer student from a school where Unix was not used.
+* [This PDF](https://github.com/ucsb-cs156/ucsb-cs156.github.io/blob/main/topics/unix/A-Basic-Linux-Workshop.pdf) goes along with the video.
+
 
 ## What you are going to do
 
@@ -158,9 +160,9 @@ After you do this, you should have all of the starter code from <{{page.starter_
 
 When you've completed those steps, you are ready to deploy your app on localhost.
 
-### Step 1.3: Deploy on Localhsot
+### Step 1.3: Deploy on `localhost`
 
-Now, to deploy the app on localhost (as you did in jpa01), we run the following command:
+Now, to deploy the app on `localhost` (as you did in jpa01), we run the following command:
 
 ```
 mvn spring-boot:run
