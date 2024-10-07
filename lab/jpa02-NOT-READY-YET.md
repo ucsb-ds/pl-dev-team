@@ -80,21 +80,120 @@ We've divided the work into these parts:
 
 ## Part 1: Get to know the app
 
-### Step 1.1: Clone repo and run app locally
+### Step 1.1: Clone repo
 
-In this part, you'll run the app on localhost
+Reviewing, from jpa00 and jpa01:
 
-### Step 1.2: Deploy on Dokku
+* In this course, you'll typically start with an empty repo, created by the staff.
+* In this case, look for a repo under <{{page.course_org}}> with the name <tt>{{title}}-<i>yourGithubId</i></tt>.
+* It will start as an empty repo
+* You'll then find a place on your laptop to clone it (we suggest under the directory `~/cs156`, but that's up to you).
+  <pre>
+  cd ~/cs156 
+  git clone {{page.title}}-<i>yourGithubId</i>
+  cd {{page.title}}-<i>youGithubId</i>
+  </pre>
+
+You will then have a local repo on your laptop that is a *clone* of the repo on Github.   
+
+
+### Step 1.2: Pull in starter code
+
+For this step, you need to be at a terminal prompt, and your current directory should be the one where you cloned the repo: <{{page.course_org_name}}/{{page.title}}-<i>yourGithubId</i>>.
+
+If you type `git remote -v`, you should see that you have something like the following (with `%` representing the terminal shell prompt):
+
+(If you get an error, be sure that you are in the correct directory, i.e. <tt>~/cs156/{{page.title}}-<i>yourGithubId</i></tt>.)
+
+<pre>
+% git remote -v
+origin	git@github.com:{{page.course_org_name}}/{{page.title}}-<i>yourGithubId</i>.git (fetch)
+origin	git@github.com:{{page.course_org_name}}/{{page.title}}-<i>yourGithubId</i>.git (push)
+% 
+</pre>
+
+What this output signififies is the the name `origin` is the name of a *remote* repo that you can fetch branch information from, pull commits from, and push commits to.
+
+* The `git` system works with both *branches*, which are multiple copies of code in the same repo, and *remotes*, which are the urls of other repos containing branches.
+* In this assignment, we'll only work with a single branch in each repo, the `main` branch.
+* In future assignments we'll work with multiple branches.
+* But, we are working with multiple *remotes* in this assignment: (1) `origin` which is the repo assigned to you, specifically, i.e. <tt>{{page.organization}}/{{page.title}}-
+<i>yourGithubId</i></tt>, and (2) `starter`, which is the repo containing the starter code, which is at <{{page.starter_repo}}>.
+
+**To define the remote called `starter`**, do this:
+
+<pre>
+git remote add starter {{page.starter_repo}}
+</pre>
+
+(If you mess up the command, you can undo it by doing `git remote remove starter` and then adding it again.)
+
+After you do this, try `git remote -v` again, and you should see the `starter` remote defined:
+
+<pre>
+% git remote -v
+origin	 git@github.com:{{page.course_org_name}}/{{page.title}}-<i>yourGithubId</i>.git (fetch)
+origin	 git@github.com:{{page.course_org_name}}/{{page.title}}-<i>yourGithubId</i>.git (push)
+starter	{{page.starter_repo}} (fetch)
+starter	{{page.starter_repo}} (push)
+% 
+</pre>
+
+Now, to pull in your starter code, simply do:
+
+```
+git pull starter main
+git push origin main
+```
+
+After you do this, you should have all of the starter code from <{{page.starter_repo}}> both:
+* In your current directory, when you type `ls`
+* On Github.com, when you look at this url (adjusting for your own githubid): <{{{{page.course_org}}/{{page.title}}-<i>yourGithubId</i>}}>
+
+When you've completed those steps, you are ready to deploy your app on localhost.
+
+### Step 1.3: Deploy on Localhsot
+
+Now, to deploy the app on localhost (as you did in jpa01), we run the following command:
+
+```
+mvn spring-boot:run
+```
+
+You'll then need to open a browser on the same machine where you are running the `mvn spring-boot:run` command, and navigate to the url <http://localhost:8080>
+
+You should see a web app come up.
+
+Note that the web app is only available while you are running the `mvn spring-boot:run` command in the terminal shell.
+* If you terminate that shell by typing `CTRL/C`, then you'll see that the web browser no longer brings up the web app, but instead a message that the page is not reachable.
+
+Explore the web app a bit.  You'll see that:
+* The home page at `/` shows some content, and there's a link to `Developer Info`.  Follow that link.
+* The page at `/info` shows the name of a fictional developer, `Chris G.` (`G.` for `Gaucho`).
+* It also has a link for the team that `Chris G.` is on.  Follow that link.
+* You'll now see a different kind of page in your browser.  This page contains information in *JSON* format, which is short for *Javascript Object Notation*.
+* JSON is usually pronounced like this: "Jay Son", rhyming with the phrase "play on".
+
+We'll talk a lot more about `json` as the course progresses, but for now, just notice that:
+* The JSON object is surrounded by curly braces (`{}`)
+* It is a set of key/value pairs.
+* The keys are `name` and `team`.
+* The value of `name is a string in *double quotes* (`"Chris G."`)
+* The value of team is an array of strings, surrounded by square brackets (`[]`).
+  
+We'll come back to a discussion of JSON objects later on.
+
+### Step 1.4: Deploy on Dokku
 
 Now deploy the app on dokku (as you did in jpa01)
 
-### Step 1.3: Deploy on Dokku
+### Step 1.5: Run the test suite
 
 Now run the test suite with `mvn test`
 
 Look over the tests.
 
-### Step 1.4: Review Jacoco Report
+### Step 1.6: Review Jacoco Report
 
 Use `mvn test jacoco:report` to generate a line coveage report.
 
@@ -110,7 +209,7 @@ Lines in yellow are lines that have a *branch* (i.e. an if/else type of construc
 
 At a later stage in this programming assignment, you'll need to write tests to address these gaps, but for now, just try to understand the output.
 
-### Step 1.5: Review Pitest Report
+### Step 1.7: Review Pitest Report
 
 Use `mvn test pitest:mutationCoverage` to generate a mutation coverage report.
 
