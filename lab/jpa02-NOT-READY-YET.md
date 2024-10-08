@@ -616,6 +616,38 @@ Now find the place in `Developer.java` where `Chris G.` needs to be replaced wit
 
 Run the app too, with `mvn spring-boot:run` and see that the name `Chris G.` is now your name.
 
+When this is done, do a commit. Start by typing `git add .` followed by `git status`.
+
+```
+git add .
+git status
+```
+
+This will show you what file will go into the next commit.  It should be *only* these files:
+
+```
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+    	modified:   src/main/java/edu/ucsb/cs156/spring/hello/Developer.java
+	    modified:   src/test/java/edu/ucsb/cs156/spring/hello/DeveloperTest.java
+```
+
+If there are other files that got scooped up by mistake, you can use the `git restore --staged <file>` command to unstage them (as explained in the message from git).
+
+**ALWAYS** type `git status` after typing `git add .` so that you avoid committing files by accident.
+
+Assuming the staged files are only `Developer.java` and `DeveloperTest.java`, you can now make the commit.
+
+```
+git commit -m "xy - updated with actual developer name"
+git push origin main
+```
+
+We don't necessarily need to say: `"xy - updated code and tests with actual developer name"` since the *normal* case should be that we update code and tests in the same commit.   
+* There may be times when we must deviate from this practice, but this is the best way to go about it.
+* The idea is to not make a commit that breaks things; if the unit tests aren't passing, that leaves things in a broken state.
+
+Let's make another change now.
 
 ### Part 2.2: Add test for `getGithubId`
 
@@ -636,19 +668,90 @@ mvn test jacoco:report
 mvn pitest:mutationCoverage
 ```
 
-
-
-
-
-When you are done with this step, make a commit with the following message, *replacing `xy` with your initials*:
+Make another commit (replace `xy` with your initials):
 
 ```
-git commit -m "xy - updated with actual developer name and team"
+git add .
+git status
+git commit -m "xy - updated with actual github id"
+git push origin main
 ```
 
-You are now ready to tackle the test coverage.
+### Part 2.3: Change `getTeam` in `Developer.java` to the names of the member of your team.
 
-## Part 3: Test Coverage
-  * Next, you'll try to get to 100% test coverage, both using jacoco and pitest
-  * We'll show you two ways to cover the tests gaps in the `Team` class for the `equals`, `toString`, and `hashCode` methods: the hard way (by hand) and the easy way (using Lombok)
+Next, change the names in this method to match those of the members of your team, including yourself, and remove the `// TODO` comment:
+
+```
+  /**
+     * Get the developers team
+     * @return developers team as a Java object
+     */
     
+    public static Team getTeam() {
+        // TODO: Change this to your team name
+        Team team = new Team("f24-xx");
+        team.addMember("Alice");
+        team.addMember("Bob");
+        team.addMember("Chris G.");
+        team.addMember("Danny");
+        team.addMember("Eve");
+        team.addMember("Frances");
+        return team;
+    }
+```
+
+Then, run the test suite (`mvn test`); everything should still pass.
+
+Then, run `mvn pitest:mutationCoveage` and you'll see we still have a testing gap here.
+
+To address that, let's write a test in `DeveloperTest.java` that the team that `getTeam` returns has the correct name. For example, if your teamname is `f24-00`, the test might look like this:
+
+```
+    @Test
+    public void getTeam_returns_team_with_correct_name() {
+        Team  t = Developer.getTeam();
+        assertEquals("f24-00", t.getName());
+    }
+```
+
+We can also write a test that checks for each of the members of the team.  Here's one way to do that.  Note that `assertTrue` takes two parameters:
+* An boolean expression that should evaluate to true if the test passes
+* A string that is printed if the test fails
+
+```
+    @Test
+    public void getTeam_returns_team_with_correct_members() {
+        Team  t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Amey"),"Team should contain Amey");
+        assertTrue(t.getMembers().contains("Grace"),"Team should contain Grace");
+        // ... etc
+    }
+```
+
+Or, you could make each one a separate test.  There are pros/cons to each approach.  All-in-one test is more compact code, but if any of the assertions fails, it won't check the rest of them.
+With separate tests, you get a lot more information from the test suite, since they can independently pass or fail.  It's a judgement call; different programmers will make different decisions here,
+and each could defend their choice.
+
+```
+    @Test
+    public void getTeam_returns_team_with_Amey() {
+        Team  t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Amey"),"Team should contain Amey");
+    }
+
+    @Test
+    public void getTeam_returns_team_with_Grace() {
+        Team  t = Developer.getTeam();
+        assertTrue(t.getMembers().contains("Grace"),"Team should contain Grace");
+    }
+    // ... etc
+```
+
+Either way, write these tests, and then check the pitest output again.  If you did it correctly, you should now have this on pitest for `Developer.java`:
+
+![image](https://github.com/user-attachments/assets/b0d40a7c-f3f7-48dc-b2f7-01c3e66cff40)
+
+And, when you run `mvn spring-boot:run`, you should now see correct information for yourself, your github, and your team on the web pages.
+
+Do another commit.  Choose a reasonable commit message for the change that you made, and push that change to the `main` branch on the `origin` repo (the one on Github).
+
