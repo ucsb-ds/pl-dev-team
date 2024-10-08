@@ -15,6 +15,9 @@ software: https://ucsb-cs156.github.io/f24/info/software.html
 install_check: https://ucsb-cs156.github.io/f24/info/install_check.html
 ---
 
+<style>
+ code {white-space: nowrap;}
+</style>
 
 # NOT READY YET
 # NOT READY YET
