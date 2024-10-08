@@ -159,7 +159,7 @@ Now, to pull in your starter code, simply do:
 
 ```
 git pull starter main
-git push origin main
+  git push origin main
 ```
 
 After you do this, you should have all of the starter code from <{{page.starter_repo}}> both:
@@ -243,7 +243,7 @@ All steps require you to login to your dokku machine, i.e. the following series 
 
 ```
 ssh username@csil.cs.ucsb.edu
-ssh username@dokku-xx.cs.ucsb.edu
+  ssh username@dokku-xx.cs.ucsb.edu
 ```
 
 <details markdown="1">
