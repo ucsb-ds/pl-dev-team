@@ -99,7 +99,7 @@ Reviewing, from jpa00 and jpa01:
   <pre>
   cd ~/cs156 
   git clone {{page.title}}-<i>yourGithubId</i>
-  cd {{page.title}}-<i>youGithubId</i>
+  cd {{page.title}}-<i>yourGithubId</i>
   </pre>
 
 You will then have a local repo on your laptop that is a *clone* of the repo on Github.   
@@ -125,7 +125,7 @@ What this output signififies is the the name `origin` is the name of a *remote* 
 * The `git` system works with both *branches*, which are multiple copies of code in the same repo, and *remotes*, which are the urls of other repos containing branches.
 * In this assignment, we'll only work with a single branch in each repo, the `main` branch.
 * In future assignments we'll work with multiple branches.
-* But, we are working with multiple *remotes* in this assignment: (1) `origin` which is the repo assigned to you, specifically, i.e. <tt>{{page.organization}}/{{page.title}}-
+* But, we are working with multiple *remotes* in this assignment: (1) `origin` which is the repo assigned to you, specifically, i.e. <tt>{{page.course_org}}/{{page.title}}-
 <i>yourGithubId</i></tt>, and (2) `starter`, which is the repo containing the starter code, which is at <{{page.starter_repo}}>.
 
 **To define the remote called `starter`**, do this:
