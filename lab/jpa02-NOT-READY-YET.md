@@ -262,7 +262,7 @@ First time:
 | 1. Create dokku app | <tt>dokku apps:create {{page.title}}-<i>yourGithubId</i></tt> |
 | 2. Sync the app with git repo, main branch | <tt>dokku git:sync {{page.title}}-<i>yourGithubId</i> {{page.course_org}}/{{page.title}}-<i>yourGithubId</i>.git main</tt>
 | 3. Deploy the `http` version of the app | <tt>dokku ps:rebuild {{page.title}}-<i>yourGithubId</i></tt> |
-| 4. Configure email for `https` support | <tt>dokku letsencrypt:set {{page.title}}-<i>yourGithubId</i></tt> email <i>youremail</i>@ucsb.edu</tt> |
+| 4. Configure email for `https` support | <tt>dokku letsencrypt:set {{page.title}}-<i>yourGithubId</i> email <i>youremail</i>@ucsb.edu</tt> |
 | 5. Enable https on your app | <tt>dokku letsencrypt:enable {{page.title}}-<i>yourGithubId</i></tt> |
 
 To redeploy any time the repo changes (otherwise changes in the repo don't affect the running app):
