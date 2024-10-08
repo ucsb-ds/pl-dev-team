@@ -18,8 +18,8 @@ slack_help_channel: "[#help-jpa02](https://ucsb-cs156-f24.slack.com/archives/C07
 ---
 
 <style>
- code {white-space: nowrap;}
- tt {white-space: nowrap;}
+ code {white-space: pre;}
+ tt {white-space: pre;}
 </style>
 
 # NOT READY YET
