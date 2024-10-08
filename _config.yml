@@ -76,31 +76,31 @@ defaults:
 
 teams: 
   - team: f24-01
-    dokku: 01
+    dokku: "01"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PYJKCWEL
   - team: f24-02
-    dokku: 02
+    dokku: "02"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QKLCSW
   - team: f24-03
-    dokku: 03
+    dokku: "03"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QLJ4JW
   - team: f24-04
-    dokku: 04
+    dokku: "04"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8JN50F
   - team: f24-05
-    dokku: 05
+    dokku: "05"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8KDQQ7
   - team: f24-06
-    dokku: 06
+    dokku: "06"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P36DJ35L
   - team: f24-07
-    dokku: 07
+    dokku: "07"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P36EHA06
   - team: f24-08
-    dokku: 08
+    dokku: "08"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PNFDK20Z
   - team: f24-09
-    dokku: 09
+    dokku: "09"
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PNFEB2EM
   - team: f24-10
     dokku: 10
