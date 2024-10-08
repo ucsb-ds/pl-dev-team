@@ -431,13 +431,41 @@ It shows the package `edu.ucsb.cs156.spring.hello` and it shows that the code in
 
 So, how can we learn more?  Click on the package name  `edu.ucsb.cs156.spring.hello`; it's a link and it should open up a page that looks like this:
 
+![image](https://github.com/user-attachments/assets/ff40860d-39af-4de9-b1d0-d83c1e0fcb30)
 
+On *this* page, we see individual class names.  And we can see that all of the problems (lines not covered by tests) are in the `Team` class.
 
-On this first page, 
+So, now we can click on the link for `Team` and it takes us to a page like this one, where we see statistics for individual constructors and methods:
 
-Lines in yellow are lines that have a *branch* (i.e. an if/else type of construct).  The yellow signifies that at least one branch was covered, but at least one branch was not coverd.
+![image](https://github.com/user-attachments/assets/d6677d54-14fc-4b10-9cd3-762ed873a28a)
 
-At a later stage in this programming assignment, you'll need to write tests to address these gaps, but for now, just try to understand the output.
+From here, we can see that three methods, in particular, are the ones not tested:
+* `hashCode`
+* `toString`
+* `equals`
+
+Clicking on any of these three links takes us to a page with the source code, marked up with information about the line and branch coverages gaps.  Click on any one of these, and you'll be taken to a page that looks like this (I'm only showing the part from line 56 to the bottom, so you may need to scroll to see this view):
+
+![image](https://github.com/user-attachments/assets/9d126368-40b2-48bd-b210-1f3212aeebcf)
+
+A few things to notice:
+* The green on lines 60-61 shows that the `setMembers` method is fully covered by tests (this is also true of all the methods and constructors earlier in the file; scroll up to verify)
+* The mix of yellow, red and green in the `equals` method shows that some parts are covered by tests, but others are not.
+  * Green means completely covered (the whole line was run by at least one test)
+  * Red means not covered at all (none of this line was run during any test)
+  * Yellow means partial branch coverage (some part of this line was run by at least one test, but at least part of this line was *not* run by *any* test).
+* The solid red in the remaining two methods shows they are not covered by tests *at all*.
+  
+One note, especially for *red/green colorblind folks*, but really for everyone: `jacoco` here is violating an important priciple of accessiblity (sometimes abbreviated as [a11y](https://www.a11yproject.com/): don't depend solely on color (especially red/green) to indicate something in a user interface.   It's a [known issue with jacoco](https://github.com/jacoco/jacoco/issues/144); after the course is done, if you feel confident, you might submit a pull request to try to address it.  The link also has some suggested work arounds if it's a problem for you.
+
+As we'll discuss later in the assignment, the three methods `hashCode`, toString` and `equals` are really important methods for a Java class; if they are not implemented correctly, many things can go wrong.
+So testing them is important.
+
+Later in the assignment, we'll show two ways to address this testing gap:
+1. Write good tests for these methods
+2. Rewrite the class so that these methods are generated automatically, and therefore don't need to be tested.
+
+But for now, as long as you understand how to generate a line/branch coverage report (i.e. `mvn test jacoco:report`) and how to interpret the output, you are good to move on.
 
 ### Step 1.7: Review Pitest Report
 
