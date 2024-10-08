@@ -524,19 +524,36 @@ Next, click on the top level package to drill down into individual classes. That
 
 ![image](https://github.com/user-attachments/assets/ff3dc653-889f-4b0d-82e1-7ed3804724db)
 
+We now see that while line coverage only showed that there was insufficient tests for `Team.java`, running
+pitest shows that we also have some problems in `Developer.java`.  So let's click into that file to see
+what's going on:
 
+The top of the file looks fine:
 
+![image](https://github.com/user-attachments/assets/44490066-a3bb-4e1a-9940-4b52e974dac6)
 
+But as we scroll down, we see the issues.   The lines with numbers to the right of the line numbers
+are lines that were mutated.  When the highlighting is green, the mutants were killed (or timed out), but when they are red,
+it means they survived. 
+
+![image](https://github.com/user-attachments/assets/8eb2b179-6132-4ea8-800a-ea4e266feea4)
+
+The numbers beside the line numbers can be treated like footnotes: they refer to the table below that shows
+what the mutation was, and what the outcome was.  You can also hover over any of these numbers and there's a pop up, like this one:
+
+![image](https://github.com/user-attachments/assets/504b35a1-2feb-40cd-8675-63dcd105ff7a)
+
+What this is telling us is that for each of the lines 44-49, if you remove the line of code completely, the *tests all still pass*.
+So, if these lines are important to the correct functioning of the code, we need a test for the *outcome* of calling these lines: one that passes when the line is present, and
+fails when it is not present.
 
 At a later stage, you'll be asked to write tests to cover these mutation coverage gaps.
-But for now, just make sure you are familiar with how to run pitest and look at the output.
 
+But for now, its enough that you are familiar with:
+* How to run pitest (`mvn pitest:mutationCoverage)
+* How to bring up the report and make sense of it.
 
-
-Look over the report, and look for the red.  These are parts of the code where a mutant survived.
-
-#### What does it mean that a mutant survived?
-
+Now we are ready to do some actual coding.
 
 ## Part 2: Customizing the app
 
