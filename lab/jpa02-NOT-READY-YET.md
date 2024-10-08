@@ -164,7 +164,7 @@ git push origin main
 
 After you do this, you should have all of the starter code from <{{page.starter_repo}}> both:
 * In your current directory, when you type `ls`
-* On Github.com, when you look at this url (adjusting for your own githubid): <{{page.course_org}}/{{page.title}}-<i>yourGithubId</i>>
+* On Github.com, when you look at this url (adjusting for your own githubid): <{{page.course_org}}/{{page.title}}-*yourGithubId*>
 
 When you've completed those steps, you are ready to deploy your app on localhost.
 
