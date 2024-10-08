@@ -770,9 +770,11 @@ Note that in future labs, we'll start to wean you off this hand-holding; if we s
 
 Check that your dokku deployment has the correct content (i.e. your name, your github, your team's name, your teammates' names).
 
-### Part 2.5: Full line and mutation coverage for Team.java
+## Part 3: Full line and mutation coverage for Team.java
 
-Now we have this problem left to solve: three methods of Team.java have mutation coveage gaps:
+We now want to get to full line and mutation coverage for Team.java
+
+We have this problem left to solve: three methods of Team.java have mutation coveage gaps:
 
 ![image](https://github.com/user-attachments/assets/d32dc527-f7c1-4837-bc7f-6846361bda50)
 
@@ -785,4 +787,34 @@ Before we can proceed, we need to understand what each of these methods is reall
 * The default implementation is sometimes fine, but other times it isn't.
 
 Let's start with the easiest method: `toString`.  
+
+One easy way to understand toString is to use the `jshell` utillity. 
+
+### Part 3.1: Using jshell
+
+First, verify that `jshell` works on your system by typing `jshell`.  You should see this:
+
+```
+pconrad@Phillips-Mac-mini-2 jpa02-pconrad % jshell
+|  Welcome to JShell -- Version 21.0.4
+|  For an introduction type: /help intro
+
+jshell> 
+```
+
+To exit `jshell` at any time, use: `/exit` like this:
+
+```
+jshell> /exit
+|  Goodbye
+pconrad@Phillips-Mac-mini-2 jpa02-pconrad % 
+```
+
+Next, be sure your code is up to date by typing `mvn compile`, and then start up `jshell` with the `classpath` being the directory <tt>&#96;pwd&#96;/target/classes</tt>.  Note that the (<tt>&#96;</tt>) character is the *backtick*, at the upper left hand corner of the US-EN keyboard.
+
+```
+mvn compile
+jshell --class-path `pwd`/target/classes
+```
+
 
