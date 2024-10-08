@@ -962,6 +962,7 @@ We need (in all), a test case for:
 * Case 1: same object
 * Case 2: different class
 * Case 3: Here, there are two parts to the `&&`, so we may need to cover these possibilities:
+
   | `this.name.equals(other.name)` | `this.members.equals(other.members)` |
   |--|--|
   | T  | T |
