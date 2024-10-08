@@ -22,15 +22,12 @@ slack_help_channel: "[#help-jpa02](https://ucsb-cs156-f24.slack.com/archives/C07
  tt {white-space: pre;}
 </style>
 
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-
-# Please do not start this lab yet.
-# Please do not start this lab yet.
-# Please do not start this lab yet.
-# Please do not start this lab yet.
+This lab is ready to start, and is complete up through step 3.2.
+* Getting that far may take you all of class today.
+* Please try to get through all of Step 1 in lecture on 10/08/2024 if possible, however.
+* And then try to get through as much of Step 2 as you can.
+* The instructions for steps 3.3, 3.4 and 4 are coming soon
+* If you get all the way through Step 3.2 and Step 3.3 *still* isn't finished, you are welcome to leave early.
 
 # {{page.title}} - {{page.description}}
 
@@ -790,7 +787,7 @@ Let's start with the easiest method: `toString`.
 
 One easy way to understand toString is to use the `jshell` utillity. 
 
-### Part 3.1: Using jshell
+### Part 3.1: Using `jshell` to understand `toString`
 
 First, verify that `jshell` works on your system by typing `jshell`.  You should see this:
 
@@ -817,4 +814,116 @@ mvn compile
 jshell --class-path `pwd`/target/classes
 ```
 
+You should then be able to import the Team class with the command:
+* import edu.ucsb.cs156.spring.hello.*
 
+```
+pconrad@Phillips-Mac-mini-2 jpa02-pconrad % jshell --class-path `pwd`/target/classes
+|  Welcome to JShell -- Version 21.0.4
+|  For an introduction type: /help intro
+
+jshell> import edu.ucsb.cs156.spring.hello.*
+
+jshell> 
+```
+
+Then you can type in the following:
+```
+Team t = new Team();
+t.toString();
+```
+
+The output should be something like this:
+
+```
+jshell> import edu.ucsb.cs156.spring.hello.*
+
+jshell> Team t = new Team();
+t ==> Team(name=, members=[])
+
+jshell> t.toString()
+$3 ==> "Team(name=, members=[])"
+
+jshell> 
+```
+
+Now, try `t.setName("f24-xx")` then put in `t.toString()` again.  You should get the result: `"Team(name=f24-xx, members=[])"`
+
+You can also try invoking other methods such as `addMember` on the `t` object to see the result.
+
+Now, try this: comment out the `toString` method in the `Team.java` class so that it looks like this.  Note that in VSCode, you
+can comment out a block by selecting it, then using `Command /` on MacOS, or `Control /` on WSL.
+
+```
+    // @Override
+    // public String toString() {
+    //     return "Team(name=" + this.name + ", members=" + this.members + ")";
+    // }
+
+```
+
+Exit from jshell, recompile, and go back into jshell:
+
+```
+/exit
+mvn compile
+jshell --class-path `pwd`/target/classes
+```
+
+Now if you type the same sequence as before, you'll see that the output of `t.toString()` is simple a generic string followed by a number:
+
+```
+"edu.ucsb.cs156.spring.hello.Team@1"
+```
+
+The point is that the purpose of the toString method is to give us a nice human readable version of the contents of an object.
+
+And that turns out to be *very important for reading the output of JUnit messsages*, since JUnit uses `toString` to give us information about objects.
+
+Now that we understand the purpose of `toString`, let's look at how to solve the testing gap.
+
+### Part 3.2: Testing gap in toString
+
+Fixing the test gap for `toString` is relatively simple.  
+
+Note that in `TeamTest.java`, we have this code:
+
+```
+    Team team;
+
+    @BeforeEach
+    public void setup() {
+        team = new Team("test-team");    
+    }
+```
+
+This declares a variable called `team`, and in the `setup` method which is run before each test (due to the `@BeforeEach` annotation), it is initialized to an instance of `Team`.
+
+So our test can just assert that the `toString` method returns what we expect for this object:
+
+```
+    @Test
+    public void toString_returns_correct_string() {
+        assertEquals("Team(name=test-team, members=[])", team.toString());
+    }
+```
+
+Add this test, run `mvn test`, and if passes, run `mvn pitest:mutationCoverage` again.  You should see that the `toString` method is now green 
+on the pitest report:
+
+![image](https://github.com/user-attachments/assets/c79f6adc-b2c9-453b-887b-58f7f565dde3)
+
+Next, we tackle the equals method.
+
+### Part 3.3: Testing gap in equals
+
+COMING SOON
+
+### Part 3.4: Testing gap in hashCode
+
+COMING SOON
+
+
+### Part 4: Finishing up and Submitting
+
+COMING SOON
