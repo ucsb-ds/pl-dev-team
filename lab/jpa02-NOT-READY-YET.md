@@ -250,7 +250,7 @@ ssh username@dokku-xx.cs.ucsb.edu
 <summary markdown="1">
 Click the triangle for a list of teams and dokku hostnames
 </summary>
-{* include dokkus.md *}
+{% include dokkus.md %}
 </details>
 
 The steps to deploy the app are explained here: <https://ucsb-cs156.github.io/topics/dokku/deploying_simple_app.html> in detail, but here's the short version.
