@@ -41,14 +41,12 @@ This lab is going to cover a lot of new concepts.
 * **Jacoco**: You'll work with Jacoco, a line coverage testing framework for Java.
 * **Mutation Coverage**: You'll be introduced to the idea of "mutation coverage", a better (but slower) way to check the strength of a test suite.
 * **Pitest**: You'll work with Pitest, a mutation coverage framework for Java
-
-In the Java code, you'll see:
-
-* **String.format**: a very useful Java method for formatting strings
 * **JSON (JavaScript Object Notation)**: a compact syntax for representing objects (used not only in Javascript, but in almost all modern web and mobile applications)
+
+In the Java code, you'll also see, though we won't discuss them immediately:
+* **String.format**: a very useful Java method for formatting strings
 * **Jackson `ObjectMapper`**: a package providing an `ObjectMapper` object that converts between Java object and JSON objects
 * **Java Bean**: A Java Bean is simply a basic Java class with a default (no-arg) constructor,  getters and setters for each data element that follow a specific naming convention, implementations of equals, hashCode, and toString
-* **Lombok**: An alternative way to generate Java Bean classes efficiently
 * **A Class with Only Static Methods**: The use case for a class with only static methods, and how you handle test coverages for such classes
 
 It's a lot, especially if you haven't seen Java before.  But don't worry: we'll guide you through it.
@@ -917,7 +915,64 @@ Next, we tackle the equals method.
 
 ### Part 3.3: Testing gap in equals
 
-COMING SOON
+There are two ways to test for equality in Java:
+* `x==y`
+* `x.equals(y)`
+
+Understanding the different is important.
+
+The short version of `==` vs `.equals` in Java is this:
+* When you compare primitives (values of types `boolean` , `byte` , `char` , `short` , `int` , `long` , `float` and `double`), `==` works like you expect, and `x.equals(y)` isn't available.
+* When you compare objects, `==` compares the *references* (the pointers) and returns `true` if they are the *same object on the heap*, otherwise false.
+* When you compare objects, `equals` does *exactly what `==` does*, **unless** some code has been written to override `equals`.
+
+In practice:
+* For all classes that are standard built in Java classes such as `String`, `ArrayList<T>`, etc. `equals` has been overridden appropriately.
+* For all classes that *you write*, you *need to do it yourself* if you are ever relying on comparisons for equality.
+* Any class where you test whether objects are equal in JUnit tests need a proper `equals` method.
+
+This is what a proper equals method looks like (this the `equals` method in the starter code, just with
+some extra comments):
+
+```java
+  /**
+     * Check if a team is equal to another object
+     * @param obj object to compare to
+     * @return true if the object is a team with the same name and members
+     */
+    @Override
+    public boolean equals(Object obj) {
+        // Case 1: these are the same object
+        if (obj == this) {
+            return true;
+        }
+        // Case 2: the other object isn't even an instance of this class
+        if (!(obj instanceof Team)) { 
+            return false;
+        }
+        // Case 3: Cast the other object to this class, and compare all of the fields
+        Team other = (Team) obj;
+        return this.name.equals(other.name) && this.members.equals(other.members);
+    }
+```
+
+What we need (that's missing) are some test cases for the parts of the code that aren't covered.
+
+We need (in all), a test case for:
+* Case 1: same object
+* Case 2: different class
+* Case 3: Here, there are two parts to the `&&`, so we may need to cover these possibilities:
+  | `this.name.equals(other.name)` | `this.members.equals(other.members)` |
+  |--|--|
+  | T  | T |
+  | T  | F |
+  | F  | T |
+  | F  | F |
+
+Note that we might not need to cover both `F,T` and `F,F` because of short-circuit boolean evaluation, but I'll leave that for you to work out.
+
+See if you can supply the missing test cases.
+
 
 ### Part 3.4: Testing gap in hashCode
 
