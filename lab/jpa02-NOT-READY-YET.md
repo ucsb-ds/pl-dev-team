@@ -204,7 +204,7 @@ JSON is simply a way to represent the *data* portion of *objects*. Here, we mean
 
 Here's the JSON content from the web app, formatted with indentation:
 
-```json
+```text
 {
  name: "f24-xx",
  members: [
