@@ -486,17 +486,7 @@ asserting in order to verify that the code is correct.
 
 This is where mutation testing can really help.  
 
-
-Use `mvn test pitest:mutationCoverage` to generate a mutation coverage report.
-
-Then open the file `target/pit-reports/index.html` in a browser
-
-* On MacOS, you can just type `open target/pit-reports/index.html`
-* If anyone has an easy way to do this on WSL, please share it on `#help-lab02`, and we'll add it to the instructions here.
-
-Look over the report, and look for the red.  These are parts of the code where a mutant survived.
-
-#### What does it mean that a mutant survived?
+#### How does mutation testing work?
 
 Here's how mutation coveage works:
 * pitest starts with the assumption that your code is correct (after all, it passes your tests).
@@ -511,8 +501,24 @@ Here's how mutation coveage works:
   (There is a *rare* corner case where it might be a "false positive", meaning there's nothing wrong with your code or the test suite; we'll cover that case later as it arises).
 * A third possibility is when the mutation causes one or more tests to go into an infinite loop.  This is called a "time out" and is a consequence of the *halting problem*, which is a topic of CMPSC 138.  In practice, we treat timeouts as "inconclusive" and ignore them; we focus only on trying to ensure that no mutants survive.
 
+#### Let's try mutation testing with `pitest`
+
+Use `mvn test pitest:mutationCoverage` to generate a mutation coverage report.
+
+Then open the file `target/pit-reports/index.html` in a browser
+
+* On MacOS, you can just type `open target/pit-reports/index.html`
+* If anyone has an easy way to do this on WSL, please share it on `#help-lab02`, and we'll add it to the instructions here.
+
 Notice which lines of code have mutant versions that survived the test suite.  At a later stage, you'll be asked to write tests to cover these mutation coverage gaps.
 But for now, just make sure you are familiar with how to run pitest and look at the output.
+
+
+
+Look over the report, and look for the red.  These are parts of the code where a mutant survived.
+
+#### What does it mean that a mutant survived?
+
 
 ## Part 2: Customizing the app
 
