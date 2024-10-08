@@ -9,6 +9,7 @@ quarter: "Fall 2024"
 QXX: f24
 qxx: f24
 baseurl: "/f24"
+slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C07P9T925KL
 
 ta_list_full: TBD
 la_list_full: TBD
