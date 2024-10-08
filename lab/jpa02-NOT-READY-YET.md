@@ -93,7 +93,7 @@ We've divided the work into these parts:
 Reviewing, from jpa00 and jpa01:
 
 * In this course, you'll typically start with an empty repo, created by the staff.
-* In this case, look for a repo under <{{page.course_org}}> with the name <tt>{{title}}-<i>yourGithubId</i></tt>.
+* In this case, look for a repo under <{{page.course_org}}> with the name <tt>{{page.title}}-<i>yourGithubId</i></tt>.
 * It will start as an empty repo
 * You'll then find a place on your laptop to clone it (we suggest under the directory `~/cs156`, but that's up to you).
   <pre>
