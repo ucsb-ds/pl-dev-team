@@ -298,7 +298,7 @@ You are now going to run a suite of tests.  There will be *lots* of output.  The
 [INFO] Total time:  4.257 s
 [INFO] Finished at: 2024-10-08T11:56:18-07:00
 [INFO] ------------------------------------------------------------------------
-pconrad@Phillips-Mac-mini-2 jpa02-pconrad % 
+pconrad@Phillips-Mac-mini-2 jpa02-pconrad %
 ```
 
 Here's what that looks like with screen highlighting:
@@ -306,6 +306,7 @@ Here's what that looks like with screen highlighting:
 ![image](https://github.com/user-attachments/assets/b55781e5-37b1-4b49-9afb-38a8adfdae70)
 
 The most important lines here are these:
+
 ```
 [INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
 [INFO] BUILD SUCCESS
@@ -414,21 +415,25 @@ The place to look for it is under `target/site/jacoco/index.html`.
 
 In any case, once you open it, it should look like this:
 
-
-
-
-```
-
-
-Use `mvn test jacoco:report` to generate a line coveage report.
-
-Then open the file `target/site/jacoco/index.html` in a browser
-* On MacOS, you can just type `open target/site/jacoco/index.html`
-* If anyone has an easy way to do this on WSL, please share it on `#help-lab02`, and we'll add it to the instructions here.
+![image](https://github.com/user-attachments/assets/2614fb23-f396-45d3-b0ff-a9dd6bd4c258)
 
 Look over the report, and look for the red.  These are parts of the code that were not touched when you ran `mvn test`.
 
-This means the lines were *not covered* by the test suite.
+Let's zoom in on this part:
+![image](https://github.com/user-attachments/assets/7970f262-6106-43a9-a677-607258b3e3a0)
+
+It shows the package `edu.ucsb.cs156.spring.hello` and it shows that the code in this package has only 86% line coverage, and 56% branch coverage.  Our goal is to get that to 100%
+
+* An aside: in most industry settings, 100% coverage is explictly **not** the goal; there are diminishing returns if you start chasing 100% coverage in very large legacy code bases.
+* However, in this course, we've engineered things so that on these early assignments 100% coverage is definitely reasonable and possible.
+* Further, in our large code bases, we adopt an approach of *identifying* the parts of the code that should be *reasonably* exempt from code coveage, and *excluding them* from the computation.
+* Accordingly, while in many settings 100% coverage may not be a reasonable goal, in this course *it always is*.
+
+So, how can we learn more?  Click on the package name  `edu.ucsb.cs156.spring.hello`; it's a link and it should open up a page that looks like this:
+
+
+
+On this first page, 
 
 Lines in yellow are lines that have a *branch* (i.e. an if/else type of construct).  The yellow signifies that at least one branch was covered, but at least one branch was not coverd.
 
