@@ -492,14 +492,17 @@ Here's how mutation coveage works:
 * pitest starts with the assumption that your code is correct (after all, it passes your tests).
 * Then, it makes many copies of your main code (usually dozens of copies), each with one "mutation" that is designed to break the code.
   * For example, if it finds `if (x < 0)` it mutates it to `if (x >= 0)`
-  * If it finds `return result;` it changes it to `return null`
+  * If it finds `return result;` it changes it to `return null;`
+  * If it finds a call to a method, it just removes that line of code completely.
   * etc.
-  These copies with mutations are called *mutants*.  Think of them like *mutants* in a science fiction film that are roaming the earth causing mayhem.
-* It then runs your entire test suite on each of the mutants. (This is why it takes so long to run!)
+* Each copy of the code has just *one* and *only one* of these mutations.   The notion is that these mutations should cause bugs (assuming the code is written correctly, and every line of code is really necessary).
+* These copies with mutations are called *mutants*.  Think of them like *mutants* in a science fiction film that are roaming the earth causing mayhem.  Mutants are bad.  We want to *kill the mutants*.
+  * Note: If you are a person that practices non-violence, I apologize that this metaphor may be uncomfortable, but please remember: it's just a metaphor. If you want to suggest that we negotiate peace with the mutants instead of killing them, I admire your ethics, but in that case the metaphor breaks down. Please just go with me here: we want to *kill the mutants!*.
+* Mutation testing works by generating these mutants, then running your entire test suite on each of them, hoping for at least one test to fail. (This is why it takes so long to run!)
 * For each mutant, if at least one test fails, that means the *mutant was killed*.  That's *good*.  It means that your tests suite is powerful enough to detect when something has gone wrong in your code.
 * But if there is a mutant where all of the tests pass, that means the *mutant survived*. That's usually *bad*.  It usually means your tests suite was not powerful enough to detect the problem.
   (There is a *rare* corner case where it might be a "false positive", meaning there's nothing wrong with your code or the test suite; we'll cover that case later as it arises).
-* A third possibility is when the mutation causes one or more tests to go into an infinite loop.  This is called a "time out" and is a consequence of the *halting problem*, which is a topic of CMPSC 138.  In practice, we treat timeouts as "inconclusive" and ignore them; we focus only on trying to ensure that no mutants survive.
+* A third possibility is when the mutation causes one or more tests to go into an infinite loop.  This is called a "time out" and is a consequence of the *halting problem*, which is a topic of CMPSC 138.  In practice, timeouts are unavoidable (see *halting problem*), so we treat timeouts as "inconclusive" and ignore them; we focus only on trying to ensure that no mutants survive.
 
 #### Let's try mutation testing with `pitest`
 
