@@ -123,7 +123,7 @@ origin	git@github.com:{{page.course_org_name}}/{{page.title}}-<i>yourGithubId</i
 % 
 </pre>
 
-What this output signififies is the the name `origin` is the name of a *remote* repo that you can fetch branch information from, pull commits from, and push commits to.
+What this output signififies is that the name `origin` is the name of a *remote* repo that you can fetch branch information from, pull commits from, and push commits to.
 
 * The `git` system works with both *branches*, which are multiple copies of code in the same repo, and *remotes*, which are the urls of other repos containing branches.
 * In this assignment, we'll only work with a single branch in each repo, the `main` branch.
@@ -195,7 +195,7 @@ Explore the web app a bit, following the instructions in this table.  The box at
 
 #### Let's talk about this JSON page
 
-If you've followed the instructions above, you see that the page `/team` looks different from the You'll now see a different kind of page in your browser.  This page contains information in *JSON* format, which is short for *Javascript Object Notation*.
+If you've followed the instructions above, you see that the page `/team` looks different from the other pages in the webapp.  This page contains information in *JSON* format, which is short for *Javascript Object Notation*.
 
 JSON is simply a way to represent the *data* portion of *objects*. Here, we mean *objects* in the *object-oriented programming* sense, though technically, we are only representing the *data* portion of object *instances*.
 
