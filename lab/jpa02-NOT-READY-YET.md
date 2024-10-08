@@ -510,7 +510,22 @@ Then open the file `target/pit-reports/index.html` in a browser
 * On MacOS, you can just type `open target/pit-reports/index.html`
 * If anyone has an easy way to do this on WSL, please share it on `#help-lab02`, and we'll add it to the instructions here.
 
-Notice which lines of code have mutant versions that survived the test suite.  At a later stage, you'll be asked to write tests to cover these mutation coverage gaps.
+As with the line coverage reports from `jacoco`, the `pitest` report starts at the package level.  In this project, all of our code is in the package
+`edu.ucsb.cs156.spring.hello`.  The part we are interested in here is the mutation percentage, which shows how many of our mutants survived (remember that
+a surviving mutant is *bad*; it means that we were able to introduce what was likely a bug into the code, but no test caught the bug.)  We only killed 11 out of 25 mutants, which is
+not very good.
+
+![image](https://github.com/user-attachments/assets/b13953d3-5ea7-42c4-8a5a-4369eba19a56)
+
+Next, click on the top level package to drill down into individual classes. That should look like this:
+
+![image](https://github.com/user-attachments/assets/ff3dc653-889f-4b0d-82e1-7ed3804724db)
+
+
+
+
+
+At a later stage, you'll be asked to write tests to cover these mutation coverage gaps.
 But for now, just make sure you are familiar with how to run pitest and look at the output.
 
 
