@@ -469,6 +469,24 @@ But for now, as long as you understand how to generate a line/branch coverage re
 
 ### Step 1.7: Review Pitest Report
 
+Line coverage has two advantages:
+* It runs fast; calculating it is just a little bit of overhead on a single run through all of the unit tests.
+* It's good for a quick check to find out which parts of the code have *no tests at all*.
+
+But, the problem is: it's easy to cheat.  Consider the following *imaginary* scenario (please, never actually do this):
+* You are required to get 100% test coverage
+* So you write a bunch of tests that invoke each method once
+* In each test, you just invoke the method and then write `assertEquals(4, 2+2)`
+* Add additional method calls with slightly different parameters until all of the branches are covered.
+
+You now have 100% line and branch coverage, but *no meaningful testing*, except to test the the code doesn't crash.  That's a low bar, and not what testing is for.
+
+The problem with line coverage, even when someone is doing a good faith effort to write tests with meaningful assertions is that it's easy to miss all of the things that you need to be
+asserting in order to verify that the code is correct.
+
+This is where mutation testing can really help.  
+
+
 Use `mvn test pitest:mutationCoverage` to generate a mutation coverage report.
 
 Then open the file `target/pit-reports/index.html` in a browser
