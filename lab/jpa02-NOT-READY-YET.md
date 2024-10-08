@@ -755,3 +755,20 @@ And, when you run `mvn spring-boot:run`, you should now see correct information 
 
 Do another commit.  Choose a reasonable commit message for the change that you made, and push that change to the `main` branch on the `origin` repo (the one on Github).
 
+### Part 2.4: Redeploy to dokku
+
+If the website now looks correct when you type `mvn spring-boot:run` and look at it on `localhost:8080`, it's time to update dokku:
+
+As a reminder, that's:
+
+| Explanation | Command(s) |
+|-------------|------------|
+| 1. Re-sync the app with git repo, main branch | <tt>dokku git:sync {{page.title}}-<i>yourGithubId</i> {{page.course_org}}/{{page.title}}-<i>yourGithubId</i>.git main</tt>
+| 2. Re-deploy the `http` version of the app | <tt>dokku ps:rebuild {{page.title}}-<i>yourGithubId</i></tt> |
+
+Note that in future labs, we'll start to wean you off this hand-holding; if we say "deploy on dokku", you'll be expected to just know the command to do that (or be able to look it up quickly).
+
+Check that your dokku deployment has the correct content (i.e. your name, your github, your team's name, your teammates' names).
+
+### Part 2.5: More Test Coverage
+
