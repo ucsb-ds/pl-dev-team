@@ -111,7 +111,7 @@ You will then have a local repo on your laptop that is a *clone* of the repo on 
 
 ### Step 1.2: Pull in starter code
 
-For this step, you need to be at a terminal prompt, and your current directory should be the one where you cloned the repo: <{{page.course_org}}/{{page.title}}-<i>yourGithubId</i>>.
+For this step, you need to be at a terminal prompt, and your current directory should be the one where you cloned the repo: [{{page.course_org}}/{{page.title}}-<i>yourGithubId</i>]({{page.course_org}}/{{page.title}}-yourGithubId)
 
 If you type `git remote -v`, you should see that you have something like the following (with `%` representing the terminal shell prompt):
 
