@@ -577,6 +577,69 @@ Make sure that every page has real information for you and your team, and that a
 
 In addition, make sure that when you run `mvn test` all of the tests now pass.
 
+### Do this methodically, and try to follow along 
+
+It would be very easy to get through this lab super quickly, just doing the bare minimum to get everything to work and pass.  I'm walking you through most of the code changes, and they aren't that hard.
+
+BUT: I encourage you to instead, take some time to really look at the code and try to understand it. That will pay off in later assignments, where there will *not* be this level of handholding.
+
+### Part 2.1: Edit `getName_returns_correct_name` in `DeveloperTests.java`
+
+In the file `DeveloperTests.java`, locate the test `getName_returns_correct_name`.  It looks like this:
+
+```java
+    @Test
+    public void getName_returns_correct_name() {
+        // TODO: Replace Chris G. with your name as shown on
+        // <https://bit.ly/cs156-f24-teams>
+        assertEquals("Chris G.", Developer.getName());
+    }
+```
+
+Follow the instructions, and then remove the the line `//` style comment.  For example, if your name is just `Katy` on the teams list, your code should look like this after you are done (only put `Katy P.` if the last initial appears on the teams list.)
+
+```java
+    @Test
+    public void getName_returns_correct_name() {
+        assertEquals("Katy", Developer.getName());
+    }
+```
+
+Now run the test suite.  The test should fail, like this:
+
+```
+[ERROR] Failures: 
+[ERROR]   DeveloperTest.getName_returns_correct_name:27 expected: <Katy> but was: <Chris G.>
+```
+
+Now find the place in `Developer.java` where `Chris G.` needs to be replaced with your name (e.g. `Katy`).  Make the change, and remove the three line `//` style comment with the `TODO` in it.  Run the test again, and they should pass.
+
+Run the app too, with `mvn spring-boot:run` and see that the name `Chris G.` is now your name.
+
+
+### Part 2.2: Add test for `getGithubId`
+
+Now, return to the pitest report you ran on `Developer.java`.  Note that there is a testing gap for the `getGithubId` method.
+
+To address, this, add a test in `DeveloperTest.java`.  It will be very similar to the one that is already there called `getName_returns_correct_name`.
+
+A good name for this new test would be: `getGithubId_returns_correct_githubId`.
+
+Write a test, but use *your* githubId in place of `cgaucho`.
+
+Then, fix the code in Developer.java so that the test passes (use `mvn test` to run the tests)
+
+You should then be able to run these commands and verify that the method `getGithubId` is now green in both the `jacoco` and `pitest` reports:
+
+```
+mvn test jacoco:report
+mvn pitest:mutationCoverage
+```
+
+
+
+
+
 When you are done with this step, make a commit with the following message, *replacing `xy` with your initials*:
 
 ```
