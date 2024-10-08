@@ -6,6 +6,7 @@ layout: default
 title: jpa02
 nav_order: 100
 ready: false
+qxx: f24
 layout: default
 parent: lab
 course_org: https://github.com/ucsb-cs156-f24
@@ -13,6 +14,7 @@ course_org_name: ucsb-cs156-f24
 starter_repo: https://github.com/ucsb-cs156-f24/STARTER-jpa02
 software: https://ucsb-cs156.github.io/f24/info/software.html
 install_check: https://ucsb-cs156.github.io/f24/info/install_check.html
+slack_help_channel: "[#help-jpa02](https://ucsb-cs156-f24.slack.com/archives/C07RC2580UR)"
 ---
 
 <style>
@@ -176,17 +178,52 @@ mvn spring-boot:run
 
 You'll then need to open a browser on the same machine where you are running the `mvn spring-boot:run` command, and navigate to the url <http://localhost:8080>
 
-You should see a web app come up.
+You should see a web app come up that looks like this:
+
+![image](https://github.com/user-attachments/assets/f054ff33-f9a2-4498-bc17-922a435887b8)
 
 Note that the web app is only available while you are running the `mvn spring-boot:run` command in the terminal shell.
 * If you terminate that shell by typing `CTRL/C`, then you'll see that the web browser no longer brings up the web app, but instead a message that the page is not reachable.
 
-Explore the web app a bit.  You'll see that:
-* The home page at `/` shows some content, and there's a link to `Developer Info`.  Follow that link.
-* The page at `/info` shows the name of a fictional developer, `Chris G.` (`G.` for `Gaucho`).
-* It also has a link for the team that `Chris G.` is on.  Follow that link.
-* You'll now see a different kind of page in your browser.  This page contains information in *JSON* format, which is short for *Javascript Object Notation*.
-* JSON is usually pronounced like this: "Jay Son", rhyming with the phrase "play on".
+Explore the web app a bit, following the instructions in this table.  The box at the right shows what you should see.
+
+
+| Instructions | Screenshot |
+|--------------|------------|
+| Find the Developer Info link on the home page, and click it.  It should take you to a new page at `/info`)  | ![image](https://github.com/user-attachments/assets/3c260e64-a03a-4f03-b0ac-c9580e693d11) |
+| The page at `/info` should have information about a fictional developer named `Chris G.`, with their github being `cgaucho`, and their team being <tt>{{page.qxx}}-xx</tt>.  Click the `cgaucho` link | ![image](https://github.com/user-attachments/assets/3f6893ee-f09f-4835-b8b0-3fbcb2de01a4) |
+| The `cgaucho` link should take you to the Github profile of github user `cgaucho`.  Click the back button to return to the `/info` page. | ![image](https://github.com/user-attachments/assets/3a7d13b3-9d3e-46d6-b10b-cbd2d129e815) |
+| Now, back on the `/info` page, click the link for <tt>{{page.qxx}}-xx</tt> to go to the `/team` page | ![image](https://github.com/user-attachments/assets/892e630a-a3d1-4c9b-a41e-60b1daeecfd6) |
+| Note that the page at the url `/team` looks different from the rest. This page is not encoded in HTML, but rather in JSON.  The exact format on the screen will depend on your browser, so it may be formatted with indentation, or may just be one big long string. There's a longer discussion of this below. | ![image](https://github.com/user-attachments/assets/a75d4d00-a6f7-4a1c-b879-60df40212f26) |
+
+#### Let's talk about this JSON page
+
+If you've followed the instructions above, you see that the page `/team` looks different from the You'll now see a different kind of page in your browser.  This page contains information in *JSON* format, which is short for *Javascript Object Notation*.
+
+JSON is simply a way to represent the *data* portion of *objects*. Here, we mean *objects* in the *object-oriented programming* sense, though technically, we are only representing the *data* portion of object *instances*.
+
+Here's the JSON content from the web app, formatted with indentation:
+
+```json
+{
+ name: "f24-xx",
+ members: [
+   "Alice",
+   "Bob",
+   "Chris G.",
+   "Danny",
+   "Eve",
+   "Frances"
+   ]
+}
+```
+
+Without indentation, it might look like this; it's harder to read, but equivalent in terms of what it represents.
+```
+{name: "f24-xx",members: ["Alice","Bob","Chris G.","Danny","Eve","Frances"]}
+```
+
+JSON is usually pronounced like this: "Jay Son", rhyming with the phrase "play on".
 
 We'll talk a lot more about `json` as the course progresses, but for now, just notice that:
 * The JSON object is surrounded by curly braces (`{}`)
@@ -195,19 +232,193 @@ We'll talk a lot more about `json` as the course progresses, but for now, just n
 * The value of `name is a string in *double quotes* (`"Chris G."`)
 * The value of team is an array of strings, surrounded by square brackets (`[]`).
   
-We'll come back to a discussion of JSON objects later on.
+We'll come back to a discussion of JSON objects later on, and we'll look at the code that produces pages in either HTML or JSON format.
 
 ### Step 1.4: Deploy on Dokku
 
 Now deploy the app on dokku (as you did in jpa01)
 
+
+All steps require you to login to your dokku machine, i.e. the following series of `ssh` commands (replacing `xx` with your two digit team number).
+
+```
+ssh username@csil.cs.ucsb.edu
+ssh username@dokku-xx.cs.ucsb.edu
+```
+
+<details markdown="1">
+<summary markdown="1">
+Click the triangle for a list of teams and dokku hostnames
+</summary>
+{* include dokkus.md *}
+</details>
+
+The steps to deploy the app are explained here: <https://ucsb-cs156.github.io/topics/dokku/deploying_simple_app.html> in detail, but here's the short version.
+
+First time: 
+
+| Explanation | Command(s) |
+|-------------|------------|
+| 1. Create dokku app | <tt>dokku apps:create {{page.title}}-<i>yourGithubId</i></tt> |
+| 2. Sync the app with git repo, main branch | <tt>dokku git:sync {{page.title}}-<i>yourGithubId</i> {{page.course_org}}/{{page.title}}-<i>yourGithubId</i>.git main</tt>
+| 3. Deploy the `http` version of the app | <tt>dokku ps:rebuild {{page.title}}-<i>yourGithubId</i></tt> |
+| 4. Configure email for `https` support | <tt>dokku letsencrypt:set {{page.title}}-<i>yourGithubId</i></tt> email <i>youremail</i>@ucsb.edu</tt> |
+| 5. Enable https on your app | <tt>dokku letsencrypt:enable {{page.title}}-<i>yourGithubId</i></tt> |
+
+To redeploy any time the repo changes (otherwise changes in the repo don't affect the running app):
+
+| Explanation | Command(s) |
+|-------------|------------|
+| 1. Re-sync the app with git repo, main branch | <tt>dokku git:sync {{page.title}}-<i>yourGithubId</i> {{page.course_org}}/{{page.title}}-<i>yourGithubId</i>.git main</tt>
+| 2. Re-deploy the `http` version of the app | <tt>dokku ps:rebuild {{page.title}}-<i>yourGithubId</i></tt> |
+
+Once you have done these steps, you should be able to see your app running at *both* of these links (modifying them for your dokku/team number, and your github id):
+
+* http (not secure): [http://dokku-xx.cs.ucsb.edu/{{page.title}}-<i>yourGithubId</i>](http://dokku-xx.cs.ucsb.edu/{{page.title}}-yourGithubId)
+* https (secure): [https://dokku-xx.cs.ucsb.edu/{{page.title}}-<i>yourGithubId</i>](https://dokku-xx.cs.ucsb.edu/{{page.title}}-yourGithubId)
+
+When that works, you're ready for the next step.
+
 ### Step 1.5: Run the test suite
 
-Now run the test suite with `mvn test`
+Now return to the terminal command line.  You should `cd` into the directory where you cloned the repo (e.g. <tt>~/cs156/{{page.title}}-<i>yourGithubId</i></tt>)
 
-Look over the tests.
+You are now going to run a suite of tests.  There will be *lots* of output.  The main thing is that the last part of the output should look like this, indicating that the tests passed:
+
+```
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 s -- in edu.ucsb.cs156.spring.hello.HelloControllerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.257 s
+[INFO] Finished at: 2024-10-08T11:56:18-07:00
+[INFO] ------------------------------------------------------------------------
+pconrad@Phillips-Mac-mini-2 jpa02-pconrad % 
+```
+
+Here's what that looks like with screen highlighting:
+
+![image](https://github.com/user-attachments/assets/b55781e5-37b1-4b49-9afb-38a8adfdae70)
+
+The most important lines here are these:
+```
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0
+[INFO] BUILD SUCCESS
+```
+
+Later in this assignment, we'll make some changes to the app and we'll see these tests fail, but *not just yet*.  We want to look at something else first, and
+that requires the test suite to be "green", meaning, that all tests pass.  For those that can see color, the words `BUILD SUCCESS` show up in green, indicating
+that the tests passed.  If one or more did fail, it would look something like this instead:
+
+```
+[ERROR] Tests run: 7, Failures: 1, Errors: 0, Skipped: 0
+[INFO] BUILD FAILURE
+```
+
+Or, with screen highlighting:
+
+![image](https://github.com/user-attachments/assets/a84a86a1-a69f-4df4-b531-59985d9fd8dc)
+
+The tests are located in the directory `/src/test/java/edu/ucsb/cs156/spring/hello`, in the files listed below (the links take you to the version of the code in the starter repo).  Look them over, and you'll see that there are some `TODO` items 
+marked in comments.  *Later* in this assignment, you'll be addressing those `TODO` items, **but not yet**.   We need a green test suite before we look at this next step.
+
+* [`ApplicationTest.java`]({{page.starter_repo}}/blob/main/src/test/java/edu/ucsb/cs156/spring/hello/ApplicationTest.java)
+* [`DeveloperTest.java`]({{page.starter_repo}}/blob/main/src/test/java/edu/ucsb/cs156/spring/hello/DeveloperTest.java)
+* [`HelloControllerTest.java`]({{page.starter_repo}}/blob/main/src/test/java/edu/ucsb/cs156/spring/hello/HelloControllerTest.java)
+* [`TeamTest.java`]({{page.starter_repo}}/blob/main/src/test/java/edu/ucsb/cs156/spring/hello/TeamTest.java)
+
+If you are familiar with the idea of writing unit tests for code, then you can just skim the test files above. But if this is a new concept to you, please look over the tests in some detail and try to understand what is happening in these tests.
+
+The basic idea of unit tests is that we want to write some code that tests our "main" code.   In a Maven project, we keep all of our `main` code and our `test` code in entirely separate directory trees (there are several really good reasons for this but we won't go into those just now.)  
+
+A few key points:
+* Each of the tests is a single Java method annotated with `@Test`.
+* A unit test, ideally, should test just one *unit* of code, i.e. a single method, not relying on any other code (This is not always entirely possible, but that's the goal; in practice you sometimes need to rely on the correctness of the constructor, for example, before you can test a method.)
+* In a unit test, there are typically three parts:
+  * Arrange: set up the context of the method you want to call
+  * Act: call the method you want to test (or otherwise cause it to be invoked)
+  * Assert: make one or more *assertions* that should be true if the code worked properly
+
+Look for these in the test code. Note that not all of the test code follows this pattern *precisely*, which may lead you to have many questions.  That's good! Ask the questions on {{page.slack_help_channel}}, and we'll try to answer as many as we can.
+
+But in the meantime, let's move on to discussing code coverage and mutation coverage.
 
 ### Step 1.6: Review Jacoco Report
+
+The next two steps involves what may be a new concepts to you:
+
+* *test coverage* in general: more specifically *line coverage* and *branch coverage*
+* *mutation testing*
+
+All of these are ways of *measuring the qualilty of a test suite*.  The main idea is:
+
+* Our test suite (collection of unit tests) checks for bugs in the code (assuming that the tests are correct)
+* Test Coverage and Mutation Testing *tests that tests themselves* to make sure that the test suite is as complete as possible.
+
+Note that *no testing approach can guarantee 100% correctness*. (Pay attention to that previous sentence, because a misunderstanding of this is one way that students lose points on the final exam.)
+
+Testing can only show the *presence* of bugs, never the *absence* of bugs.
+* More specficially: failed tests show that a bug is present (either in the code, or the test).
+* A purely green test suite does *not* show that your code is free of bugs; there might be some case you didn't test for!
+
+That last part is the key here: we want to *minimize* the number of cases we didn't test for.
+
+What *test coverage* and *mutation testing* do for us is exactly that: they help uncover parts of the code that are *not* being tested adequately, so that we can try to improve our test suite.
+
+In this step, we focus on the first of these techniques, *test coverage*.
+
+What test coverage does is very simple and fast:
+* It runs the entire test suite once
+* As it does, it keeps track of every line of code that was executed by at least one of the tests
+* The lines left over (the ones that were never executed) are the *gaps in coverage*; lines of code for which you need to write a test.
+
+Clearly, if a line of code was never executed by a test, then the test suite cannot possibly distinguish between whether that code is correct or incorrect.  So if the correctness of that line of code is important, we need to write a test for it.
+
+A tool called `jacoco`, which is short for "Java Code Coverage" can check for line and branch coverage in Java:
+* `line coverage` entire lines of code to see if they were run by at least one test
+* `branch coverage` looks deeper into things like `if/else`, loops, conditional expressions, etc to ensure that if there is more than one *path* through the code (e.g. the `if` part and the `else` part), that *both* branches were covered.
+
+#### Running `mvn test jacoco:report`
+
+Let's run a line coverage report by typing:
+
+```
+mvn test jacoco:report
+```
+
+When you do, it will run the test suite, and then generate a jacoco line coverage report, which will be formatted as a web page.  Here's what the tail end of that output looks like:
+
+```
+[INFO] --- jacoco:0.8.12:report (default-cli) @ hello ---
+[INFO] Loading execution data file /Users/pconrad/github/ucsb-cs156-f24/jpa02-pconrad/target/jacoco.exec
+[INFO] Analyzed bundle 'hello' with 4 classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.968 s
+[INFO] Finished at: 2024-10-08T12:32:52-07:00
+[INFO] ------------------------------------------------------------------------
+pconrad@Phillips-Mac-mini-2 jpa02-pconrad % 
+```
+
+There will be no particular indication of the outcome of the report, or where to find it; you just *have to know*.  
+
+The place to look for it is under `target/site/jacoco/index.html`.
+* On MacOS, you can open that file with the command `open target/site/jacoco/index.html`
+* On Windows, one way to open it is to open the File Explorer, and navigate to the `index.html` file and double click it
+
+In any case, once you open it, it should look like this:
+
+
+
+
+```
+
 
 Use `mvn test jacoco:report` to generate a line coveage report.
 
