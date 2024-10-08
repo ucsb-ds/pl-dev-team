@@ -770,5 +770,19 @@ Note that in future labs, we'll start to wean you off this hand-holding; if we s
 
 Check that your dokku deployment has the correct content (i.e. your name, your github, your team's name, your teammates' names).
 
-### Part 2.5: More Test Coverage
+### Part 2.5: Full line and mutation coverage for Team.java
+
+Now we have this problem left to solve: three methods of Team.java have mutation coveage gaps:
+
+![image](https://github.com/user-attachments/assets/d32dc527-f7c1-4837-bc7f-6846361bda50)
+
+Before we can proceed, we need to understand what each of these methods is really doing.
+
+* The three methods `hashCode()`, `toString()` and `equals()` are particularly important in Java
+* Every class has these three methods, whether they are declared or not.
+* That's because in Java, every class inherits methods from a special base class called `java.lang.Object`.
+* So, if you don't override these methods in your class, you get the *default* implementation.
+* The default implementation is sometimes fine, but other times it isn't.
+
+Let's start with the easiest method: `toString`.  
 
