@@ -1,7 +1,7 @@
 ---
 title: "Week 02b - 10.09 Wed"
 lecture_date: 2024-10-09
-description: "TBD"
+description: "More on jpa02"
 ready: true
 layout: default
 parent: lectures
