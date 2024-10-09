@@ -415,7 +415,7 @@ It shows the package `edu.ucsb.cs156.spring.hello` and it shows that the code in
 
 * An aside: in most industry settings, 100% coverage is explictly **not** the goal; there are diminishing returns if you start chasing 100% coverage in very large legacy code bases.
 * However, in this course, we've engineered things so that on these early assignments 100% coverage is definitely reasonable and possible.
-* Further, in our large code bases, we adopt an approach of *identifying* the parts of the code that should be *reasonably* exempt from code coveage, and *excluding them* from the computation.
+* Further, in our large code bases, we adopt an approach of *identifying* the parts of the code that should be *reasonably* exempt from code coverage, and *excluding them* from the computation.
 * Accordingly, while in many settings 100% coverage may not be a reasonable goal, in this course *it always is*.
 
 So, how can we learn more?  Click on the package name  `edu.ucsb.cs156.spring.hello`; it's a link and it should open up a page that looks like this:
@@ -477,7 +477,7 @@ This is where mutation testing can really help.
 
 #### How does mutation testing work?
 
-Here's how mutation coveage works:
+Here's how mutation coverage works:
 * pitest starts with the assumption that your code is correct (after all, it passes your tests).
 * Then, it makes many copies of your main code (usually dozens of copies), each with one "mutation" that is designed to break the code.
   * For example, if it finds `if (x < 0)` it mutates it to `if (x >= 0)`
@@ -691,7 +691,7 @@ Next, change the names in this method to match those of the members of your team
 
 Then, run the test suite (`mvn test`); everything should still pass.
 
-Then, run `mvn pitest:mutationCoveage` and you'll see we still have a testing gap here.
+Then, run `mvn pitest:mutationCoverage` and you'll see we still have a testing gap here.
 
 To address that, let's write a test in `DeveloperTest.java` that the team that `getTeam` returns has the correct name. For example, if your teamname is `f24-00`, the test might look like this:
 
@@ -763,7 +763,7 @@ Check that your dokku deployment has the correct content (i.e. your name, your g
 
 We now want to get to full line and mutation coverage for Team.java
 
-We have this problem left to solve: three methods of Team.java have mutation coveage gaps:
+We have this problem left to solve: three methods of Team.java have mutation coverage gaps:
 
 ![image](https://github.com/user-attachments/assets/d32dc527-f7c1-4837-bc7f-6846361bda50)
 
