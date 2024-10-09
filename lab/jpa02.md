@@ -777,7 +777,7 @@ Before we can proceed, we need to understand what each of these methods is reall
 
 Let's start with the easiest method: `toString`.  
 
-One easy way to understand toString is to use the `jshell` utillity. 
+One easy way to understand toString is to use the `jshell` utillity. In the next section, we try to do the shortest possible lesson on `toString`, but if you want a more in-depth lesson, visit: <https://ucsb-cs156.github.io/tutorials/student/student_ex02.html>
 
 ### Part 3.1: Using `jshell` to understand `toString`
 
