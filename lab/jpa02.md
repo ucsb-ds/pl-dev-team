@@ -500,7 +500,7 @@ Use `mvn test pitest:mutationCoverage` to generate a mutation coverage report.
 Then open the file `target/pit-reports/index.html` in a browser
 
 * On MacOS, you can just type `open target/pit-reports/index.html`
-* If anyone has an easy way to do this on WSL, please share it on `#help-lab02`, and we'll add it to the instructions here.
+* On Windows, one way to open it is to open the File Explorer, and navigate to the `\\wsl$` directory and open Ubuntu/home to reach your Ubuntu user directory.
 
 As with the line coverage reports from `jacoco`, the `pitest` report starts at the package level.  In this project, all of our code is in the package
 `edu.ucsb.cs156.spring.hello`.  The part we are interested in here is the mutation percentage, which shows how many of our mutants survived (remember that
