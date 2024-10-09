@@ -400,7 +400,7 @@ There will be no particular indication of the outcome of the report, or where to
 
 The place to look for it is under `target/site/jacoco/index.html`.
 * On MacOS, you can open that file with the command `open target/site/jacoco/index.html`
-* On Windows, one way to open it is to open the File Explorer, and navigate to the `index.html` file and double click it
+* On Windows, one way to open it is to open the File Explorer, and navigate to the `\\wsl$` directory and open Ubuntu/home to reach your Ubuntu user directory.
 
 In any case, once you open it, it should look like this:
 
