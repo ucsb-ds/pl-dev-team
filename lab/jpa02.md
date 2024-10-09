@@ -71,9 +71,9 @@ We've divided the work into these parts:
   * You'll also start looking at the jacoco and pitest output to familiarize yourself with them
 * Part 2: Customizing the app
   * In this step, you'll start putting in correct values, replacing the placeholders such as `Chris G.` with your own name
-  * You'll do this *first* in the test code (the code under `/src/main/java`)
+  * You'll do this *first* in the test code (the code under `/src/test/java`)
   * You'll see that the tests then fail
-  * Then do this in the main code (the code under `src/test/java`)
+  * Then do this in the main code (the code under `src/main/java`)
   * You'll iterate until the tests pass
 * Part 3: Test Coverage
   * Next, you'll try to get to 100% test coverage, both using jacoco and pitest
