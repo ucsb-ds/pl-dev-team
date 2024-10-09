@@ -1032,8 +1032,33 @@ Typically, you'll try to fix all of these problems locally (i.e. get your `jacoc
 
 ### Part 4.2: Updating your README.md
 
-In your README.md, 
+Go the the `README.md` file for your repo.
 
+If you still see stuff in there about `jpa01`, then do these commands to get the latest updates from the starter code:
+
+```
+git pull starter main
+git push origin main
+```
+
+You should then see a README that starts like this:
+
+```
+# STARTER-jpa02
+
+* TODO: Change the title of this README 
+  in the text `# STARTER-jpa02` above
+  to match the name of your repo, i. e., `jpa02-yourgithubid`, then delete
+  this TODO item.
+...
+```
+
+Follow all of the `TODO` items and update the `README.md` as requested.  The most important thing is to have a link to your running webapp on dokku.
+
+
+### Part 4.3: Submit on Canvas
+
+You are now ready to submit on Canvas
 
 
    
