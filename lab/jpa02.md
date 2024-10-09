@@ -977,9 +977,47 @@ See if you can supply the missing test cases.
 
 ### Part 3.4: Testing gap in hashCode
 
-COMING SOON
+Strictly speaking, any time you modify the `equals` method, you are supposed to modify the `hashCode` method as well.  If you don't, then if/when you use data structures that rely on hashing such as `java.util.HashMap`, they may fail.
 
+(Hopefully you remember the idea of a hash table and hashing from CMPSC 24, CMPSC 32, or an equivalent course.  If not, go review!)
 
-### Part 4: Finishing up and Submitting
+The point of the `hashCode` method is to generate a hash (an `int` value, i.e. a 32-bit signed integer) based on the contents of the object, such that:
+* if `a.equals(b)`, then `a.hashCode()==b.hashCode()`
+* note that it is *not necessarily* the case that if `a.hashCode()==b.hashCode()`, that `a.equals(b)` (that's sort of the whole idea of hashing; taking a large domain of values and mapping it to a smaller domain of values.)
 
-COMING SOON
+Try to write a test that will check the `hashCode` value.  
+
+Note that you might not know what the expected value is.  But you do know that if you set two objects to have the same content, that their `hashCode()` values should be equal. So, consider something like this:
+
+```
+   Team t1 = new Team();
+   t1.setName("foo");
+   t1.addMember("bar");
+   Team t2 = new Team();
+   t2.setName("foo");
+   t2.addMember("bar");
+   assertEquals(t1.hashCode(), t2.hashCode());
+```
+
+This should enable to you to get 100% test coverage (both line coverage and mutation coverage) for the Team.java class.
+
+## Part 4: Finishing up and Submitting
+
+### Part 4.1: Getting Green on CI
+
+When you are finished, you should notice that the red X on your repo turns into a green check:
+
+Red check:
+
+<img width="1267" alt="image" src="https://github.com/user-attachments/assets/989499ef-f284-4ec9-b67a-1fbf52fc9eff">
+
+Green Check: 
+
+What's this red X, green check stuff? 
+* The red X shows that at least one *Github Actions* run failed.
+* The green check shows that all *Github Actions* runs succeeded.
+
+What are Github Actions runs?
+* They are scripts that are run on Github's servers when certain conditions are met (e.g. pushing a branch to `main`)
+* They typically run things like unit tests, test coverage, mutation coverage, etc.
+* The scripts are in the `.github/workflows` directory; in this repo, they are called 
