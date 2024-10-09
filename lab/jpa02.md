@@ -22,12 +22,6 @@ slack_help_channel: "[#help-jpa02](https://ucsb-cs156-f24.slack.com/archives/C07
  tt {white-space: pre;}
 </style>
 
-This lab is ready to start, and is complete up through step 3.2.
-* Getting that far may take you all of class today.
-* Please try to get through all of Step 1 in lecture on 10/08/2024 if possible, however.
-* And then try to get through as much of Step 2 as you can.
-* The instructions for steps 3.4 and 4 are coming soon
-* If you get all the way through Step 3.2 and Step 3.3 *still* isn't finished, you are welcome to leave early.
 
 # {{page.title}} - {{page.description}}
 
