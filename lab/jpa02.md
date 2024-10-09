@@ -1016,8 +1016,24 @@ Green Check:
 What's this red X, green check stuff? 
 * The red X shows that at least one *Github Actions* run failed.
 * The green check shows that all *Github Actions* runs succeeded.
+* A yellow circle means that at least one *Github Action* run is still in progress (e.g. due to a recent push to `main`).
 
 What are Github Actions runs?
 * They are scripts that are run on Github's servers when certain conditions are met (e.g. pushing a branch to `main`)
 * They typically run things like unit tests, test coverage, mutation coverage, etc.
-* The scripts are in the `.github/workflows` directory; in this repo, they are called 
+
+The scripts are in the `.github/workflows` directory; in this repo, they are called
+* `maven.yml` (runs unit tests and jacoco line/branch coverage report; passes when all tests pass and 100% coverage)
+* `pitest.yml` (runs pitest mutation coverage; passes when all mutants are killed).
+
+Check that you have a green check.  If you don't, clicking the red X will take you a page where you can look into what's going wrong.
+
+Typically, you'll try to fix all of these problems locally (i.e. get your `jacoco` and `pitest` reports green locally) before you try to get the green check; if all goes well, when you get a green check locally and push to github, the green check will automatically appear.
+
+### Part 4.2: Updating your README.md
+
+In your README.md, 
+
+
+
+   
