@@ -18,6 +18,7 @@ example_running_app: https://jpa03-staff.dokku-00.cs.ucsb.edu/
 office_hours_page: https://ucsb-cs156.github.io/f24/office-hours
 software_install_url: https://ucsb-cs156.github.io/f24/info/software.html
 staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
+starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
 ---
 
 <style>
@@ -25,6 +26,8 @@ staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajes
   code {white-space: pre}
   pre {white-space: pre}
 </style>
+
+{% include drop_down_style.html %}
 
 # NOT READY YET
 # NOT READY YET
@@ -148,7 +151,14 @@ git push origin main
 
 ## Step 3: Configure Actions and Github Pages
 
-Next, find the `Actions` tab on your repo.  It should look like one of the images below
+In this step, we'll:
+* Enable Github Actions if not already enabled
+* Set up Github Pages
+* Set up Chromatic Project Token
+
+### Step 3.1: Enable Github Actions (if not already enabled)
+
+Go to the webpage for your repo on Github.  Find the `Actions` tab on your repo.  It should look like one of the images below
 
 <table>
 <thead>
@@ -175,7 +185,74 @@ If GitHub Actions are already enabled:
 
 If it looks like the one on the left, click the green button that says "Enable Actions on this Repository".
 
+### Step 3.2: Enable Github Pages
+
 Next, visit the file [`docs/github-pages.md`](https://github.com/ucsb-cs156-s24/STARTER-jpa03/blob/main/docs/github-pages.md) on GitHub and read what it says to do to configure the documentation for your repo on Github Pages.
+
+### Step 3.3: Enable Chromatic
+
+In this step, we are setting up *Storybook*, which is software that allows us to document and test the frontend of our application, one component at a time, without needing the backend at all.  
+
+As an example of Storybook, here is a link to the storybook for the starter code:
+* {{page.starter_storybook}}
+
+<details markdown="1">
+<summary markdown="1">
+Click the triangle to read more about why Storybook and Chromatic are useful when building a full-stack web applications.
+</summary>
+
+Storybook is helpful for several reasons:
+
+* You can develop frontend components without depending on whether the backend part is working yet.  This is very helpful for team projects where you may want to have different team members working on the frontend and the backend. (Note, however, that it's *very* important to agree in advance on the interface between the frontend and the backend!).
+* You can test the frontend components separately from the backend.  This is very helpful when debugging problems in the web app which are typically caused by one of three things (a) a problem in the backend, (b) a problem in the frontend (c) a error in communication between the front and backend.  Having a way to isolate the frontend makes it much easier to identify the root causes of such problems.
+* It serves as a way of documenting the collection of user interface elements that a present in the code base.  This is helpful for being able to reuse user interface components, or identify the existing part of the user interface that's closest to the one you intend to build.
+* It helps to be able to identify opportunities for refactoring the user interface code to make it more consistent.
+
+Chromatic.com, in addition to providing web hosting for Storybook sites, offers: 
+> "... a visual testing & review tool that scans every possible UI state across browsers to catch visual and functional bugs. Assign reviewers and resolve discussions to streamline team sign-off."
+
+The idea is that the first time your Storybook is built, it takes a screenshot of each user element.  On subsequent builds, it again takes those screenshots, and if/when any of them change, it asks whether the change should be approved or rejected.  This is incorporated into the Github Action for Storybook which will remain marked with a yellow (i.e. unfinished, incomplete) until the developer reviews the changes in the user interface elements.
+  
+</details>
+
+To configure your web app for Chromatic, you need to:
+* Create a Chromatic.com account (using your Github login)
+* Visit the page <https://ucsb-cs156.github.io/topics/chromatic> and follow the instructions to set up your repo as a Chromatic project.
+* Once it is setup as a project, you'll be able to obtain a value for the `CHROMATIC_PROJECT_TOKEN`
+* Then, you can set up the `CHROMATIC_PROJECT_TOKEN` as a repository level secret, accessible to the Github Actions scripts.
+
+When you've completed these steps, if you see that either of these Github Actions has a red X, try rerunning it.
+
+```
+53-chromatic-main-branch.yml
+55-chromatic-pr.yml
+```
+
+Here's how to re-run failed Github Actions:
+1. Go to the Github Actions tab of your repo
+2. On the left side, in the list of workflows, if the one you are looking for is not listed, click `Show More Workflows`, as shown here:
+
+   <img width="317" alt="image" src="https://github.com/user-attachments/assets/5a1b6386-460a-484a-a89b-ec8251a81504">
+
+3. On a failed workflow, if you click it, there should be a button like this to re-run the failed workflow:
+
+   <img width="278" alt="image" src="https://github.com/user-attachments/assets/c9740071-4941-40ba-9948-7ed492f9aaeb">
+
+   Alternatively, find the button upper left that says "Run Workflow", click it, and then click the green `Run Workflow` button, as shown here:
+   
+   <img width="920" alt="image" src="https://github.com/user-attachments/assets/ef8c6b89-77fd-4d29-8367-09441ab8e5d1">
+
+When you are finished, on the Github Pages site, you should see this:
+
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/6190a217-87d4-4058-a0c1-45a799df4292">
+
+And the links for `Storybook` and `build info` should take you to pages that looks like these:
+
+| storybook | build info |
+|-|-|
+| <img width="123" alt="image" src="https://github.com/user-attachments/assets/eaa1b86d-cd8a-449d-81bc-4fa813f51a7d"> | 
+<img width="124" alt="image" src="https://github.com/user-attachments/assets/061b53c9-9f07-47c1-9ea6-1f5df030e06b"> |
+
 
 ## Step 4: Configure your app for localhost as documented in the README.md
 
