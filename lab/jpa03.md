@@ -250,8 +250,7 @@ And the links for `Storybook` and `build info` should take you to pages that loo
 
 | storybook | build info |
 |-|-|
-| <img width="123" alt="image" src="https://github.com/user-attachments/assets/eaa1b86d-cd8a-449d-81bc-4fa813f51a7d"> | 
-<img width="124" alt="image" src="https://github.com/user-attachments/assets/061b53c9-9f07-47c1-9ea6-1f5df030e06b"> |
+| <img width="500" alt="image" src="https://github.com/user-attachments/assets/eaa1b86d-cd8a-449d-81bc-4fa813f51a7d"> | <img width="500" alt="image" src="https://github.com/user-attachments/assets/061b53c9-9f07-47c1-9ea6-1f5df030e06b"> |
 
 
 ## Step 4: Configure your app for localhost as documented in the README.md
