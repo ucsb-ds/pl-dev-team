@@ -280,7 +280,7 @@ And the links for `Storybook` and `build info` should take you to pages that loo
 
 ## Step 4: Configure your app for localhost as documented in the README.md
 
-Before we start configuring your app, let's take just a moment to learn what OAuth is
+Before we start configuring your app, let's take just a moment to learn what OAuth is.
 
 ## About OAuth
 
