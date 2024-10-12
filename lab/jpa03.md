@@ -390,25 +390,23 @@ If so, then you are ready to submit on Canvas.
 
 ## Grading Rubric:
 
-* (10 pts) Basic Logistics
-  * There is a repo with the correct name in the correct organization with the starter code for this lab
-  * There is a post on Canvas for this assignment that has the correct content
-* (10 pts) There is a running web app at <tt>https://{{page.num}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
+* (10 pts) There is a repo with the correct name in the correct organization with the starter code for this lab
+* (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the repo, not the running app on Dokku)
 * (10 pts) README has a link to your running web app.
-* (20 pts) Running web app has the ability to login with OAuth through a Google Account.
+* (10 pts) There is a running web app at <tt>https://{{page.num}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
+* (10 pts) Running web app has the ability to login with OAuth through a Google Account.
 * (10 pts) The `ADMIN_EMAILS` variable is set to include all staff emails (see list below) plus your own email.
   - The correct setting is shown below, except with your email in place of <tt><i>youremail</i></tt>
   - <tt>ADMIN_EMAILS=<i>youremail</i>@ucsb.edu,{{page.staff_emails}}</tt>
-* (20 pts) Github Pages are set up correctly including:
-  - The link on your main repo page is set to the running Github Pages
-  - That link shows the correct content
-* (20 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
+* (10 pts) The link on your main repo page is set your Github Pages page (i.e. <tt>https://{{page.course_org_name}}.github.io/{{page.num}}-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.  ) 
+* (10 pts) The Github Pages page shows a web page that looks like the example in the lab instructions and has the correct content.
+* (10 pts) Chromatic is configured correctly, and the Github Pages site has a Storybook configured properly.
+* (10 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
 
 Note that the Rubric above is subject to change, but if it does:
 
 * You'll be notified during a class meeting
 * You'll have an additional week from the date of the announced change to get your repo in shape with the new requirements.
-
 
 # Instructor Resources
 
@@ -418,9 +416,9 @@ Note that the Rubric above is subject to change, but if it does:
 Click the triangle for a list of tasks the instructor should do prior releasing this lab.
 </summary>
 
-* Create jpa03 repos using the <https://ucsb-cs-github-linker.herokuapp.com>
+* Create {{page.num}} repos using the <https://ucsb-cs-github-linker.herokuapp.com>
 * Set up starter code in the course organization, and update links
-* Create a Canvas assignment for jpa03
+* Create a Canvas assignment for {{page.num}}
 * Make sure the app <{{page.example_running_app}}> is up and running, and is sync'd with the starter code:
 
   i.e, on dokku-00 for example, do:
