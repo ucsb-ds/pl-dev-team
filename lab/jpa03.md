@@ -337,15 +337,17 @@ address those as best you can before submitting.
 
 The steps to get your app up and running on Dokku are documented here:
 
-* [Getting Started on Dokku]({{page.starter_repo}}/tree/main#getting-started-on-dokku)
+* <https://ucsb-cs156.github.io/topics/dokku/deploying_an_app.html>
 
-These include:
-- Setting up SSL (https) for your dokku app
-- Creating the dokku app
-- Creating the postgres database and linking it to your app
-- Setting up the needed environment variables with `dokku config:set app-name VARIABLE=VALUE`
+Note that there are are *more steps* than in the previous labs, since this app is more complex:
+* It requires configuration variables
+* It requires a Postgres database
+* It requires a special `dokku git` setting (to keep the `.git` directory)
+  
+Once you've followed these instructions, try logging in to your app.
 
-Once you have your app up and running try logging in with OAuth, and store things in the database.
+* You should see that you are logged in
+* You should see an Admin menu, where you can see the names of everyone that has logged in
 
 ## What if it doesn't work?
 
