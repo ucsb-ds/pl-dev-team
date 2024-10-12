@@ -155,6 +155,7 @@ In this step, we'll:
 * Enable Github Actions if not already enabled
 * Set up Github Pages
 * Set up Chromatic Project Token
+* Check that Storybook/Chromatic are building properly
 
 ### Step 3.1: Enable Github Actions (if not already enabled)
 
@@ -189,6 +190,21 @@ If it looks like the one on the left, click the green button that says "Enable A
 
 Next, visit the file [`docs/github-pages.md`](https://github.com/ucsb-cs156-s24/STARTER-jpa03/blob/main/docs/github-pages.md) on GitHub and read what it says to do to configure the documentation for your repo on Github Pages.
 
+When you've completed this step, on your main repo page on Github, the link at right under `About` should take you to the Github Pages for your repo; it should look like this:
+
+<img width="341" alt="image" src="https://github.com/user-attachments/assets/04522e3a-3c27-4288-afa8-54b201fee266">
+
+The link will be of the form: <tt>https://{{page.course_org_name}}.github.io/jpa03-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.   Click on the link, and you should see a page like this one:
+
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/32f4ca67-c0e0-4364-b5f5-12f266b90929">
+
+If you don't:
+* Look through the instructions again
+* Try manually running the Github Action `/02-gh-pages-rebuild-part-1.yml` (note that it will automatically start `04-gh-pages-rebuild-part-2.yml` when it is finished.
+* If any steps in workflows `02` or `04` completed with errors, try running them again.  It is not unusual for the "Deploy" step to fail; there are sometimes [race conditions](https://en.wikipedia.org/wiki/Race_condition) with multiple jobs trying to publish to the site at the same time, and we have not yet determined a way to prevent that.
+* If the jobs fail repeatedly or on a step other than the "Deploy" step, you may need to ask the staff for help.
+
+
 ### Step 3.3: Enable Chromatic
 
 In this step, we are setting up *Storybook*, which is software that allows us to document and test the frontend of our application, one component at a time, without needing the backend at all.  
@@ -221,14 +237,21 @@ To configure your web app for Chromatic, you need to:
 * Once it is setup as a project, you'll be able to obtain a value for the `CHROMATIC_PROJECT_TOKEN`
 * Then, you can set up the `CHROMATIC_PROJECT_TOKEN` as a repository level secret, accessible to the Github Actions scripts.
 
-When you've completed these steps, if you see that either of these Github Actions has a red X, try rerunning it.
+### Step 3.4: Check that Chromatic is building properly
 
-```
-53-chromatic-main-branch.yml
-55-chromatic-pr.yml
-```
+Once you've set up the `CHROMATIC_PROJECT_TOKEN` value, you'll need to re-run the Github Actions scripts that publish the Storybook to the
+repo's Github Pages site.
+
+Go to the Github Actions page for your repo; you'll need to run the job `53-chromatic-main-branch.yml` again; it will likely have failed on the 
+first run for lack of a value for  `CHROMATIC_PROJECT_TOKEN`.
+
+<details markdown="1">
+<summary markdown="1">
+Click the triangle to read about how to re-run failed Github Actions
+</summary>
 
 Here's how to re-run failed Github Actions:
+
 1. Go to the Github Actions tab of your repo
 2. On the left side, in the list of workflows, if the one you are looking for is not listed, click `Show More Workflows`, as shown here:
 
@@ -242,7 +265,9 @@ Here's how to re-run failed Github Actions:
    
    <img width="920" alt="image" src="https://github.com/user-attachments/assets/ef8c6b89-77fd-4d29-8367-09441ab8e5d1">
 
-When you are finished, on the Github Pages site, you should see this:
+</details>
+
+When you've re-run the Github Action `53-chromatic-main-branch.yml`, navigate to the Github Pages site for repo.
 
 <img width="412" alt="image" src="https://github.com/user-attachments/assets/6190a217-87d4-4058-a0c1-45a799df4292">
 
