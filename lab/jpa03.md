@@ -410,7 +410,7 @@ Note that the Rubric above is subject to change, but if it does:
 * You'll be notified during a class meeting
 * You'll have an additional week from the date of the announced change to get your repo in shape with the new requirements.
 
-# Instructor Resources
+## Instructor Resources
 
 
 <details markdown="1">
