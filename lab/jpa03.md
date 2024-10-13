@@ -51,7 +51,7 @@ You may cooperate with one or more pair partners from your team to help in debug
 
 ## Goal
 
-By the end of this lab, you'll have deployed your own copy of the starter code repo (<{{page.starter}}>) on both localhost
+By the end of this lab, you'll have deployed your own copy of the starter code repo (<{{page.starter_repo}}>) on both localhost
 and Dokku.
 
 This app is a full-stack web app with:
@@ -136,10 +136,10 @@ Clone that repo somewhere and cd into it.
 
 Then add this remote:
 
-<tt>git remote add starter {{page.starter}}</tt>
+<tt>git remote add starter {{page.starter_repo}}</tt>
 
 That sets up `starter` as a remote with the code from this github repo:
-* <{{page.starter}}>
+* <{{page.starter_repo}}>
 
 Then do:
 
@@ -303,12 +303,12 @@ Implementing OAuth can be tricky at first, but once you get the hang of it, it's
 
 ## Steps to Configure your app
 
-The next step is to read through the [`README.md`]({{page.starter}}/blob/main/README.md) and configure your app as indicated there.
+The next step is to read through the [`README.md`]({{page.starter_repo}}/blob/main/README.md) and configure your app as indicated there.
 
-As shown in the [`README.md`]({{page.starter}}/blob/main/README.md), these steps include the following.  Each of these is documented in files linked to from the [`README.md`]({{page.starter}}/blob/main/README.md) file so we won't repeat those here; we'll just link to them.
+As shown in the [`README.md`]({{page.starter_repo}}/blob/main/README.md), these steps include the following.  Each of these is documented in files linked to from the [`README.md`]({{page.starter_repo}}/blob/main/README.md) file so we won't repeat those here; we'll just link to them.
 
-1. [Configuring GitHub Pages for the documentation]({{page.starter}}/tree/main#configuring-github-pages-for-the-documentation)
-2. [Getting Started on localhost]({{page.starter}}/tree/main#getting-started-on-localhost), which includes:
+1. [Configuring GitHub Pages for the documentation]({{page.starter_repo}}/tree/main#configuring-github-pages-for-the-documentation)
+2. [Getting Started on localhost]({{page.starter_repo}}/tree/main#getting-started-on-localhost), which includes:
    - Setting up Google OAuth credentials
    - Entering those credential in the `.env` file
    - Learning how to run the backend and frontend in separate windows
