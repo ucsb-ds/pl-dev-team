@@ -188,7 +188,7 @@ If it looks like the one on the left, click the green button that says "Enable A
 
 ### Step 3.2: Enable Github Pages
 
-Next, visit the file [`docs/github-pages.md`](https://github.com/ucsb-cs156-s24/STARTER-jpa03/blob/main/docs/github-pages.md) on GitHub and read what it says to do to configure the documentation for your repo on Github Pages.
+Next, visit the file [`docs/github-pages.md`]({{page.starter_repo}}/blob/main/docs/github-pages.md) on GitHub and read what it says to do to configure the documentation for your repo on Github Pages.
 
 When you've completed this step, on your main repo page on Github, the link at right under `About` should take you to the Github Pages for your repo; it should look like this:
 
