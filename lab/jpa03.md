@@ -124,7 +124,7 @@ introducing the coding challenges as well.
 There should already be a repo for you under the course organization
 with a name in this format:
 
-* <tt>https://github.com/{{page.github_org}}/{{page.num}}-<i>githubid</i></tt>
+* <tt>https://github.com/{{page.github_org}}/{{page.title}}-<i>githubid</i></tt>
 
 where <tt><i>github</i></tt> is your github id.
 
@@ -188,7 +188,7 @@ If it looks like the one on the left, click the green button that says "Enable A
 
 ### Step 3.2: Enable Github Pages
 
-Next, visit the file [`docs/github-pages.md`]({{page.starter_repo}}/blob/main/docs/github-pages.md) on GitHub and read what it says to do to configure the documentation for your repo on Github Pages.
+Next, visit the file [`docs/github-pages.md`]({{page.starter_repo}}/blob/main/docs/github-pages.md) on GitHub or in your repo and read what it says to do to configure the documentation for your repo on Github Pages.
 
 When you've completed this step, on your main repo page on Github, the link at right under `About` should take you to the Github Pages for your repo; it should look like this:
 
