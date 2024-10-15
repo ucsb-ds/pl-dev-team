@@ -110,7 +110,7 @@ So, let's get started.
 
 ## Step 1: Understanding what we are trying to do
 
-## What are we trying to accomplish in this lab?
+### What are we trying to accomplish in this lab?
 
 This lab has little to no programming.
 The point of the lab is to walk you through the steps you need to
@@ -283,7 +283,7 @@ And the links for `Storybook` and `build info` should take you to pages that loo
 
 Before we start configuring your app, let's take just a moment to learn what OAuth is.
 
-## About OAuth
+### About OAuth
 
 OAuth is a protocol that allows you to delegate the login/logout
 functionality (user authentication) to a third party such as
@@ -302,7 +302,7 @@ Using OAuth sidesteps this issue:
 
 Implementing OAuth can be tricky at first, but once you get the hang of it, it's far easier than everything you would need to do to really work with usernames/passwords securely and safely.
 
-## Steps to Configure your app
+### Steps to Configure your app
 
 The next step is to read through the [`README.md`]({{page.starter_repo}}/blob/main/README.md) and configure your app as indicated there.
 
@@ -314,7 +314,7 @@ As shown in the [`README.md`]({{page.starter_repo}}/blob/main/README.md), these 
    - Entering those credential in the `.env` file
    - Learning how to run the backend and frontend in separate windows
 
-## The `.env` file  should *not* be committed to GitHub
+### The `.env` file  should *not* be committed to GitHub
 
 I already made this point, but I really, really want to emphasize it.
 
@@ -328,13 +328,13 @@ Security starts with making smart choices about how to handle credentials and to
 
 The staff reserve the right to deduct points if we find that you have committed your `.env` file to GitHub.
 
-## Green check ✅, not red X ❌
+### Green check ✅, not red X ❌
 
 Once you've completed your setup, GitHub Actions should be running on the main branch with
 a green check, not a red X.  If there are problems there,
 address those as best you can before submitting.
 
-## Explaning the `H2-Console` and `Swagger` links.
+### Explaning the `H2-Console` and `Swagger` links.
 
 You may have noticed two extra links on your localhost version of the app:
 * `H2-Console` is a link that is typically only available when running on localhost.  It provides access to database features for the database that is used when we run on localhost, which uses software called H2.  This link can be used to bring up H2 and look directly into the database tables that are present in the application.
@@ -344,7 +344,7 @@ You are encourged to take a look at each of these.   We'll be using them extensi
 
 Note that when we run our application on Dokku, we typically do *not* use H2, but a different database called Postgres, so we don't use the H2-Console there; it's typically only for when we are running on localhost.   We will, however, sometimes enable swagger access when running on dokku.  We'll discuss this more at a later step in the lab.
 
-# Step 5: Configure your app to run on Dokku
+## Step 5: Configure your app to run on Dokku
 
 The steps to get your app up and running on Dokku are documented here:
 
@@ -368,7 +368,7 @@ You should test the following features:
 * You should see be able to login with your UCSB Google account
 * You should see an Admin menu, where you can see the names of everyone that has logged in
 
-## What if it doesn't work?
+### What if it doesn't work?
 
 If it doesn't work:
 
