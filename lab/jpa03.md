@@ -19,6 +19,7 @@ office_hours_page: https://ucsb-cs156.github.io/f24/office-hours
 software_install_url: https://ucsb-cs156.github.io/f24/info/software.html
 staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
 starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
+canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262241
 ---
 
 <style>
@@ -36,7 +37,7 @@ starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
 
 Please wait before starting this lab.  We are still adjusting the instructions for changes that resulted from the upgrades of the started code to Java 21, Node 20, and others changes.
 
-For due date: see the jpa03 entry on Canvas: <https://ucsb.instructure.com/courses/20058/assignments/236309>
+For due date: see the jpa03 entry on Canvas: <{{page.canvas_link}}>
 
 # Instructions for jpa03
 
