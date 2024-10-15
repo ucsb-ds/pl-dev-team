@@ -40,7 +40,7 @@ For due date: see the jpa03 entry on Canvas: <https://ucsb.instructure.com/cours
 
 # Instructions for jpa03
 
-If you run into problems, let us know on the `#jpa03-help` channel on the slack.
+If you run into problems, let us know on the {{page.slack_help_channel}} channel on the slack.
 
 {% include drop_down_style.html %}
 
