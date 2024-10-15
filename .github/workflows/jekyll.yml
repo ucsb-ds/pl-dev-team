@@ -31,12 +31,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1.196.0
         with:
-          ruby-version: '2.7' # Not needed with a .ruby-version file
-          rubygems: 3.3.22
+          ruby-version: '3.3.4' # Not needed with a .ruby-version file
+          rubygems: 3.5.21
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
           cache-version: 0 # Increment this number if you need to re-download cached gems
       - name: Setup Pages
