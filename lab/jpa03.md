@@ -334,6 +334,16 @@ Once you've completed your setup, GitHub Actions should be running on the main b
 a green check, not a red X.  If there are problems there,
 address those as best you can before submitting.
 
+## Explaning the `H2-Console` and `Swagger` links.
+
+You may have noticed two extra links on your localhost version of the app:
+* `H2-Console` is a link that is typically only available when running on localhost.  It provides access to database features for the database that is used when we run on localhost, which uses software called H2.  This link can be used to bring up H2 and look directly into the database tables that are present in the application.
+* `Swagger` is a link that takes you to a special page that is automatically generated from the backend controller code.   This page allows you to interact directly with backend api endpoint, endpoints that often (though not always) take inputs, and typically (though not always) return their responses in JSON format.
+
+You are encourged to take a look at each of these.   We'll be using them extensively later in the course. 
+
+Note that when we run our application on Dokku, we typically do *not* use H2, but a different database called Postgres, so we don't use the H2-Console there; it's typically only for when we are running on localhost.   We will, however, sometimes enable swagger access when running on dokku.  We'll discuss this more at a later step in the lab.
+
 # Step 5: Configure your app to run on Dokku
 
 The steps to get your app up and running on Dokku are documented here:
@@ -345,9 +355,17 @@ Note that there are are *more steps* than in the previous labs, since this app i
 * It requires a Postgres database
 * It requires a special `dokku git` setting (to keep the `.git` directory)
   
-Once you've followed these instructions, try logging in to your app.
+Once you've followed these instructions, try logging in to your app.  It should be available at this url:
 
-* You should see that you are logged in
+<tt>https://{{page.title}}-<i>yourGithubId</i>.dokku-<i>xx</i>.cs.ucsb.edu</tt>
+
+Where:
+* <tt><i>yourGithubId</i></tt> is your Github Id
+* <tt><i>yourGithubId</i></tt> is your two-digit team/dokku number
+
+You should test the following features:
+
+* You should see be able to login with your UCSB Google account
 * You should see an Admin menu, where you can see the names of everyone that has logged in
 
 ## What if it doesn't work?
@@ -361,7 +379,12 @@ If it doesn't work:
 * Ask during class on `#help-lecture-discussion`
 
 
-## Step 6: Add link to running app to your README.md file
+## Step 6: Enable Link to Swagger
+
+You may have noticed two extra links on your localhost version of the app:
+* `H2-Console` is a link that is typically only available when running on localhost.  It provides access to database features for the database that is used when we run on localhost, which uses software called H2. 
+
+## Step 7: Add link to running app to your README.md file
 
 At the top of your README.md, you'll find this:
 
@@ -374,7 +397,7 @@ not the example value shown here).
 <img width="500" alt="image" src="https://user-images.githubusercontent.com/1119017/235759017-e48fdcf6-abb7-40e7-8ae8-71173113d4cd.png">
 
 
-## Step 7: Submit on Canvas
+## Step 8: Submit on Canvas
 
 Here's a checklist to look over before submitting on Canvas:
 
