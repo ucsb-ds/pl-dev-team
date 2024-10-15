@@ -5,8 +5,8 @@ echo "Installing software needed to run Jekyll locally... "
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 
-rvm install ruby-2.7.7
-rvm use 2.7.7
+rvm install ruby-3.3.4
+rvm use 3.3.4
 gem install bundler 
 #gem install pkg-config
 #gem install nokogiri
