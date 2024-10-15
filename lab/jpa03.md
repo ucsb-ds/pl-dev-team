@@ -78,11 +78,11 @@ If the menu looks like this, click on the hamburger icon (☰) to expose the Log
 
 <img width="799" alt="image" src="https://user-images.githubusercontent.com/1119017/235781737-648575ec-c095-4ecf-a218-12ec579d4d19.png">
 
-It should then look like this, and you shoudl be able to login:
+It should then look like this, and you should be able to login:
 
 <img width="732" alt="image" src="https://user-images.githubusercontent.com/1119017/235782012-7775743c-1880-4960-b99a-3417055f850e.png">
 
-Once you are logged in, you'll see a navigation bar like this one:
+Once you are logged in, you'll see a navigation bar like this one (though you will not see the `Admin` menu):
 
 <img width="1208" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/c6acd005-85fb-4907-b65e-cce203a61294">
 
