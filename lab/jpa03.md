@@ -23,7 +23,7 @@ canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262241
 ---
 
 <style>
-  tt {white-space: pre}
+  tt {white-space: pre; font-size: 80%;}
   code {white-space: pre}
   pre {white-space: pre}
 </style>
