@@ -145,8 +145,8 @@ As in previous labs, you should have a directory somewhere, perhaps `~/cs156` in
 `cd` into that directory, then use `git clone` followed by the url for your repo, e.g.
 
 <tt>cd ~/cs156</tt><br />
-<tt>git clone git@github.com:{{page.course_org_name}}/{{page.title}}-<i>yourGithubid<i>.git</tt><br />
-<tt>cd {{page.title}}-<i>yourGithubid<i></tt>
+<tt>git clone git@github.com:{{page.course_org_name}}/{{page.title}}-<i>yourGithubid</i>.git</tt><br />
+<tt>cd {{page.title}}-<i>yourGithubid</i></tt>
   
 </details>
 
