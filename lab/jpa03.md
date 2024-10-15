@@ -381,8 +381,18 @@ If it doesn't work:
 
 ## Step 6: Enable Link to Swagger
 
-You may have noticed two extra links on your localhost version of the app:
-* `H2-Console` is a link that is typically only available when running on localhost.  It provides access to database features for the database that is used when we run on localhost, which uses software called H2. 
+For a *production* dokku deployment of a *real, user-facing* app, we would normally not want a link to the Swagger tool to appear.  This is not functionality that a normal end user
+would be interacting with.
+
+However, for developers, it is often convenient to enable this link on deployments of our app that are being used for quality assurance (QA), demos, etc.  
+
+You can enable this link by setting the following configuration variable on dokku:
+
+<tt>dokku config:set <i>appname</i> SHOW_SWAGGER_UI_LINK=true</tt>
+
+Where <tt><i>appname</i></tt> in this case is <tt>{{page.title}}-<i>yourGithubId<i></tt>.
+
+Type that command, and when it finishes, you should be able to refresh the web page for your dokku deployment of the app and see the Swagger link in the menu bar.
 
 ## Step 7: Add link to running app to your README.md file
 
@@ -416,9 +426,8 @@ If so, then you are ready to submit on Canvas.
 
 ## Grading Rubric:
 
-* (10 pts) There is a repo with the correct name in the correct organization with the starter code for this lab
 * (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the repo, not the running app on Dokku)
-* (10 pts) README has a link to your running web app.
+* (10 pts) README in your repo has a link to your running web app.
 * (10 pts) There is a running web app at <tt>https://{{page.num}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
 * (10 pts) Running web app has the ability to login with OAuth through a Google Account.
 * (10 pts) The `ADMIN_EMAILS` variable is set to include all staff emails (see list below) plus your own email.
@@ -428,6 +437,7 @@ If so, then you are ready to submit on Canvas.
 * (10 pts) The Github Pages page shows a web page that looks like the example in the lab instructions and has the correct content.
 * (10 pts) Chromatic is configured correctly, and the Github Pages site has a Storybook configured properly.
 * (10 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
+* (10 pts) On dokku, the Swagger link appears in the menu bar.
 
 Note that the Rubric above is subject to change, but if it does:
 
