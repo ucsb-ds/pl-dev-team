@@ -30,13 +30,6 @@ canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262241
 
 {% include drop_down_style.html %}
 
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-
-Please wait before starting this lab.  We are still adjusting the instructions for changes that resulted from the upgrades of the started code to Java 21, Node 20, and others changes.
-
 For due date: see the jpa03 entry on Canvas: <{{page.canvas_link}}>
 
 # Instructions for jpa03
