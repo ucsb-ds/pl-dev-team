@@ -226,7 +226,7 @@ If you don't:
 In this step, we are setting up *Storybook*, which is software that allows us to document and test the frontend of our application, one component at a time, without needing the backend at all.  
 
 As an example of Storybook, here is a link to the storybook for the starter code:
-* {{page.starter_storybook}}
+* <{{page.starter_storybook}}>
 
 <details markdown="1">
 <summary markdown="1">
