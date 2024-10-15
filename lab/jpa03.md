@@ -390,7 +390,7 @@ You can enable this link by setting the following configuration variable on dokk
 
 <tt>dokku config:set <i>appname</i> SHOW_SWAGGER_UI_LINK=true</tt>
 
-Where <tt><i>appname</i></tt> in this case is <tt>{{page.title}}-<i>yourGithubId<i></tt>.
+Where <tt><i>appname</i></tt> in this case is <tt>{{page.title}}-<i>yourGithubId</i></tt>.
 
 Type that command, and when it finishes, you should be able to refresh the web page for your dokku deployment of the app and see the Swagger link in the menu bar.
 
