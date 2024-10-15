@@ -422,24 +422,14 @@ not the example value shown here).
 
 ## Step 8: Submit on Canvas
 
-Here's a checklist to look over before submitting on Canvas:
+Before submitting on Canvas, check all of the items in the grading rubric below; make sure you are in compliance with all of them.
 
-1. On the main page for the repo: is the app "green on CI"? i.e. does the `main` branch have a green check for the Github Actions scripts?
-2. On the main page for the repo: is there a link to the apps Github Pages site on the main page for the repo?  (i.e. the site whose URL is something like `https://ucsb-cs156-s24.github.io/jpa03-cgaucho`)?
-3. Does the Github Pages site link take you to a page with links to
-   javadoc and storybook?
-4. Do those javadoc and storybook links work?
-5. In the README.md file: is there a link to the running app?
-6. Does OAuth work on the running app, i.e. can I log in with my Google login?
-7. Did you remember to add the staff(see emails in the rubric below), your teammates, and yourself to the `ADMIN_EMAILS` variable in your `config:set` on dokku?
-8. Did you deploy a database? If so, for Admin users, the Users menu should show who has logged in recently (it uses the database to do this.)
 If so, then you are ready to submit on Canvas.
 
-* Submit the link to *your repo*, not the link to your running app.
+Remember to submit a link to *your repo*, not a link to your running app.
 
 ## Grading Rubric:
 
-* (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the repo, not the running app on Dokku)
 * (10 pts) README in your repo has a link to your running web app.
 * (10 pts) There is a running web app at <tt>https://{{page.num}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
 * (10 pts) Running web app has the ability to login with OAuth through a Google Account.
@@ -451,6 +441,8 @@ If so, then you are ready to submit on Canvas.
 * (10 pts) Chromatic is configured correctly, and the Github Pages site has a Storybook configured properly.
 * (10 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
 * (10 pts) On dokku, the Swagger link appears in the menu bar.
+* (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the *repo*, not the running app on Dokku)
+
 
 Note that the Rubric above is subject to change, but if it does:
 
