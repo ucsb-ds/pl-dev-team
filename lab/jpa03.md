@@ -125,7 +125,7 @@ introducing the coding challenges as well.
 There should already be a repo for you under the course organization
 with a name in this format:
 
-* <tt>https://{{page.course_org}}/{{page.title}}-<i>githubid</i></tt>
+* <tt>{{page.course_org}}/{{page.title}}-<i>githubid</i></tt>
 
 where <tt><i>github</i></tt> is your github id.
 
