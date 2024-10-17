@@ -135,10 +135,12 @@ populate the Todo column with all of the issues in your repo.
 
 ### To populate the `Todo` column with all issue in the repo
 
+BEFORE YOU START: Make sure that no-one else on the team, and no-one on the staff is already doing this!  If more than one team member does this, it makes a big mess.  Use *both* your team slack channel (as well as talking to people live, in person) to coordinate this.
+
 1. Open the Kanban board (Project in Github terms)
 2. Click beside the `+` sign where it says `Add issues` under the Todo column as shown in the animation below.
 3. Type this symbol: `#`
-4. Type the name of your repo (e.g. `team01-s24-5pm-2`)
+4. Type the name of your repo (e.g. <tt>{{page.title}}-{{page.sample_team}}</tt>)
 5. The name of your repo will pop up.  Click on it.
 6. A dialog box will pop up.  At the botton it should say (for example): `Add issues from ucsb-cs156-s24/team01-s24-5pm-2`. Click that.
 7. Another pop up will appear titled `Add items to project`.  There will be an checkbox at the top labelled something like `25 most recent items` (the number may vary).  Click this box.
