@@ -15,7 +15,7 @@ github_org: ucsb-cs156-f24
 starter_repo: https://github.com/ucsb-cs156-f24/STARTER-team01
 slack_help_channel: "[#help-team01](https://ucsb-cs156-f24.slack.com/archives/C07RZATTF1V)" 
 teams_url: https://bit.ly/cs156-f24-teams
-example_running_app: https://team01.dokku-00.cs.ucsb.edu/
+example_running_app: https://.dokku-00.cs.ucsb.edu/
 office_hours_page: https://ucsb-cs156.github.io/f24/office-hours
 software_install_url: https://ucsb-cs156.github.io/f24/info/software.html
 staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
@@ -140,7 +140,7 @@ Here are the links to the repos and Kanban (project) boards for team01
 |[{{page.title}}-{{site.qxx}}-16]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-16) | [{{page.title}}-{{site.qxx}}-16](https://github.com/orgs/{{page.github_org}}/projects/16) |
 
 For team01, the list of issues is populated by the staff before you start using the Github Actions workflow [`99-team01.yml`](
-{{page.starter}}/blob/main/.github/workflows/99-team01.yml); your repo should have exactly {{page.num_issues}} issues. 
+{{page.starter_repo}}/blob/main/.github/workflows/99-team01.yml); your repo should have exactly {{page.num_issues}} issues. 
 
 <details markdown="1">
 <summary markdown="1">
@@ -308,9 +308,9 @@ From a process standpoint, here's how this project works:
 To get started:
 
 * Clone your team's team01
-* Add the <{{page.starter}}> repo as a remote called starter
+* Add the <{{page.starter_repo}}> repo as a remote called starter
   <p>
-  <tt>git remote add starter {{page.starter}} </tt>
+  <tt>git remote add starter {{page.starter_repo}} </tt>
   </p>
   This is in case there are updates to the starter code that you need to pull from by doing:
   ```
@@ -348,7 +348,7 @@ In addition, we'll practice further with a few concepts that we touched on in `j
 
 ## The two database tables in the starting code
 
-Your starter code at <{{page.starter}}> provides Spring Boot code with the ability to do CRUD operations on two database tables:
+Your starter code at <{{page.starter_repo}}> provides Spring Boot code with the ability to do CRUD operations on two database tables:
 
 * `UCSBDates`
 * `UCSBDiningCommons`
