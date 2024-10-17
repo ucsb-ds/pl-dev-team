@@ -15,7 +15,6 @@ github_org: ucsb-cs156-f24
 starter_repo: https://github.com/ucsb-cs156-f24/STARTER-team01
 slack_help_channel: "[#help-team01](https://ucsb-cs156-f24.slack.com/archives/C07RZATTF1V)" 
 teams_url: https://bit.ly/cs156-f24-teams
-example_running_app: COMING-SOON
 office_hours_page: https://ucsb-cs156.github.io/f24/office-hours
 software_install_url: https://ucsb-cs156.github.io/f24/info/software.html
 staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
@@ -33,9 +32,6 @@ example_full_running_app: "[team02](https://team02.dokku-00.cs.ucsb.edu)"
 {% include drop_down_style.html %}
 
 For due date: see the {{page.title}} entry on Canvas: <{{page.canvas_link}}>
-
-Note: There are two links to the running app that are not yet updated; the staff is working on those.
-For now they say "COMING SOON"; we'll update those shortly, and announce the update on the Slack. 
 
 ## What this assignment is about: Database CRUD operations
 
