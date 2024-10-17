@@ -9,6 +9,7 @@ ready: false
 qxx: f24
 layout: default
 parent: lab
+sample_team: f24-01
 github_org_url: https://github.com/ucsb-cs156-f24
 github_org: ucsb-cs156-f24
 starter_repo: https://github.com/ucsb-cs156-f24/STARTER-team01
@@ -67,11 +68,59 @@ In this assignment, we will build the backend only for api endpoint that allow C
 The type of database we'll work with in this assignment is called an SQL database (SQL is typically pronounced like the english word "sequel").
 
 
+## What you'll do: Process
+
+From a process standpoint, you are working with a Kanban board.
+
+- A Kanban board is a "visualization of work in progress"
+- If you've ever worked with a Trello board, it's a similar idea.
+- Originally, a Kanban board was a corkboard, and each item was an index card pinned to it with a thumbtack.
+- These days, they are mostly online tools.
+
+In this course, we typically work with four columns labelled:
+* "todo", "in progress", "in review" and "done".
+
+There may be more columns or fewer, though typically at a minimum, there is:
+* "todo", "in progress" and "done".
+
+Here's how that will play out in detail:
+
+1. Navigate to the web page for the GitHub organization, i.e. <https://github.com/{{page.github_org}}>.  You'll see a tab for `Projects`. Click on that tab.  You should then see a project for your team for the team01 assignment, e.g. `team01-f24-01`, `team01-f24-02`,etc.
+2. Open the link for your team's Project.  You should find four columns: `Todo`, `In Progress`, `In Review`, `Done`
+3. The `Todo` column will be populated with a set of tasks, which are called *Issues* in the GitHub implementation of Kanban.  These correspond to the Issues that we'll also see in the `Issues` column of your repo.
+4. Now navigate to your repo for {{page.num}}, which will have a url such as: <https://github.com/{{page.github_org}}/{{page.title}}-{{page.sample_team}}>.  You will see a tab for `Issues`. Click on that tab.
+4. You should now see a list of issues.  These are the work items your team needs to complete to do the the work for the team01 assignment. They are the same issues that you find in the "To Do" column of your Kanban board (i.e. your `Project`, to use the GitHub terminology).
+5. There may also be some additional housekeeping steps that you need to complete in order for the {{page.num}} assignment to be considered completed; the issues on the Kanban board are not necessarily the only things you need to complete to earn full credit for the assignment.  But these issues are the bulk of the work you need to divide up as a team.
+6. Note that you are allowed and even encouraged to add cards on the Kanban board and/or Issues for any other items you find in the assignment description that need to be completed.  Tracking this on the Kanban board can be a helpful way to make sure that it get done, and to signal to other team members when it has been done.
+7. Each team member will take on an issue, one at a time, assign it to themselves, and move it from the "To Do" column of the Kanban board to the "In Progress" column as you start the issue.  When you are finished with the issue, you move it into the "In Review" column when you've made a "Pull Request" to indicate that the issue is ready for your team members to review.
+8. Ideally, each team member should have exactly one (and only one) issue assigned to them in the In Progress column at a time.
+9. Once a pull request is complete for a given task, you move it into the `In Review` column
+   - At this stage, you seek a code review from a member of the team that
+     was not involved in the coding.
+   - Also, at this stage, if the PR is not "green on CI",
+     meaning that all of the GitHub actions scripts show green checks, this is when you
+     should address that, before merging the pull request.
+6. Only when the PR is merged does the issue get moved into the `Done` column.
+
+As long as you are not done with your contribution to the project, you should always have at least one issue in the `In Progress` column (the thing you are working on to contribute to the team's work.)
+
+# The Kanban board belongs to the team
+
+The staff has pre-populated your Kanban board with a number of issues to help you get started.  However, please be aware of these important points:
+
+* There may be things in this assignment description, or other things that your team needs to get done that are *not* included on the Kanban board.
+* As/when you find such things, feel free to *add them to the Kanban board yourself*.
+
+The purpose of the Kanban board is primarily to *serve the team* as a visual representation fo the work in progress.
+
+It is true that since this is a *course*, there is an aspect that you are maintaining the Kanban board for a "grade", as part of an "assignment"&mdash;but the hope is that ultimately, you'll see the intrinsic value of keeping a board like this up-to-date so that the team has way to see what's going on with the project at a glance.
+
+
 ## Repos for team01
 
-Here are the links to the repos and project boards for team01
+Here are the links to the repos and Kanban (project) boards for team01
 
-| Repo | Project Board |
+| Repo | Kanban Board |
 |-----|-----|
 |[{{page.title}}-{{site.qxx}}-01]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-01) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
 
