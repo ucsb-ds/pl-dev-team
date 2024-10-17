@@ -9,8 +9,8 @@ ready: false
 qxx: f24
 layout: default
 parent: lab
-course_org: https://github.com/ucsb-cs156-f24
-course_org_name: ucsb-cs156-f24
+github_org_url: https://github.com/ucsb-cs156-f24
+github_org: ucsb-cs156-f24
 starter_repo: https://github.com/ucsb-cs156-f24/STARTER-team01
 slack_help_channel: "[#help-team01](https://ucsb-cs156-f24.slack.com/archives/C07RZATTF1V)" 
 teams_url: https://bit.ly/cs156-f24-teams
@@ -73,8 +73,7 @@ Here are the links to the repos and project boards for team01
 
 | Repo | Project Board |
 |-----|-----|
-|[{{page.title}}-{{site.qxx}}-01](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-01) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-02](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-02) | [{{page.title}}-{{site.qxx}}-02](https://github.com/orgs/{{page.github_org}}/projects/2) |
+|[{{page.title}}-{{site.qxx}}-01]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-01) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
 
 For team01, the list of issues is populated by the staff before you start using the Github Actions workflow [`99-team01.yml`](
 {{page.starter}}/blob/main/.github/workflows/99-team01.yml); your repo should have exactly {{page.num_issues}} issues. 
