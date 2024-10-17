@@ -73,22 +73,8 @@ Here are the links to the repos and project boards for team01
 
 | Repo | Project Board |
 |-----|-----|
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-01) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-02) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-03) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-04) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-05) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-06) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-07) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-08) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-09) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-10) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-11) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-12) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-13) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-14) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-15) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
-|[{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-16) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
+|[{{page.title}}-{{site.qxx}}-01](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-01) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/1) |
+|[{{page.title}}-{{site.qxx}}-02](https://github.com/ucsb-cs156-{{site.qxx}}/{{page.title}}-{{site.qxx}}-02) | [{{page.title}}-{{site.qxx}}-02](https://github.com/orgs/{{page.github_org}}/projects/2) |
 
 For team01, the list of issues is populated by the staff before you start using the Github Actions workflow [`99-team01.yml`](
 {{page.starter}}/blob/main/.github/workflows/99-team01.yml); your repo should have exactly {{page.num_issues}} issues. 
