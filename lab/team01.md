@@ -43,7 +43,7 @@ A basic feature of many applications (not just web applications) is referred to 
 * Destroy Student (delete a student that is no longer enrolled)
 
 At this link, you'll find a working app with CRUD operations for a Restaurant table:
-* <{{page.example_full_running_app}}>
+* {{page.example_full_running_app}}
 
 This is the first of three team assignments (team01, team01, team03) that will add additional database tables to this app.  The coding will be fairly straightforward, and will be very similar to a typical "first assignment" you might get on a real world team, in that it involves a lot of "copy and paste" coding.  That is, you'll look at an example of how to do CRUD operations for one database table, and you'll replicate that code for another database table.
 
