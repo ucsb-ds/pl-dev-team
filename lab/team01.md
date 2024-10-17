@@ -21,7 +21,7 @@ software_install_url: https://ucsb-cs156.github.io/f24/info/software.html
 staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
 starter_storybook: "https://ucsb-cs156-f24.github.io/STARTER-team01/chromatic"
 canvas_link: "https://ucsb.instructure.com/courses/21167/assignments/262246"
-example_full_running_app: COMING-SOON
+example_full_running_app: [team02](https://team02.dokku-00.cs.ucsb.edu/placeholder)
 ---
 
 <style>
