@@ -904,6 +904,23 @@ Note that these files only describe the creation of a table, however on the real
 
 Also you might find it useful to know the commands described in the [Liquibase doc](https://github.com/ucsb-cs156-s24/STARTER-team01/blob/main/docs/liquibase.md). They will allow you to check and apply the changes that will happen to the database outside of just building the app
 
+### About that `CONSTRAINT_5`
+
+The `CONSTRAINT_5` in the example is a bit unfortunate, but we caught it too late to change it for F24; hopefully we can change this before we use the assignment again.
+
+Here's what that means, and what you should do in your code: 
+* *Constraints* are rules that a database table is required to follow
+* When you specify that a certain field is a *primary key*, one of the aspects of being a primary key is that this field can have no duplicate values in the table.
+* In a liquibase specification, each *constraint* has to be given a unique name; unique across the entire database (not just this table, but all tables in the database).
+* When this example was put together, someone chose the name `CONSTRAINT_5` because, we can assume, the names `CONSTRAINT_1`, `CONSTRAINT_2`, etc. were already taken.
+* The problem is that this isn't a very good strategy for choosing a name; it's difficult to know which numbers have/have not been used.
+* Instead, we suggest the following strategy: Since database tables have to be unique, and a table can only have one primary key, use the name <tt><i>NAME_OF_TABLE</i>_PK</tt>, for example:
+  * <tt>RESTAURANTS_PK</tt>
+  * <tt>UCSBDININGCOMMONSMENUITEMS_PK</tt>
+  * etc.
+
+That is a more sustainable naming convention.
+
 </details>
 
 
