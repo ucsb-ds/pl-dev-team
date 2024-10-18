@@ -155,7 +155,7 @@ BEFORE YOU START: Make sure that no-one else on the team, and no-one on the staf
 3. Type this symbol: `#`
 4. Type the name of your repo (e.g. <tt>{{page.title}}-{{page.sample_team}}</tt>)
 5. The name of your repo will pop up.  Click on it.
-6. A dialog box will pop up.  At the botton it should say (for example): `Add issues from ucsb-cs156-s24/team01-s24-5pm-2`. Click that.
+6. A dialog box will pop up.  At the botton it should say (for example): <tt>Add issues from {{page.github_org}}/{{page.title}}-{{site.qxx}}-{{page.sample_team}}</tt>. Click that.
 7. Another pop up will appear titled `Add items to project`.  There will be an checkbox at the top labelled something like `25 most recent items` (the number may vary).  Click this box.
 8. Click the green button at bottom right labelled `Add selected items`
 9. Now, if there are more items to add, a new set of items will appear.  They will be added in batches of 25 until the last few are added (e.g. `17 most recent items`).  Repeat steps 7 and 8 until there are no more items to add.
@@ -818,8 +818,8 @@ Click the triangle for more details on creating an `Database Migration` file
 
 For the Database Migration files, see the examples:
 
-* [UCSBDate](https://github.com/ucsb-cs156-s24/STARTER-team01/blob/main/src/main/resources/db/migration/changes/UCSBDates.json)
-* [UCSBDiningCommons](https://github.com/ucsb-cs156-s24/STARTER-team01/blob/main/src/main/resources/db/migration/changes/UCSBDiningCommons.json)
+* [UCSBDate]({{page.starter_repo}}/blob/main/src/main/resources/db/migration/changes/UCSBDates.json)
+* [UCSBDiningCommons]({{page.starter_repo}}/blob/main/src/main/resources/db/migration/changes/UCSBDiningCommons.json)
 
 We describe the database changes in the `changes` section of the files linked to above.
 
@@ -902,7 +902,7 @@ For more information on Liquibase you can visit <https://ucsb-cs156.github.io/to
 
 Note that these files only describe the creation of a table, however on the real world you will most likely be describing changes like adding a new column or deleting an existing table etc. for all possible changes you can make to the database using the changes sets you can see <https://docs.liquibase.com/change-types/home.html>
 
-Also you might find it useful to know the commands described in the [Liquibase doc](https://github.com/ucsb-cs156-s24/STARTER-team01/blob/main/docs/liquibase.md). They will allow you to check and apply the changes that will happen to the database outside of just building the app
+Also you might find it useful to know the commands described in the [Liquibase doc]({{page.starter_repo}}/blob/main/docs/liquibase.md). They will allow you to check and apply the changes that will happen to the database outside of just building the app
 
 ### About that `CONSTRAINT_5`
 
