@@ -423,19 +423,18 @@ Remember to submit a link to *your repo*, not a link to your running app.
 
 ## Grading Rubric:
 
-* (10 pts) README in your repo has a link to your running web app.
-* (10 pts) There is a running web app at <tt>https://{{page.num}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
-* (10 pts) Running web app has the ability to login with OAuth through a Google Account.
-* (10 pts) The `ADMIN_EMAILS` variable is set to include all staff emails (see list below) plus your own email.
-  - The correct setting is shown below, except with your email in place of <tt><i>youremail</i></tt>
-  - <tt>ADMIN_EMAILS=<i>youremail</i>@ucsb.edu,{{page.staff_emails}}</tt>
-* (10 pts) The link on your main repo page is set your Github Pages page (i.e. <tt>https://{{page.course_org_name}}.github.io/{{page.num}}-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.  ) 
-* (10 pts) The Github Pages page shows a web page that looks like the example in the lab instructions and has the correct content.
-* (10 pts) Chromatic is configured correctly, and the Github Pages site has a Storybook configured properly.
-* (10 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
-* (10 pts) On dokku, the Swagger link appears in the menu bar.
-* (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the *repo*, not the running app on Dokku)
-
+1.  (10 pts) README in your repo has a link to your running web app.
+2.  (10 pts) There is a running web app at <tt>https://{{page.num}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
+3.  (10 pts) Running web app has the ability to login with OAuth through a Google Account.
+4.  (10 pts) The `ADMIN_EMAILS` variable is set to include all staff emails (see list below) plus your own email.
+    - The correct setting is shown below, except with your email in place of <tt><i>youremail</i></tt>
+    - <tt>ADMIN_EMAILS=<i>youremail</i>@ucsb.edu,{{page.staff_emails}}</tt>
+5.  (10 pts) The link on your main repo page is set your Github Pages page (i.e. <tt>https://{{page.course_org_name}}.github.io/{{page.num}}-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.  ) 
+6.  (10 pts) The Github Pages page shows a web page that looks like the example in the lab instructions and has the correct content.
+7.  (10 pts) Chromatic is configured correctly, and the Github Pages site has a Storybook configured properly.
+8.  (10 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
+9.  (10 pts) On dokku, the Swagger link appears in the menu bar.
+10. (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the *repo*, not the running app on Dokku)
 
 Note that the Rubric above is subject to change, but if it does:
 
