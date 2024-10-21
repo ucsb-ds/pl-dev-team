@@ -293,6 +293,8 @@ From a process standpoint, here's how this project works:
 
    Typically, you should be assigned to only one item at a time in the In Progress column.  The exception is if you drag an item to In Progress, make some progress on it, and then need to stop working on it for a while because you are blocked, or something else urgently needs your attention.  But that should be the exception, not the normal way of doing things.
 
+7. This [YouTube video](https://youtu.be/Shi0kzx-3K4) shows how to locate all of your issues and assign them to yourself.  You are strongly encourage to assign all of the issues pertaining to your database table to yourself (as shown in the video) right from the start; but only drag one issues at a time into the `In Progress` column, so that the column reflects what the team is actually working on.    
+
 8. Now work on your issues as you did in team01; dragging them to "In Review" once they are ready for code review, and to "Done" when they are merged.  Also work on the setup task to which you were assigned.
 9. While the project is underway, **every time class meets, you'll start with a standup meeting**.
 
