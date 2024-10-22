@@ -9,6 +9,18 @@ parent: lectures
 
 # {{page.title}} - {{page.descripion}}
 
+## Updates to Starter Code
+
+There were a few updates to the starter code, as reflected in these PRs:
+
+I'll be pushing those changes into each of your team repos, but that means you'll need
+to *rebase on the main branch*.
+
+This link explains how to do it:
+* <https://ucsb-cs156.github.io/topics/git/git_pull_rebase_main.html>
+
+Please do this with the branches you are working on *frequently* so that you pull in changes to the starter code, as well as your fellow team members work.
+
 ## Start with Standup (aka "Daily Scrum")
 
 1. First, please take a moment to make a *standup post* on your *official slack team channel*   The post can just be something like this:
