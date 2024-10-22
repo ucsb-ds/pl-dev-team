@@ -11,10 +11,15 @@ parent: lectures
 
 ## Updates to Starter Code
 
-There were a few updates to the starter code, as reflected in these PRs:
+There were a few updates to the starter code, as reflected in these PRs
 
-I'll be pushing those changes into each of your team repos, but that means you'll need
-to *rebase on the main branch*.
+* Add missing databaase migration for Restaurants: <https://github.com/ucsb-cs156-f24/STARTER-team01/pull/88>
+* Fix error preventing creation of new UCSBDates <https://github.com/ucsb-cs156-f24/STARTER-team01/pull/89>
+
+Note that if you are far enough along that you used the UCSBDates controller as a basis for your code, you may want to look at PR89 above, and make a similar change in your code.
+
+I've already pushed these PRs into each of your team repos, but that means you'll need
+to *rebase your branches on the main branch* to pull in these changes.
 
 This link explains how to do it:
 * <https://ucsb-cs156.github.io/topics/git/git_pull_rebase_main.html>
