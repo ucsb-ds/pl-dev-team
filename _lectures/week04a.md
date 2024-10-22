@@ -32,6 +32,8 @@ parent: lectures
 
 Then, update your team Kanban board:
 
+More about standup meetings:
+* <https://ucsb-cs156.github.io/topics/agile/agile_standups.html>
 
 ## Update Team Kanban board
 
