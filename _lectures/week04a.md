@@ -9,7 +9,7 @@ parent: lectures
 
 # {{page.title}} - {{page.descripion}}
 
-## Start with Standup
+## Start with Standup (aka "Daily Scrum")
 
 1. First, please take a moment to make a *standup post* on your *official slack team channel*   The post can just be something like this:
 
