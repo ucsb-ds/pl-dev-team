@@ -107,7 +107,7 @@ The starter code has examples of:
 
 It also has an example of temporary placeholder pages for CRUD operations, which is an intermediate step towards the full CRUD frontend code.
 
-Basically, the task of {{page.title}} is to use this example code to build frontends for the backends you built in {{page.prev_assignment}.
+Basically, the task of {{page.title}} is to use this example code to build frontends for the backends you built in {{page.prev_assignment}}).
 
 ## Understanding what you are building
 
