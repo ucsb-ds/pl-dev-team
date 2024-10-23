@@ -1,6 +1,6 @@
 ---
 title: team02
-desc: "Team Project: React CRUD frontend"
+description: "Team Project: React CRUD frontend"
 assigned: 2024-05-01 17:00
 due: 2024-05-13 11:59
 github_org: ucsb-cs156-f24
@@ -9,14 +9,14 @@ sample_team: f24-01
 layout: lab
 layout: default
 parent: lab
-num: team02
+prev_assignment: team01
 nav_order: 203
 ready: true
-project_number_start: 34
 starter: https://github.com/ucsb-cs156-f24/STARTER-team02
 deployment: https://team02.dokku-00.cs.ucsb.edu/
 storybook: https://ucsb-cs156-f24.github.io/STARTER-team02/chromatic
 canvas: https://ucsb.instructure.com/courses/21167/assignments/262247
+help_team02: "[<tt>#help-team02</tt>](https://ucsb-cs156-f24.slack.com/archives/C07TA31HD9A)"
 ---
 
 # NOT READY YET
@@ -32,8 +32,8 @@ canvas: https://ucsb.instructure.com/courses/21167/assignments/262247
 
 <style>
   tt {white-space: pre; font-size: 80%;}
-  code {white-space: pre}
-  pre {white-space: pre}
+  code {white-space: pre; font-size: 80%}
+  pre {white-space: pre; font-size: 80%}
 </style>
 
 {% include drop_down_style.html %}
@@ -43,12 +43,11 @@ Canvas link: <{{page.canvas}}>
 
 {% include drop_down_style.html %}
 
-# {{page.title}}&mdash;{{ page.desc }}
+# {{page.title}}&mdash;{{ page.description }}
 
-## What are we learning in team02
+## What are we learning in {{page.title}}
 
-In this team project, our starter code has a frontend and backend, and we are focusing only on the frontend; you will likely not have to make any modifications to the backend (other than copying your backend code from
-team02.)
+In this team project, our starter code has a frontend and backend, and we are focusing only on the frontend; you will likely not have to make any modifications to the backend (other than copying your backend code from {{page.prev_assignment}}).
 
 We are focusing on learning these new React concepts:
 
@@ -64,9 +63,9 @@ We are focusing on learning these new React concepts:
 * Using `npm run storybook` to visualize frontend components in isolation
 
 
-## Repos for team02
+## Repos for {{page.title}}
 
-Here are the links to the artifacts for team02:
+Here are the links to the artifacts for {{page.title}}:
 
 ## Repos for {{page.title}}
 
@@ -77,31 +76,18 @@ Here are the links to the repos and Kanban (project) boards for {{page.title}}
 |[{{page.title}}-{{t.team}}]({{page.github_org_url}}/{{page.title}}-{{t.team}}) | [{{page.title}}-{{t.team}}](https://github.com/orgs/{{page.github_org}}/projects/{{t.team02_project}}) | [{{page.title}}-{{t.team}}](https://{{page.github_org}}.github.io/{{page.title}}-{{t.team}}) | [dokku](https://{{page.title}}-{{t.team}}.dokku-{{t.dokku}.cs.ucsb.edu) | [dokku-qa](https://{{page.title}}-{{t.team}}-qa.dokku-{{t.dokku}.cs.ucsb.edu) | [slack]({{t.slack}}) | {% endfor %}
 
 
-
-
-For team02, the Kanban board is populated by the staff before you start using the Github Actions workflow [`99-team02.yml`](
-{{page.starter}}/blob/main/.github/workflows/99-team02.yml); if your Kanban is not yet populated,
+For {{page.title}}, the Kanban board is populated by the staff before you start using the Github Actions workflow [<tt>99-{{page.title}}.yml</tt>](
+{{page.starter}}/blob/main/.github/workflows/99-{{page.title}}.yml); if your Kanban is not yet populated,
 please check in with the staff.
 
 ## Dokku prod deployments
 
-These deployments should track the `main` branch.  **You will need to manually redeploy** after you merge each pull request, with these commands (adapted for your team; the example shows 5pm-1):
+The prod deployments (i.e. the ones on dokku with the name <tt>{{page.title}}</tt>) should track the `main` branch.  **You will need to manually redeploy** after you merge each pull request, with these commands (adapted for your team; the example shows team {{page.sample_team}}):
 
 <pre>
-dokku git:sync team02 https://github.com/{{page.github_org}}/team02-{{page.sample_team}} main
-dokku ps:rebuild team02
+dokku git:sync {{page.title}} https://github.com/{{page.github_org}}/{{page.title}}-{{page.sample_team}} main
+dokku ps:rebuild {{page.title}}
 </pre>
-
-| 4pm | 5pm |
-|-----|-----|
-| 4pm-1: <https://{{page.title}}.dokku-01.cs.ucsb.edu> | 5pm-1: <https://{{page.title}}.dokku-09.cs.ucsb.edu> |
-| 4pm-2: <https://{{page.title}}.dokku-02.cs.ucsb.edu> | 5pm-2: <https://{{page.title}}.dokku-10.cs.ucsb.edu> |
-| 4pm-3: <https://{{page.title}}.dokku-03.cs.ucsb.edu> | 5pm-3: <https://{{page.title}}.dokku-11.cs.ucsb.edu> |
-| 4pm-4: <https://{{page.title}}.dokku-04.cs.ucsb.edu> | 5pm-4: <https://{{page.title}}.dokku-12.cs.ucsb.edu> |
-| 4pm-5: <https://{{page.title}}.dokku-05.cs.ucsb.edu> | 5pm-5: <https://{{page.title}}.dokku-13.cs.ucsb.edu> |
-| 4pm-6: <https://{{page.title}}.dokku-06.cs.ucsb.edu> | 5pm-6: <https://{{page.title}}.dokku-14.cs.ucsb.edu> |
-| 4pm-7: <https://{{page.title}}.dokku-07.cs.ucsb.edu> | 5pm-7: <https://{{page.title}}.dokku-15.cs.ucsb.edu> |
-| 4pm-8: <https://{{page.title}}.dokku-08.cs.ucsb.edu> | 5pm-8: <https://{{page.title}}.dokku-16.cs.ucsb.edu> |
 
 ## Work on your own laptop, not CSIL
 
@@ -113,20 +99,19 @@ For advice on what to install, see:
 
 If this presents a difficulty, please contact the instructor ASAP so that some arrangement can be made for your situation.
 
-## What are we doing in team02?
+## What are we doing in {{page.title}}?
 
-In this team project, you'll continue the work you started in team02.
+In this team project, you'll continue the work you started in {{page.title}}.
 
 The starter code has examples of:
 
-* Implementing backend CRUD operations for two database tables  (this is exactly like team02)
-
+* Implementing backend CRUD operations for two database tables  (this is exactly like {{page.prev_assignment}})
 * Implementing a user-friendly frontend for the CRUD operations
   for these two database tables using Javascript and React (this is the new part)
 
 It also has an example of temporary placeholder pages for CRUD operations, which is an intermediate step towards the full CRUD frontend code.
 
-Basically, the task of team02 is to use this example code to build frontends for the backends you built in team02.
+Basically, the task of {{page.title}} is to use this example code to build frontends for the backends you built in {{page.prev_assignment}.
 
 ## Understanding what you are building
 
@@ -167,7 +152,7 @@ Here are some things to explore:
   while the Edit button takes you to a separate Edit page.  Note that
   the URL changes.
 
-What you'll be doing (as a team) is adding additional menu items alongside `Restaurants` and `UCSBDates`, providing similar CRUD operations for four, five or six of these tables (the sames ones from team02):
+What you'll be doing (as a team) is adding additional menu items alongside `Restaurants` and `UCSBDates`, providing similar CRUD operations for four, five or six of these tables (the sames ones from {{page.title}}):
 
 * `UCSBDiningCommonsMenuItem`
 * `UCSBOrganization`
@@ -176,7 +161,7 @@ What you'll be doing (as a team) is adding additional menu items alongside `Rest
 * `HelpRequest`
 * `Articles`
 
-You'll reuse the backend files you built for team02; copying them over
+You'll reuse the backend files you built for {{page.title}}; copying them over
 is one of the first steps in the lab. Then you'll build a frontend in Javascript using the React framework.
 
 ## Understanding the Starter Code
@@ -239,7 +224,7 @@ This has several benefits:
 ## Assigning the database tables to your team
 
 The tables you'll need to divide up among the team members are the same ones
-as in team02.  You can assign team members to the same tables, or you can
+as in {{page.title}}.  You can assign team members to the same tables, or you can
 switch it up; that's up to you.
 
 The six tables are:
@@ -253,7 +238,7 @@ The six tables are:
 
 I suggest you divide up these tables on your Slack channel first.
 There is also an issue on the Kanban board to update this in the `README.md`
-of your team02 repo.
+of your {{page.title}} repo.
 
 ## The examples: Restaurant and UCSBDate
 
@@ -375,27 +360,13 @@ and disabled in others.  The important things to keep in mind are:
   this allows early feedback about new features, which is a key
   part of the Agile software design philosophy.
 
-Note that we are not using feature toggles in team02 (at least not as of
+Note that we are not using feature toggles in {{page.title}} (at least not as of
 this quarter, though it would be a nice thing to incorporate into a future version
 of the project.)   But I wanted to be clear about how this "placeholder" code
 might be handled if this were a real-world code base, and not an
 exercise.
 
 ## Understanding the issues on the Kanban board
-
-Here are the Kanban boards:
-
-| 4pm | 5pm | 
-|-----|-----|
-| [{{page.title}}-{{site.qxx}}-4pm-1](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '0'}}) | [{{page.title}}-{{site.qxx}}-5pm-1](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '8'}}) |
-| [{{page.title}}-{{site.qxx}}-4pm-2](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '1'}}) | [{{page.title}}-{{site.qxx}}-5pm-2](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '9'}}) |
-| [{{page.title}}-{{site.qxx}}-4pm-3](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '2'}}) | [{{page.title}}-{{site.qxx}}-5pm-3](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '10'}}) |
-| [{{page.title}}-{{site.qxx}}-4pm-4](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '3'}}) | [{{page.title}}-{{site.qxx}}-5pm-4](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '11'}}) |
-| [{{page.title}}-{{site.qxx}}-4pm-5](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '4'}}) | [{{page.title}}-{{site.qxx}}-5pm-5](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '12'}}) |
-| [{{page.title}}-{{site.qxx}}-4pm-6](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '5'}}) | [{{page.title}}-{{site.qxx}}-5pm-6](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '13'}}) |
-| [{{page.title}}-{{site.qxx}}-4pm-7](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '6'}}) | [{{page.title}}-{{site.qxx}}-5pm-7](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '14'}}) |
-| [{{page.title}}-{{site.qxx}}-4pm-8](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '7'}}) | [{{page.title}}-{{site.qxx}}-5pm-8](https://github.com/orgs/{{page.github_org}}/projects/{{page.project_number_start | | plus: '15'}}) |
-
 
 The issues on your Kanban board can be grouped as follows:
 
@@ -413,7 +384,7 @@ The issues on your Kanban board can be grouped as follows:
   - Submit for grading on Canvas (on behalf of team)
 
 * Database Table Scope issues (48 issues, 8 per table): These are repeated for each database table
-  - Backend Controller and Tests (copying from team02)
+  - Backend Controller and Tests (copying from {{page.prev_assignment}})
   - Fixtures (example data for testing)
   - Form Component (an HTML form for data entry)
   - Table Component (a HTML Table for visualizing lists of data)
@@ -427,18 +398,18 @@ Note that if you have fewer than 6 team members, you should go ahead
 and close the issues for database tables that your team is not
 implementing; you can also remove them from the Kanban board.
 
-## Copying your team02 work into the starter code.
+## Copying your {{page.previous_assignment}} work into the starter code.
 
-You'll start with the starter code `STARTER-team02`, and then add to it the files you created in team02 to implement
+You'll start with the starter code from <tt>STARTER-{{page.title}}</tt>, and then add to it the files you created in {{page.prev_assignment}} to implement
 the database tables and backend CRUD operations
 
-These will likely include, for each of the database tables you created in team02:
+These will likely include, for each of the database tables you created in {{page.prev_assignment}}:
 * A Java class for the `@Entity`
 * A Java class for the `@Repository`
 * A Java class for the Controller
 * A Java class containing Controller tests
 
-The first pull request you make should simply copy those files from your team02 repo into the appropriate directories.
+The first pull request you make should simply copy those files from your {{page.prev_assignment}} repo into the appropriate directories.
 
 I strongly encourage *one pull request per team member*, rather than one giant pull request for the entire team. 
 * Historically, when teams have tried the one "giant pull request" approach, it sometimes works, but *often a problem with one of the database tables holds up
@@ -508,27 +479,27 @@ When all of your issues are either complete, or at least have open pull requests
 * See if there are code reviews that you can help with
 * See if anyone else on the team needs help with their tasks
 
-# What comes after team02
+# What comes after {{page.title}}
 
-After team02, we start the legacy code projects.
+After {{page.title}}, we have one more team assignment, {{page.next_assignment}} where we focus on integration and end-to-end testing.  After that, we start the legacy code projects.
 
 # Asking for help
 
-If you need additional guidance, ask on the `#help-team02` channel, and we'll try to steer you in the right direction.
+If you need additional guidance, ask on the `#help-lecture-discussion` channel during class time, or on {{page.help_team02}} outside of class time.
 
 # When you are done
 
-When all branches are merged to main, all tasks on Kanban board in the done column, please submit on Canvas as you did for team02.  Link coming soon.
+When all branches are merged to main, all tasks on Kanban board in the done column, please submit on Canvas as you did for {{page.prev_assignment}}.  
 
 # Videos
 
-The following videos for team02 contain helpful information about carrying out the various steps.
+The following videos for {{page.title}} contain helpful information about carrying out the various steps.
 
 Note that these are from an earlier quarter so if you find that you don't have access, let the instructor know; they may need to adjust the permissions.
 
 Also, there may be slight differences between the assignment in earlier quarters and the assignment this quarter; in case of any discrepency, follow the
 instructions in this file and in the issues on your Kanban board.  You can
-also seek clarification on the #help-team02 channel.
+also seek clarification on the {{page.help-team02}} channel.
 
 
 List of videos (you may need to login via Canvas to get access):
