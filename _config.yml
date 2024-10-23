@@ -77,49 +77,65 @@ defaults:
 teams: 
   - team: f24-01
     dokku: "01"
+    team02_project: 19
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PYJKCWEL
   - team: f24-02
     dokku: "02"
+    team02_project: 20
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QKLCSW
   - team: f24-03
     dokku: "03"
+    team02_project: 21
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QLJ4JW
   - team: f24-04
     dokku: "04"
+    team02_project: 22
     slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8JN50F
   - team: f24-05
     dokku: "05"
+    team02_project: 23
     slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8KDQQ7
   - team: f24-06
     dokku: "06"
+    team02_project: 24
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P36DJ35L
   - team: f24-07
     dokku: "07"
+    team02_project: 25
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P36EHA06
   - team: f24-08
     dokku: "08"
+    team02_project: 26
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PNFDK20Z
   - team: f24-09
     dokku: "09"
+    team02_project: 27
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PNFEB2EM
   - team: f24-10
-    dokku: 10
+    dokku: "10"
+    team02_project: 28
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QS5090
   - team: f24-11
-    dokku: 11
+    dokku: "11"
+    team02_project: 29
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P9N217AP
   - team: f24-12
-    dokku: 12
+    dokku: "12"
+    team02_project: 30
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PCA3GTBN
   - team: f24-13
-    dokku: 13
+    dokku: "13"
+    team02_project: 31
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QU0BKL
   - team: f24-14
-    dokku: 14
+    dokku: "14"
+    team02_project: 32
     slack: https://ucsb-cs156-f24.slack.com/archives/C07PCA4MFMJ
   - team: f24-15
-    dokku: 15
+    dokku: "15"
+    team02_project: 33
     slack: https://ucsb-cs156-f24.slack.com/archives/C07P36L8SHL
   - team: f24-16
-    dokku: 16
+    dokku: "16"
+    team02_project: 34
     slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8T9415
