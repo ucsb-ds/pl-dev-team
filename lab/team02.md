@@ -4,6 +4,7 @@ desc: "Team Project: React CRUD frontend"
 assigned: 2024-05-01 17:00
 due: 2024-05-13 11:59
 github_org: ucsb-cs156-f24
+github_org_url: https://github.com/ucsb-cs156-f24
 sample_team: f24-01
 layout: lab
 layout: default
@@ -63,9 +64,9 @@ Here are the links to the artifacts for team02:
 
 Here are the links to the repos and Kanban (project) boards for {{page.title}}
 
-| Repo | Kanban Board | GH Pages |
+| Repo | Kanban Board | GH Pages | Dokku | Dokku QA | Slack |
 |-----|-----|------|{% for t in site.teams %}
-|[{{page.title}}-{{t.team}}]({{page.github_org_url}}/{{page.title}}-{{t.team}}) | [{{page.title}}-{{t.team}}](https://github.com/orgs/{{page.github_org}}/projects/{{t.team02_project}}) | [{{page.title}}-{{t.team}}](https://{{page.github_org}}.github.io/{{page.title}}-{{t.team}}) |{% endfor %}
+|[{{page.title}}-{{t.team}}]({{page.github_org_url}}/{{page.title}}-{{t.team}}) | [{{page.title}}-{{t.team}}](https://github.com/orgs/{{page.github_org}}/projects/{{t.team02_project}}) | [{{page.title}}-{{t.team}}](https://{{page.github_org}}.github.io/{{page.title}}-{{t.team}}) | [dokku](https://{{page.title}}-{{t.team}}.dokku-{{t.dokku}.cs.ucsb.edu) | [dokku-qa](https://{{page.title}}-{{t.team}}-qa.dokku-{{t.dokku}.cs.ucsb.edu) | [slack]({{t.slack}}) | {% endfor %}
 
 
 
