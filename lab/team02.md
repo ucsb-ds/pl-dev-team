@@ -18,6 +18,18 @@ storybook: https://ucsb-cs156-f24.github.io/STARTER-team02/chromatic
 canvas: https://ucsb.instructure.com/courses/21167/assignments/262247
 ---
 
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+# NOT READY YET
+
+
 Canvas link: <{{page.canvas}}>
 
 {% include drop_down_style.html %}
