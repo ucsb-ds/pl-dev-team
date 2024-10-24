@@ -17,6 +17,7 @@ deployment: https://team02.dokku-00.cs.ucsb.edu/
 storybook: https://ucsb-cs156-f24.github.io/STARTER-team02/chromatic
 canvas: https://ucsb.instructure.com/courses/21167/assignments/262247
 help_team02: "[<tt>#help-team02</tt>](https://ucsb-cs156-f24.slack.com/archives/C07TA31HD9A)"
+nvm_use: "`nvm use 20.17.0`"
 ---
 
 # NOT READY YET
@@ -244,7 +245,8 @@ The two database tables in the starter code are these:
   a name and description, such as:
 
   ```json
-    {
+  [
+        {
             "id": 2,
              "name": "Cristino's Bakery",
              "description": "Takeout only.  It may look mostly like a bakery with Mexican pastries, but it also has amazing burritos and tacos",
@@ -260,7 +262,8 @@ The two database tables in the starter code are these:
             "id": 4,
              "name": "Ca' Dario Cucina Italiana",
              "description": "White tablecloth Italian restaurant, with great pasta and pizza"
-        },
+        }
+  ]
   ```
 
 * `UCSBDate`, which represents dates from the UCSB calendar.
@@ -284,8 +287,7 @@ The two database tables in the starter code are these:
       "quarter": "20234",
       "name": "firstDayOfFinals",
       "datetime": "2023-12-09T00:00:00",
-    },
-    // etc.
+    }
   ]
   ```
   <details markdown="1">
@@ -402,6 +404,7 @@ the database tables and backend CRUD operations
 These will likely include, for each of the database tables you created in {{page.prev_assignment}}:
 * A Java class for the `@Entity`
 * A Java class for the `@Repository`
+* The database migration file (`TableName.json`)
 * A Java class for the Controller
 * A Java class containing Controller tests
 
@@ -417,17 +420,19 @@ all the rest*.
 To test the backend and frontend together:
 
 * At top level of repo, run `mvn spring-boot:run` in one window (you'll need to configure your `.env` file with `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, and `ADMIN_EMAILS`)
-* In a separate terminal window, cd into `frontend`, type `nvm use 16.20.0` and then run `npm start`
+* In a separate terminal window, cd into `frontend`, type {{page.nvm_use}} and then run `npm start`
 
-Remember that the first time you do that, you must first do:
+Remember that the first time you do that, you must first do `npm ci`, like this:
 
-```
-nvm use 16.20.0
-npm install
-```
+<pre>
+{{page.nvm_use}}
+npm ci
+npm start
+</pre>
+
 
 Here are some other commands, all things you do in the `frontend` directory
-after first doing `nvm use 16.20.0; npm install` once in that session:
+after first doing {{page.nvm_use}} once in that session:
 
 * Run tests locally: `npm test`.
 * Run tests from one file locally: `npm test -- RestaurantsEditPage`
@@ -450,7 +455,6 @@ The fact that you'll end up with merge conflicts here is a feature, not a bug:it
 
 Having some experience in resolving these will help you later on when you encounter more complex merge conflicts.
 
-
 ## Carrying out your issues
 
 Now, take on each of the issues for your table on the Kanban board.
@@ -466,7 +470,7 @@ As you finish each issue:
   you can just make a new branch off the previous branch and continue coding.
 * However, we strongly encourage you to work with your team to try to get PRs merged as quickly as possible. Don't let them pile up.
 
-Also, and I can't emphasize this enough: keep each PR small.   We are trying to get you into that habit, because it will pay off in the project phase, and in real world practice.
+Also, and I can't emphasize this enough: **keep each PR small**.   We are trying to get you into that habit, because it will pay off in the project phase, and in real world practice.
 
 When all of your issues are either complete, or at least have open pull requests, turn your attention to helping the team to get finished.
 
