@@ -503,9 +503,11 @@ also seek clarification on the {{page.help-team02}} channel.
 
 Note that these videos refer to **team03** instead of **team02** (we eliminated one earlier assignment this quarter.)
 
-* [Intro to Front End, Part 1](https://www.youtube.com/watch?v=fW6jtiEMBQc)
-* [Intro to Front End, Part 2](https://www.youtube.com/watch?v=fW6jtiEMBQc)
-* [Adding Delete Button](https://youtu.be/98GPs0YTzJU) to Table, and first look at Frontend Testing (18 minutes)
-* [FrontEnd Testing part 1](https://youtu.be/aysc0fo1k-o) (20 minutes) (`npm run coverage`)
-* [FrontEnd Testing part 2](https://youtu.be/veqgRNpg5BA) (14 minutes) (`npm run coverage` continued)
-* [FrontEnd Testing part 3](https://youtu.be/e_XqCwnplfI) (19 minutes) (`eslint` and `stryker`)
+| Link to Video | Length | What it Covers |
+|---------------|--------|----------------|
+| [Intro to Front End, Part 1](https://www.youtube.com/watch?v=fW6jtiEMBQc) | 26 minutes | Getting Started with the Frontend |
+| [Intro to Front End, Part 2](https://www.youtube.com/watch?v=fW6jtiEMBQc) | 45 minutes | Debugging, Storybook |
+| [Adding Delete Button](https://youtu.be/98GPs0YTzJU) | 18 minutes |  Adding Delete Button to Table, and first look at Frontend Testing |
+| [FrontEnd Testing part 1](https://youtu.be/aysc0fo1k-o) | 20 minutes |  `npm run coverage` |
+| [FrontEnd Testing part 2](https://youtu.be/veqgRNpg5BA) | 14 minutes |  `npm run coverage` (continued) |
+| [FrontEnd Testing part 3](https://youtu.be/e_XqCwnplfI) | 19 minutes | `eslint` and `stryker` |
