@@ -491,7 +491,7 @@ If you need additional guidance, ask on the `#help-lecture-discussion` channel d
 
 When all branches are merged to main, all tasks on Kanban board in the done column, please submit on Canvas as you did for {{page.prev_assignment}}.  
 
-# Videos
+## Videos
 
 The following videos for {{page.title}} contain helpful information about carrying out the various steps.
 
@@ -501,9 +501,11 @@ Also, there may be slight differences between the assignment in earlier quarters
 instructions in this file and in the issues on your Kanban board.  You can
 also seek clarification on the {{page.help-team02}} channel.
 
+Note that these videos refer to **team03** instead of **team02** (we eliminated one earlier assignment this quarter.)
 
-List of videos (you may need to login via Canvas to get access):
-* [Intro to Front End](https://gauchocast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6a3feb86-018d-4ff9-9212-ae8e015108de&start=230) (1 hr 14 minutes; you can skip to 3:50 to start, everything before that you may skip)
+
+* [Intro to Front End, Part 1](https://www.youtube.com/watch?v=fW6jtiEMBQc)
+* [Intro to Front End, Part 2]([Intro to Front End, Part 1](https://www.youtube.com/watch?v=fW6jtiEMBQc)
 * [Adding Delete Button](https://gauchocast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=76f95008-fe11-4d69-9463-ae9201678437) to Table (18 minutes)
 * [FrontEnd Testing part 1](https://gauchocast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=ef93222e-3712-4adc-872d-ae9300054f55) (20 minutes) (npm run coverage)
 * [FrontEnd Testing part 2](https://gauchocast.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3601f9cc-6bc1-4225-b1ff-ae9300055dc3) (14 minutes) (npm run coverage continued)
