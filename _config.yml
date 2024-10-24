@@ -25,6 +25,8 @@ mermaid:
 aux_links:
   "CS156 main website":
     - "https://ucsb-cs156.github.io/"
+  "github":
+    - "//github.com/ucsb-cs156-f24"
   "Canvas":
     - "https://www.canvas.ucsb.edu"
 
