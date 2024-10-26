@@ -923,6 +923,26 @@ Here's what that means, and what you should do in your code:
 
 That is a more sustainable naming convention.
 
+### CamelCase vs. Snake Case
+
+One unexpected thing that you will likely encounter: when a database field is named with  a `camelCaseTypeVariable` such as `diningCommonsCode`, when you put this variable
+into the database migration file, you need to convert it to `SNAKE_CASE` like this: `DINING_COMMONS_CODE`. 
+
+If you don't do this, you'll likely run into errors when you try to use the `POST` method and store a database record in the table; it may look something like this:
+
+```
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "UCMI1_0.DINING_COMMONS_CODE" not found;
+```
+
+You may be wondering why this is the case.  
+
+The root cause is related to the fact that  SQL, the language used by the underlying database management system, is *case insensitive*, meaning
+that `diningCommonsCode`, `DININGCOMMONSCODE` and `diningcommonscode` are all treated as identical in SQL.
+
+Because of this, the designers of Hibernate, one of the layers on which Spring is built, used a strategy of mapping camel-case to snake case as described [here](https://thorben-janssen.com/naming-strategies-in-hibernate-5/#camelcasetounderscoresnamingstrategy-in-hibernate-554).
+
+It is possible to override this behavior, but this is the default.
+
 </details>
 
 
