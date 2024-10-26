@@ -946,14 +946,52 @@ It is possible to override this behavior, but this is the default.
 </details>
 
 
-# More Hints
+## More Hints
+
+Here are some common problems that folks may run into.
+
+<details markdown="1">
+<summary markdown="1">
+Test for `GET` by id fails, throwing `EntityNotFound` exception
+</summary>
+
+If you get a failure on this test: 
+
+`test_that_logged_in_user_can_get_by_id_when_the_id_does_not_exist`
+
+Check that your Controller extends `ApiController`
+
+* Incorrect: `public class UCSBDiningCommonsMenuItemController {`
+* Correct: `public class UCSBDiningCommonsMenuItemController extends ApiController {`
+
+Here's why: The class `ApiController` includes this method, which is then inherited when you extend `ApiController`:
+
+```java
+ /**
+   * This method handles the EntityNotFoundException.
+   * @param e the exception
+   * @return a map with the type and message of the exception
+   */
+  @ExceptionHandler({ EntityNotFoundException.class })
+  @ResponseStatus(HttpStatus.NOT_FOUND)
+  public Object handleGenericException(Throwable e) {
+    return Map.of(
+      "type", e.getClass().getSimpleName(),
+      "message", e.getMessage()
+    );
+  }
+```
+
+The code in most of our controllers relies on this exception handler to return an object of the correct type (a JSON object that contains `type` and `message` fields describing the exception).   If this is not in place, the controller will simply throw an exception, which is not what the test code is looking for.
+
+</details>
 
 We may add more hints about working with the team01 code as we discover what
 problems studnets run into.
 
 In the meantime, use the `#help-team01` channel to ask questions.
 
-# A note about open source
+## A note about open source
 
 Note that this assignment is open source.
 
