@@ -133,7 +133,7 @@ The starter code contains a number of Java test files, under the `integration` a
 
 These test files just contain a selection of examples of what kind of tests you could write for the backend and frontend that you worked on in team02 and {{page.repo_to_work_in}}. This assignment is relatively open-ended and any test that satisfies the submission criteria will be sufficient.
 
-# Part 1.3: Running the tests
+# Part 1.4: Running the tests
 
 You may be used to running `mvn test` in order to run the test suite for the application, but integration and end-to-end tests run with a seperate command.
 
