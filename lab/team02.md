@@ -520,8 +520,8 @@ Before releasing this lab to students, be sure the following tasks are done:
 ### Links for staff setup
 
 | Repo | Kanban Board | GH Pages | Action 99 |
-|-----|-----|------|{% for t in site.teams %}
-|[{{page.title}}-{{t.team}}]({{page.github_org_url}}/{{page.title}}-{{t.team}}) | [{{page.title}}-{{t.team}}](https://github.com/orgs/{{page.github_org}}/projects/{{t.team02_project}}) | [{{page.title}}-{{t.team}}](https://{{page.github_org}}.github.io/{{page.title}}-{{t.team}}) | [99-team02]() | {% endfor %}
+|-----|-----|------|----|{% for t in site.teams %}
+|[{{page.title}}-{{t.team}}]({{page.github_org_url}}/{{page.title}}-{{t.team}}) | [{{page.title}}-{{t.team}}](https://github.com/orgs/{{page.github_org}}/projects/{{t.team02_project}}) | [{{page.title}}-{{t.team}}](https://{{page.github_org}}.github.io/{{page.title}}-{{t.team}}) | [99-{{page.title}}.yml]({page.github_org_url}}/{{page.title}}-{{t.team}}/actions/workflows/99-{{page.title}}.yml) | {% endfor %}
 
 
 </details>
