@@ -5,8 +5,8 @@ description: "Informed Consent Survey, Start team02"
 ready: true
 layout: default
 parent: lectures
-slides: 
-pre_survey_hwk: TBD
+slides: https://docs.google.com/presentation/d/1YHpr82kOuu-_gsoerMLwRIU39ymB5F0wlOKMCFkKtX0/edit?usp=sharing
+pre_survey_hwk: "[H02](https://ucsb.instructure.com/courses/21167/assignments/291729)"
 team02: "[team02](https://ucsb-cs156.github.io/f24/lab/team02.html)"
 team03: "[team03](https://ucsb-cs156.github.io/f24/lab/team03.html)"
 ---
