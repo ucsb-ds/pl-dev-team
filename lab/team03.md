@@ -50,7 +50,9 @@ Start by going into the directory where you cloned your {{page.repo_to_work_in}}
 Click triangle for links to the repos:  
 </summary>
 
-TODO: Paste in table of repos
+| Repo | Kanban Board | GH Pages | Dokku | Dokku QA | Slack |
+|-----|-----|------|{% for t in site.teams %}
+|[{{page.repo_to_work_in}}-{{t.team}}]({{page.github_org_url}}/{{page.repo_to_work_in}}-{{t.team}}) | [{{page.repo_to_work_in}}-{{t.team}}](https://github.com/orgs/{{page.github_org}}/projects/{{t.team02_project}}) | [{{page.repo_to_work_in}}-{{t.team}}](https://{{page.github_org}}.github.io/{{page.repo_to_work_in}}-{{t.team}}) | [dokku](https://{{page.repo_to_work_in}}-{{t.team}}.dokku-{{t.dokku}}.cs.ucsb.edu) | [dokku-qa](https://{{page.repo_to_work_in}}-{{t.team}}-qa.dokku-{{t.dokku}}.cs.ucsb.edu) | [slack]({{t.slack}}) | {% endfor %}
 
 </details>
 
