@@ -509,13 +509,58 @@ Information for staff is in this dropdown
 
 Before releasing this lab to students, be sure the following tasks are done:
 
-1. Finalize starter code repo <{{page.starter}}>
-2. Deploy starter code repo to <{{page.deployment}}>
-3. Set up storybook (and the rest of the gh pages site): <{{page.storybook}}>
-4. Be sure that {{page.help_team02}} is set up.
-5. Be sure that the repos are setup
-6. Run the script to set up the Issues
-7. Copy issues to the Kanban boards
+
+* Finalize starter code repo <{{page.starter}}>
+
+* Create <{{page.title}}> repos using the <https://ucsb-cs-github-linker.herokuapp.com>
+
+  <img width="465" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/434dceb9-77a3-4ce6-9c28-a5faf4e0be1d">
+
+* Set up starter code in the course organization, and update links
+* Create a Canvas assignment for <{{page.title}}>; update the due dates and publish it
+* Create projects for all of the groups. You can find a script for this here:
+  * <https://github.com/ucsb-cs156-f24/project-creator/blob/main/scripts/<{{page.title}}>-projects.sh>
+  You will probably need to make a new copy of that repo for this quarter in this
+  quarter's organization and update the scripts.
+* After running the script, there are three aspects of setting up the projects that
+  are manual:
+  * set view to board
+  * add "In Review" column
+  * change team access to admin
+    
+    ![set-team-access-admin](https://github.com/ucsb-cs156/s24/assets/1119017/aeff9ce9-4a21-42f4-84ce-cc0cce7a12d4)
+
+
+* Make sure the app <{{page.deployment}}> is up and running, and is sync'd with the starter code:
+
+  i.e, on dokku-00 for example, do:
+
+  <pre>
+  dokku git:sync <{{page.title}}> https://github.com/{{page.github_org}}/STARTER-<{{page.title}}> main
+  dokku ps:rebuild <{{page.title}}>
+  </pre>
+
+* Set up storybook (and the rest of the gh pages site): <{{page.storybook}}>
+* Proofread the instructions in this file, and request that the staff (TAs/LAs do also)
+* Consider assigning at least one TA/LA (preferably the one with the least prior experience with the course) to complete the lab in it's entirety to debug the starter code and instructions
+
+The next step was probably already done earlier, but just in case: 
+
+* Be sure that the organization settings are set like this, in, for example, <https://github.com/organizations/{{page.github_org}}/settings/actions>
+
+  This is needed so that the github actions scripts have write access to the directory.
+
+  <img width="943" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/de8c9efe-7bcd-48a1-97d5-0c0aa68a68db">
+
+
+  This setting is probabaly also a good idea:
+
+  <img width="972" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/99fead23-d9d0-4373-a435-466c5ef9e752">
+
+
+* Be sure that {{page.help_team02}} is set up.
+* Run the script to set up the Issues (action 99, see links below)
+* Copy issues to the Kanban boards
 
 ### Links for staff setup
 
