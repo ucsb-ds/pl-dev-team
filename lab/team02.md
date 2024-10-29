@@ -499,3 +499,29 @@ Note that these videos refer to **team03** instead of **team02** (we eliminated 
 | [FrontEnd Testing part 1](https://youtu.be/aysc0fo1k-o) | 20 minutes |  `npm run coverage` |
 | [FrontEnd Testing part 2](https://youtu.be/veqgRNpg5BA) | 14 minutes |  `npm run coverage` (continued) |
 | [FrontEnd Testing part 3](https://youtu.be/e_XqCwnplfI) | 19 minutes | `eslint` and `stryker` |
+
+## Staff information
+
+<details markdown="1">
+<summary markdown="1">
+Information for staff is in this dropdown
+</summary>
+
+Before releasing this lab to students, be sure the following tasks are done:
+
+1. Finalize starter code repo <{{page.starter}}>
+2. Deploy starter code repo to <{{page.deployment}}>
+3. Set up storybook (and the rest of the gh pages site): <{{page.storybook}}>
+4. Be sure that {{page.help_team02}} is set up.
+5. Be sure that the repos are setup
+6. Run the script to set up the Issues
+7. Copy issues to the Kanban boards
+
+### Links for staff setup
+
+| Repo | Kanban Board | GH Pages | Action 99 |
+|-----|-----|------|{% for t in site.teams %}
+|[{{page.title}}-{{t.team}}]({{page.github_org_url}}/{{page.title}}-{{t.team}}) | [{{page.title}}-{{t.team}}](https://github.com/orgs/{{page.github_org}}/projects/{{t.team02_project}}) | [{{page.title}}-{{t.team}}](https://{{page.github_org}}.github.io/{{page.title}}-{{t.team}}) | [99-team02]() | {% endfor %}
+
+
+</details>
