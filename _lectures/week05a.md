@@ -37,7 +37,7 @@ Prof. Conrad, together with three other professors from Oregon State, Washington
 
 Today, we are asking you fill out a survey related to this research as a homework assignment ({{page.pre_survey_hwk}})
 
-You can read about the study here: <{{site.informed_consent_briefing}}>
+You can read about the study here: <{{page.informed_consent_briefing}}>
 
 Note that you will be asked, as part of the survey, whether we may use your answers for research, meaning publications that are submitted to conferences and journals and available to the scientific community. We hope you will say yes to this, but you are *free to say no, with no adverse consequeces* to your grade. 
 
@@ -49,9 +49,7 @@ Note that you will be asked, as part of the survey, whether we may use your answ
 
 ## Where is the link to the pre-survey?
 
-* On the course slack (pinned to the announcements channel)
-* On Canvas
-
+* On Canvas under H02
 
 # CATME evaluation
 
