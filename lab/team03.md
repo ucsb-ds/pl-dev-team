@@ -10,6 +10,8 @@ qxx: f24
 canvas: https://ucsb.instructure.com/courses/21167/assignments/262248
 starter: https://github.com/ucsb-cs156-f24/STARTER-team02
 sample_team: f24-04
+layout: default
+parent: lab
 ---
 
 # {{page.title}} - {{page.description}}
