@@ -12,6 +12,7 @@ starter: https://github.com/ucsb-cs156-f24/STARTER-team02
 sample_team: f24-04
 layout: default
 parent: lab
+github_org_url: https://github.com/ucsb-cs156-f24/
 ---
 
 # {{page.title}} - {{page.description}}
