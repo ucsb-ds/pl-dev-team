@@ -15,6 +15,15 @@ parent: lab
 github_org_url: https://github.com/ucsb-cs156-f24/
 ---
 
+
+<style>
+  tt {white-space: pre;}
+  code {white-space: pre; font-size: 80%}
+  pre {white-space: pre; font-size: 80%}
+</style>
+
+{% include drop_down_style.html %}
+
 # {{page.title}} - {{page.description}}
 
 This team assignment is designed to introduce you to the ideas of integration tests and end-to-end tests, as illustrated in this diagram, often called the "testing pyramid":
