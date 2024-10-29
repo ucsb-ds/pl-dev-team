@@ -19,20 +19,8 @@ canvas: https://ucsb.instructure.com/courses/21167/assignments/262247
 help_team02: "[<tt>#help-team02</tt>](https://ucsb-cs156-f24.slack.com/archives/C07TA31HD9A)"
 nvm_use: "<tt>nvm use 20.17.0</tt>"
 ---
-
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-# NOT READY YET
-
 <style>
-  tt {white-space: pre; font-size: 80%;}
+  tt {white-space: pre;}
   code {white-space: pre; font-size: 80%}
   pre {white-space: pre; font-size: 80%}
 </style>
