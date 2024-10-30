@@ -1084,6 +1084,9 @@ The next step was probably already done in team01, but just in case:
 
   <img width="972" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/99fead23-d9d0-4373-a435-466c5ef9e752">
 
+## For S25
+
+* Consider updating the issues in 99-team01.yml to guide the students through branch hygeine.  Otherwise, they are likely to make one big branch and one big PR for the entire project.
 
 </details>
 
