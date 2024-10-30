@@ -84,6 +84,26 @@ For advice on what to install, see:
 
 If this presents a difficulty, please contact the instructor ASAP so that some arrangement can be made for your situation.
 
+## A few words about Chromatic
+
+This quarter, f24 is the **first time** that we are trying to incoporate Chromatic visual difference testing into the course.
+
+Accordingly, we may run into **unexpected issues**.  Sometimes the only way to know how a technology will work when you turn 96 students loose on it in a course is to **try it, and see what happens**.
+
+The dropdown box below will contain information about issues/problems we run into using Chromatic, and it **may be updated periodically** as we run into additional issues.  Please check it periodically if you run into Chromatic issues while working on this lab.
+
+<details markdown="1">
+<summary markdown="1">
+
+### Yellow Circle on Chromatic Checks (Github Actions)
+
+If you find that one of the Github Actions related to Chromatic is not finishing (i.e. stays as a permanent yellow circle), consult this page for hints on what to do:
+* <https://ucsb-cs156.github.io/topics/chromatic/chromatic_yellow_circle.html>
+
+</summary>
+</details>
+
+
 ## What are we doing in {{page.title}}?
 
 In this team project, you'll continue the work you started in {{page.title}}.
