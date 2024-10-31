@@ -1032,6 +1032,12 @@ When all branches are merged to main, all tasks on Kanban board in the done colu
 
 There is no Gradescope autograder for team01; it will be graded manually.
 
+## Video Resources
+
+| Topic | Video | Length |
+|-------|-------|--------|
+| Set up dev dokku deployment | <https://youtu.be/pW1LWgu3iuk> | |
+
 # Instructor Resources
 
 
