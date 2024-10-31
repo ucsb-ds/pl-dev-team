@@ -1036,7 +1036,7 @@ There is no Gradescope autograder for team01; it will be graded manually.
 
 | Topic | Video | Length |
 |-------|-------|--------|
-| Set up dev dokku deployment | <https://youtu.be/pW1LWgu3iuk> | |
+| Set up dev dokku deployment | <https://youtu.be/pW1LWgu3iuk> | 29 minutes |
 
 # Instructor Resources
 
