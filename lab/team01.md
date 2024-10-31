@@ -1038,6 +1038,7 @@ There is no Gradescope autograder for team01; it will be graded manually.
 |-------|-------|--------|
 | Set up dev dokku deployment | <https://youtu.be/pW1LWgu3iuk> | 29 minutes |
 | Create database table | <https://youtu.be/KHAKnngUyeY> | 47 minutes |
+| Create Controller, `GET /all`  and `POST` | <https://youtu.be/XBCJcRAsZtQ> | 1 hour 3 minutes | 
 
 
 # Instructor Resources
