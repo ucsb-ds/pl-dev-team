@@ -1041,8 +1041,9 @@ There is no Gradescope autograder for team01; it will be graded manually.
 | (3) Create Controller, `GET /all`  and `POST` | <https://youtu.be/XBCJcRAsZtQ> | 1 hour 3 minutes | 
 | (4) Add `GET` by id to Controller | <https://youtu.be/8vDoFSdblLE> | 23 minutes |
 | (5) Add `PUT` (edit/update) to Controller | <https://youtu.be/2Iy9TShGURk> | 36 minutes |
-| (6) Add `DELETE` (edit/update) to Controller | <> | |
+| (6) Add `DELETE` (edit/update) to Controller | <https://youtu.be/whu7Nei6zTM> | 20 minutes |
 
+Total running time: 3 hours, 38 minutes.
 
 
 # Instructor Resources
