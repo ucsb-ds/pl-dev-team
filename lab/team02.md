@@ -520,6 +520,18 @@ Note that these videos refer to **team03** instead of **team02** (we eliminated 
 | [FrontEnd Testing part 2](https://youtu.be/veqgRNpg5BA) | 14 minutes |  `npm run coverage` (continued) |
 | [FrontEnd Testing part 3](https://youtu.be/e_XqCwnplfI) | 19 minutes | `eslint` and `stryker` |
 
+## New Videos
+
+The following videos for {{page.title}} contain helpful information about carrying out the various steps, and are *new* for Fall 2024.
+
+
+| Title                                               | Link to Video                   | Length     |
+|-----------------------------------------------------|---------------------------------|------------|
+| team02/frontend, 01: Create personal dev deployment | <https://youtu.be/mFv0cZJViqQ>  | 17 minutes | 
+
+
+
+
 ## Staff information
 
 <details markdown="1">
