@@ -525,12 +525,17 @@ Note that these videos refer to **team03** instead of **team02** (we eliminated 
 The following videos for {{page.title}} contain helpful information about carrying out the various steps, and are *new* for Fall 2024.
 
 
-| Title                                               | Link to Video                   | Length     |
-|-----------------------------------------------------|---------------------------------|------------|
-| team02/frontend, 01: Create personal dev deployment | <https://youtu.be/mFv0cZJViqQ>  | 17 minutes | 
-
-
-
+| Title                                                   | Link to Video                   | Length     |
+|---------------------------------------------------------|---------------------------------|------------|
+| team02/frontend, 01: Create personal dev deployment     | <https://youtu.be/mFv0cZJViqQ>  | 17 minutes | 
+| team02/frontend, 02: Copy files for Backend CRUD API from team01 (previous project) | <https://youtu.be/x_OaPMbPgMM> | 16 minutes | 
+| team02/frontend: 03: Create fixtures                    | <> | | 
+| team02/frontend: 04: Form Component plus tests          | <> | | 
+| team02/frontend: 05: Table Component plus tests         | <> | | 
+| team02/frontend: 06: Copy Placeholders for pages; add to App.js/AppNavbar.js  | <> | | 
+| team02/frontend: 07: Create Page plus tests and stories | <> | | 
+| team02/frontend: 08: Index Page plus tests and stories  | <> | | 
+| team02/frontend: 09: Edit Page plus tests and stories   | <> | | 
 
 ## Staff information
 
