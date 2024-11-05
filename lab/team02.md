@@ -529,7 +529,7 @@ The following videos for {{page.title}} contain helpful information about carryi
 |---------------------------------------------------------|---------------------------------|------------|
 | team02/frontend, 01: Create personal dev deployment     | <https://youtu.be/mFv0cZJViqQ>  | 17 minutes | 
 | team02/frontend, 02: Copy files for Backend CRUD API from team01 (previous project) | <https://youtu.be/x_OaPMbPgMM> | 16 minutes | 
-| team02/frontend: 03: Create fixtures                    | <> | | 
+| team02/frontend: 03: Create fixtures                    | <https://youtu.be/u-jJ-ZWFpeE> | 30 minutes | 
 | team02/frontend: 04: Form Component plus tests          | <> | | 
 | team02/frontend: 05: Table Component plus tests         | <> | | 
 | team02/frontend: 06: Copy Placeholders for pages; add to App.js/AppNavbar.js  | <> | | 
