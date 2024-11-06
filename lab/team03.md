@@ -256,4 +256,32 @@ When all team members are finished, and all PRs are merged, submit a link to you
 
 
 
+## Appendix: If you started before 6pm, Tuesday Nov 5th
+
+Note: there was a typo in the instructions that said to merge in the code from S24 instead of F24.
+
+That would result in one of the existing integration tests failing, namely the one for Swagger.
+
+<details markdown="1">
+<summary markdown="1">
+If this impacted you, here's the fix:
+
+</summary>
+Here's the command to run to see the test fail:
+
+```
+INTEGRATION=true mvn test-compile failsafe:integration-test -Dit.test=SwaggerWebIT
+```
+
+Here's the change you need to make so that it will pass:
+
+![image](https://github.com/user-attachments/assets/954bec20-4a94-47f9-bf60-ed5a8a49fc97)
+
+The first person on your team that is working on team03 should make an issue for this, add it to the Kanban board, fix it, make a PR, and
+get it code reviewed and merged.
+
+(Thanks to Javin for finding this first.)
+
+</details>
+
 
