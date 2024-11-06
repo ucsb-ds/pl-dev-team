@@ -69,7 +69,7 @@ Click triangle for links to the repos:
 </details>
 
 1. Begin by making a branch for this assignment.
-2. Then, update that branch by merging in the code in <https://github.com/ucsb-cs156-s24/STARTER-{{page.repo_to_work_in}}> again.  You will need to do this in case there might be bug fixes to the code that supports integration and end-to-end testing that were added *after* most of your teams cloned the code for {{page.repo_to_work_in}}.
+2. Then, update that branch by merging in the code in <{{page.starter}}> again.  You will need to do this in case there might be bug fixes to the code that supports integration and end-to-end testing that were added *after* most of your teams cloned the code for {{page.repo_to_work_in}}.
 
    You may already have a remote for this called `starter`; you can check
    by typing: `git remote -v` and seeing if you have a remote called `starter`. If not, define one:
