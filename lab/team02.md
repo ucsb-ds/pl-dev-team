@@ -532,7 +532,7 @@ The following videos for {{page.title}} contain helpful information about carryi
 | team02/frontend: 03: Create fixtures                    | <https://youtu.be/u-jJ-ZWFpeE> | 30 minutes | 
 | team02/frontend: 04: Form Component plus tests (part 1) | <https://youtu.be/clTcUGZIGq0> | 1 hour 15 minutes | 
 | team02/frontend: 05: Form Component plus tests (part 2, mutation testing) | <https://youtu.be/v116IJyqj6k> | 35 minutes | 
-| team02/frontend: 06: Code Review and Merging PRs | <> |  | 
+| team02/frontend: 06: Code Review and Merging PRs        | <https://youtu.be/Dh9RAXQcg5E> | 18 minutes | 
 | team02/frontend: 07: Table Component plus tests         | <> | | 
 | team02/frontend: 08: Copy Placeholders for pages; add to App.js/AppNavbar.js  | <> | | 
 | team02/frontend: 09: Create Page plus tests and stories | <> | | 
