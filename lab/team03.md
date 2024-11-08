@@ -74,9 +74,9 @@ Click triangle for links to the repos:
    You may already have a remote for this called `starter`; you can check
    by typing: `git remote -v` and seeing if you have a remote called `starter`. If not, define one:
 
-   ```
-   git remote add starter https://github.com/ucsb-cs156-s24/STARTER-{{page.repo_to_work_in}}
-   ```
+   <pre>
+   git remote add starter {{page.starter}}
+   </pre>
 
    Then do:
    ```
