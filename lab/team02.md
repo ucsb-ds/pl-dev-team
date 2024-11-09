@@ -536,8 +536,10 @@ The following videos for {{page.title}} contain helpful information about carryi
 | team02/frontend: 07: Table Component plus tests         | <https://youtu.be/kNJuBDpOstU> | 49 minutes | 
 | team02/frontend: 08: Copy Placeholders for pages; add to App.js/AppNavbar.js <br /><br />(Includes discussion of `git pull --rebase origin branch` and resolving merge conflicts during a rebase)  | <https://youtu.be/T46Z9gf6TvA> | 48 minutes | 
 | team02/frontend: 09: Create Page plus tests and stories | <https://youtu.be/gRAVdQLghgI> | 1 hour 2 minutes | 
-| team02/frontend: 10: Index Page plus tests and stories  | <> | | 
-| team02/frontend: 11: Edit Page plus tests and stories   | <> | | 
+| team02/frontend: 10: Index Page plus tests and stories  | <https://youtu.be/Z4RCkLoQi0g> | 50 minutes| 
+| team02/frontend: 11: Edit Page plus tests and stories   | <https://youtu.be/2vyxAtskECU> | 1 hour 19 minutes | 
+
+Total running time: 7 hours, 59 minutes
 
 ## Staff information
 
