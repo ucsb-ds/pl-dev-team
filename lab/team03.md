@@ -13,6 +13,7 @@ sample_team: f24-04
 layout: default
 parent: lab
 github_org_url: https://github.com/ucsb-cs156-f24/
+video_testing_pyramid: "[team03 01 - Testing Pyramid (10 min)](https://youtu.be/_ZfdICWIDdA)"
 ---
 
 
@@ -30,7 +31,11 @@ This team assignment is designed to introduce you to the ideas of integration te
 
 <img width="454" alt="testing pyramid" src="https://github.com/ucsb-cs156/ucsb-cs156.github.io/assets/1119017/cfbc9f96-af05-45de-bf54-bff7472a262a">
 
-Briefly, the idea is that:
+This testing pyramid is explained further in the this video: {{page.video_testing_pyramid}} as well as in the following section.
+
+## Introduction to the Testing Pyramid
+
+Briefly, the idea of the testing pyramid is that:
 * Unit tests test only a *single unit*, so in principle,  *absolutely everything* outside that unit should be mocked (including network services, database calls, etc.)
 * For an integration test, you are testing the integration of multiple units, so it's ok to *not* mock some parts of the interaction.  For example, an integration test of a controller might look *exactly like* the unit test of a controller, *except* that instead of mocking the database calls, you actually let the database calls happen to a real instance of the database (albeit one that is carefully controlled), and then you do assertions on the before and after state of the database tables.   
 * For an end-to-end test, you treat the entire application (to the extent possible) as a "black box", meaning that the tests typically have no knowledge of "what's inside the box".   You use browser automation software to interact with an instance of a real browser (Firefox, Chrome, Edge, Safari, etc.) and to act like a "robot" that is clicking buttons and entering data on real web pages, and then making assertions about the content of the page that shows up.
@@ -284,4 +289,6 @@ get it code reviewed and merged.
 
 </details>
 
+## Videos
 
+* {{page.video_testing_pyramid}}
