@@ -13,7 +13,9 @@ sample_team: f24-04
 layout: default
 parent: lab
 github_org_url: https://github.com/ucsb-cs156-f24/
-video_testing_pyramid: "[team03 01 - Testing Pyramid (10 min)](https://youtu.be/_ZfdICWIDdA)"
+video_testing_pyramid: "[team03 01 - Testing Pyramid (10 min)](https://youtu.be/zvLlO8EUh0c)"
+video_integration_tests: "[team03 02 - Integration Tests (24 min)](https://youtu.be/ohPxfE0hbZI)"
+video_e2e_tests: "[team03 03 - End-to-end Tests (? min)](tbd)"
 ---
 
 
@@ -57,6 +59,8 @@ In this exercise, you'll do five things, working in the team repo from {{page.re
 7. Submit a link to the pull request on Canvas.
 
 # Part 1.1: Getting Started
+
+(For a video covering this section, see: {{page.video_integration_tests}})
 
 Again, for this assignment you will be working in your {{page.repo_to_work_in}} repos, but is an individual homework assignment. 
 
@@ -195,7 +199,7 @@ Create a file for your integration test with the name shown below.
 
 | Integration Test  | 
 |-|
-| `UCSBDiningCommonsMenuItem.java` | 
+| `UCSBDiningCommonsMenuItemIT.java` | 
 | `UCSBOrganizationIT.java` |
 | `RecommendationRequestIT.java` |  
 | `MenuItemReviewIT.java` | 
@@ -216,6 +220,8 @@ When you've written at least one integration test and it passes:
 4. Move on to the end-to-end test
 
 ### Part 2.2 End to End test
+
+(For a video covering this section, see: {{page.video_e2e_tests}})
 
 Drag your issue for the Integration tests from `To Do` to `In Progress`.
 
@@ -292,3 +298,6 @@ get it code reviewed and merged.
 ## Videos
 
 * {{page.video_testing_pyramid}}
+* {{page.video_integration_tests}}
+* {{page.video_e2e_tests}}
+
