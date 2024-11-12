@@ -242,7 +242,7 @@ Create a file for your end-to-end test with the name shown below.
 
 For the end-to-end test you may choose any frontend feature related to the database you worked on in {{page.repo_to_work_in}}.
 
-You can use the examples in `RestaurantIT.java` as a model, but it is not a requirement to follow it precisely and depending on your implementation you may not be able to.  You just need a similar kind of test.
+You can use the examples in `RestaurantWebIT.java` as a model, but it is not a requirement to follow it precisely and depending on your implementation you may not be able to.  You just need a similar kind of test.
 
 You **are not** required to cover every front end feature of the CRUD operations for your database table from {{page.repo_to_work_in}}; we just want to be sure that you have experience with creating at least one end to end test.  (In a real app, we'd want to cover all of CRUD operations, but the learning benefit of doing so starts to diminish after you've done the first one.)
 
