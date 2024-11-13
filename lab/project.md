@@ -68,19 +68,19 @@ sections:
         -
           num: "09"
           dokku: "09"
-          kanban: xx
+          kanban: 46
         -
           num: "10"
           dokku: "10"
-          kanban: xx
+          kanban: 47
         -
           num: "11"
           dokku: "11"
-          kanban: xx
+          kanban: 48
         -
           num: "12"
           dokku: "12"
-          kanban: xx
+          kanban: 49
   -
       time: 4pm
       product: proj-dining
@@ -89,19 +89,19 @@ sections:
         -
           num: "13"
           dokku: "13"
-          kanban: xx
+          kanban: 50
         -
           num: "14"
           dokku: "14"
-          kanban: xx
+          kanban: 51
         -
           num: "15"
           dokku: "15"
-          kanban: xx
+          kanban: 52
         -
           num: "16"
           dokku: "16"
-          kanban: xx
+          kanban: 53
 ---
 
 <style>
