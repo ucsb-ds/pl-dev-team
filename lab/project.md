@@ -47,19 +47,19 @@ sections:
         -
           num: "05"
           dokku: "05"
-          kanban: xx
+          kanban: 42
         -
           num: "06"
           dokku: "06"
-          kanban: xx
+          kanban: 43
         -
           num: "07"
           dokku: "07"
-          kanban: xx
+          kanban: 44
         -
           num: "08"
           dokku: "08"
-          kanban: xx
+          kanban: 45
   -
       time: 4pm
       product: proj-happycows
