@@ -8,7 +8,7 @@ layout: default
 qxx: f24
 ---
 
-This homework grade is to complete your CATME peer evaluation by the published deadline.  Reminders were made:
+This homework grade is to complete your CATME peer evaluation by the published deadline.  Reminders get made
 * On Slack, multiple times
 * In lecture on Tuesday, and Section on Wednesday
 * By email from CATME, multiple times.
