@@ -26,19 +26,19 @@ sections:
         -
           num: "01"
           dokku: "01"
-          kanban: xx
+          kanban: 38
         -
           num: "02"
           dokku: "02"
-          kanban: xx
+          kanban: 39
         -
           num: "03"
           dokku: "03"
-          kanban: xx
+          kanban: 40
         -
           num: "04"
           dokku: "04"
-          kanban: xx
+          kanban: 41
   -
       time: 11am
       product: proj-rec
