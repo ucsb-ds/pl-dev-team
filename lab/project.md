@@ -206,7 +206,7 @@ Populate your todo column with issues, start assigning them to your team, and st
 
 You may not get through all of the Sprint planning today, but by the end of discussion section on Wednesday:
 * Each of the six team members should be assigned to an issue in the todo column
-* The previous bullet point shoudl *remain true* until your team reaches 100 points
+* The previous bullet point should *remain true* until your team reaches 100 points
 * This may require breaking issues out of an epic.  In some cases, you may need to assign different team members to work on backend and frontend issues from the same epic in parallel, or pair-program on some of the early issues.
 
 Teams accumulate points when PRs are merged into main
