@@ -662,4 +662,19 @@ The students are then encouraged to set up personal deployments using the projec
 
 Students may create additional deployments if needed.
 
+## Staff Links
+
+{% for section in page.sections %}
+### Section: {{ section.time }} ({{section.product}})
+
+| Team | Repo | Merged PRs |  Open PRs |Github Pages | Kanban | Dokku Prod | Dokku qa | Wf 82 |
+|------|------|-----|-----|--------------|--------|------------|----------|----|{% for team in section.teams %}{% capture teamName %}{{page.qxx}}-{{ team.num }}{% endcapture %}{% capture repoName %}{{section.product}}-{{teamName}}{% endcapture %}
+|  {{teamName}} |  [ repo ]({{page.githubOrgUrl}}/{{repoName}}) |   [ Merged PRs ]({{page.githubOrgUrl}}/{{repoName}}/pulls?q=is%3Apr+is%3Amerged) |   [ Open PRs ]({{page.githubOrgUrl}}/{{repoName}}/pulls?q=?q=is%3Aopen+is%3Apr) |  [ github pages ]({{page.githubPagesUrl}}/{{repoName}}) | [ kanban ]({{page.githubProjectsUrl}}/{{team.kanban}}) | [ dokku prod ](https://{{section.productShort}}.dokku-{{team.dokku}}.cs.ucsb.edu) | [ dokku qa ](https://{{section.productShort}}-qa.dokku-{{team.dokku}}.cs.ucsb.edu) | [wf 82]({{page.githubOrgUrl}}/{{repoName}}/actions/workflows/82-kanban-slack-update.yml) |{% endfor %}
+
+{% endfor %}
+
+
+
+
+
 </details>
