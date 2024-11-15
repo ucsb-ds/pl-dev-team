@@ -8,7 +8,7 @@ layout: lab
 layout: default
 parent: lab
 num: project
-nav_order: 300
+nav_order: 500
 proj_courses_slack_url: 
 proj_happycows_slack_url: 
 proj_rec_slack_url:
