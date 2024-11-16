@@ -11,6 +11,8 @@ On Canvas: <https://ucsb.instructure.com/courses/21167>
 
 Course Github Org: <https://github.com/ucsb-cs156-f24>
 
+Legacy Code Project: <https://ucsb-cs156.github.io/f24/lab/project.html>
+
 ## Thanks
 
 <a href="https://www.chromatic.com/"><img src="https://user-images.githubusercontent.com/321738/84662277-e3db4f80-af1b-11ea-88f5-91d67a5e59f6.png" width="153" height="30" alt="Chromatic" /></a>
