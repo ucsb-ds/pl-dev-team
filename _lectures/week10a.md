@@ -16,12 +16,9 @@ slides:
 
 # Today
 
-* Help us get your PRs merged
 * Work on Videos
-* Work on Release Notes
-
-OR: do final retro.
-
+* Work on Release Notes OR:
+* Do final retro.
 
 # Final CATME survey, and the end of quarter post-survey
 
