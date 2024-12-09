@@ -6,19 +6,19 @@ layout: default
 title: team01
 nav_order: 100
 ready: false
-qxx: f24
+
 layout: default
 parent: lab
-sample_team: f24-01
-github_org_url: https://github.com/ucsb-cs156-f24
-github_org: ucsb-cs156-f24
-starter_repo: https://github.com/ucsb-cs156-f24/STARTER-team01
-slack_help_channel: "[#help-team01](https://ucsb-cs156-f24.slack.com/archives/C07RZATTF1V)" 
-teams_url: https://bit.ly/cs156-f24-teams
-office_hours_page: https://ucsb-cs156.github.io/f24/office-hours
-software_install_url: https://ucsb-cs156.github.io/f24/info/software.html
+sample_team: s25-01
+github_org_url: https://github.com/ucsb-cs156-s25
+github_org: ucsb-cs156-s25
+starter_repo: https://github.com/ucsb-cs156-s25/STARTER-team01
+slack_help_channel: "[#help-team01](https://ucsb-cs156-s25.slack.com/archives/C07RZATTF1V)" 
+teams_url: https://bit.ly/cs156-s25-teams
+office_hours_page: https://ucsb-cs156.github.io/s25/office-hours
+software_install_url: https://ucsb-cs156.github.io/s25/info/software.html
 staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
-starter_storybook: "https://ucsb-cs156-f24.github.io/STARTER-team01/chromatic"
+starter_storybook: "https://ucsb-cs156-s25.github.io/STARTER-team01/chromatic"
 canvas_link: "https://ucsb.instructure.com/courses/21167/assignments/262246"
 example_full_running_app: "[team02](https://team02.dokku-00.cs.ucsb.edu)"
 ---
@@ -83,10 +83,10 @@ There may be more columns or fewer, though typically at a minimum, there is:
 
 Here's how that will play out in detail:
 
-1. Navigate to the web page for the GitHub organization, i.e. <https://github.com/{{page.github_org}}>.  You'll see a tab for `Projects`. Click on that tab.  You should then see a project for your team for the team01 assignment, e.g. `team01-f24-01`, `team01-f24-02`,etc.
+1. Navigate to the web page for the GitHub organization, i.e. <https://github.com/{{page.github_org}}>.  You'll see a tab for `Projects`. Click on that tab.  You should then see a project for your team for the team01 assignment, e.g. `team01-s25-01`, `team01-s25-02`,etc.
 2. Open the link for your team's Project.  You should find four columns: `Todo`, `In Progress`, `In Review`, `Done`
 3. The `Todo` column will be populated with a set of tasks, which are called *Issues* in the GitHub implementation of Kanban.  These correspond to the Issues that we'll also see in the `Issues` column of your repo.
-4. Now navigate to your repo for {{page.num}}, which will have a url such as: <https://github.com/{{page.github_org}}/{{page.title}}-{{page.sample_team}}>.  You will see a tab for `Issues`. Click on that tab.
+4. Now navigate to your repo for {{page.num}}, which will have a url such as: <https://github.com/{{page.github_org}}/{{page.title}}-{{site.sample_team}}>.  You will see a tab for `Issues`. Click on that tab.
 4. You should now see a list of issues.  These are the work items your team needs to complete to do the the work for the team01 assignment. They are the same issues that you find in the "To Do" column of your Kanban board (i.e. your `Project`, to use the GitHub terminology).
 5. There may also be some additional housekeeping steps that you need to complete in order for the {{page.num}} assignment to be considered completed; the issues on the Kanban board are not necessarily the only things you need to complete to earn full credit for the assignment.  But these issues are the bulk of the work you need to divide up as a team.
 6. Note that you are allowed and even encouraged to add cards on the Kanban board and/or Issues for any other items you find in the assignment description that need to be completed.  Tracking this on the Kanban board can be a helpful way to make sure that it get done, and to signal to other team members when it has been done.
@@ -153,9 +153,9 @@ BEFORE YOU START: Make sure that no-one else on the team, and no-one on the staf
 1. Open the Kanban board (Project in Github terms)
 2. Click beside the `+` sign where it says `Add issues` under the Todo column as shown in the animation below.
 3. Type this symbol: `#`
-4. Type the name of your repo (e.g. <tt>{{page.title}}-{{page.sample_team}}</tt>)
+4. Type the name of your repo (e.g. <tt>{{page.title}}-{{site.sample_team}}</tt>)
 5. The name of your repo will pop up.  Click on it.
-6. A dialog box will pop up.  At the botton it should say (for example): <tt>Add issues from {{page.github_org}}/{{page.title}}-{{site.qxx}}-{{page.sample_team}}</tt>. Click that.
+6. A dialog box will pop up.  At the botton it should say (for example): <tt>Add issues from {{page.github_org}}/{{page.title}}-{{site.qxx}}-{{site.sample_team}}</tt>. Click that.
 7. Another pop up will appear titled `Add items to project`.  There will be an checkbox at the top labelled something like `25 most recent items` (the number may vary).  Click this box.
 8. Click the green button at bottom right labelled `Add selected items`
 9. Now, if there are more items to add, a new set of items will appear.  They will be added in batches of 25 until the last few are added (e.g. `17 most recent items`).  Repeat steps 7 and 8 until there are no more items to add.
@@ -908,7 +908,7 @@ Also you might find it useful to know the commands described in the [Liquibase d
 
 ### About that `CONSTRAINT_5`
 
-The `CONSTRAINT_5` in the example is a bit unfortunate, but we caught it too late to change it for F24; hopefully we can change this before we use the assignment again.
+The `CONSTRAINT_5` in the example is a bit unfortunate, but we caught it too late to change it for s25; hopefully we can change this before we use the assignment again.
 
 Here's what that means, and what you should do in your code: 
 * *Constraints* are rules that a database table is required to follow

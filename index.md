@@ -1,5 +1,5 @@
 ---
-title: CS156 f24
+title: CS156 s25
 permalink: "/"
 layout: default
 nav_order: 0
@@ -9,9 +9,9 @@ nav_order: 0
 
 On Canvas: <https://ucsb.instructure.com/courses/21167>
 
-Course Github Org: <https://github.com/ucsb-cs156-f24>
+Course Github Org: <https://github.com/ucsb-cs156-s25>
 
-Legacy Code Project: <https://ucsb-cs156.github.io/f24/lab/project.html>
+Legacy Code Project: <https://ucsb-cs156.github.io/s25/lab/project.html>
 
 ## Thanks
 

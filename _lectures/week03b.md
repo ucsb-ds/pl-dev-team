@@ -1,44 +1,63 @@
 ---
-title: "Week 03b - 10.16 Wed"
-lecture_date: 2024-10-16
-description: "Work day on jpa03"
+title: "Week 03a - 10.15 Tue"
+lecture_date: 2024-10-15
+description: "Start jpa03 (Configure Full Stack Spring Boot with OAuth, Postgres)"
 ready: true
 layout: default
 parent: lectures
-jpa03: "[jpa03](https://ucsb-cs156.github.io/f24/lab/jpa03.html)"
+jpa03: "[jpa03](https://ucsb-cs156.github.io/s25/lab/jpa03.html)"
 ---
 
 # {{page.title}} - {{page.descripion}}
 
-## [Slack Post, 10:35am](https://ucsb-cs156-f24.slack.com/archives/C07FDC0U6DS/p1729100132011889)
+## From [Slack Post at 4:11pm](https://ucsb-cs156-s25.slack.com/archives/C07FDC0U6DS/p1729033915670989)
 
-For discussion, today, Wednesday 10/16:
+Class today: We’ll start {{page.jpa03}} which may be the last individual assignment before we start the first team assignment.  
 
-Today will be just a “work day” on {{page.jpa03}} after all.  Students are still encouraged to come in person if at all possible, but may use zoom if they really need to.   (See slack post for Zoom links).
+Please note that while I’ve set the due date for this as this coming Sunday (in case you run into problems), my hope is that the majority of you will finish this in class today, or during discussion tomorrow, because we may be ready to start the team assignments as early as tomorrow in discussion.
 
-Please do come to lecture tomorrow (Thursday 10/17) if at all possible, because we are planning team activities that are best done in person.
+So, please do not assume that tomorrow will be “just a work day” on jpa03.   We might be starting something new tomorrow, and it may required team participation.
 
-Please note that the “Chromatic” stuff is new for F24, and that we are still figuring out how best to incorporate it into our workflow and into the course.  So there may be some “turbulence” as we figure that out.   Some of the issues don’t show up until you try a product “at scale”.
+You may start on jpa03 before class if you like.  If you complete it, you are still encouraged to come to class (or stay in class) to help others on yoru team, but at the very least, let your team know if you finished it before class are are choosing not to come.
 
-Chromatic offers two services: 
+## From [Later Slack Post (5:54pm)](https://ucsb-cs156-s25.slack.com/archives/C07FDC0U6DS/p1729040065164739)
 
-1. Hosting for the Storybook pages, which if I’m not mistaken is free and unlimited for open source projects 
-2.  Visual “Snapshots” of builds that are compared for any changes; here, the free tier has a 5000 snapshot per month limit which we have already exceeded.    
+In the instructions for jpa03 inside `oauth.md` when it refers to your “mentor”, please disregard that, and instead, add these emails: which are in the jpa03 instructions:
 
-My hope is that exceeding the limit does not affect the Storybook building/hosting but it might affect the “build” page.  So *we will not be checking the build page as part of the assessment of jpa03, only the Storybook page.
-If the storybook page is not building properly, please pull from the starter code again.   (Note that some students may run into git merge/rebase issues; I’ll address those separately in a moment.)   If that still doesn’t fix it, move on to the other parts of the lab.  
+```
+ADMIN_EMAILS=youremail@ucsb.edu,phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu
+```
 
-I’ve makde a separate  `#help-storybook-chromatic`  channel on the Slack so that we don’t clutter up the main `#help-jpa03` channel with storybook issues. 
-Remember to use `#help-lecture-discussion` though for all issues (except the storybook/chromatic issues) during your actual lecture and discussion sessions.  Use `#help-jpa03` for help at all other times of day.
+Be sure not to use any spaces; just separate the emails with commas.
 
-## [Slack Post, 1:14pm](https://ucsb-cs156-f24.slack.com/archives/C07FDC0U6DS/p1729109687764269)
+You should also add the emails for the members of your team.
 
-IMPORTANT: Please DO NOT set up your own communication channels as an “alternative” to using the course slack (iMessage, Discord, etc.).   When you do that, you cut the staff out of the loop.  We are an important part of your team.  
+## From [Later Even Slack Post (6:28pm)](https://ucsb-cs156-s25.slack.com/archives/C07FDC0U6DS/p1729040065164739)
 
-I realize that you may have a thousand reasons for preferring iMessage/Discord/WeChat, etc. over Slack, and you may be used to doing this in other courses.  But in this course, we are trying to replicate a professional software development organization.  
+if you are getting 404s on the Chromatic storybook and build pages, please try this:
 
-Learning to communicate like a professional with your colleagues is an important learning goal of the course.   We cannot do that if/when we are scattered across multiple communication channels.
+```
+git pull starter main
+git push origin main
+```
 
-You may use the Audio/Video features of Discord if you like to *supplement* the text communication over Slack. But please do NOT use these other tools as a *substitute* for communication over the Slack.
+Then re-run workflow Github Actions workflow 02 (that rebuilds the web site).
 
-And please make sure that you are monitoring the slack on a daily basis for important updates from your team and the staff.
+Wait until all Github Actions are done including the one thats’ labelled pages build and deployment
+
+Then try again and see if the links work.
+
+If that still doesn’t work, let me know, but also, continue with the other steps of the lab, and we’ll circle back to this.
+
+Fun fact: most of the parts of this lab are things we’ve been doing for several quarters now, but the Chromatic stuff is all brand new.  So I’m not surprised we are running into some issues.
+
+
+Also, I got an email from Chromatic that our project is over it's monthly quota of snapshots.
+
+So, it may very well be that we run into some other issues have to have pivot regarding the Chromatic thing…
+We used to do this a different way, and we may have to return back to that.
+
+I'll keep you updated.
+
+
+

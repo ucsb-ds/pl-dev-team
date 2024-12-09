@@ -18,7 +18,7 @@ Completing this survey by midnight Wednesday counts as a homework grade.   If I 
 
 ## Please look over the material on Retros before tomorrow
 
-Before tomorrow's class, please look over the lecture summary here, and read over the linked material about retros: <https://ucsb-cs156.github.io/f24/lectures/week05b/>
+Before tomorrow's class, please look over the lecture summary here, and read over the linked material about retros: <https://ucsb-cs156.github.io/s25/lectures/week05b/>
 
 This article, especially: [Agile Retros](https://ucsb-cs156.github.io/topics/agile/agile_retros.html)
 

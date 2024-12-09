@@ -13,10 +13,10 @@ proj_courses_slack_url:
 proj_happycows_slack_url: 
 proj_rec_slack_url:
 proj_dining_slack_url:
-qxx: f24
-githubOrgUrl: https://github.com/ucsb-cs156-f24
-githubProjectsUrl: https://github.com/orgs/ucsb-cs156-f24/projects
-githubPagesUrl: https://ucsb-cs156-f24.github.io
+
+githubOrgUrl: https://github.com/ucsb-cs156-s25
+githubProjectsUrl: https://github.com/orgs/ucsb-cs156-s25/projects
+githubPagesUrl: https://ucsb-cs156-s25.github.io
 sections:
   -
       time: 11am
@@ -108,7 +108,7 @@ sections:
   td, th { min-width: auto}
 </style>
 
-# f24 Legacy Project Launch
+# s25 Legacy Project Launch
 
 On {{ page.assigned | date: '%A %B %d %Y at %l:%M%p' }}, in section, we'll launch the legacy code projects.
 
@@ -137,7 +137,7 @@ Taking on new work after that point is not permitted, since we need time for the
 ## Section: {{ section.time }} ({{section.product}})
 
 | Team | Repo | PRs | Github Pages | Kanban | Dokku Prod | Dokku qa |
-|------|------|-----|--------------|--------|------------|----------|{% for team in section.teams %}{% capture teamName %}{{page.qxx}}-{{ team.num }}{% endcapture %}{% capture repoName %}{{section.product}}-{{teamName}}{% endcapture %}
+|------|------|-----|--------------|--------|------------|----------|{% for team in section.teams %}{% capture teamName %}{{site.qxx}}-{{ team.num }}{% endcapture %}{% capture repoName %}{{section.product}}-{{teamName}}{% endcapture %}
 |  {{teamName}} |  [ repo ]({{page.githubOrgUrl}}/{{repoName}}) |   [ PRs ]({{page.githubOrgUrl}}/{{repoName}}/pulls) |  [ github pages ]({{page.githubPagesUrl}}/{{repoName}}) | [ kanban ]({{page.githubProjectsUrl}}/{{team.kanban}}) | [ dokku prod ](https://{{section.productShort}}.dokku-{{team.dokku}}.cs.ucsb.edu) | [ dokku qa ](https://{{section.productShort}}-qa.dokku-{{team.dokku}}.cs.ucsb.edu) | {% endfor %}
 
 {% endfor %}
@@ -379,7 +379,7 @@ To set up Kanban boards for the legacy code project:
 3. For each team, click the `Use Template` button, and in the box that comes up, paste in the
    name of the repo for which you are creating a Kanban board; for example, pasting in `proj-happycows-f23-5pm-2` as shown here.  Also be sure that the owner is the github org for the course, e.g. `ucsb-cs156-f23`:
 
-   <img width="608" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/7f49f240-f3c2-45b2-bb7d-8e9b0e6683e5">
+   <img width="608" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/7f49s250-f3c2-45b2-bb7d-8e9b0e6683e5">
 
    A kanban board will be created:
 
@@ -668,7 +668,7 @@ Students may create additional deployments if needed.
 ### Section: {{ section.time }} ({{section.product}})
 
 | Team | Repo | Merged PRs |  Open PRs |Github Pages | Kanban | Dokku Prod | Dokku qa | Wf 82 |
-|------|------|-----|-----|--------------|--------|------------|----------|----|{% for team in section.teams %}{% capture teamName %}{{page.qxx}}-{{ team.num }}{% endcapture %}{% capture repoName %}{{section.product}}-{{teamName}}{% endcapture %}
+|------|------|-----|-----|--------------|--------|------------|----------|----|{% for team in section.teams %}{% capture teamName %}{{site.qxx}}-{{ team.num }}{% endcapture %}{% capture repoName %}{{section.product}}-{{teamName}}{% endcapture %}
 |  {{teamName}} |  [ repo ]({{page.githubOrgUrl}}/{{repoName}}) |   [ Merged PRs ]({{page.githubOrgUrl}}/{{repoName}}/pulls?q=is%3Apr+is%3Amerged) |   [ Open PRs ]({{page.githubOrgUrl}}/{{repoName}}/pulls?q=?q=is%3Aopen+is%3Apr) |  [ github pages ]({{page.githubPagesUrl}}/{{repoName}}) | [ kanban ]({{page.githubProjectsUrl}}/{{team.kanban}}) | [ dokku prod ](https://{{section.productShort}}.dokku-{{team.dokku}}.cs.ucsb.edu) | [ dokku qa ](https://{{section.productShort}}-qa.dokku-{{team.dokku}}.cs.ucsb.edu) | [wf 82]({{page.githubOrgUrl}}/{{repoName}}/actions/workflows/82-kanban-slack-update.yml) |{% endfor %}
 
 {% endfor %}

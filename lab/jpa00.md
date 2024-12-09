@@ -9,11 +9,11 @@ ready: false
 layout: default
 parent: lab
 signup_app: https://ucsb-cs-github-linker.herokuapp.com/
-slack: https://ucsb-cs156-f24.slack.com
-course_org: https://github.com/ucsb-cs156-f24
-course_org_name: ucsb-cs156-f24
-starter_repo: https://github.com/ucsb-cs156-f24/STARTER-jpa00
-course_software: https://ucsb-cs156.github.io/f24/info/software.html
+slack: https://ucsb-cs156-s25.slack.com
+course_org: https://github.com/ucsb-cs156-s25
+course_org_name: ucsb-cs156-s25
+starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa00
+course_software: https://ucsb-cs156.github.io/s25/info/software.html
 ---
 
 This assignment is `jpa00`, i.e "Java Programming Assignment 00".
@@ -94,7 +94,7 @@ There a few details, but they are all straightforward.
    course. For this assignment, it will not matter what editor you use,
    but in future assignments, the use of an IDE will become more important. So we encourage you to try VSCode if you haven't used it before.
 
-3. Make sure you have completed the checklist for installation steps here: <https://ucsb-cs156.github.io/f24/info/install_checklist.html>.
+3. Make sure you have completed the checklist for installation steps here: <https://ucsb-cs156.github.io/s25/info/install_checklist.html>.
   
    If you haven't done the `nvm` part yet, it's ok; you won't need
    that for this lab.  But you will need Java 21, Maven, and VSCode.

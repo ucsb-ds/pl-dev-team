@@ -7,8 +7,8 @@ layout: default
 parent: lectures
 retro_part_asn: TBD
 canvas_retro_submission: TBD
-team02: "[team02](https://ucsb-cs156.github.io/f24/lab/team02.html)"
-team03: "[team03](https://ucsb-cs156.github.io/f24/lab/team03.html)"
+team02: "[team02](https://ucsb-cs156.github.io/s25/lab/team02.html)"
+team03: "[team03](https://ucsb-cs156.github.io/s25/lab/team03.html)"
 js_hwk: TBD
 ---
 
@@ -108,8 +108,8 @@ want a peek behind the scenes.
 Preparation for first retro
 </summary>
 
-* Create folder such as `cs156-f24-teams` inside staff Google Drive folder
-* Create one folder per team inside that folder named `f24-01`, `f24-02`, etc.
+* Create folder such as `cs156-s25-teams` inside staff Google Drive folder
+* Create one folder per team inside that folder named `s25-01`, `s25-02`, etc.
 * Create `retro1` document inside each of those folders
 * Paste content inside each
 * For each team slack channel, send this message:

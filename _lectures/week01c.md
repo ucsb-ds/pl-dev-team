@@ -1,24 +1,17 @@
 ---
-title: "Week 01c - 10.03 Thu"
-lecture_date: 2024-10-03
-description: "P05 - divide up LTD, jpa01 (Spring Boot/Dokku), H01 (LTD)"
+title: "Week 01b - 10.02 Wed"
+lecture_date: 2024-10-02
+description: "jpa00 - first Java programming assignment"
 ready: true
 layout: default
 parent: lectures
-jpa01: "[jpa01](https://ucsb-cs156.github.io/f24/lab/jpa01)"
-H01: "[H01](https://ucsb-cs156.github.io/f24/hwk/h01)"
+slack_help_lecture_discussion: https://ucsb-cs156-s25.slack.com/archives/C06RGNTV7E2
 ---
 
+# {{page.title}} - {{page.description}}
 
-# {{page.title}} -- {{page.description}}
+Today, we'll work on [jpa00](https://ucsb-cs156.github.io/s25/lab/jpa00.html)
 
-Today's Agenda:
-* VSCode (brief remarks):
-  * Extensions: <https://ucsb-cs156.github.io/topics/vscode/vscode_extensions.html>
-  * Hints: <https://ucsb-cs156.github.io/topics/vscode/>
-* Team activity P05: <https://ucsb-cs156.github.io/f24/hwk/p05/>
-  * One submission per team on Canvas
+You should work independently, but also help other folks on your team as/when they get stuck on things.
 
-* When the team is finished with P05:
-  * Start on {{page.jpa01}}
-  * If you finish that, start on {{page.H01}}
+So if you finish early, before you just "leave", check in both in person and on slack with the other members of your team to see if any of them need help.

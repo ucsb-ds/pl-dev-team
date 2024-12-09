@@ -6,13 +6,12 @@ due: 2024-11-12 16:45
 title: team03
 repo_to_work_in: team02
 layout: default
-qxx: f24
+
 canvas: https://ucsb.instructure.com/courses/21167/assignments/262248
-starter: https://github.com/ucsb-cs156-f24/STARTER-team02
-sample_team: f24-04
+starter: https://github.com/ucsb-cs156-s25/STARTER-team02
 layout: default
 parent: lab
-github_org_url: https://github.com/ucsb-cs156-f24/
+github_org_url: https://github.com/ucsb-cs156-s25/
 video_testing_pyramid: "[team03 01 - Testing Pyramid (10 min)](https://youtu.be/zvLlO8EUh0c)"
 video_integration_tests: "[team03 02 - Integration Tests (24 min)](https://youtu.be/ohPxfE0hbZI)"
 video_e2e_tests: "[team03 03 - End-to-end Tests (32 min)](https://youtu.be/SGhXLNJrA8I)"
@@ -114,7 +113,7 @@ Still working in your {{page.repo_to_work_in}} repo, you are going to create an 
 5. Save the issue by clicking the <img width="152" alt="Submit New Issue" src="https://github.com/user-attachments/assets/9ba3bb0f-e4bd-49f4-97af-b3788bb606cf"> button.
 6. Now we want to add this to the Kanban board. There are multiple ways of adding this to your Kanban board, but the easiest can be done directly from this page. Find the part of the page that looks like this in the right hand side:
    <img width="276" alt="image" src="https://github.com/user-attachments/assets/3a86e834-b830-4000-ad9a-b3a931b0ecc8">
-   Click on the gear. It will bring up a box where you can type in the name of your project for {{page.repo_to_work_in}}, e.g. <tt>{{page.repo_to_work_in}}-{{page.sample_team}}</tt>.  Select this project. Then, the box should change to something like this:
+   Click on the gear. It will bring up a box where you can type in the name of your project for {{page.repo_to_work_in}}, e.g. <tt>{{page.repo_to_work_in}}-{{site.sample_team}}</tt>.  Select this project. Then, the box should change to something like this:
 
    <img width="318" alt="Issue on Project, with no status dropdown" src="https://github.com/user-attachments/assets/22145980-37be-4734-b66a-dc25d9e5849b">
 
@@ -130,15 +129,15 @@ Before you begin working on the integration and end-to-end tests for the code yo
 The starter code contains a number of Java test files, under the `integration` and `web` directories. These files use a couple of new tools that are explained in the testing pyramid article
  [here](https://ucsb-cs156.github.io/topics/testing/testing_pyramid.html). All of the integration and end-to-end tests contain the keyword `IT` which is similar to the keyword `Test` that appears at the end of each unit test file, and we use `Web` to distinguish end-to-end test from integration tests.
  
-* The [`RestaurantIT`](https://github.com/ucsb-cs156-{{page.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/integration/RestaurantIT.java) integration test class which contains the integration tests for the `Restaurants` backend. The structure of these tests are incredibly similar to the structure of the tests in [`RestaurantControllerTests`](https://github.com/ucsb-cs156-{{page.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/controllers/RestaurantsControllerTests.java), with the difference being that the integration test uses a real `RestaurantRepository` instead of a mocked one.
+* The [`RestaurantIT`](https://github.com/ucsb-cs156-{{site.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/integration/RestaurantIT.java) integration test class which contains the integration tests for the `Restaurants` backend. The structure of these tests are incredibly similar to the structure of the tests in [`RestaurantControllerTests`](https://github.com/ucsb-cs156-{{site.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/controllers/RestaurantsControllerTests.java), with the difference being that the integration test uses a real `RestaurantRepository` instead of a mocked one.
 
-* The [`HomePageWebIT`](https://github.com/ucsb-cs156-{{page.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/web/HomePageWebIT.java) end-to-end test class that contains the minimum configuration necessary for running an end-to-end test within our stack. This test uses Playwright to assert whether or not the home page of our application contains the text that we expect.
+* The [`HomePageWebIT`](https://github.com/ucsb-cs156-{{site.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/web/HomePageWebIT.java) end-to-end test class that contains the minimum configuration necessary for running an end-to-end test within our stack. This test uses Playwright to assert whether or not the home page of our application contains the text that we expect.
 
-* The [`OauthWebIT`](https://github.com/ucsb-cs156-{{page.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/web/OauthWebIT.java) which tests our mocked authentication endpoint so that we can login like we normally do with Google Oauth but with fake user information.
+* The [`OauthWebIT`](https://github.com/ucsb-cs156-{{site.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/web/OauthWebIT.java) which tests our mocked authentication endpoint so that we can login like we normally do with Google Oauth but with fake user information.
 
-* The [`RestaurantWebIT`](https://github.com/ucsb-cs156-{{page.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/web/RestaurantWebIT.java) which contains the example of an end-to-end test for `Restaurants`.
+* The [`RestaurantWebIT`](https://github.com/ucsb-cs156-{{site.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/web/RestaurantWebIT.java) which contains the example of an end-to-end test for `Restaurants`.
 
-* [`WebTestCase`](https://github.com/ucsb-cs156-{{page.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/WebTestCase.java) which is the parent class of `OauthWebIt` and `RestaurantWebIT` and contains much of the shared code and setup that is needed for the end-to-end tests.
+* [`WebTestCase`](https://github.com/ucsb-cs156-{{site.qxx}}/STARTER-{{page.repo_to_work_in}}/blob/main/src/test/java/edu/ucsb/cs156/example/WebTestCase.java) which is the parent class of `OauthWebIt` and `RestaurantWebIT` and contains much of the shared code and setup that is needed for the end-to-end tests.
 
 These test files just contain a selection of examples of what kind of tests you could write for the backend and frontend that you worked on in team02 and {{page.repo_to_work_in}}. This assignment is relatively open-ended and any test that satisfies the submission criteria will be sufficient.
 
@@ -269,7 +268,7 @@ When all team members are finished, and all PRs are merged, submit a link to you
 
 ## Appendix: If you started before 6pm, Tuesday Nov 5th
 
-Note: there was a typo in the instructions that said to merge in the code from S24 instead of F24.
+Note: there was a typo in the instructions that said to merge in the code from S24 instead of s25.
 
 That would result in one of the existing integration tests failing, namely the one for Swagger.
 

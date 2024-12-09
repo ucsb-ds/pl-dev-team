@@ -4,17 +4,18 @@ theme: just-the-docs
 incremental: true
 
 course: "CMPSC 156"
-title: "CS156 f24"
-quarter: "Fall 2024"
-QXX: f24
-qxx: f24
-baseurl: "/f24"
-slack_help_lecture_discussion: https://ucsb-cs156-f24.slack.com/archives/C07P9T925KL
+title: "CS156 S25"
+quarter: "Spring 2025"
+QXX: S25
+qxx: s25
+baseurl: "/s25"
+slack_help_lecture_discussion: TBD
+sample_team: s25-04
 
 ta_list_full: TBD
 la_list_full: TBD
 discussion_section_day: Wednesday
-discussion_section_times: 4pm, 5pm
+discussion_section_times: 6pm, 7pm
 
 mermaid:
   # Version of mermaid library
@@ -26,7 +27,7 @@ aux_links:
   "CS156 main website":
     - "https://ucsb-cs156.github.io/"
   "github":
-    - "//github.com/ucsb-cs156-f24"
+    - "//github.com/ucsb-cs156-s25"
   "Canvas":
     - "https://www.canvas.ucsb.edu"
 
@@ -40,12 +41,12 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/ucsb-cs156/f24" # the github URL for your repo
+gh_edit_repository: "https://github.com/ucsb-cs156/s25" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
 
-help_macos_link: https://ucsb-cs156-f24.slack.com/
-help_windows_link: https://ucsb-cs156-f24.slack.com/
+help_macos_link: https://ucsb-cs156-s25.slack.com/
+help_windows_link: https://ucsb-cs156-s25.slack.com/
 
 # Collections for website data
 collections:
@@ -77,67 +78,67 @@ defaults:
       subpath: "/assets/images/"
 
 teams: 
-  - team: f24-01
+  - team: s25-01
     dokku: "01"
-    team02_project: 19
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07PYJKCWEL
-  - team: f24-02
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-02
     dokku: "02"
-    team02_project: 20
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QKLCSW
-  - team: f24-03
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-03
     dokku: "03"
-    team02_project: 21
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QLJ4JW
-  - team: f24-04
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-04
     dokku: "04"
-    team02_project: 22
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8JN50F
-  - team: f24-05
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-05
     dokku: "05"
-    team02_project: 23
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8KDQQ7
-  - team: f24-06
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-06
     dokku: "06"
-    team02_project: 24
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P36DJ35L
-  - team: f24-07
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-07
     dokku: "07"
-    team02_project: 25
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P36EHA06
-  - team: f24-08
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-08
     dokku: "08"
-    team02_project: 26
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07PNFDK20Z
-  - team: f24-09
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-09
     dokku: "09"
-    team02_project: 27
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07PNFEB2EM
-  - team: f24-10
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-10
     dokku: "10"
-    team02_project: 28
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QS5090
-  - team: f24-11
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-11
     dokku: "11"
-    team02_project: 29
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P9N217AP
-  - team: f24-12
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-12
     dokku: "12"
-    team02_project: 30
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07PCA3GTBN
-  - team: f24-13
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-13
     dokku: "13"
-    team02_project: 31
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P9QU0BKL
-  - team: f24-14
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-14
     dokku: "14"
-    team02_project: 32
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07PCA4MFMJ
-  - team: f24-15
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-15
     dokku: "15"
-    team02_project: 33
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07P36L8SHL
-  - team: f24-16
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd
+  - team: s25-16
     dokku: "16"
-    team02_project: 34
-    slack: https://ucsb-cs156-f24.slack.com/archives/C07NV8T9415
+    team02_project: tbd
+    slack: https://ucsb-cs156-s25.slack.com/archives/tbd

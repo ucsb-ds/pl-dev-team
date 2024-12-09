@@ -6,17 +6,17 @@ layout: default
 title: jpa03
 nav_order: 100
 ready: false
-qxx: f24
+
 layout: default
 parent: lab
-course_org: https://github.com/ucsb-cs156-f24
-course_org_name: ucsb-cs156-f24
-starter_repo: https://github.com/ucsb-cs156-f24/STARTER-jpa03
-slack_help_channel: "[#help-jpa03](https://ucsb-cs156-f24.slack.com/archives/C07RY3BQPCZ)"
-teams_url: https://bit.ly/cs156-f24-teams
+course_org: https://github.com/ucsb-cs156-s25
+course_org_name: ucsb-cs156-s25
+starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa03
+slack_help_channel: "[#help-jpa03](https://ucsb-cs156-s25.slack.com/archives/C07RY3BQPCZ)"
+teams_url: https://bit.ly/cs156-s25-teams
 example_running_app: https://jpa03-staff.dokku-00.cs.ucsb.edu/
-office_hours_page: https://ucsb-cs156.github.io/f24/office-hours
-software_install_url: https://ucsb-cs156.github.io/f24/info/software.html
+office_hours_page: https://ucsb-cs156.github.io/s25/office-hours
+software_install_url: https://ucsb-cs156.github.io/s25/info/software.html
 staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
 starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
 canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262241

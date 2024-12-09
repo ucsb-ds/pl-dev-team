@@ -6,15 +6,15 @@ layout: default
 title: jpa02
 nav_order: 100
 ready: false
-qxx: f24
+
 layout: default
 parent: lab
-course_org: https://github.com/ucsb-cs156-f24
-course_org_name: ucsb-cs156-f24
-starter_repo: https://github.com/ucsb-cs156-f24/STARTER-jpa02
-software: https://ucsb-cs156.github.io/f24/info/software.html
-install_check: https://ucsb-cs156.github.io/f24/info/install_check.html
-slack_help_channel: "[#help-jpa02](https://ucsb-cs156-f24.slack.com/archives/C07RC2580UR)"
+course_org: https://github.com/ucsb-cs156-s25
+course_org_name: ucsb-cs156-s25
+starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa02
+software: https://ucsb-cs156.github.io/s25/info/software.html
+install_check: https://ucsb-cs156.github.io/s25/info/install_check.html
+slack_help_channel: "[#help-jpa02](https://ucsb-cs156-s25.slack.com/archives/C07RC2580UR)"
 ---
 
 <style>
@@ -180,9 +180,9 @@ Explore the web app a bit, following the instructions in this table.  The box at
 | Instructions | Screenshot |
 |--------------|------------|
 | Find the Developer Info link on the home page, and click it.  It should take you to a new page at `/info`)  | ![image](https://github.com/user-attachments/assets/3c260e64-a03a-4f03-b0ac-c9580e693d11) |
-| The page at `/info` should have information about a fictional developer named `Chris G.`, with their github being `cgaucho`, and their team being <tt>{{page.qxx}}-xx</tt>.  Click the `cgaucho` link | ![image](https://github.com/user-attachments/assets/3f6893ee-f09f-4835-b8b0-3fbcb2de01a4) |
+| The page at `/info` should have information about a fictional developer named `Chris G.`, with their github being `cgaucho`, and their team being <tt>{{site.qxx}}-xx</tt>.  Click the `cgaucho` link | ![image](https://github.com/user-attachments/assets/3f6893ee-f09f-4835-b8b0-3fbcb2de01a4) |
 | The `cgaucho` link should take you to the Github profile of github user `cgaucho`.  Click the back button to return to the `/info` page. | ![image](https://github.com/user-attachments/assets/3a7d13b3-9d3e-46d6-b10b-cbd2d129e815) |
-| Now, back on the `/info` page, click the link for <tt>{{page.qxx}}-xx</tt> to go to the `/team` page | ![image](https://github.com/user-attachments/assets/892e630a-a3d1-4c9b-a41e-60b1daeecfd6) |
+| Now, back on the `/info` page, click the link for <tt>{{site.qxx}}-xx</tt> to go to the `/team` page | ![image](https://github.com/user-attachments/assets/892e630a-a3d1-4c9b-a41e-60b1daeecfd6) |
 | Note that the page at the url `/team` looks different from the rest. This page is not encoded in HTML, but rather in JSON.  The exact format on the screen will depend on your browser, so it may be formatted with indentation, or may just be one big long string. There's a longer discussion of this below. | ![image](https://github.com/user-attachments/assets/a75d4d00-a6f7-4a1c-b879-60df40212f26) |
 
 #### Let's talk about this JSON page
@@ -195,7 +195,7 @@ Here's the JSON content from the web app, formatted with indentation:
 
 ```text
 {
- name: "f24-xx",
+ name: "s25-xx",
  members: [
    "Alice",
    "Bob",
@@ -209,7 +209,7 @@ Here's the JSON content from the web app, formatted with indentation:
 
 Without indentation, it might look like this; it's harder to read, but equivalent in terms of what it represents.
 ```
-{name: "f24-xx",members: ["Alice","Bob","Chris G.","Danny","Eve","Frances"]}
+{name: "s25-xx",members: ["Alice","Bob","Chris G.","Danny","Eve","Frances"]}
 ```
 
 JSON is usually pronounced like this: "Jay Son", rhyming with the phrase "play on".
@@ -385,7 +385,7 @@ When you do, it will run the test suite, and then generate a jacoco line coverag
 
 ```
 [INFO] --- jacoco:0.8.12:report (default-cli) @ hello ---
-[INFO] Loading execution data file /Users/pconrad/github/ucsb-cs156-f24/jpa02-pconrad/target/jacoco.exec
+[INFO] Loading execution data file /Users/pconrad/github/ucsb-cs156-s25/jpa02-pconrad/target/jacoco.exec
 [INFO] Analyzed bundle 'hello' with 4 classes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
@@ -580,7 +580,7 @@ In the file `DeveloperTests.java`, locate the test `getName_returns_correct_name
     @Test
     public void getName_returns_correct_name() {
         // TODO: Replace Chris G. with your name as shown on
-        // <https://bit.ly/cs156-f24-teams>
+        // <https://bit.ly/cs156-s25-teams>
         assertEquals("Chris G.", Developer.getName());
     }
 ```
@@ -678,7 +678,7 @@ Next, change the names in this method to match those of the members of your team
     
     public static Team getTeam() {
         // TODO: Change this to your team name
-        Team team = new Team("f24-xx");
+        Team team = new Team("s25-xx");
         team.addMember("Alice");
         team.addMember("Bob");
         team.addMember("Chris G.");
@@ -693,13 +693,13 @@ Then, run the test suite (`mvn test`); everything should still pass.
 
 Then, run `mvn pitest:mutationCoverage` and you'll see we still have a testing gap here.
 
-To address that, let's write a test in `DeveloperTest.java` that the team that `getTeam` returns has the correct name. For example, if your teamname is `f24-00`, the test might look like this:
+To address that, let's write a test in `DeveloperTest.java` that the team that `getTeam` returns has the correct name. For example, if your teamname is `s25-00`, the test might look like this:
 
 ```
     @Test
     public void getTeam_returns_team_with_correct_name() {
         Team  t = Developer.getTeam();
-        assertEquals("f24-00", t.getName());
+        assertEquals("s25-00", t.getName());
     }
 ```
 
@@ -839,7 +839,7 @@ $3 ==> "Team(name=, members=[])"
 jshell> 
 ```
 
-Now, try `t.setName("f24-xx")` then put in `t.toString()` again.  You should get the result: `"Team(name=f24-xx, members=[])"`
+Now, try `t.setName("s25-xx")` then put in `t.toString()` again.  You should get the result: `"Team(name=s25-xx, members=[])"`
 
 You can also try invoking other methods such as `addMember` on the `t` object to see the result.
 
@@ -998,7 +998,7 @@ This should enable to you to get 100% test coverage (both line coverage and muta
 
 #### The equivalent mutation problem in `hashCode()`
 
-There is an interesting problem that arises with the mutation testing for the `hashCode()` function; credit to [this student, who found and reported it on `#help-jpa02`](https://ucsb-cs156-f24.slack.com/archives/C07RC2580UR/p1728449151605459).   (The post is only available to members of the Slack; you are all encouraged to go read it, and Prof. Conrad's response.)
+There is an interesting problem that arises with the mutation testing for the `hashCode()` function; credit to [this student, who found and reported it on `#help-jpa02`](https://ucsb-cs156-s25.slack.com/archives/C07RC2580UR/p1728449151605459).   (The post is only available to members of the Slack; you are all encouraged to go read it, and Prof. Conrad's response.)
 
 Here's the question (without the student's identity, to protect their privacy on the public facing website):
 

@@ -13,8 +13,8 @@ parent: lectures
 
 There were a few updates to the starter code, as reflected in these PRs
 
-* Add missing databaase migration for Restaurants: <https://github.com/ucsb-cs156-f24/STARTER-team01/pull/88>
-* Fix error preventing creation of new UCSBDates <https://github.com/ucsb-cs156-f24/STARTER-team01/pull/89>
+* Add missing databaase migration for Restaurants: <https://github.com/ucsb-cs156-s25/STARTER-team01/pull/88>
+* Fix error preventing creation of new UCSBDates <https://github.com/ucsb-cs156-s25/STARTER-team01/pull/89>
 
 Note that if you are far enough along that you used the UCSBDates controller as a basis for your code, you may want to look at PR89 above, and make a similar change in your code.
 
@@ -89,7 +89,7 @@ For more information on how to do code reviews, see:
 * Considerations: <https://ucsb-cs156.github.io/topics/code_reviews/>
 
 
-## A little bit each day! [Slack Post, Friday 10/18, 10:57am](https://ucsb-cs156-f24.slack.com/archives/C07FDC0U6DS/p1729274275308369)
+## A little bit each day! [Slack Post, Friday 10/18, 10:57am](https://ucsb-cs156-s25.slack.com/archives/C07FDC0U6DS/p1729274275308369)
 
 A general bit of advice:
 

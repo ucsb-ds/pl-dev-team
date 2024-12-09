@@ -3,20 +3,19 @@ title: team02
 description: "Team Project: React CRUD frontend"
 assigned: 2024-05-01 17:00
 due: 2024-05-13 11:59
-github_org: ucsb-cs156-f24
-github_org_url: https://github.com/ucsb-cs156-f24
-sample_team: f24-01
+github_org: ucsb-cs156-s25
+github_org_url: https://github.com/ucsb-cs156-s25
 layout: lab
 layout: default
 parent: lab
 prev_assignment: team01
 nav_order: 203
 ready: true
-starter: https://github.com/ucsb-cs156-f24/STARTER-team02
+starter: https://github.com/ucsb-cs156-s25/STARTER-team02
 deployment: https://team02.dokku-00.cs.ucsb.edu/
-storybook: https://ucsb-cs156-f24.github.io/STARTER-team02/chromatic
+storybook: https://ucsb-cs156-s25.github.io/STARTER-team02/chromatic
 canvas: https://ucsb.instructure.com/courses/21167/assignments/262247
-help_team02: "[<tt>#help-team02</tt>](https://ucsb-cs156-f24.slack.com/archives/C07TA31HD9A)"
+help_team02: "[<tt>#help-team02</tt>](https://ucsb-cs156-s25.slack.com/archives/C07TA31HD9A)"
 nvm_use: "<tt>nvm use 20.17.0</tt>"
 ---
 <style>
@@ -67,10 +66,10 @@ please check in with the staff.
 
 ## Dokku prod deployments
 
-The prod deployments (i.e. the ones on dokku with the name <tt>{{page.title}}</tt>) should track the `main` branch.  **You will need to manually redeploy** after you merge each pull request, with these commands (adapted for your team; the example shows team {{page.sample_team}}):
+The prod deployments (i.e. the ones on dokku with the name <tt>{{page.title}}</tt>) should track the `main` branch.  **You will need to manually redeploy** after you merge each pull request, with these commands (adapted for your team; the example shows team {{site.sample_team}}):
 
 <pre>
-dokku git:sync {{page.title}} https://github.com/{{page.github_org}}/{{page.title}}-{{page.sample_team}} main
+dokku git:sync {{page.title}} https://github.com/{{page.github_org}}/{{page.title}}-{{site.sample_team}} main
 dokku ps:rebuild {{page.title}}
 </pre>
 
@@ -86,7 +85,7 @@ If this presents a difficulty, please contact the instructor ASAP so that some a
 
 ## A few words about Chromatic
 
-This quarter, f24 is the **first time** that we are trying to incoporate Chromatic visual difference testing into the course.
+This quarter, s25 is the **first time** that we are trying to incoporate Chromatic visual difference testing into the course.
 
 Accordingly, we may run into **unexpected issues**.  Sometimes the only way to know how a technology will work when you turn 96 students loose on it in a course is to **try it, and see what happens**.
 
@@ -560,7 +559,7 @@ Before releasing this lab to students, be sure the following tasks are done:
 * Set up starter code in the course organization, and update links
 * Create a Canvas assignment for <{{page.title}}>; update the due dates and publish it
 * Create projects for all of the groups. You can find a script for this here:
-  * <https://github.com/ucsb-cs156-f24/project-creator/blob/main/scripts/<{{page.title}}>-projects.sh>
+  * <https://github.com/ucsb-cs156-s25/project-creator/blob/main/scripts/<{{page.title}}>-projects.sh>
   You will probably need to make a new copy of that repo for this quarter in this
   quarter's organization and update the scripts.
 * After running the script, there are three aspects of setting up the projects that
