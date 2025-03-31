@@ -62,6 +62,7 @@ jobs:
           attempt_limit: 3
           attempt_delay: 5000
           with: |
+            token: ${{ github.token }}  # The token used to authenticate with the GitHub API.
             folder: _site # The folder the action should deploy.
             branch: gh-pages
             clean: true # Automatically remove deleted files from the deploy branch
