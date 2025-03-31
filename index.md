@@ -7,11 +7,11 @@ nav_order: 0
 
 # {{site.title}}, {{site.quarter}}
 
-On Canvas: <https://ucsb.instructure.com/courses/21167>
+On Canvas: <{{site.aux_links["Canvas"]}}>
 
 Course Github Org: <https://github.com/ucsb-cs156-s25>
 
-Legacy Code Project: <https://ucsb-cs156.github.io/s25/lab/project.html>
+<!-- Legacy Code Project: <https://ucsb-cs156.github.io/s25/lab/project.html> -->
 
 ## Thanks
 
