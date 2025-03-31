@@ -11,13 +11,13 @@ Instructions on installing these follow below.
 
 * The latest version of git
 * SDKMAN (tool for installing and switching between Java versions)
-* Java 21
+* Java 21 (`bellsoft-liberica-jdk` distribution recommended).
 * Maven 3.9.9
 
 # Software to Install in week 3 (for frontend development)
 
 * nvm (node version manager)
-* Current LTS version of Node available through nvm (currently node v20.17.0, and npm v10.8.2)
+* Current LTS version of Node available through nvm (currently node v22.14.0, and npm v10.9.2)
 
 When you are finished, check <https://ucsb-cs156.github.io/s25/info/install_checklist.html> to double check that you completed every step successfully.
 
