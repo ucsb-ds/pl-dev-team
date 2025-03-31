@@ -16,6 +16,8 @@ starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa00
 course_software: https://ucsb-cs156.github.io/s25/info/software.html
 ---
 
+{% include drop_down_style.html %}
+
 This assignment is `jpa00`, i.e "Java Programming Assignment 00".
 
 If you find typos or problems with the lab instructions, please report these via Slack:
