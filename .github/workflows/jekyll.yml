@@ -65,5 +65,4 @@ jobs:
             folder: _site # The folder the action should deploy.
             branch: gh-pages
             clean: true # Automatically remove deleted files from the deploy branch
-            commit_message: "Deploying to GitHub Pages" # The commit message to use for the deploy commit.
-            publish_dir: _site # The directory the action should deploy.
+           
