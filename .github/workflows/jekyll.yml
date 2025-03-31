@@ -25,6 +25,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+env:
+  GH_TOKEN: ${{ github.token }}
+
 jobs:
   # Build job
   build:
@@ -50,14 +53,17 @@ jobs:
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3.0.1
-  # Deployment job
-  deploy:
-    environment:
-      name: "github-pages"
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+
+      - name: Deploy 🚀    
+        if: always() # always upload artifacts, even if tests fail
+        uses: Wandalen/wretry.action@master
+        with:
+          action: JamesIves/github-pages-deploy-action@v4
+          attempt_limit: 3
+          attempt_delay: 5000
+          with: |
+            folder: _site # The folder the action should deploy.
+            branch: gh-pages
+            clean: true # Automatically remove deleted files from the deploy branch
+            commit_message: "Deploying to GitHub Pages" # The commit message to use for the deploy commit.
+            publish_dir: _site # The directory the action should deploy.
