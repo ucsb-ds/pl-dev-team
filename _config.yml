@@ -12,10 +12,11 @@ baseurl: "/s25"
 slack_help_lecture_discussion: TBD
 sample_team: s25-04
 
-ta_list_full: TBD
-la_list_full: TBD
+ta_list_full: Sangita Kunapuli, Amey Walimbe
+la_list_full: Daniel Jensen, Benjamin Conte, Samuel Zhu, Divyani Punj
 discussion_section_day: Wednesday
 discussion_section_times: 6pm, 7pm
+
 
 mermaid:
   # Version of mermaid library
@@ -29,7 +30,7 @@ aux_links:
   "github":
     - "//github.com/ucsb-cs156-s25"
   "Canvas":
-    - "https://www.canvas.ucsb.edu"
+    - "https://ucsb.instructure.com/courses/25659"
 
 # TODO: replace canvas link above with specific one
 # such as https://www.canvas.ucsb.edu/courses/12345
