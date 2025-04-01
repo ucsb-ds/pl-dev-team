@@ -11,6 +11,13 @@ On Canvas: <{{site.aux_links["Canvas"]}}>
 
 Course Github Org: <https://github.com/ucsb-cs156-s25>
 
+Seating Chart: <https://bit.ly/cs156-s25-teams>
+
+QR Code for Seating Chart: 
+
+![bit ly_cs156-s25-teams](https://github.com/user-attachments/assets/9725e7a7-4dfb-473d-b7fd-b8204bf7d7de)
+
+
 <!-- Legacy Code Project: <https://ucsb-cs156.github.io/s25/lab/project.html> -->
 
 ## Thanks
