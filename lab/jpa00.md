@@ -21,10 +21,10 @@ course_software: https://ucsb-cs156.github.io/s25/info/software.html
 This assignment is `jpa00`, i.e "Java Programming Assignment 00".
 
 If you find typos or problems with the lab instructions, please report these via Slack:
-* When class is in session (e.g. lecture or discussion) please use `#help-lecture-discussion`
+* When class is in session (e.g. lecture or discussion) please use [`#help-lecture-discussion`]({{site.help_lecture_discussion}})
 * At other times, please use `#help-jpa00`, or if it is a configuration problem, use one of these channels as applicable:
-  - `#help-macos`
-  - `#help-windows`
+  - [`#help-macos`]({{site.help_macos_link}})
+  - [`#help-windows-linux-wsl`]({{site.help_windows_link}})
 
 # Goals
 
@@ -108,7 +108,7 @@ We will use gradescope to grade all your homeworks, exams and lab/programming as
 
 The lab assignment {{page.title}} should appear in your Gradescope dashboard in {{site.course}}. You will need to submit your code for {{page.title}} using this page.
 
-If you don't see the course {{site.course}} and the assignment {{page.title}}, please check with the staff using `#help-lecture-discussion` during class, or `#help-lab00` outside of class.
+If you don't see the course {{site.course}} and the assignment {{page.title}}, please check with the staff using [`#help-lecture-discussion`]({{site.help_lecture_discussion}}) during class, or `#help-lab00` outside of class.
 
 
 ## Step 3: Configure your machine for git/GitHub

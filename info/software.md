@@ -122,7 +122,7 @@ It turns out that almost everything in terms of installing software (Java, Maven
 Therefore we strongly suggest that if you have a Windows environment, you install the Windows Subsystem for Linux (WSL) and then follow the 
 instructions under Linux/WSL.
    
-If you are unable to install WSL because of limitations on your machine, please reach out to the course staff via Slack using the [#help-windows]({{site.help_windows_link}}) channel on Slack. In that case, we will try to find an alternative for you.
+If you are unable to install WSL because of limitations on your machine, please reach out to the course staff via Slack using the [#help-windows-linux-wsl]({{site.help_windows_link}}) channel on Slack. In that case, we will try to find an alternative for you.
  
 ## Recommended for Ubuntu Linux / WSL Users
  
@@ -142,7 +142,7 @@ If you're using a Linux distribution that is not Ubuntu (or a similar Debian-bas
 
 ## Recommmended for MacOS Users
 
-If you have questions about this section, please ask on the [`#help-macos`]({{site.help_macos_link}}) channel on the Slack
+If you have questions about this section, please ask on the [[`#help-macos`]({{site.help_macos_link}})]({{site.help_macos_link}}) channel on the Slack
 
 1. MacOS version: If you have a MacOS version that is really old (e.g. 12.x), you should consider upgrading to a later version.
 
@@ -255,7 +255,7 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
 
    That shows the correct Maven version (3.9.9) but the wrong Java version (23).
 
-   If you are not seeing the correct Java version after typing <code>sdk use java {{site.jdk_distribution}}</code> followed by `mvn --version`, then ask for help on the `#help-macos` channel on the course slack.
+   If you are not seeing the correct Java version after typing <code>sdk use java {{site.jdk_distribution}}</code> followed by `mvn --version`, then ask for help on the [`#help-macos`]({{site.help_macos_link}}) channel on the course slack.
    
 4. nvm, Node, and npm
 

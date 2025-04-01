@@ -54,7 +54,7 @@ Helping prepare you for transition from "Computer Science Student" to "Professio
   - Typically try to keep instructions to 5-15 minutes
   - 35-45 minutes with your teams
 
-# `#help-lecture-discussion`
+# [`#help-lecture-discussion`]({{site.help_lecture_discussion}})
 
 The #help-lecture-discussion channel on the Slack is special.
 

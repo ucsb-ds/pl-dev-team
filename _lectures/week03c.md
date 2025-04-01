@@ -29,7 +29,7 @@ My hope is that exceeding the limit does not affect the Storybook building/hosti
 If the storybook page is not building properly, please pull from the starter code again.   (Note that some students may run into git merge/rebase issues; I’ll address those separately in a moment.)   If that still doesn’t fix it, move on to the other parts of the lab.  
 
 I’ve makde a separate  `#help-storybook-chromatic`  channel on the Slack so that we don’t clutter up the main `#help-jpa03` channel with storybook issues. 
-Remember to use `#help-lecture-discussion` though for all issues (except the storybook/chromatic issues) during your actual lecture and discussion sessions.  Use `#help-jpa03` for help at all other times of day.
+Remember to use [`#help-lecture-discussion`]({{site.help_lecture_discussion}}) though for all issues (except the storybook/chromatic issues) during your actual lecture and discussion sessions.  Use `#help-jpa03` for help at all other times of day.
 
 ## [Slack Post, 1:14pm](https://ucsb-cs156-s25.slack.com/archives/C07FDC0U6DS/p1729109687764269)
 
