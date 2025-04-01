@@ -16,7 +16,7 @@ Seating Chart: <https://bit.ly/cs156-s25-teams>
 QR Code for Seating Chart: 
 
 
-<img alt="qr code for https://bit.ly/cs156-s25-teams" src="https://github.com/user-attachments/assets/9725e7a7-4dfb-473d-b7fd-b8204bf7d7de" width="500">
+<img alt="qr code for https://bit.ly/cs156-s25-teams" src="https://github.com/user-attachments/assets/9725e7a7-4dfb-473d-b7fd-b8204bf7d7de" width="250">
 
 <!-- Legacy Code Project: <https://ucsb-cs156.github.io/s25/lab/project.html> -->
 
