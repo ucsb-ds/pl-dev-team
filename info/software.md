@@ -5,17 +5,21 @@ layout: default
 parent: info
 ---
 
-# Software to Install or Configure (and/or update as needed)
+# Software to Install or Configure at start of course (and/or update as needed)
 
 Instructions on installing these follow below.
 
 * The latest version of git
-* Java 21
+* SDKMAN (tool for installing and switching between Java versions)
+* Java 21 (`bellsoft-liberica-jdk` distribution recommended).
 * Maven 3.9.9
-* nvm (node version manager)
-* Current LTS version of Node available through nvm (currently node v20.17.0, and npm v10.8.2)
 
 When you are finished, check <https://ucsb-cs156.github.io/s25/info/install_checklist.html> to double check that you completed every step successfully.
+
+# Software to Install in week 3 (for frontend development)
+
+* nvm (node version manager)
+* Current LTS version of Node available through nvm (currently node v22.14.0, and npm v10.9.2)
 
 ## Recommmended for Everyone
 
@@ -77,13 +81,38 @@ When you are finished, check <https://ucsb-cs156.github.io/s25/info/install_chec
    4. When using VSCode with a github project, get in the habit of opening VSCode *in the directory where the repo lives*.  This is important because when you do it this way, VSCode can integrate with the structure of a git directory, as well as the structure of a Maven or React project, and give you additional hints and support that are extraordinarily helpful.   
 
 
-5. Install Java 21, Maven, and nvm on your local system.
-
+5. Install SDKMAN on your local system.  SDKMAN is a tool that works on WSL, Mac and Linux that makes it easy to select and install Java versions.  For installation instructions, see: <https://sdkman.io/>; it's typically a one line install such as:
+   ```
+   curl -s "https://get.sdkman.io" | bash
+   ```
    
-   * For Mac users, instructions for installing with Homebrew appear below.   
-   * For WSL users, see: [https://ucsb-cs156.github.io/topics/windows_wsl/](https://ucsb-cs156.github.io/topics/windows/windows_wsl.html)
+6. Use `SDKMAN` to install Java 21
+
+   Note that even once you decide to install Java 21, there are a bewildering array of differnet distributions to choose from.  Based on the website <https://whichjdk.com/>, the distribution we currently recommend is {{site.jdk-distribution}}, so the command to install this with `SDKMAN` is:
+
+   <p><code>sdk install java {{site.jdk_distribution}}</code></p>
+
+   Then, any time you want to use this version of Java, you can type:
+
+   <p><code>sdk use java {{site.jdk_distribution}}</code></p>
+
+   If you just type `sdk use java ` and press the tab key it may autocomplete for you if you have only one version of java installed with `sdk`.
 
    **You really do need Java 21, specifically**, and NOT Java 8, Java 11, Java 17, or a preview version of 22, 23, or higher.   It won't matter for the `"Hello World"` program in the first week, but when we move on to complex Java applications involving third-party libraries, it will definitely matter.
+
+8. Install Maven on your local system.
+
+   * For Mac users, instructions for installing Maven with Homebrew appear below.   
+   * For WSL users, see: [https://ucsb-cs156.github.io/topics/windows_wsl/](https://ucsb-cs156.github.io/topics/windows/windows_wsl.html)
+
+9. Install nvm on your local system.
+
+   * For Mac users, instructions for installing nvm with Homebrew appear below. 
+   * For WSL users, see:
+     * [Install nvm and Node on WSL](https://ucsb-cs156.github.io/topics/windows/windows_wsl.html#install-nvm-and-node-on-wsl)
+
+     * [Update npm on WSL](https://ucsb-cs156.github.io/topics/windows/windows_wsl.html#update-npm-on-wsl)
+
    
 ## Recommmended for Windows Users
 
@@ -162,7 +191,7 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
 
    To see if `brew` is already installed, type `brew update` at the command line.  If it is already installed, this will update your installation.
    
-   If you see the following, that it isn't installed, so visit <https://brew.sh/> and follow the instructions to install it.
+   If you see the following, then it isn't installed, so visit <https://brew.sh/> and follow the instructions to install it.
 
    ```
    zsh: command not found: brew
@@ -184,84 +213,11 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
 
    It is important to run these command to complete the brew installation.
 
-4. Install XCode.  We *do not use* XCode in this course, but we *need it to install Java21 using `brew`*.
 
-   
-   
-5. Install Java 21 with `brew`: first part
-   
-   To install Java with homebrew, use:
-   
-   ```
-   brew update
-   brew install openjdk@21
-   ```
-
-   Note that if you skipped the Xcode installation step above, you may find get an error like this (some parts removed); in that case, go back to the XCode installation step.
-
-   ```
-   openjdk@21: A full installation of Xcode.app is required to compile
-   this software. Installing just the Command Line Tools is not sufficient.
-
-   Xcode can be installed from the App Store.
-   Error: openjdk@21: An unsatisfied requirement failed this build.
-   ```
-   
-   When the command finishes, **you are not finished**.  Keep that terminal window open and do the next part
-   immediately.
-
-
-3. Install Java 21 with `brew`: **important second part**
-   
-   After this command finishes executing, there will be some lines printed on the terminal *similar* to, but
-   not necessarily *identical* to these:
-
-   ```
-   For the system Java wrappers to find this JDK, symlink it with
-   sudo ln -sfn /opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
-
-   openjdk@21 is keg-only, which means it was not symlinked into /opt/homebrew,
-   because this is an alternate version of another formula.
-
-   If you need to have openjdk@21 first in your PATH, run:
-   echo 'export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"' >> ~/.zshrc
-
-   For compilers to find openjdk@21 you may need to set:
-   export CPPFLAGS="-I/opt/homebrew/opt/openjdk@21/include"
-   ```
-
-   You will need to find these lines in the text outputted by `brew install openjdk@21`
-   and run it in the terminal. It should be near the end of the output. 
-  
-   Make sure you copy the commands from **your terminal output**, and **not** from this web page, since they
-   may be customized to your Mac OS version, the architecture of your machine, etc.
-
-   * Note that the command that starts with `sudo ln -sfn ...` only has to be done once.
-   * The `echo 'export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"' >> ~/.zshrc` command puts a line in your
-     `.zshrc` startup file.  That will not take effect unless/until you start a new terminal window.
-   * The line `export CPPFLAGS="-I/opt/homebrew/opt/openjdk@21/include"` is also one that would go in your
-     `.zshrc` file.
-
-   Once you've done these, open a **new terminal window** so that the `~/.zshrc` file is read from again before
-   you test whether the Java 21 compiler was installed properly, with this command:
-   
-   ```
-   java -version
-   ```
-
-   If it worked, you should see something like this:
-
-   ```
-   pconrad@Phillips-MacBook-Air ~ % java --version
-   openjdk 21.0.4 2024-07-16
-   OpenJDK Runtime Environment Homebrew (build 21.0.4)
-   OpenJDK 64-Bit Server VM Homebrew (build 21.0.4, mixed mode, sharing)
-   pconrad@Phillips-MacBook-Air ~ % 
-   ```
 
 5. Maven
 
-   After installing Java 21, you can use `brew` to install Maven:
+   You can use `brew` to install Maven:
 
    ```
    brew update
@@ -283,8 +239,8 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
 
    Be sure that you have Maven version 3.9 or higher, as Java 21 requires this version to work.
 
-   When you type `mvn --version` if you are getting a version of Java other than Java 21, the fix is described
-   in [this article](https://euedofia.medium.com/fix-default-java-version-on-maven-on-mac-os-x-156cf5930078) but that article is a little out of date, so here's the updated instructions:
+   When you type `mvn --version` be sure you are getting the correct version of Java
+   (the one you selected with <code>sdk use java {{site.jdk_distribution}}</code>
 
    For example, you do NOT want to see this:
    ```
@@ -298,51 +254,23 @@ If you have questions about this section, please ask on the [`#help-macos`]({{si
    ```
 
    That shows the correct Maven version (3.9.9) but the wrong Java version (23).
-   
-   To update the maven configuration, file, edit this file; note that the version number may be different
-   by the time you are reading these instructions:
 
-   ```
-   vim `which mvn`
-   ```
-
-   The `which mvn` part determines the name of the script or binary that the `mvn` command brings up, and `vim` opens that file for editing.
-   
-   In that file, change the line that starts with `JAVA_HOME=` to this:
-
-   ```
-   JAVA_HOME="${JAVA_HOME:-$(/usr/libexec/java_home 21)}" exec "/opt/homebrew/Cellar/maven/3.9.9/libexec/bin/mvn" "$@"
-   ```
-   Or if you find that the above does not work after typing `mvn --version` then try:
-    ```
-   JAVA_HOME="${JAVA_HOME:-/usr/local/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home}" exec "/usr/local/Cellar/maven/3.9.9/libexec/bin/mvn" "$@"
-   ```
-   For Apple Silicon (M1/M2/M3), try replacing the first `openjdk` with `openjdk@21`, like this:
-    ```
-   JAVA_HOME="${JAVA_HOME:-/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home}" exec "/opt/homebrew/Cellar/maven/3.9.9/libexec/bin/mvn" "$@"
-   ```
-    
-   Again, you may need to adjust the version number `3.9.9` to whatever your version of Maven is.  After doing
-   this, if you type `mvn --version` it should show Java 21, like this:
-
-   ```
-   pconrad@Phillips-MacBook-Air ~ % mvn --version
-   Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
-   Maven home: /opt/homebrew/Cellar/maven/3.9.9/libexec
-   Java version: 21.0.4, vendor: Homebrew, runtime: /opt/homebrew/Cellar/openjdk@21/21.0.4/libexec/openjdk.jdk/Contents/Home
-   Default locale: en_US, platform encoding: UTF-8
-   OS name: "mac os x", version: "14.4.1", arch: "aarch64", family: "mac"
-   pconrad@Phillips-MacBook-Air ~ % 
-   ```
+   If you are not seeing the correct Java version after typing <code>sdk use java {{site.jdk_distribution}}</code> followed by `mvn --version`, then ask for help on the `#help-macos` channel on the course slack.
    
 4. nvm, Node, and npm
 
    Even if you already have node and npm installed on your computer, you should install Node Version Manager (nvm). The instructions for installing this are the same as those for Linux and WSL users, so please follow the instructions listed there.
 
-   [Install nvm and Node on WSL](https://ucsb-cs156.github.io/topics/windows/windows_wsl.html#install-nvm-and-node-on-wsl)
+   You can install nvm via `brew install nvm`.
 
-   [Update npm on WSL](https://ucsb-cs156.github.io/topics/windows/windows_wsl.html#update-npm-on-wsl)
+   Be sure to read the post installation instructions, which may ask you to type in some commands to adjust your shell, typically something like the ones below. It's important to do these extra commands, and **note that the ones below may not be the correct ones for your system, so copy the ones shown on your screen after you type `brew install nvm`**.
 
+   ```
+   echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.zshrc
+   echo '[ -s "$(brew --prefix nvm)/nvm.sh" ] && \. "$(brew --prefix nvm)/nvm.sh"' >> ~/.zshrc
+   echo '[ -s "$(brew --prefix nvm)/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix nvm)/etc/bash_completion.d/nvm"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
 
 ## Optional (for everyone)
 

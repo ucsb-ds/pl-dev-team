@@ -3,6 +3,8 @@ theme: just-the-docs
 
 incremental: true
 
+jdk_distribution: "21.0.6-librca"
+
 course: "CMPSC 156"
 title: "CS156 S25"
 quarter: "Spring 2025"
