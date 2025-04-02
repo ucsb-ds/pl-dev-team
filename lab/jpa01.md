@@ -13,7 +13,7 @@ course_org_name: ucsb-cs156-s25
 starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa01
 software: https://ucsb-cs156.github.io/s25/info/software.html
 install_check: https://ucsb-cs156.github.io/s25/info/install_check.html
-canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262240
+canvas_link: https://ucsb.instructure.com/courses/25659/assignments/348156
 teams_link: "<https://bit.ly/cs156-s25-teams>"
 ---
 
