@@ -23,7 +23,7 @@ Also note that you can get started on some of this *before* class and you are en
    * First, ssh into your CSIL account at `csil.cs.ucsb.edu` (if you are unfamiliar with this, ask your teammates first before asking the staff.)
    * Then, *from* your session on `csil.cs.ucsb.edu`, try this command:
      
-     <tt>ssh <i>username</i>@dokku-<i>xx</i></tt>
+     <tt>ssh <i>username</i>@dokku-<i>xx</i>.cs.ucsb.edu</tt>
  
      where <tt><i>username</i></tt> is your CSIL username, and <tt><i>username</i></tt> is your two digit team number (e.g. `04` or `13).
 
