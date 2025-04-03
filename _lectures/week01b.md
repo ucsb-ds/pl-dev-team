@@ -5,7 +5,7 @@ description: "Installation and Accounts"
 ready: true
 layout: default
 parent: lectures
-on_canvas: "[Participation Activity P04 on Canvas](https://canvas.ucsb.edu/tbd)"
+on_canvas: "[Participation Activity P04 on Canvas](https://ucsb.instructure.com/courses/25659/assignments/348142)"
 ---
 
 # {{page.title}} - {{page.description}}
