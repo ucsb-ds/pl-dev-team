@@ -25,7 +25,7 @@ Also note that you can get started on some of this *before* class and you are en
      
      <tt>ssh <i>username</i>@dokku-<i>xx</i>.cs.ucsb.edu</tt>
  
-     where <tt><i>username</i></tt> is your CSIL username, and <tt><i>username</i></tt> is your two digit team number (e.g. `04` or `13).
+     where <tt><i>username</i></tt> is your CSIL username, and <tt><i>username</i></tt> is your two digit team number (e.g. `04` or `13`).
 
      If it doesn't work, check the steps in H00 again where you set up your private key and authorized key files.
 
