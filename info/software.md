@@ -81,7 +81,9 @@ When you are finished, check <https://ucsb-cs156.github.io/s25/info/install_chec
    4. When using VSCode with a github project, get in the habit of opening VSCode *in the directory where the repo lives*.  This is important because when you do it this way, VSCode can integrate with the structure of a git directory, as well as the structure of a Maven or React project, and give you additional hints and support that are extraordinarily helpful.   
 
 
-**On Windows / WSL ? Follow [these](/topics/windows/windows_wsl.html) directions from here. On Mac? Continue on to #5**
+**On Windows / WSL ? Switch to [these directions](/topics/windows/windows_wsl.html)
+
+On Mac? Continue with the steps below.
 
 
 5. Install SDKMAN on your local system.  SDKMAN is a tool that works on WSL, Mac and Linux that makes it easy to select and install Java versions.  For installation instructions, see: <https://sdkman.io/>; it's typically a one line install such as:
