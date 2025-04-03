@@ -33,6 +33,8 @@ Also note that you can get started on some of this *before* class and you are en
 
      Once it works, make a post to your team slack channel that says: "I can login to dokku".
 
+     But if you are unable to resolve the dokku issue in a reasonable amount of time, make a post on your team channel that says: "I cannot log into dokku", as well as making a post on `#help-dokku` describing what's happening (along with screenshots.)
+
    
 2. Next, check in on your Slack with your name, and what platform you use, e.g. `I use MacOS`, or `I use Windows/WSL` or `My laptop runs Ubuntu Linux` or whatever.
    * Optional: You may want to rearrange yourself at the table so that Mac folks are sitting with Mac folks, and Windows folks with Windows folks, etc.  This will make it easier if you run into problems later, since you can check in with your neighbor.
