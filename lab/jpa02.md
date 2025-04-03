@@ -9,7 +9,7 @@ ready: false
 qxx: s25
 layout: default
 parent: lab
-course_org: https://github.com/ucsb-cs156-s24
+course_org: https://github.com/ucsb-cs156-s25
 course_org_name: ucsb-cs156-s25
 starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa02
 software: https://ucsb-cs156.github.io/s25/info/software.html
