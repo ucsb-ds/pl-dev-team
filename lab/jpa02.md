@@ -557,9 +557,9 @@ Iterate on this until the tests pass.
 
 You should *also*, in parallel, actually run the application on localhost using `mvn spring-boot:run` to see that the output actually looks correct.
 
-* Examine the contents of the home page (i.e. <https://localhost:8080/>)
-* Example the contents when you click the link that takes you to <https://localhost:8080/info>
-* Examine the contents when you click the link that takes you to <https://localhost:8080/team>
+* Examine the contents of the home page (i.e. <http://localhost:8080/>)
+* Example the contents when you click the link that takes you to <http://localhost:8080/info>
+* Examine the contents when you click the link that takes you to <http://localhost:8080/team>
 
 Make sure that every page has real information for you and your team, and that all of the placeholders are gone.
 
