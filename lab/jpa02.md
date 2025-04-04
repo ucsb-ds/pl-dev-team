@@ -271,7 +271,7 @@ When that works, you're ready for the next step.
 
 Now return to the terminal command line.  You should `cd` into the directory where you cloned the repo (e.g. <tt>~/cs156/{{page.title}}-<i>yourGithubId</i></tt>)
 
-You are now going to run a suite of tests.  There will be *lots* of output.  The main thing is that the last part of the output should look like this, indicating that the tests passed:
+You are now going to run a suite of tests. You can run the test suite by doing `mvn test`. There will be *lots* of output.  The main thing is that the last part of the output should look like this, indicating that the tests passed:
 
 ```
 [INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 s -- in edu.ucsb.cs156.spring.hello.HelloControllerTest
