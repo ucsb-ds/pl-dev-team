@@ -143,8 +143,13 @@ In this step, we'll:
 
 ### Step 2.1: Enable Github Actions (if not already enabled)
 
-Go to the webpage for your repo on Github, e.g. <tt>https://github.com/{{page.course_org_name}}/{{page.num}}-<i>yourGithubLogin</i></tt>.  Find the `Actions` tab on your repo.  It should look like one of the images below. 
+Go to the webpage for your repo on Github, e.g. <tt>https://github.com/{{page.course_org_name}}/{{page.num}}-<i>yourGithubLogin</i></tt>.  Find the `Actions` tab on your repo.  
 
+The menu will look like this: the `Actions` tab is fourth from the left:
+
+<img width="1048" alt="image" src="https://github.com/user-attachments/assets/330f4487-cb2b-41eb-99c3-a27a47cca3d0" />
+
+When you click on the `Actions` tab, it should look like one of the images below, depending on whether Actions are already enabled or not.
 * Note that you can click on the images below to zoom in on them.
 
 <table>
