@@ -159,7 +159,7 @@ If GitHub Actions are already enabled:
 <tbody>
 <tr>
 <td>
-<img width="476" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/a7d67508-1a03-4215-a1de-e63bc58cddd0">
+<img width="476" alt="image" src="https://github.com/user-attachments/assets/a7e42344-8591-47de-88db-fd41c2ab36a0" />  
 </td>
 <td>
 <img width="984" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/1a60521f-474d-4bbd-a8eb-3c0c66dc134f">
