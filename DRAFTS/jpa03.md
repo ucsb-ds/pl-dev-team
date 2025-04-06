@@ -183,9 +183,9 @@ Next, visit the file [`docs/github-pages.md`]({{page.starter_repo}}/blob/main/do
 
 * **Follow all of the instructions in that file**
 
-When you've completed this step, on your main repo page on Github, the link at right under `About` should take you to the Github Pages for your repo; it should look like this:
+When you've completed this step, on your main repo page on Github, the link at right under `About` (near the Gear icon) should take you to the Github Pages for your repo; it should look like this:
 
-<img width="341" alt="image" src="https://github.com/user-attachments/assets/04522e3a-3c27-4288-afa8-54b201fee266">
+<img width="375" alt="image" src="https://github.com/user-attachments/assets/4113c0b3-147e-46af-a784-8b60633c565a" />
 
 The link will be of the form: <tt>https://{{page.course_org_name}}.github.io/jpa03-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.   Click on the link, and:
 * you should see a page like this one (this image only shows the top portion of the page, not the entire page.)
