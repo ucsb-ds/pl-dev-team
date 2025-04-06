@@ -279,7 +279,7 @@ Once you've followed these instructions, try logging in to your app.  It should 
 
 Where:
 * <tt><i>yourGithubId</i></tt> is your Github Id
-* <tt><i>yourGithubId</i></tt> is your two-digit team/dokku number
+* <tt><i>xx</i></tt> is your two-digit team/dokku number
 
 You should test the following features:
 
