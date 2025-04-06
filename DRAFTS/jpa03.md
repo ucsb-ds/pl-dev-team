@@ -187,40 +187,16 @@ When you've completed this step, on your main repo page on Github, the link at r
 
 <img width="341" alt="image" src="https://github.com/user-attachments/assets/04522e3a-3c27-4288-afa8-54b201fee266">
 
-The link will be of the form: <tt>https://{{page.course_org_name}}.github.io/jpa03-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.   Click on the link, and you should see a page like this one:
+The link will be of the form: <tt>https://{{page.course_org_name}}.github.io/jpa03-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.   Click on the link, and:
+* you should see a page like this one (this image only shows the top portion of the page, not the entire page.)
+* the links to `javadoc`, `jacoco`, and `pitest` should all work (i.e. they are not dead links).
 
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/32f4ca67-c0e0-4364-b5f5-12f266b90929">
+<img width="620" alt="image" src="https://github.com/user-attachments/assets/9865af73-9ce9-4508-b25d-dd98a09287bf" />
 
-If you don't:
-* Look through the instructions again
-* Try manually running the Github Action `/02-gh-pages-rebuild-part-1.yml` (note that it will automatically start `04-gh-pages-rebuild-part-2.yml` when it is finished.
-* If any steps in workflows `02` or `04` completed with errors, try running them again.  It is not unusual for the "Deploy" step to fail; there are sometimes [race conditions](https://en.wikipedia.org/wiki/Race_condition) with multiple jobs trying to publish to the site at the same time, and we have not yet determined a way to prevent that (see the box below for instructions on how to re-run a failed Github Action).
-* If the jobs fail repeatedly or on a step other than the "Deploy" step, you may need to ask the staff for help.
+If this is *not* what you see: 
 
-<details markdown="1">
-<summary markdown="1">
-Click the triangle to read about how to re-run failed Github Actions
-</summary>
-
-Here's how to re-run failed Github Actions:
-
-1. Go to the Github Actions tab of your repo
-2. On the left side, in the list of workflows, if the one you are looking for is not listed, click `Show More Workflows`, as shown here:
-
-   <img width="317" alt="image" src="https://github.com/user-attachments/assets/5a1b6386-460a-484a-a89b-ec8251a81504">
-
-3. On a failed workflow, if you click it, there should be a button like this to re-run the failed workflow:
-
-   <img width="278" alt="image" src="https://github.com/user-attachments/assets/c9740071-4941-40ba-9948-7ed492f9aaeb">
-
-   Alternatively, find the button upper left that says "Run Workflow", click it, and then click the green `Run Workflow` button, as shown here:
-   
-   <img width="920" alt="image" src="https://github.com/user-attachments/assets/ef8c6b89-77fd-4d29-8367-09441ab8e5d1">
-
-</details>
-
-
-
+* Look through the instructions again here, and be sure that you've completed *every* step. [`docs/github-pages.md`]({{page.starter_repo}}/blob/main/docs/github-pages.md)
+  
 ## Step 3: Configure your app for localhost as documented in the README.md
 
 Before we start configuring your app, let's take just a moment to learn what OAuth is.
@@ -232,7 +208,7 @@ functionality (user authentication) to a third party such as
 Google, Facebook, GitHub, Twitter, etc.  If you've ever used
 a website that allows you to "Login with Google", "Login With Facebook", or "Login with Github" then chances are good that app was built using OAuth.
 
-Indeed, you've already encountered an examples of GitHub OAuth earlier in the course when you used your GitHub account to log into the <https://ucsb-cs-github-linker.herokuapp.com>
+Indeed, you've already encountered an examples of GitHub OAuth earlier in the course when you used your GitHub account to log into the <https://frontiers.dokku-00.cs.ucsb.edu> app.
 
 When implementing a website that can store information and making it available on the public internet it's important to *secure the site;* otherwise, bad actors may fill your database with unsavory material.
 
