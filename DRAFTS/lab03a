@@ -226,7 +226,6 @@ The next step is to read through the [`README.md`]({{page.starter_repo}}/blob/ma
 
 As shown in the [`README.md`]({{page.starter_repo}}/blob/main/README.md), these steps include the following.  Each of these is documented in files linked to from the [`README.md`]({{page.starter_repo}}/blob/main/README.md) file so we won't repeat those here; we'll just link to them.
 
-1. [Configuring GitHub Pages for the documentation]({{page.starter_repo}}/tree/main#configuring-github-pages-for-the-documentation)
 2. [Getting Started on localhost]({{page.starter_repo}}/tree/main#getting-started-on-localhost), which includes:
    - Setting up Google OAuth credentials
    - Entering those credential in the `.env` file
@@ -279,7 +278,7 @@ Once you've followed these instructions, try logging in to your app.  It should 
 
 Where:
 * <tt><i>yourGithubId</i></tt> is your Github Id
-* <tt><i>xx</i></tt> is your two-digit team/dokku number
+* <tt><i>yourGithubId</i></tt> is your two-digit team/dokku number
 
 You should test the following features:
 
