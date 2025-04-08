@@ -296,22 +296,6 @@ If it doesn't work:
 * Come to office hours (posted here: <{{page.office_hours_pages}}>)
 * Ask during class on `#help-lecture-discussion`
 
-
-## Step 5: Enable Link to Swagger
-
-For a *production* dokku deployment of a *real, user-facing* app, we would normally not want a link to the Swagger tool to appear.  This is not functionality that a normal end user
-would be interacting with.
-
-However, for developers, it is often convenient to enable this link on deployments of our app that are being used for quality assurance (QA), demos, etc.  
-
-You can enable this link by setting the following configuration variable on dokku:
-
-<tt>dokku config:set <i>appname</i> SHOW_SWAGGER_UI_LINK=true</tt>
-
-Where <tt><i>appname</i></tt> in this case is <tt>{{page.title}}-<i>yourGithubId</i></tt>.
-
-Type that command, and when it finishes, you should be able to refresh the web page for your dokku deployment of the app and see the Swagger link in the menu bar.
-
 ## Step 6: Add link to running app to your README.md file
 
 At the top of your README.md, you'll find this:
@@ -344,8 +328,7 @@ Remember to submit a link to *your repo*, not a link to your running app.
 5.  (10 pts) The link on your main repo page is set your Github Pages page (i.e. <tt>https://{{page.course_org_name}}.github.io/{{page.num}}-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.  ) 
 6.  (10 pts) The Github Pages page shows a web page that looks like the example in the lab instructions and has the correct content.
 8.  (10 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
-9.  (10 pts) On dokku, the Swagger link appears in the menu bar.
-10. (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the *repo*, not the running app on Dokku)
+9. (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the *repo*, not the running app on Dokku)
 
 Note that the Rubric above is subject to change, but if it does:
 
