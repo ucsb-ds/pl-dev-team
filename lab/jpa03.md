@@ -44,11 +44,15 @@ You may cooperate with one or more pair partners from your team to help in debug
 
 ## Goal
 
-By the end of this lab, you'll have deployed your own copy of the starter code repo (<{{page.starter_repo}}>) on both localhost
-and Dokku.
+The goal of this lab is to learn about some of the techniques and tools that you will need while working on upcoming assignments and the legacy code project. By the end of this lab, you'll have deployed your own copy of the starter code repo (<{{page.starter_repo}}>) on both localhost and Dokku.
+
+The app that you’ll be deploying doesn’t do much beyond demonstrating some *very* basic features:
+* It allows users to login and logout using a Google account
+* It allows the developer to configure some users as "admins" through setting an environment variable (`ADMIN_EMAILS`)
+* It allows admin users to see who has logged in to the app in the past (by storing
+  each login in a database), and to see which users have admin credentials.
 
 This app is a full-stack web app with:
-
 * A back-end built in Spring Boot (the code for this is under the directory `./src`, plus the `pom.xml` at the top level
 * OAuth integration; this allows the app to have a "login/logout" feature based on Google Accounts (e.g. your UCSB Google Account)
 * A SQL database, which runs using H2 (an in-memory database) on localhost, and using Postgres when running on Dokku.
@@ -56,28 +60,7 @@ This app is a full-stack web app with:
   the production code (`main` branch) and all branches that have
   open pull requests targetting the `main` branch.
 
-This app is not intended as a coherent app to solve a real-world problem,
-but as a code base that demonstrates many of the techniques you
-would need in such an app.   The legacy code apps that we'll work
-with in this course have a similar structure.
-
-Here is an example of this app, up and running.  Try logging in with your UCSB Google Credentials:
-
-* <{{page.example_running_app}}>
-
-TODO: Insert some more details here about what to expect from the running app.
-
-
-The app doesn't do much beyond demonstrating some *very* basic features:
-* It allows users to login and logout using a Google account
-* It allows the developer to configure some users as "admins" through setting an environment variable (`ADMIN_EMAILS`)
-* It allows admin users to see who has logged in to the app in the past (by storing
-  each login in a database), and to see which users have admin credentials.
-
-However, we need those basic functions as a basis to build more complex functions,
-and every student in the class needs to know how to configure and deploy an app on
-Dokku.  The configuration has several parts:
-
+The configuration and deployment of the app can be broken down into several parts:
 * Setting up SSL (https) for your dokku app
 * Configuring Google OAuth (this can be tested on localhost first)
 * Setting up the dokku app
@@ -85,8 +68,15 @@ Dokku.  The configuration has several parts:
 * Configuring https
 * Configuring a postgres database on Dokku
 
+Here is an example of the app you'll be implementing, up and running. Try logging in with your UCSB Google Credentials:
+
+* <{{page.example_running_app}}>
+
+
 So, let's get started.
 
+
+TODO: Insert some more details here about what to expect from the running app.
 
 ## Step 1: Create your repo
 
