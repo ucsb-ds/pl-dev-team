@@ -274,7 +274,14 @@ Where:
 You should test the following features:
 
 * You should see be able to login with your UCSB Google account
-* You should see an Admin menu, where you can see the names of everyone that has logged in
+* Navigate to the swagger page and find the /admin/users api and click `Try it Out`. Then click `Execute`, your output should look as follows:
+
+```
+
+[{"id":1,"email":"cgaucho@ucsb.edu","googleSub":"10123023023","pictureUrl":"url","fullName":"Chris Gaucho","givenName":"Chris","familyName":"Gaucho","emailVerified":true,"locale":null,"hostedDomain":"ucsb.edu","admin":true}] 
+
+```
+
 
 ### What if it doesn't work?
 
