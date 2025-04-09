@@ -262,8 +262,8 @@ To redeploy any time the repo changes (otherwise changes in the repo don't affec
 
 Once you have done these steps, you should be able to see your app running at *both* of these links (modifying them for your dokku/team number, and your github id):
 
-* http (not secure): [http://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](http://dokku-xx.cs.ucsb.edu/{{page.title}}-yourGithubId)
-* https (secure): [https://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](https://dokku-xx.cs.ucsb.edu/{{page.title}}-yourGithubId)
+* http (not secure): [http://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](http://dokku-xx-yourGithubId.cs.ucsb.edu/{{page.title}})
+* https (secure): [https://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](https://dokku-xx-yourGithubId.cs.ucsb.edu/{{page.title}})
 
 When that works, you're ready for the next step.
 
