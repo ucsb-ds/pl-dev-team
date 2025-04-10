@@ -18,7 +18,7 @@ teams_url: https://bit.ly/cs156-s25-teams
 example_running_app: https://jpa04-staff.dokku-00.cs.ucsb.edu/
 office_hours_page: https://ucsb-cs156.github.io/s25/office-hours
 software_install_url: https://ucsb-cs156.github.io/s25/info/software.html
-staff_emails: "phtcon@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,jenilrajeshkumar@ucsb.edu,djensen@ucsb.edu,gracefeng@ucsb.edu,hongrui_su@ucsb.edu"
+staff_emails: "djensen@ucsb.edu,benjaminconte@ucsb.edu,samuelzhu@ucsb.edu,divyanipunj@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,phtcon@ucsb.edu"
 starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
 canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262241
 ---
