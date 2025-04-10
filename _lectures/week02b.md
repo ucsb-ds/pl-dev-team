@@ -14,7 +14,7 @@ parent: lectures
 
 Today, we'll work on 
 
-* [p05](https://ucsb-cs156.github.io/s25/hwk/p05.html)
+* [p05](https://ucsb-cs156.github.io/s25/hwk/p05/)
 
 Then continue with:
 
