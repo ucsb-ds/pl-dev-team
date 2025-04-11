@@ -76,15 +76,16 @@ Here is an example of this app, up and running.  Try logging in with your UCSB G
 
 If the menu looks like this, click on the hamburger icon (☰) to expose the Login button:
 
-<img width="799" alt="image" src="https://user-images.githubusercontent.com/1119017/235781737-648575ec-c095-4ecf-a218-12ec579d4d19.png">
+![image](https://github.com/user-attachments/assets/51f5fdfe-fc77-4d80-b39c-f82a9bbf27d6)
 
 It should then look like this, and you should be able to login:
 
-<img width="732" alt="image" src="https://user-images.githubusercontent.com/1119017/235782012-7775743c-1880-4960-b99a-3417055f850e.png">
+![image](https://github.com/user-attachments/assets/deeaaa7f-9a3e-4a98-a69a-b70ee1ae6e8c)
 
 Once you are logged in, you'll see a navigation bar like this one (though you will not see the `Admin` menu):
 
-<img width="1208" alt="image" src="https://github.com/ucsb-cs156/f23/assets/1119017/c6acd005-85fb-4907-b65e-cce203a61294">
+![image](https://github.com/user-attachments/assets/a9cab513-0c7e-4e6f-a1e3-95d3f60d8832)
+
 
 None of the menus will do much of anything.  It turns out that the application is
 a shell of an application that:
