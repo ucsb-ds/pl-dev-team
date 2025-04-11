@@ -19,7 +19,7 @@ example_running_app: https://jpa04-staff.dokku-00.cs.ucsb.edu/
 office_hours_page: https://ucsb-cs156.github.io/s25/office-hours
 software_install_url: https://ucsb-cs156.github.io/s25/info/software.html
 staff_emails: "djensen@ucsb.edu,benjaminconte@ucsb.edu,samuelzhu@ucsb.edu,divyanipunj@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,phtcon@ucsb.edu"
-starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
+starter_storybook: "https://67f864a308dbcc23529c76e8-hpbxoidyyg.chromatic.com/"
 canvas_link: https://ucsb.instructure.com/courses/25659/assignments/357308
 ---
 
@@ -194,7 +194,7 @@ And the links for `Storybook` and `build info` should take you to pages that loo
 
 | storybook | build info |
 |-|-|
-| <img width="500" alt="image" src="https://github.com/user-attachments/assets/eaa1b86d-cd8a-449d-81bc-4fa813f51a7d"> | <img width="500" alt="image" src="https://github.com/user-attachments/assets/061b53c9-9f07-47c1-9ea6-1f5df030e06b"> |
+| <img width="500" alt="image" src="https://github.com/user-attachments/assets/eaa1b86d-cd8a-449d-81bc-4fa813f51a7d"> | <img width="500" alt="image" src="https://github.com/user-attachments/assets/bb041223-49e7-4b4f-a831-5033a6b4425e"> |
 
 
 ### Green check ✅, not red X ❌
@@ -229,7 +229,7 @@ Once you've followed these instructions, try logging in to your app.  It should 
 
 Where:
 * <tt><i>yourGithubId</i></tt> is your Github Id
-* <tt><i>yourGithubId</i></tt> is your two-digit team/dokku number
+* <tt><i>xx</i></tt> is your two-digit team/dokku number
 
 You should test the following features:
 
