@@ -9,7 +9,7 @@ nav_order: 100
 ready: false
 qxx: s25
 layout: default
-parent: DRAFTS
+parent: lab
 course_org: https://github.com/ucsb-cs156-s25
 course_org_name: ucsb-cs156-s25
 starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa04
