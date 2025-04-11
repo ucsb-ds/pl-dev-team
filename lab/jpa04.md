@@ -13,7 +13,7 @@ parent: lab
 course_org: https://github.com/ucsb-cs156-s25
 course_org_name: ucsb-cs156-s25
 starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa04
-slack_help_channel: "[#help-jpa04](https://ucsb-cs156-s25.slack.com/archives/C07RY3BQPCZ)"
+slack_help_channel: "[#help-jpa04](https://ucsb-cs156-s25.slack.com/archives/C08ML77K8TS)"
 teams_url: https://bit.ly/cs156-s25-teams
 example_running_app: https://jpa04-staff.dokku-00.cs.ucsb.edu/
 office_hours_page: https://ucsb-cs156.github.io/s25/office-hours
