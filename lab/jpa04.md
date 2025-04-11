@@ -23,7 +23,7 @@ starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
 canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262241
 ---
 
-<div style="font-size:400%; width: 80%; margin-left: auto; margin-right: auto; background-color: yellow;">Please don't start jpa04 yet!  It's not quite ready. Wait until it is assigned.</div>
+<div style="font-size:400%; width: 80%; margin-left: auto; margin-right: auto; background-color: yellow;">This lab is still under construction, but you may go ahead and start.  If you have difficulties, please post to #help-jpa04</div>
 
 
 <style>
