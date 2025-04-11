@@ -20,7 +20,7 @@ office_hours_page: https://ucsb-cs156.github.io/s25/office-hours
 software_install_url: https://ucsb-cs156.github.io/s25/info/software.html
 staff_emails: "djensen@ucsb.edu,benjaminconte@ucsb.edu,samuelzhu@ucsb.edu,divyanipunj@ucsb.edu,sangitakunapuli@ucsb.edu,amey@ucsb.edu,phtcon@ucsb.edu"
 starter_storybook: "https://6709627038191f269c9a870b-waqkeiwvio.chromatic.com/"
-canvas_link: https://ucsb.instructure.com/courses/21167/assignments/262241
+canvas_link: https://ucsb.instructure.com/courses/25659/assignments/357308
 ---
 
 <div style="font-size:400%; width: 80%; margin-left: auto; margin-right: auto; background-color: yellow;">This lab is still under construction, but you may go ahead and start.  If you have difficulties, please post to #help-jpa04</div>
