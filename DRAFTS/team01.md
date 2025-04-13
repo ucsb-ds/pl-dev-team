@@ -338,7 +338,7 @@ We are focusing on learning these new Spring Boot backend concepts:
 * Implementing controller routes for CRUD operations (Created, Read, Update, Destroy)
 * Writing unit tests for controller CRUD operations, including the use of:
   - Spring `MockMvc`
-  - Mockito methods for creating mocks of repositories and services (`when`, `verify)
+  - Mockito methods for creating mocks of repositories and services (`when`, `verify`)
   - the idea of "dependency injection"
 
 In addition, we'll practice further with a few concepts that we touched on in `jpa03`, but may not have fully fleshed out:
