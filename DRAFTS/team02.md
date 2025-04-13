@@ -17,7 +17,7 @@ deployment: https://team02.dokku-00.cs.ucsb.edu/
 storybook: https://ucsb-cs156-s25.github.io/STARTER-team02/chromatic
 canvas: https://ucsb.instructure.com/courses/25659/assignments/348165
 help_team02: "[<tt>#help-team02</tt>](https://ucsb-cs156-s25.slack.com/archives/C08MUGUKDGS)"
-nvm_use: "<tt>nvm use 20.17.0</tt>"
+nvm_use: "<tt>nvm use 22.14.0</tt>"
 ---
 <style>
   tt {white-space: pre;}
