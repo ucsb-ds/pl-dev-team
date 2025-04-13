@@ -13,6 +13,7 @@ sample_team: s25-03
 github_org_url: https://github.com/ucsb-cs156-s25
 github_org: ucsb-cs156-s25
 starter_repo: https://github.com/ucsb-cs156-s25/STARTER-team01
+starter_repo_url: git@github.com:ucsb-cs156-s25/STARTER-team01.git
 slack_help_channel: "[#help-team01](https://ucsb-cs156-s25.slack.com/archives/C08N24HMQAV)" 
 teams_url: https://bit.ly/cs156-s25-teams
 office_hours_page: https://ucsb-cs156.github.io/s25/office-hours
@@ -308,9 +309,9 @@ From a process standpoint, here's how this project works:
 To get started:
 
 * Clone your team's team01
-* Add the <{{page.starter_repo}}> repo as a remote called starter
+* Add the <{{page.starter_repo_url}}> repo as a remote called starter
   <p>
-  <tt>git remote add starter {{page.starter_repo}} </tt>
+  <tt>git remote add starter {{page.starter_repo_url}} </tt>
   </p>
   This is in case there are updates to the starter code that you need to pull from by doing:
   ```
@@ -857,7 +858,7 @@ Here's the code for one of those, namely the database migration for file `UCSBDa
                       "autoIncrement": true,
                       "constraints": {
                         "primaryKey": true,
-                        "primaryKeyName": "CONSTRAINT_5"
+                        "primaryKeyName": "UCSBDATES_PK"
                       },
                       "name": "ID",
                       "type": "BIGINT"
@@ -906,17 +907,13 @@ Note that these files only describe the creation of a table, however on the real
 
 Also you might find it useful to know the commands described in the [Liquibase doc]({{page.starter_repo}}/blob/main/docs/liquibase.md). They will allow you to check and apply the changes that will happen to the database outside of just building the app
 
-### About that `CONSTRAINT_5`
-
-The `CONSTRAINT_5` in the example is a bit unfortunate, but we caught it too late to change it for s25; hopefully we can change this before we use the assignment again.
+### About that `UCSBDATES_PK`
 
 Here's what that means, and what you should do in your code: 
 * *Constraints* are rules that a database table is required to follow
 * When you specify that a certain field is a *primary key*, one of the aspects of being a primary key is that this field can have no duplicate values in the table.
 * In a liquibase specification, each *constraint* has to be given a unique name; unique across the entire database (not just this table, but all tables in the database).
-* When this example was put together, someone chose the name `CONSTRAINT_5` because, we can assume, the names `CONSTRAINT_1`, `CONSTRAINT_2`, etc. were already taken.
-* The problem is that this isn't a very good strategy for choosing a name; it's difficult to know which numbers have/have not been used.
-* Instead, we suggest the following strategy: Since database tables have to be unique, and a table can only have one primary key, use the name <tt><i>NAME_OF_TABLE</i>_PK</tt>, for example:
+* We suggest the following strategy: Since database tables have to be unique, and a table can only have one primary key, use the name <tt><i>NAME_OF_TABLE</i>_PK</tt>, for example:
   * <tt>RESTAURANTS_PK</tt>
   * <tt>UCSBDININGCOMMONSMENUITEMS_PK</tt>
   * etc.
