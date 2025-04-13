@@ -96,11 +96,11 @@ The dropdown box below will contain information about issues/problems we run int
 <summary markdown="1">
 
 ### Yellow Circle on Chromatic Checks (Github Actions)
+</summary>
 
 If you find that one of the Github Actions related to Chromatic is not finishing (i.e. stays as a permanent yellow circle), consult this page for hints on what to do:
 * <https://ucsb-cs156.github.io/topics/chromatic/chromatic_yellow_circle.html>
 
-</summary>
 </details>
 
 
