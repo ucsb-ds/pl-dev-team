@@ -262,8 +262,8 @@ To redeploy any time the repo changes (otherwise changes in the repo don't affec
 
 Once you have done these steps, you should be able to see your app running at *both* of these links (modifying them for your dokku/team number, and your github id):
 
-* http (not secure): [http://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](http://dokku-xx.cs.ucsb.edu/{{page.title}}-yourGithubId)
-* https (secure): [https://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](https://dokku-xx.cs.ucsb.edu/{{page.title}}-yourGithubId)
+* http (not secure): [http://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](http://dokku-xx-yourGithubId.cs.ucsb.edu/{{page.title}})
+* https (secure): [https://{{page.title}}-<i>yourGithubId</i>.dokku-xx.cs.ucsb.edu/](https://dokku-xx-yourGithubId.cs.ucsb.edu/{{page.title}})
 
 When that works, you're ready for the next step.
 
@@ -538,7 +538,7 @@ fails when it is not present.
 At a later stage, you'll be asked to write tests to cover these mutation coverage gaps.
 
 But for now, its enough that you are familiar with:
-* How to run pitest (`mvn pitest:mutationCoverage)
+* How to run pitest (`mvn test pitest:mutationCoverage`)
 * How to bring up the report and make sense of it.
 
 Now we are ready to do some actual coding.
@@ -653,7 +653,7 @@ You should then be able to run these commands and verify that the method `getGit
 
 ```
 mvn test jacoco:report
-mvn pitest:mutationCoverage
+mvn test pitest:mutationCoverage
 ```
 
 Make another commit (replace `xy` with your initials):
@@ -690,7 +690,7 @@ Next, change the names in this method to match those of the members of your team
 
 Then, run the test suite (`mvn test`); everything should still pass.
 
-Then, run `mvn pitest:mutationCoverage` and you'll see we still have a testing gap here.
+Then, run `mvn test pitest:mutationCoverage` and you'll see we still have a testing gap here.
 
 To address that, let's write a test in `DeveloperTest.java` that the team that `getTeam` returns has the correct name. For example, if your teamname is `s25-00`, the test might look like this:
 
@@ -899,7 +899,7 @@ So our test can just assert that the `toString` method returns what we expect fo
     }
 ```
 
-Add this test, run `mvn test`, and if passes, run `mvn pitest:mutationCoverage` again.  You should see that the `toString` method is now green 
+Add this test, run `mvn test`, and if passes, run `mvn test pitest:mutationCoverage` again.  You should see that the `toString` method is now green 
 on the pitest report:
 
 ![image](https://github.com/user-attachments/assets/c79f6adc-b2c9-453b-887b-58f7f565dde3)
