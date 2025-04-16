@@ -905,8 +905,6 @@ For more information on Liquibase you can visit <https://ucsb-cs156.github.io/to
 
 Note that these files only describe the creation of a table, however on the real world you will most likely be describing changes like adding a new column or deleting an existing table etc. for all possible changes you can make to the database using the changes sets you can see <https://docs.liquibase.com/change-types/home.html>
 
-Also you might find it useful to know the commands described in the [Liquibase doc]({{page.starter_repo}}/blob/main/docs/liquibase.md). They will allow you to check and apply the changes that will happen to the database outside of just building the app
-
 ### About that `UCSBDATES_PK`
 
 Here's what that means, and what you should do in your code: 
