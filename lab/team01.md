@@ -8,7 +8,7 @@ nav_order: 100
 ready: false
 qxx: s25
 layout: default
-parent: DRAFTS
+parent: lab
 sample_team: s25-03
 github_org_url: https://github.com/ucsb-cs156-s25
 github_org: ucsb-cs156-s25
