@@ -22,6 +22,11 @@ staff_emails: "djensen@ucsb.edu,benjaminconte@ucsb.edu,samuelzhu@ucsb.edu,divyan
 starter_storybook: "https://ucsb-cs156-s25.github.io/STARTER-team01/chromatic"
 canvas_link: "https://ucsb.instructure.com/courses/25659/assignments/348164"
 example_full_running_app: "[team01](https://team01.dokku-00.cs.ucsb.edu)"
+num_issues: 42
+num_top_level_issues: 6
+num_issues_per_table_alpha: 6
+num_issues_per_table: 6
+num_database_tables_alpha: 6
 ---
 
 <style>
@@ -87,7 +92,7 @@ Here's how that will play out in detail:
 1. Navigate to the web page for the GitHub organization, i.e. <https://github.com/{{page.github_org}}>.  You'll see a tab for `Projects`. Click on that tab.  You should then see a project for your team for the team01 assignment, e.g. `team01-s25-01`, `team01-s25-02`,etc.
 2. Open the link for your team's Project.  You should find four columns: `Todo`, `In Progress`, `In Review`, `Done`
 3. The `Todo` column will be populated with a set of tasks, which are called *Issues* in the GitHub implementation of Kanban.  These correspond to the Issues that we'll also see in the `Issues` column of your repo.
-4. Now navigate to your repo for {{page.num}}, which will have a url such as: <https://github.com/{{page.github_org}}/{{page.title}}-{{page.sample_team}}>.  You will see a tab for `Issues`. Click on that tab.
+4. Now navigate to your repo for {{page.title}}, which will have a url such as: <https://github.com/{{page.github_org}}/{{page.title}}-{{page.sample_team}}>.  You will see a tab for `Issues`. Click on that tab.
 4. You should now see a list of issues.  These are the work items your team needs to complete to do the the work for the team01 assignment. They are the same issues that you find in the "To Do" column of your Kanban board (i.e. your `Project`, to use the GitHub terminology).
 5. There may also be some additional housekeeping steps that you need to complete in order for the {{page.num}} assignment to be considered completed; the issues on the Kanban board are not necessarily the only things you need to complete to earn full credit for the assignment.  But these issues are the bulk of the work you need to divide up as a team.
 6. Note that you are allowed and even encouraged to add cards on the Kanban board and/or Issues for any other items you find in the assignment description that need to be completed.  Tracking this on the Kanban board can be a helpful way to make sure that it get done, and to signal to other team members when it has been done.
@@ -208,7 +213,7 @@ You should see {{page.num_issues}} issues on the board in the ToDo column when y
 
 ### Set up Tasks
 
-These appear only once on the board for the entire team; there are a total of {{page.num_top_level_issues}} of them.
+These appear only once on the board for the entire team; there are a total of {{page.num_top_level_issues}} them.
 
 | Task |
 |------|
