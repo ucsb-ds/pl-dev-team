@@ -117,46 +117,9 @@ It is true that since this is a *course*, there is an aspect that you are mainta
 
 ## Repos for team01
 
-<!--
-team01-s25-01  number 3 
-team01-s25-02  number 7 
-team01-s25-03  number 8 
-team01-s25-04  number 9 
-team01-s25-05  number 11 
-team01-s25-06  number 12 
-team01-s25-07  number 13 
-team01-s25-08  number 14 
-team01-s25-09  number 15 
-team01-s25-10  number 16 
-team01-s25-11  number 18 
-team01-s25-12  number 20 
-team01-s25-13  number 21 
-team01-s25-14  number 22 
-team01-s25-15  number 23 
-team01-s25-16  number 24 
--->
-
-
 Here are the links to the repos and Kanban (project) boards for team01
 
-| Repo | Kanban Board | GH Pages |
-|-----|-----|------|
-|[{{page.title}}-{{site.qxx}}-01]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-01) | [{{page.title}}-{{site.qxx}}-01](https://github.com/orgs/{{page.github_org}}/projects/3) | [{{page.title}}-{{site.qxx}}-01](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-01/) |
-|[{{page.title}}-{{site.qxx}}-02]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-02) | [{{page.title}}-{{site.qxx}}-02](https://github.com/orgs/{{page.github_org}}/projects/7) | [{{page.title}}-{{site.qxx}}-02](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-02/) |
-|[{{page.title}}-{{site.qxx}}-03]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-03) | [{{page.title}}-{{site.qxx}}-03](https://github.com/orgs/{{page.github_org}}/projects/8) | [{{page.title}}-{{site.qxx}}-03](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-03/) |
-|[{{page.title}}-{{site.qxx}}-04]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-04) | [{{page.title}}-{{site.qxx}}-04](https://github.com/orgs/{{page.github_org}}/projects/9) | [{{page.title}}-{{site.qxx}}-04](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-04/) |
-|[{{page.title}}-{{site.qxx}}-05]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-05) | [{{page.title}}-{{site.qxx}}-05](https://github.com/orgs/{{page.github_org}}/projects/11) | [{{page.title}}-{{site.qxx}}-05](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-05/) |
-|[{{page.title}}-{{site.qxx}}-06]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-06) | [{{page.title}}-{{site.qxx}}-06](https://github.com/orgs/{{page.github_org}}/projects/12) | [{{page.title}}-{{site.qxx}}-06](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-06/) |
-|[{{page.title}}-{{site.qxx}}-07]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-07) | [{{page.title}}-{{site.qxx}}-07](https://github.com/orgs/{{page.github_org}}/projects/13) | [{{page.title}}-{{site.qxx}}-07](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-07/) |
-|[{{page.title}}-{{site.qxx}}-08]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-08) | [{{page.title}}-{{site.qxx}}-08](https://github.com/orgs/{{page.github_org}}/projects/14) | [{{page.title}}-{{site.qxx}}-08](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-08/) |
-|[{{page.title}}-{{site.qxx}}-09]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-09) | [{{page.title}}-{{site.qxx}}-09](https://github.com/orgs/{{page.github_org}}/projects/15) | [{{page.title}}-{{site.qxx}}-09](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-09/) |
-|[{{page.title}}-{{site.qxx}}-10]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-10) | [{{page.title}}-{{site.qxx}}-10](https://github.com/orgs/{{page.github_org}}/projects/16) | [{{page.title}}-{{site.qxx}}-10](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-10/) |
-|[{{page.title}}-{{site.qxx}}-11]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-11) | [{{page.title}}-{{site.qxx}}-11](https://github.com/orgs/{{page.github_org}}/projects/18) | [{{page.title}}-{{site.qxx}}-11](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-11/) |
-|[{{page.title}}-{{site.qxx}}-12]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-12) | [{{page.title}}-{{site.qxx}}-12](https://github.com/orgs/{{page.github_org}}/projects/20) | [{{page.title}}-{{site.qxx}}-12](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-12/) |
-|[{{page.title}}-{{site.qxx}}-13]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-13) | [{{page.title}}-{{site.qxx}}-13](https://github.com/orgs/{{page.github_org}}/projects/21) | [{{page.title}}-{{site.qxx}}-13](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-13/) |
-|[{{page.title}}-{{site.qxx}}-14]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-14) | [{{page.title}}-{{site.qxx}}-14](https://github.com/orgs/{{page.github_org}}/projects/22) | [{{page.title}}-{{site.qxx}}-14](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-14/) |
-|[{{page.title}}-{{site.qxx}}-15]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-15) | [{{page.title}}-{{site.qxx}}-15](https://github.com/orgs/{{page.github_org}}/projects/23) | [{{page.title}}-{{site.qxx}}-15](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-15/) |
-|[{{page.title}}-{{site.qxx}}-16]({{page.github_org_url}}/{{page.title}}-{{site.qxx}}-16) | [{{page.title}}-{{site.qxx}}-16](https://github.com/orgs/{{page.github_org}}/projects/24) | [{{page.title}}-{{site.qxx}}-16](https://{{page.github_org}}.github.io/{{page.title}}-{{site.qxx}}-16/) |
+{% include team01_repos.md %}
 
 For team01, the list of issues is populated by the staff before you start using the Github Actions workflow [`99-team01.yml`](
 {{page.starter_repo}}/blob/main/.github/workflows/99-team01.yml); your repo should have exactly {{page.num_issues}} issues. 
