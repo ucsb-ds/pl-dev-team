@@ -86,65 +86,65 @@ defaults:
 teams: 
   - team: s25-01
     dokku: "01"
-    team02_project: tbd
+    team02_project: 26
     slack: https://ucsb-cs156-s25.slack.com/archives/C08LSEA0140
   - team: s25-02
     dokku: "02"
-    team02_project: tbd
+    team02_project: 27
     slack: https://ucsb-cs156-s25.slack.com/archives/C08KXG6D6Q6
   - team: s25-03
     dokku: "03"
-    team02_project: tbd
+    team02_project: 27
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L6M3TVKM
   - team: s25-04
     dokku: "04"
-    team02_project: tbd
+    team02_project: 28
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L649P62W
   - team: s25-05
     dokku: "05"
-    team02_project: tbd
+    team02_project: 29
     slack: https://ucsb-cs156-s25.slack.com/archives/C08LEHKQQRF
   - team: s25-06
     dokku: "06"
-    team02_project: tbd
+    team02_project: 30
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L6M63YNP
   - team: s25-07
     dokku: "07"
-    team02_project: tbd
+    team02_project: 31
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L700MMPE
   - team: s25-08
     dokku: "08"
-    team02_project: tbd
+    team02_project: 32
     slack: https://ucsb-cs156-s25.slack.com/archives/C08KP90NACX
   - team: s25-09
     dokku: "09"
-    team02_project: tbd
+    team02_project: 33
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L64EH1NE
   - team: s25-10
     dokku: "10"
-    team02_project: tbd
+    team02_project: 34
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L6M9TEBV
   - team: s25-11
     dokku: "11"
-    team02_project: tbd
+    team02_project: 35
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L26YQDQV
   - team: s25-12
     dokku: "12"
-    team02_project: tbd
+    team02_project: 36
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L6MAKF9R
   - team: s25-13
     dokku: "13"
-    team02_project: tbd
+    team02_project: 37
     slack: https://ucsb-cs156-s25.slack.com/archives/C08KP94MNJK
   - team: s25-14
     dokku: "14"
-    team02_project: tbd
+    team02_project: 40
     slack: https://ucsb-cs156-s25.slack.com/archives/C08L271J4UD
   - team: s25-15
     dokku: "15"
-    team02_project: tbd
+    team02_project: 41
     slack: https://ucsb-cs156-s25.slack.com/archives/C08KP95T8BH
   - team: s25-16
     dokku: "16"
-    team02_project: tbd
+    team02_project: 42
     slack: https://ucsb-cs156-s25.slack.com/archives/C08LEHV0PFT
