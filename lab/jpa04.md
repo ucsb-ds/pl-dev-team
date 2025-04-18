@@ -23,8 +23,8 @@ starter_storybook: "https://67f864a308dbcc23529c76e8-hpbxoidyyg.chromatic.com/"
 canvas_link: https://ucsb.instructure.com/courses/25659/assignments/357308
 ---
 
-<div style="font-size:400%; width: 80%; margin-left: auto; margin-right: auto; background-color: yellow;">This lab is still under construction, but you may go ahead and start.  If you have difficulties, please post to #help-jpa04</div>
-
+<!-- <div style="font-size:400%; width: 80%; margin-left: auto; margin-right: auto; background-color: yellow;">This lab is still under construction, but you may go ahead and start.  If you have difficulties, please post to #help-jpa04</div>
+ -->
 
 <style>
   tt {white-space: pre; font-size: 80%;}
