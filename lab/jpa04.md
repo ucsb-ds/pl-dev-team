@@ -266,14 +266,13 @@ Type that command, and when it finishes, you should be able to refresh the web p
 
 At the top of your README.md, you'll find this:
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/1119017/235758700-20b3d8cf-d0dc-4182-8e6d-5e6ef551956a.png">
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/8593a5f7-8aa7-4373-8e4a-6b7cdb7987f3" />
 
 Follow these instructions; i.e. put in the link to your running app on Dokku, and
 remove the comment so that afterwards it looks something like this (but with your actual Dokku link,
 not the example value shown here).
 
-<img width="500" alt="image" src="https://user-images.githubusercontent.com/1119017/235759017-e48fdcf6-abb7-40e7-8ae8-71173113d4cd.png">
-
+<img width="534" alt="image" src="https://github.com/user-attachments/assets/57d2abb4-bc83-41bb-a659-c27260462938" />
 
 ## Step 7: Submit on Canvas
 
