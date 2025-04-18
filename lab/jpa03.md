@@ -133,7 +133,7 @@ In this step, we'll:
 
 ### Step 2.1: Enable Github Actions (if not already enabled)
 
-Go to the webpage for your repo on Github, e.g. <tt>https://github.com/{{page.course_org_name}}/{{page.num}}-<i>yourGithubLogin</i></tt>.  Find the `Actions` tab on your repo.  
+Go to the webpage for your repo on Github, e.g. <tt>https://github.com/{{page.course_org_name}}/{{page.title}}-<i>yourGithubLogin</i></tt>.  Find the `Actions` tab on your repo.  
 
 The menu will look like this: the `Actions` tab is fourth from the left:
 
@@ -287,9 +287,9 @@ You should test the following features:
 
 If it doesn't work:
 
-* Check on the Slack channel <tt>#help-{{page.num}}</tt> to see if there are any known issues.
+* Check on the Slack channel <tt>#help-{{page.title}}</tt> to see if there are any known issues.
 * Ask folks on your own team for help first on your team's slack channel.
-* Post a specific question on the <tt>#help-{{page.num}}</tt> slack channel—note what you were trying to do, what you expected, and what happened instead.  Screenshots or copy/pasted console output is helpful!
+* Post a specific question on the <tt>#help-{{page.title}}</tt> slack channel—note what you were trying to do, what you expected, and what happened instead.  Screenshots or copy/pasted console output is helpful!
 * Come to office hours (posted here: <{{page.office_hours_pages}}>)
 * Ask during class on `#help-lecture-discussion`
 
@@ -317,12 +317,12 @@ Remember to submit a link to *your repo*, not a link to your running app.
 ## Grading Rubric:
 
 1.  (10 pts) README in your repo has a link to your running web app.
-2.  (20 pts) There is a running web app at <tt>https://{{page.num}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
+2.  (20 pts) There is a running web app at <tt>https://{{page.title}}-<i>githubid</i>.dokku-xx.cs.ucsb.edu</tt>
 3.  (10 pts) Running web app has the ability to login with OAuth through a Google Account.
 4.  (10 pts) The `ADMIN_EMAILS` variable is set to include all staff emails (see list below) plus your own email.
     - The correct setting is shown below, except with your email in place of <tt><i>youremail</i></tt>
     - <tt>ADMIN_EMAILS=<i>youremail</i>@ucsb.edu,{{page.staff_emails}}</tt>
-5.  (10 pts) The link on your main repo page is set your Github Pages page (i.e. <tt>https://{{page.course_org_name}}.github.io/{{page.num}}-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.  ) 
+5.  (10 pts) The link on your main repo page is set your Github Pages page (i.e. <tt>https://{{page.course_org_name}}.github.io/{{page.title}}-<i>yourGithubId</i></tt>, where <tt><i>yourGithubId</i></tt> is replaced by your Github Id.  ) 
 6.  (10 pts) The Github Pages page shows a web page that looks like the example in the lab instructions and has the correct content.
 8.  (10 pts) GitHub Actions runs correctly and there is a green check (not a red X) on your main branch
 9. (10 pts) There is a post on Canvas for this assignment that has the correct content (i.e. a link to the *repo*, not the running app on Dokku)
@@ -340,9 +340,9 @@ Note that the Rubric above is subject to change, but if it does:
 Click the triangle for a list of tasks the instructor should do prior releasing this lab.
 </summary>
 
-* Create {{page.num}} repos 
+* Create {{page.title}} repos 
 * Set up starter code in the course organization, and update links
-* Create a Canvas assignment for {{page.num}}
+* Create a Canvas assignment for {{page.title}}
 * Make sure the app <{{page.example_running_app}}> is up and running, and is sync'd with the starter code:
 
   i.e, on dokku-00 for example, do:
