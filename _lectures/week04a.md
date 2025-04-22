@@ -33,6 +33,12 @@ parent: lectures
 
 3. For anyone that's missing, please check on the slack, and let them know that they missed standup, but that they are encouraged to post a standup update as soon as possible. 
 
+## Today's participation activity
+
+Submit a link to your standup update on Canvas:
+
+* <https://ucsb.instructure.com/courses/25659/assignments/348163>
+
 Then, update your team Kanban board as explained below.
 
 ## Update Team Kanban board
