@@ -11,7 +11,10 @@ parent: lectures
 
 ## Start with Standup (aka "Daily Scrum")
 
-1. First, please take a moment to make a *standup post* on your *official slack team channel*   The post can just be something like this:
+1. Please take a moment to look over this:
+   <https://ucsb-cs156.github.io/topics/agile/agile_standups.html>
+
+1. Then, please take a moment to make a *standup post* on your *official slack team channel*   The post can just be something like this:
 
    <img width="622" alt="image" src="https://github.com/user-attachments/assets/30bf064b-3537-48eb-85a9-5c5e8c5d5b03">
    <img width="526" alt="image" src="https://github.com/user-attachments/assets/b7479cf0-947b-423c-8e67-2a09041145ea">
@@ -30,10 +33,7 @@ parent: lectures
 
 3. For anyone that's missing, please check on the slack, and let them know that they missed standup, but that they are encouraged to post a standup update as soon as possible. 
 
-Then, update your team Kanban board:
-
-More about standup meetings:
-* <https://ucsb-cs156.github.io/topics/agile/agile_standups.html>
+Then, update your team Kanban board as explained below.
 
 ## Update Team Kanban board
 
