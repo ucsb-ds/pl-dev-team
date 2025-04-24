@@ -23,5 +23,5 @@ Take note of anyone that's missing; `@` them on the slack channel, and ask them 
 
 ## Work on team01, or start on team02
 
-If your team is ready to start on team02, please do so.
+If your team is ready to start on [team02](https://ucsb.instructure.com/courses/25659/assignments/348165), please do so.
 
