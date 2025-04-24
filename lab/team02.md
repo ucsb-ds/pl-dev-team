@@ -8,7 +8,7 @@ github_org_url: https://github.com/ucsb-cs156-s25
 sample_team: s25-01
 layout: lab
 layout: default
-parent: DRAFTS
+parent: lab
 prev_assignment: team01
 nav_order: 203
 ready: true
