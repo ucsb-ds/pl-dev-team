@@ -29,6 +29,7 @@ video_e2e_tests: "[team03 03 - End-to-end Tests (32 min)](https://youtu.be/SGhXL
 
 # {{page.title}} - {{page.description}}
 
+
 This team assignment is designed to introduce you to the ideas of integration tests and end-to-end tests, as illustrated in this diagram, often called the "testing pyramid":
 
 <img width="454" alt="testing pyramid" src="https://github.com/ucsb-cs156/ucsb-cs156.github.io/assets/1119017/cfbc9f96-af05-45de-bf54-bff7472a262a">
@@ -62,7 +63,8 @@ In this exercise, you'll do five things, working in the team repo from {{page.re
 
 (For a video covering this section, see: {{page.video_integration_tests}})
 
-Again, for this assignment you will be working in your {{page.repo_to_work_in}} repos, but is an individual homework assignment. 
+This team project will use the same repos and same Kanban boards that you used for {{page.repo_to_work_in}}.  So you do not need a new repo or a new Kanban board. 
+
 
 Start by going into the directory where you cloned your {{page.repo_to_work_in}} repo.
 

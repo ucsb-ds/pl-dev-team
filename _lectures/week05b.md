@@ -1,7 +1,7 @@
 ---
-title: "Week 05a - 04.29 Tue"
-lecture_date: 2025-04-29
-description: "Standup/Work on team02"
+title: "Week 05b - 04.30 Wed"
+lecture_date: 2025-04-30
+description: "Standup/Work on team02/team03"
 ready: true
 layout: default
 parent: lectures
@@ -26,20 +26,9 @@ invite everyone to stand, and read out their post to the group.
 Take note of anyone that's missing; `@` them on the slack channel, and ask them to make a standup post as soon as they get an opportunity.
 </details>
 
-
-## You should be done with team01
-
-If your team isn't finished with team01, your team is behind.  If you need help, please reach out to the staff and let us know how we can support you.
-
 ## Please work on team02
 
 Please be sure that you review the Kanban board at least once a day (e.g. when it is posted to your team slack channel), and make sure that:
 * you have at least one issue in the "in progress" column
 * ideally, you have *exactly* one issue in the "in progress" column
 * that you are helping your team to get code reviews merged.
-
-## If your team will be done with team02 soon...
-
-Please give the staff a 24-48 hours "heads up" if you think your team will finish team02 early. 
-
-We want to be sure to have team03 ready to roll out.
