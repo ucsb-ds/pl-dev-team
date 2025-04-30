@@ -11,7 +11,7 @@ canvas: https://ucsb.instructure.com/courses/25659/assignments/348166
 starter: https://github.com/ucsb-cs156-s25/STARTER-team02
 sample_team: s25-04
 layout: default
-parent: DRAFTS
+parent: lab
 github_org_url: https://github.com/ucsb-cs156-s25/
 video_testing_pyramid: "[team03 01 - Testing Pyramid (10 min)](https://youtu.be/zvLlO8EUh0c)"
 video_integration_tests: "[team03 02 - Integration Tests (24 min)](https://youtu.be/ohPxfE0hbZI)"
