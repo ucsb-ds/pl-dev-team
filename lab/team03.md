@@ -49,7 +49,7 @@ You can read more about the testing pyramid in a dedicated article here:
 
 If you were aware of the testing pyramid prior to taking this course, you might have noticed that unit tests exist in every assignment given in this course, but integration and end-to-end tests do not...yet. While the rolling in of the rest of the testing pyramid is in progress and while we decide how to best integrate these topics directly into the course material, this assignment is designed to be a brief introduction to these testing topics that you will likely encounter in real-world software development. 
   
-In this exercise, you'll do five things, working in the team repo from {{page.repo_to_work_in}}.  While you are working in the team repo, **this is an individual homework**.
+In this exercise, you'll do five things, working in the team repo from {{page.repo_to_work_in}}.
 
 1. Run an existing integration test and look at the code.
 2. Run an existing end-to-end test in headless mode (the normal way)
