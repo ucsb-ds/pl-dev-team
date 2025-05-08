@@ -159,7 +159,24 @@ So that you don't have to remember to sign each commit as you make it, you can r
 git config --global commit.gpgsign true
 ```
 
-### Step 2c: Configure Github for signing keys
+### Step 2c: Configure local git for signing keys
+
+Now run these commands:
+
+```
+mkdir -p ~/.config/git
+touch ~/.config/git/allowed_signers
+```
+
+Followed by this one (changing `~/.ssh/id_rsa.pub to the name of your public key file if needed).
+
+```
+echo "myemail@ucsb.edu" `cat ~/.ssh/id_rsa.pub` >> ~/.config/git/allowed_signers
+```
+
+This is mainly needed so that the `git log --show-signature` command works properly.
+
+### Step 2d: Configure Github for signing keys
 
 
 Next, you need to upload your *public* key to Github as a *signing key*.  This is different from uploading it to Github for accessing repos, which you probably have already done previously. 
