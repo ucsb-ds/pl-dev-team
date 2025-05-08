@@ -4,7 +4,7 @@ assigned: 2025-05-08
 due: 2025-05-12 23:59
 layout: default
 title: jpa05
-prev_lab: jpa04
+prev_lab: jpa00
 nav_order: 100
 ready: false
 qxx: s25
@@ -26,18 +26,52 @@ canvas_link:
 
 For due date: see the jpa04 entry on Canvas: <{{page.canvas_link}}>
 
-# Instructions for jpa05
-
-This is an **individual** lab on the topic enabling verified commits for Git and GitHub
-
-You may cooperate with one or more pair partners from your team to help in debugging and understanding the lab, but each person should complete the lab separately for themselves.
 
 # Goal
+
 By the end of this lab, commits you push to GitHub will have a "Verified" tag next to them.
 
 This is important because it allows GitHub to verify that commits come directly from you, and have not been modified or tampered with.
 
-## Step 1: Create your repo
+It also ensures that we can accurately associate each commit with the individual that made the commit.  Without this, it's possible for some commits to end up with 
+metadata (name and email) that are difficult to associate with any given student in the class.
+
+# But why? (More information about Signed Commits)
+
+When you set your git configuration to use an email address with a command like this, github puts that email address on your
+commmits:
+```
+ git config --global user.email "cgaucho@ucsb.edu"
+```
+
+But what is to stop you from typing this:
+
+```
+git config --global user.email "billgates@microsoft.com"
+```
+
+Well, nothing really.  If that really is an email address associated with a GitHub account, you could totally put in commit messages 
+that look as if they were made by Bill Gates.  And Bill Gates could impersonate "Chris Gaucho" in return.
+
+While there is nothing in place to stop this impersonation, it is possible to configure 
+Commit Signature Verification so that when you make commits, they are identified
+with a special badge indicating that the commit is verified as having come from you.
+
+You can learn more at this web page:
+* <https://ucsb-cs156.github.io/topics/GitHub/github_verified_commits.html>
+
+Shout out to our friends at AppFolio: this is one of the tips Phill Conrad picked up while interning there.
+
+
+# This is an individual lab
+
+This is an **individual** lab.  It's very straightforward; probably the easiest lab since {{page.prev_lab}},
+so it shouldn't take very long. But it's essential before you undertake the legacy code projects.
+
+You may get help from your teammates in understanding the lab, but each person should complete the lab separately for themselves.
+
+
+## Step 1: Fina your repo
 
 There should already be a repo for you under the course organization
 with a name in this format:
@@ -45,6 +79,9 @@ with a name in this format:
 * <tt>{{page.course_org}}/{{page.title}}-<i>githubid</i></tt>
 
 where <tt><i>github</i></tt> is your github id.
+
+This repo has configured to require signed commits.  You can verify this by going
+to the branch pro
 
 You should add a remote for the starter code from this repo:
 
@@ -124,7 +161,7 @@ Once the key is uploaded, you're all set to be able to sign your commits!
 
 ## Step 3: Make a test commit and push to GitHub
 
-Just like in [jpa00](/s25/labs/jpa00.html), change the file `src/main/java/Hello.java` so that the `System.out.println` method call reads:
+Just like in [{{page.prev_lab}}](/s25/labs/{{page.prev_lab}}.html), change the file `src/main/java/Hello.java` so that the `System.out.println` method call reads:
 
 ```
         System.out.println("Hello, World!");
