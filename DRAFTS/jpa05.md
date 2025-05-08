@@ -250,6 +250,14 @@ error: failed to push some refs to 'github.com:ucsb-cs156-s25/jpa05-yourGithubId
 
 If so, please ask for help in the slack channel.
 
+If it does work, try this command:
+
+```
+git log --show-signature
+```
+
+You should see that your commits are signed.
+
 ## Step 4: Submit on Gradescope
 
 Now submit your work on Gradescope here: 
