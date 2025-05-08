@@ -13,7 +13,8 @@ parent: DRAFTS
 course_org: https://github.com/ucsb-cs156-s25
 course_org_name: ucsb-cs156-s25
 starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa05
-canvas_link: 
+canvas_link_a: https://ucsb.instructure.com/courses/25659/assignments/361787
+canvas_link_b: https://ucsb.instructure.com/courses/25659/assignments/361790
 ---
 
 <style>
@@ -24,8 +25,13 @@ canvas_link:
 
 {% include drop_down_style.html %}
 
-For due date: see the jpa04 entry on Canvas: <{{page.canvas_link}}>
+Note that you need to submit this assigment on *both* Gradescope and Canvas as explained below.
 
+For due date: see the {{page.title}} entries on Canvas:
+* [{{page.title}}a]({{page.canvas_link_a}}) (Gradescope submission)
+* [{{page.title}}b]({{page.canvas_link_a}}) (Canvas submission)
+
+Again: *both* submissions are required to get full credit, since they check different things.
 
 # Goal
 
@@ -71,7 +77,7 @@ so it shouldn't take very long. But it's essential before you undertake the lega
 You may get help from your teammates in understanding the lab, but each person should complete the lab separately for themselves.
 
 
-## Step 1: Fina your repo
+## Step 1: Find your repo
 
 There should already be a repo for you under the course organization
 with a name in this format:
@@ -93,15 +99,55 @@ If you need a refresher on how to do that, please see the instructions for {{pag
 
 ## Step 2: Enable Verified Commits
 
+In this step, we set up verified/signed commits.  
+
+This only has to be done
+once per machine that you work on, but if you work on multiple machines it has to
+be done on *each of them*.  
+
+If you complete this lab on one machine, but later switch to another for working on other projects that require signed commits, you'll need to repeat this entire "Step 2" on that other machine as well.
+
+What we are doing in this step applies to all of your Github work on that machine, so it isn't necessary to do it on individual repos or for different courses.
+
+### Step 2a: Configure `user.name` and `user.email`
+
 To set your name and email for your whole git installation, run the following commands. The email will need to be one associated with your GitHub Account.
-```bash
+
+* Replace `<name>` use the name you want to be called in class.  Do not include the `<>`.
+* Replace `<email>` with your ucsb email (e.g. `cgaucho@ucsb.edu`). Do not include the `<>`. 
+
+```
 git config --global user.name <name>
 git config --global user.email <email> 
 ```
 
-Next, you'll need an ssh key. If you haven't made one, start [here](/topics/GitHub/github_ssh_keys.html).
+### Step 2b: Create an ssh key
 
-Once you've made an ssh key, you have to tell github it exists. For most students, the commands will be below. If you set a custom location for your public/private key pair, replace `~/.ssh/id_rsa.pub` with your public key location. **If you have an id_ed25519 key, replace `id_rsa.pub` with `id_ed25519.pub`**. Run the following commmands:
+Next, you'll need an ssh public key/private key pair. 
+
+If you have one already, you should be able to find it by doing:
+
+```
+ls -al ~/.ssh
+```
+
+* The key file ending in `.pub` is the public key.
+* The key file that doesn't end in `.pub` is the private key.
+
+If you don't have one on this machine, follow these instructions to create one:
+
+* <https://ucsb-cs156.github.io/topics/GitHub/github_ssh_keys.html>.  
+
+
+### Step 2c: Configure Github for signing keys
+
+
+Once you've made an ssh key, you have to tell github it exists. For most students, the commands will be below. 
+
+* If you set a custom location for your public/private key pair, replace `~/.ssh/id_rsa.pub` with your public key location. 
+* **If you have an id_ed25519 key, replace `id_rsa.pub` with `id_ed25519.pub`**. 
+
+Run the following commmands:
 
 ```bash
 git config --global gpg.format ssh
@@ -113,7 +159,10 @@ So that you don't have to remember to sign each commit as you make it, you can r
 git config --global commit.gpgsign true
 ```
 
-After that, you have to tell GitHub about your signing key.
+### Step 2c: Configure Github for signing keys
+
+
+Next, you need to upload your *public* key to Github as a *signing key*.  This is different from uploading it to Github for accessing repos, which you probably have already done previously. 
 
 VERY IMPORTANT: you want to upload your `id_rsa.pub` file to `github.com`
 
@@ -183,3 +232,20 @@ error: failed to push some refs to 'github.com:ucsb-cs156-s25/jpa05-yourGithubId
 ```
 
 If so, please ask for help in the slack channel.
+
+## Step 4: Submit on Gradescope
+
+Now submit your work on Gradescope here: 
+
+* <{{page.canvas_link_a}}>
+
+If you get errors, correct them. Otherwise, proceed to submitting on Canvas:
+
+## Step 5: Submit on Canvas
+
+Now submit a link to your repo here:
+
+* <{{page.canvas_link_b}}>
+
+
+And you are finished!
