@@ -256,7 +256,11 @@ If it does work, try this command:
 git log --show-signature
 ```
 
-You should see that your commits are signed.
+You should see that your commits are signed; something like this:
+
+<img width="1071" alt="image" src="https://github.com/user-attachments/assets/1ceac976-5ee9-4091-971a-c10475b0816e" />
+
+You can type `q` to get out of the `git log` command and return to the terminal shell prompt.
 
 ## Step 4: Submit on Gradescope
 
