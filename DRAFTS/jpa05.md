@@ -64,7 +64,7 @@ git config --global user.email <email>
 
 Next, you'll need an ssh key. If you haven't made one, start [here](/topics/GitHub/github_ssh_keys.html).
 
-Once you've made an ssh key, you have to tell github it exists. For most students, the commands will be below. If you set a custom location for your public/private key pair, replace `~/.ssh/id_rsa.pub` with your public key location. **If you have an id_ed25519 key, replace `id_rsa.pub` with `id_ed25519.pub`. Run the following commmands:
+Once you've made an ssh key, you have to tell github it exists. For most students, the commands will be below. If you set a custom location for your public/private key pair, replace `~/.ssh/id_rsa.pub` with your public key location. **If you have an id_ed25519 key, replace `id_rsa.pub` with `id_ed25519.pub`**. Run the following commmands:
 
 ```bash
 git config --global gpg.format ssh
