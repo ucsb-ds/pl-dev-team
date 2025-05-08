@@ -113,12 +113,12 @@ What we are doing in this step applies to all of your Github work on that machin
 
 To set your name and email for your whole git installation, run the following commands. The email will need to be one associated with your GitHub Account.
 
-* Replace `<name>` use the name you want to be called in class.  Do not include the `<>`.
-* Replace `<email>` with your ucsb email (e.g. `cgaucho@ucsb.edu`). Do not include the `<>`. 
+* Replace `"Your Name"` use the name you want to be called in class (e.g. `"Chris Gaucho"`
+* Replace `"email@ucsb.edu"` with your ucsb email (e.g. `"cgaucho@ucsb.edu"`). 
 
 ```
-git config --global user.name <name>
-git config --global user.email <email> 
+git config --global user.name "Your Name"
+git config --global user.email "email@ucsb.edu"
 ```
 
 ### Step 2b: Create an ssh key
