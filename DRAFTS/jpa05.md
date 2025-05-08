@@ -174,6 +174,11 @@ Followed by this one (changing `~/.ssh/id_rsa.pub to the name of your public key
 echo "myemail@ucsb.edu" `cat ~/.ssh/id_rsa.pub` >> ~/.config/git/allowed_signers
 ```
 
+Then, tell git where the allowed signers are:
+```bash
+git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
+```
+
 This is mainly needed so that the `git log --show-signature` command works properly.
 
 ### Step 2d: Configure Github for signing keys
