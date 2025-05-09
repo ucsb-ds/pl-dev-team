@@ -9,7 +9,7 @@ layout: lab
 layout: default
 parent: lab
 num: project
-nav_order: 500
+nav_order: 700
 proj_courses_slack_url: https://ucsb-cs156-s25.slack.com/archives/C08R52XTP0X
 proj_frontiers_slack_url: https://ucsb-cs156-s25.slack.com/archives/C08S7GMA332
 proj_dining_slack_url: https://ucsb-cs156-s25.slack.com/archives/C08RD087D2A
