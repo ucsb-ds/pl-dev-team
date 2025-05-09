@@ -16,6 +16,7 @@ github_org_url: https://github.com/ucsb-cs156-s25/
 video_testing_pyramid: "[team03 01 - Testing Pyramid (10 min)](https://youtu.be/zvLlO8EUh0c)"
 video_integration_tests: "[team03 02 - Integration Tests (24 min)](https://youtu.be/ohPxfE0hbZI)"
 video_e2e_tests: "[team03 03 - End-to-end Tests (32 min)](https://youtu.be/SGhXLNJrA8I)"
+nav_order: 600
 ---
 
 
