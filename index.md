@@ -7,6 +7,8 @@ nav_order: 0
 
 # {{site.title}}, {{site.quarter}}
 
+[Legacy Code Project Info](https://ucsb-cs156.github.io/s25/lab/project.html)
+
 On Canvas: <{{site.aux_links["Canvas"]}}>
 
 Course Github Org: <https://github.com/ucsb-cs156-s25>
