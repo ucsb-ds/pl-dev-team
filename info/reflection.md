@@ -5,6 +5,9 @@ layout: default
 parent: info
 ---
 
+If the embedded frame below is difficult to read, you can read this document 
+[Directly on Google Docs](https://docs.google.com/document/d/1wLRWv3-nKdhsValX8Vsx1CoFrbCKgYHTY-nib722Df0/edit?usp=sharing)
+
 <style>
   iframe { 
     width: 98%; margin-left:auto; margin-right:auto;
