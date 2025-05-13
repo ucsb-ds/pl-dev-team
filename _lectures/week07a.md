@@ -5,11 +5,6 @@ description: "Launch Legacy Code Project"
 ready: true
 layout: default
 parent: lectures
-retro_part_asn: TBD
-canvas_retro_submission: TBD
-team02: "[team02](https://ucsb-cs156.github.io/s25/lab/team02.html)"
-team03: "[team03](https://ucsb-cs156.github.io/s25/lab/team03.html)"
-js_hwk: TBD
 ---
 
 # {{page.title}} - {{page.descripion}}
@@ -18,7 +13,14 @@ Please see: <https://ucsb-cs156.github.io/s25/lab/project.html>
 
 ## What you should do today
 
+1. Assign yourself your first issue
+2. Clone the repo and get the app working on localhost
+3. Create a dev deployment on dokku
+
+## Assigning yourself your first issue
+
 * Look over the issues with your team
+* Read the Sprint Planning document (it's linked in the README of the repo.)
 * Decide what your first issue will be
 * Assign it to yourself and put it in the In Progress column on the Kanban board.
 * If there are follow on issues that flow from the first one in an Epic, you might assign yourself those as well and drag them into "ToDo", but don't work *too* far ahead.  Let the team be *Agile* (i.e. it can move quickly from one plan to another).
@@ -55,3 +57,13 @@ If you have commented out code in your pull request, or put LGTM on a PR with co
 If you do it a second time, we'll be really irritated.
 
 Please read the document about PRs, and refer to it *often* when making and reviewing PRs.
+
+# Setting up your app on localhost and dokku
+
+Setting up the app on localhost and dokku is a little more complicated that with team01/team02/team03 unless you are working on proj-rec
+
+* proj-rec setup is just like team01/team02/team03
+* proj-dining also requires setting up the UCSB_API_KEY
+* proj-courses also requires setting up UCSB_API_KEY and MongoDB
+* proj-frontiers also requires Github configruation in *addition to* Google configuration.
+
