@@ -1,7 +1,10 @@
 <details markdown="1">
 <summary markdown="1">
-Example Videos (these teams gave me permission to share them publically)
+Example Videos (these teams gave me permission to share them publicly)
 </summary>
+
+Note: I have more of these from F23, S24 and F24, including some
+for rec and dining.  I will add those to this collection soon.
 
 * [m23-10am-2-happycows](https://drive.google.com/file/d/1gSt0yLrAp8OWJ8g52vM8EDlN65VfojjE/view?usp=sharing)
 * [m23-10am-4-happycows](https://www.youtube.com/watch?v=LFC8m_KjoD0)
@@ -29,7 +32,6 @@ Example Videos (these teams gave me permission to share them publically)
 These videos are available to CS156 students/staff only (restricted via Canvas login)
 
 * [m23-10am-1-happycows](https://ucsb.instructure.com/courses/14657/files/folder/Videos?preview=1686608) [Available to CS156 students/staff only)
-
 
 
 </details>

@@ -8,11 +8,13 @@ Release notes
 
 You are required to prepare a set of release notes as a team.
 
-You may prepare these in one of two ways:
-* As a Google Drive document in your Drive folder called `Release Notes` (in the same folder where your retros go), OR
-* In Markdown format in a file `/docs/release_notes.md` in a new branch of your repo called `release_notes`. If you choose this route, make a Pull Request for this change (the normal PR deadline doesn't apply to this PR).
+Please prepare these as a Google Drive document in the same folder where you do your retros.
 
-The choice is up to you: each method has its pros and cons; do whatever seems easiest to you.
+Please call the file `s25-xx-release-notes`.
+
+Please include the name of your team and a link to your repo at the top of the page,
+along with the names of the members of your team.
+
 
 ## What goes in the release notes
 
@@ -22,12 +24,19 @@ The release notes should summarize:
 * It does not have to be every single last detail of every change; it should focus on the big picture of things users/developers would need or want to know. 
 * Before and after screenshots can be helpful.
 
-For more information, see this section of the lecture notes from M23:
-* <https://ucsb-cs156.github.io/m23/lectures/week07b/#brief-discussion-of-release-notes>
+## Samples
+
+You can find samples of release notes at these links:
+
+* [proj-courses](https://github.com/ucsb-cs156/proj-courses/tree/main/docs/release-notes)
+* [proj-dining](https://github.com/ucsb-cs156/proj-dining/tree/main/docs/release-notes)
+* [proj-rec](https://github.com/ucsb-cs156/proj-rec/tree/main/docs/release-notes)
+
+We do not have any samples for Frontiers since this is the first quarter that CS156 teams have worked on proj-frontiers.
 
 ## How to submit
 
-Work colletively on this as a team.   When finished, submit a link to either your Google Drive doc, or to your PR on Canvas under the assignment `ReleaseNotes`
+Work colletively on this as a team.   When finished, submit a link to either your Google Drive doc on Canvas under the assignment `ReleaseNotes`
 
 For the due date, refer to the Release Notes assignment on Canvas.
 
