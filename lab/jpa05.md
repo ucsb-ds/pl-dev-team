@@ -9,7 +9,7 @@ nav_order: 100
 ready: false
 qxx: s25
 layout: default
-parent: DRAFTS
+parent: lab
 course_org: https://github.com/ucsb-cs156-s25
 course_org_name: ucsb-cs156-s25
 starter_repo: https://github.com/ucsb-cs156-s25/STARTER-jpa05
@@ -113,12 +113,12 @@ What we are doing in this step applies to all of your Github work on that machin
 
 To set your name and email for your whole git installation, run the following commands. The email will need to be one associated with your GitHub Account.
 
-* Replace `<name>` use the name you want to be called in class.  Do not include the `<>`.
-* Replace `<email>` with your ucsb email (e.g. `cgaucho@ucsb.edu`). Do not include the `<>`. 
+* Replace `"Your Name"` use the name you want to be called in class (e.g. `"Chris Gaucho"`
+* Replace `"email@ucsb.edu"` with your ucsb email (e.g. `"cgaucho@ucsb.edu"`). 
 
 ```
-git config --global user.name <name>
-git config --global user.email <email> 
+git config --global user.name "Your Name"
+git config --global user.email "email@ucsb.edu"
 ```
 
 ### Step 2b: Create an ssh key
@@ -159,7 +159,29 @@ So that you don't have to remember to sign each commit as you make it, you can r
 git config --global commit.gpgsign true
 ```
 
-### Step 2c: Configure Github for signing keys
+### Step 2c: Configure local git for signing keys
+
+Now run these commands:
+
+```
+mkdir -p ~/.config/git
+touch ~/.config/git/allowed_signers
+```
+
+Followed by this one (changing `~/.ssh/id_rsa.pub to the name of your public key file if needed).
+
+```
+echo "myemail@ucsb.edu" `cat ~/.ssh/id_rsa.pub` >> ~/.config/git/allowed_signers
+```
+
+Then, tell git where the allowed signers are:
+```bash
+git config --global gpg.ssh.allowedSignersFile ~/.config/git/allowed_signers
+```
+
+This is mainly needed so that the `git log --show-signature` command works properly.
+
+### Step 2d: Configure Github for signing keys
 
 
 Next, you need to upload your *public* key to Github as a *signing key*.  This is different from uploading it to Github for accessing repos, which you probably have already done previously. 
@@ -232,6 +254,18 @@ error: failed to push some refs to 'github.com:ucsb-cs156-s25/jpa05-yourGithubId
 ```
 
 If so, please ask for help in the slack channel.
+
+If it does work, try this command:
+
+```
+git log --show-signature
+```
+
+You should see that your commits are signed; something like this:
+
+<img width="1071" alt="image" src="https://github.com/user-attachments/assets/1ceac976-5ee9-4091-971a-c10475b0816e" />
+
+You can type `q` to get out of the `git log` command and return to the terminal shell prompt.
 
 ## Step 4: Submit on Gradescope
 
