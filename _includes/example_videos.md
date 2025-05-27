@@ -29,6 +29,20 @@ for rec and dining.  I will add those to this collection soon.
 * [w22-5pm-2 courses](https://www.youtube.com/watch?v=OYj6NVf9-ls)
 * [w22-7pm-3 happycows](https://youtu.be/RJ8Tf_xfN9E)
 
+* [f24-01 courses](https://drive.google.com/file/d/1m7fA6VtykPx_PJenfXFnLNtgomCoOoBl/view)
+* [f24-03 courses](https://youtu.be/kbUWq5iFZkc)
+* [f24-05 rec](https://youtu.be/0gyFcaJB9zw)
+* [f24-06 rec](https://drive.google.com/file/d/10Hnzo2Txt8oAydJmbRw0HdtG3jtlSjry/view)
+* [f24-07 rec](https://youtu.be/LHYHfuDuEQE)
+* [f24-08 rec](https://drive.google.com/file/d/1uUOqrU3bZT_FNQU7qe2_-YvyiJEVIpPM/view?usp=sharing)
+* [f24-09 happycows](https://www.youtube.com/watch?v=DNQVILjI88M)
+* [f24-10 happycows](https://www.youtube.com/watch?v=CNaUs23Z8F4)
+* [f24-11 happycows](https://drive.google.com/file/d/1pTZil7qeW4vzizZ8bhg3FQwaWrdM9WFI/view?usp=sharing)
+* [f24-12 happycows](https://youtu.be/GwSM3TuXnWk)
+* [f24-14 dining](https://drive.google.com/file/d/1HcfAYPKMURIfRr059JEGOCMbtXF35L6d/view?usp=drivesdk)
+* [f24-15 dining](https://drive.google.com/file/d/18113MgPyllMAW12oLrz9n2iDGlU98boV/view?usp=sharing)
+* [f24-16 dining](https://drive.google.com/file/d/1mH5sX4SMOXqmR3Jn6FqCs6HxRMMzEXwa/view?usp=sharing)
+
 These videos are available to CS156 students/staff only (restricted via Canvas login)
 
 * [m23-10am-1-happycows](https://ucsb.instructure.com/courses/14657/files/folder/Videos?preview=1686608) [Available to CS156 students/staff only)
