@@ -29,6 +29,23 @@ for rec and dining.  I will add those to this collection soon.
 * [w22-5pm-2 courses](https://www.youtube.com/watch?v=OYj6NVf9-ls)
 * [w22-7pm-3 happycows](https://youtu.be/RJ8Tf_xfN9E)
 
+* [f23-5pm-2 happycows](https://drive.google.com/file/d/1zyf0mijriHDQXUPf9r99IRzmVpFMaRHX/view?usp=drive_link)
+* [f23-5pm-3 happycows](https://youtu.be/KH8JnwjJ67c)
+* [f23-5pm-4 happycows](https://drive.google.com/file/d/1UvlfS_ZLYFkB2d0RXMujMcaR8xl3uOkC/view?usp=sharing)
+* [f23-6pm-1 organic](https://youtu.be/vPEd5tSiCiA)
+* [f23-6pm-4 organic](https://drive.google.com/file/d/1ocQBv1yinjMhVogoY4P1N9Z4QqKZ08_A/view?usp=sharing)
+* [f23-7pm-3 courses](https://drive.google.com/file/d/1SoZQzYliZszVoW0q6rPM9LcRfD8XxoR3/view?usp=drive_link)
+
+
+* [s24-4pm-2 courses](https://www.youtube.com/watch?v=FeAvVxEMM5Y)
+* [s24-4pm-3 courses](https://drive.google.com/file/d/1vpGGv9HXbRSvxbg7YnLAbkNZt7zzOk9B/view?usp=drive_link)
+* [s24-4pm-4 courses](https://youtu.be/OK22L0Xz5RI)
+* [s24-4pm-6 happycows](https://drive.google.com/file/d/1hemJSd1tYCmDkU7e4dEJn6LkXIBkQhoN/view?usp=sharing)
+* [s24-4pm-8 happycows](https://drive.google.com/file/d/1LGBrgQzJTLCP0aTX-V36hOpClUHl4j8z/view?usp=sharing)
+* [s24-5pm-1 organic](https://drive.google.com/file/d/1k5v7QKhvlPWeeghG2b2D6AY976dGldcg/view?usp=sharing)
+* [s24-5pm-7 gauchoride](https://drive.google.com/file/d/1mcXL9cEqemz6hn6t_OEsPpp_E_bSUcCZ/view?ts=6662931e)
+
+
 * [f24-01 courses](https://drive.google.com/file/d/1m7fA6VtykPx_PJenfXFnLNtgomCoOoBl/view)
 * [f24-03 courses](https://youtu.be/kbUWq5iFZkc)
 * [f24-05 rec](https://youtu.be/0gyFcaJB9zw)
