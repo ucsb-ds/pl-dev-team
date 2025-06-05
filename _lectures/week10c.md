@@ -16,6 +16,11 @@ parent: lectures
 * Final Retro
   * Please do your final retro today if you haven't done it yet.
   * The retro document is in the same Google Drive folder with your previous two retros.
+* Final PeerEval: it's open now on CATME.org.  
+  * Please do it today or at the latest, tomorrow.
+* Post survey
+  * Look for an email from WSU with a Qualtrics survey; this is a homework grade.
+  * Please complete it sometime during finals week.
 
 ## Release Notes
 
