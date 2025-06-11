@@ -15,7 +15,6 @@ the issues closed by the team.
 
 Note that additional issues introduced by the team later might not appears in these tables.
 
-
 ## Legacy repository: proj-courses
 
 | issue | s25-01 | s25-02 | s25-03 | s25-05 |
@@ -94,6 +93,17 @@ Note that additional issues introduced by the team later might not appears in th
 | [86](https://github.com/ucsb-cs156/proj-frontiers/issues/86) JOB - Async job that updates all student and staff github org membership statuses | - | - | - | - |
 | [87](https://github.com/ucsb-cs156/proj-frontiers/issues/87) Frontend for Jobs (in general, and for update membership statuses job created in #86) | - | - | - | - |
 | [88](https://github.com/ucsb-cs156/proj-frontiers/issues/88) JOBS - schedule job created in #86 to run once a day automatically (configurable by env variable) | - | - | - | - |
+| [10](https://github.com/ucsb-cs156/proj-frontiers/issues/10) EPIC: Role Management for Admin and Instructor | - | - | - | - |
+| [47](https://github.com/ucsb-cs156/proj-frontiers/issues/47) Finish out CRUD for Roster student (still need Update and Delete). | - | - | - | - |
+| [79](https://github.com/ucsb-cs156/proj-frontiers/issues/79) Create frontend table component to list instructors/admins (it will have a delete button but no edit button). One table component can be reused for both the Frontend Index Pages for instructors and admins; no need for two of these. | - | - | - | - |
+| [80](https://github.com/ucsb-cs156/proj-frontiers/issues/80) Create frontend form component for adding an email.  It can be reused for both instructors and admins; no need for two of these. | [PR42](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-07/pull/42) | [PR31](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-09/pull/31) | [PR30](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-11/pull/30) | [PR35](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-12/pull/35) |
+| [81](https://github.com/ucsb-cs156/proj-frontiers/issues/81) Create frontend Index and Create pages for instructors | - | - | - | - |
+| [82](https://github.com/ucsb-cs156/proj-frontiers/issues/82) Create frontend index and Create pages for admins | - | - | - | - |
+| [113](https://github.com/ucsb-cs156/proj-frontiers/issues/113) BACKEND - Add update for roster student | [PR35](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-07/pull/35) | [PR37](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-09/pull/37) | [PR27](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-11/pull/27) | [PR34](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-12/pull/34) |
+| [114](https://github.com/ucsb-cs156/proj-frontiers/issues/114) BACKEND - Add delete for roster student | [PR38](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-07/pull/38) | [PR44](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-09/pull/44) | [PR36](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-11/pull/36) | [PR30](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-12/pull/30) |
+| [115](https://github.com/ucsb-cs156/proj-frontiers/issues/115) FRONTEND (Storybook only) - add table for roster students | - | - | - | - |
+| [116](https://github.com/ucsb-cs156/proj-frontiers/issues/116) FRONTEND (Storybook only) - add form for roster students | - | - | - | - |
+| [117](https://github.com/ucsb-cs156/proj-frontiers/issues/117) FRONTEND, NEW PAGE - Implement Index, Create, Update pages for RosterStudent, and link from Course Index page. | - | - | - | - |
 
 
 ## Legacy repository: proj-rec
@@ -124,4 +134,4 @@ Note that additional issues introduced by the team later might not appears in th
 | [39](https://github.com/ucsb-cs156/proj-rec/issues/39) Modify `recommendationType` in the Recommendation Request table to be a foreign key to RequestType table | - | - | [PR51](https://github.com/ucsb-cs156-s25/proj-rec-s25-15/pull/51) | - |
 | [40](https://github.com/ucsb-cs156/proj-rec/issues/40) The list of hardcoded request types above is added into the Request Type table at startup (check for each one to see if is already there before loading it). | - | - | - | - |
 | [43](https://github.com/ucsb-cs156/proj-rec/issues/43) FEATURE: GET all recommendation requests endpoint for Admin | - | - | - | [PR39](https://github.com/ucsb-cs156-s25/proj-rec-s25-16/pull/39) |
-
+| [44](https://github.com/ucsb-cs156/proj-rec/issues/44) UX - Fix Brand and placeholder text on the home page | [PR47](https://github.com/ucsb-cs156-s25/proj-rec-s25-13/pull/47) | [PR36](https://github.com/ucsb-cs156-s25/proj-rec-s25-14/pull/36) | - | [PR34](https://github.com/ucsb-cs156-s25/proj-rec-s25-16/pull/34)  [PR36](https://github.com/ucsb-cs156-s25/proj-rec-s25-16/pull/36) |
