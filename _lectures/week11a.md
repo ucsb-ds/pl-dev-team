@@ -89,7 +89,7 @@ Note that additional issues introduced by the team later might not appears in th
 | [77](https://github.com/ucsb-cs156/proj-frontiers/issues/77) Adjust security config files, interceptors to adjust roles based on table contents. | - | - | - | - |
 | [83](https://github.com/ucsb-cs156/proj-frontiers/issues/83) FEATURE - ADMIN_EMAILS are added to the admins table at startup. | [PR56](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-07/pull/56) | [PR46](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-09/pull/46) | [PR37](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-11/pull/37) | [PR44](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-12/pull/44) |
 | [84](https://github.com/ucsb-cs156/proj-frontiers/issues/84) FEATURE, NEW PAGE - Create the new home page experience. | - | - | - | - |
-| [85](https://github.com/ucsb-cs156/proj-frontiers/issues/85) FEATURE - Webhook listener | - | - | - | - |
+| [85](https://github.com/ucsb-cs156/proj-frontiers/issues/85) FEATURE - Webhook listener | [PR55](https://github.com/ucsb-cs156-s25/proj-frontiers-s25-07/pull/55) | - | - | - |
 | [86](https://github.com/ucsb-cs156/proj-frontiers/issues/86) JOB - Async job that updates all student and staff github org membership statuses | - | - | - | - |
 | [87](https://github.com/ucsb-cs156/proj-frontiers/issues/87) Frontend for Jobs (in general, and for update membership statuses job created in #86) | - | - | - | - |
 | [88](https://github.com/ucsb-cs156/proj-frontiers/issues/88) JOBS - schedule job created in #86 to run once a day automatically (configurable by env variable) | - | - | - | - |
