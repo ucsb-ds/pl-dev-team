@@ -1,8 +1,14 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: CMPSC 5A PrairieLearn Development
+description: A Jekyll site for PrairieLearn content, using the Just the Docs theme.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+# GitHub Pages URL (adjust if using custom domain or baseurl)
+url: https://ucsb-ds.github.io/pl-dev-team
 
+# Optional: GitHub repo link in header
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  View on GitHub: https://github.com/ucsb-ds/pl-dev-team
+
+# Optional: Enable search
+just_the_docs:
+  search_enabled: true
