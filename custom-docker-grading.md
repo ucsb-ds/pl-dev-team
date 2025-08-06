@@ -1,3 +1,7 @@
+---
+title: Custom Docker Image
+---
+
 # Custom Docker Images for PrairieLearn Grading
 
 This page documents how to create and use custom Docker images for grading Python-based PrairieLearn questions using the PrairieLearn repository — with support for libraries like [`datascience`](https://www.data8.org), used in CMPSC 5A/5B.
