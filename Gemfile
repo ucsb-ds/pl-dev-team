@@ -1,7 +1,7 @@
-source 'https://rubygems.org'
+# If rebuilding Gemfile.lock, be sure to do this so that GitHub Actions works
+# bundle lock --add-platform x86_64-linux 
 
-gem "jekyll", "~> 4.4.1" # installed by `gem jekyll`
-# gem "webrick"        # required when using Ruby >= 3 and Jekyll <= 4.2.2
-
-gem "just-the-docs", "0.10.1" # pinned to the current release
-# gem "just-the-docs"        # always download the latest release
+ruby "3.3.4"
+source "https://rubygems.org"
+gem "jekyll"
+gem "just-the-docs"
