@@ -1,5 +1,6 @@
 ---
 title: Custom Docker Image
+nav_order: 1
 ---
 
 # Custom Docker Images for PrairieLearn Grading
