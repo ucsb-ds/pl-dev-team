@@ -5,23 +5,8 @@ incremental: true
 
 jdk_distribution: "21.0.6-librca"
 
-course: "CMPSC 156"
-title: "CS156 S25"
-quarter: "Spring 2025"
-QXX: S25
-qxx: s25
-baseurl: "/s25"
-slack_help_lecture_discussion: TBD
-sample_team: s25-04
 
-ta_list_full: Sangita Kunapuli, Amey Walimbe
-la_list_full: Daniel Jensen, Benjamin Conte, Samuel Zhu, Divyani Punj
-discussion_section_day: Wednesday
-discussion_section_times: 6pm, 7pm
-
-help_windows_link: https://ucsb-cs156-s25.slack.com/archives/C08L76J189Y
-help_macos_link: https://ucsb-cs156-s25.slack.com/archives/C08LFHL9P5F
-help_lecture_discussion: https://ucsb-cs156-s25.slack.com/archives/C08KX29APQ8
+baseurl: "/"
 
 mermaid:
   # Version of mermaid library
@@ -29,13 +14,7 @@ mermaid:
   version: "9.1.3"
 
 # Aux links for the upper right navigation
-aux_links:
-  "CS156 main website":
-    - "https://ucsb-cs156.github.io/"
-  "github":
-    - "//github.com/ucsb-cs156-s25"
-  "Canvas":
-    - "https://ucsb.instructure.com/courses/25659"
+
 
 # TODO: replace canvas link above with specific one
 # such as https://www.canvas.ucsb.edu/courses/12345
@@ -47,136 +26,11 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/ucsb-cs156/s25" # the github URL for your repo
+gh_edit_repository: "https://github.com/ucsb-ds/" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately
 
-help_macos_link: https://ucsb-cs156-s25.slack.com/
-help_windows_link: https://ucsb-cs156-s25.slack.com/
 
-# Collections for website data
-collections:
-  modules:
-  staffers:
-    permalink: "/:path/"
-    output: true
-  lectures:
-    permalink: "/lectures/:path/"
-    output: true
-  hwk:
-    permalink: "/hwk/:path/"
-    output: true
-# Default layouts for each collection type
-defaults:
-  - scope:
-      type: lectures
-    values:
-      layout: default
-  - scope:
-      type: hwk
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: staffers
-    values:
-      layout: staffer
-      subpath: "/assets/images/"
 
-teams: 
-  - team: s25-01
-    dokku: "01"
-    team02_project: 26
-    legacy_project: "courses"
-    legacy_kanban: 47 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08LSEA0140
-  - team: s25-02
-    dokku: "02"
-    team02_project: 27
-    legacy_project: "courses"
-    legacy_kanban: 48 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08KXG6D6Q6
-  - team: s25-03
-    dokku: "03"
-    team02_project: 27
-    legacy_project: "courses"
-    legacy_kanban: 49 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L6M3TVKM
-  - team: s25-04
-    dokku: "04"
-    team02_project: 28
-    legacy_project: "dining" 
-    legacy_kanban: 55
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L649P62W
-  - team: s25-05
-    dokku: "05"
-    team02_project: 29
-    legacy_project: "courses"
-    legacy_kanban: 50 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08LEHKQQRF
-  - team: s25-06
-    dokku: "06"
-    team02_project: 30
-    legacy_project: "dining" 
-    legacy_kanban: 56
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L6M63YNP
-  - team: s25-07
-    dokku: "07"
-    team02_project: 31
-    legacy_project: "frontiers" 
-    legacy_kanban: 51
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L700MMPE
-  - team: s25-08
-    dokku: "08"
-    team02_project: 32
-    legacy_project: "dining" 
-    legacy_kanban: 57
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08KP90NACX
-  - team: s25-09
-    dokku: "09"
-    team02_project: 33
-    legacy_project: "frontiers" 
-    legacy_kanban: 52
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L64EH1NE
-  - team: s25-10
-    dokku: "10"
-    team02_project: 34
-    legacy_project: "dining" 
-    legacy_kanban: 58 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L6M9TEBV
-  - team: s25-11
-    dokku: "11"
-    team02_project: 35
-    legacy_project: "frontiers" 
-    legacy_kanban: 53 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L26YQDQV
-  - team: s25-12
-    dokku: "12"
-    team02_project: 36
-    legacy_project: "frontiers" 
-    legacy_kanban: 54
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L6MAKF9R
-  - team: s25-13
-    dokku: "13"
-    team02_project: 37
-    legacy_project: "rec" 
-    legacy_kanban: 59 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08KP94MNJK
-  - team: s25-14
-    dokku: "14"
-    team02_project: 40
-    legacy_project: "rec" 
-    legacy_kanban: 60 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08L271J4UD
-  - team: s25-15
-    dokku: "15"
-    team02_project: 41
-    legacy_project: "rec" 
-    legacy_kanban: 61 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08KP95T8BH
-  - team: s25-16
-    dokku: "16"
-    team02_project: 42
-    legacy_project: "rec" 
-    legacy_kanban: 62 
-    slack: https://ucsb-cs156-s25.slack.com/archives/C08LEHV0PFT
+
+
