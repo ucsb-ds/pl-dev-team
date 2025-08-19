@@ -1,5 +1,5 @@
 ---
-title: CS156 s25
+title: pl-dev-team
 permalink: "/"
 layout: default
 nav_order: 0
