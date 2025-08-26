@@ -230,4 +230,14 @@ Steps:
     > 🔥 **Important:** The `--platform linux/amd64` flag is **required** for PrairieLearn compatibility.    
     > The `linux/arm64` is optional for Apple Silicon (M1/M2) compatibility.
 
+    Here's what that looks like:
+
+    ```
+    % pwd
+    /Users/pconrad/github/ucsb-ds/PrairieLearn
+    % cd graders/python 
+    % pwd
+    /Users/pconrad/github/ucsb-ds/PrairieLearn/graders/python
+    % docker buildx build --platform linux/amd64,linux/arm64 -t phtcon/grader-python:latest --push .
+    ```
     
