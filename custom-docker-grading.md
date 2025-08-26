@@ -249,7 +249,7 @@ Steps:
     ```json
      "externalGradingOptions": {
        "enabled": true,
-       "image": "rachit182/grader-python:latest",
+       "image": "phtcon/grader-python:latest",
        "entrypoint": "/python_autograder/run.sh",
        "timeout": 20
     }
