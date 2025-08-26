@@ -112,3 +112,17 @@ This setup is maintained by the UCSB CS & PSTAT departments for courses like CMP
 It integrates the [`datascience`](https://www.data8.org) library from UC Berkeley's [Data 8](https://inferentialthinking.com/chapters/intro.html) curriculum.
 
 > The forked repo: [https://github.com/ucsb-ds/PrairieLearn](https://github.com/ucsb-ds/PrairieLearn)
+
+
+## Updating the custom image
+
+We currently have two custom images that we've been maintaining:
+* rachit182/grader-python
+* phtcon/grader-python
+
+The intent is to move eventually to one called `ucsb-ds/grader-python` managed by Prof. Conrad, but which he could ostensibly hand off to another faculty member at some point if needed, for continuity that doesn't depend on any single individual.
+
+We needed to update this image because there was a new version of the `datascience` module from UC Berkeley that fixes a deprecation notice.   Here, we document the steps we took.
+Later, our intent is to clean up this documentation and turn it into something that's more generic to "how do you keep the docker image up to date".  For today, this is just a brain dump and documenting what we did.
+
+
