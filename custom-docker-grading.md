@@ -158,6 +158,15 @@ Steps:
    remote.  The idea is that our UCSB fork is a snapsnot of what the PL repo looked like at a certain point in time,
    but no doubt they continue to make upgrades and changes.  We want ours to stay in sync with those changes, while
    retaining the parts that make it distinct (specficially, maintaining `datascience` in the `requirements.txt` file.
+
+   To start, update the local branch pointers both remotes by doing `git fetch origin` and `git fetch PL`. These
+   commands don't touch the file system; they simply update the local repos "branch pointers" that keep track of
+   what changes have been made on the remote repos.
+
+   ```
+   git fetch PL
+   git fetch origin
+   ```
    
    
 8. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
