@@ -183,8 +183,31 @@ Steps:
    ```
    This command might throw you into an editor such `vim` to enter a commit message.  If you end up in vim, the
    way to save an exit is to press `<esc>` then type `:wq` then press `<enter>`.
-   
-9. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
-10. Look to see whether we pinned a specific version, or whether we just pull the "latest" version.   If it's a specfic version, we should update that.  If it's always the "latest" version, then we may be able to remove suppressing the warning from some of our materials.
 
+8. Now, be sure you know the correct version number for the custom
+   requirements you want to include in `graders/python/requirements.txt`
+
+   You can find the correct version number by going into a temporary directory,
+   using a `venv`, doing `pip install datascience`, and then `pip freeze > requirements.txt`.  That will give you the
+   exact syntax you need for the `requirement.txt` file.
+
+   For example:
+
+   ```
+   mkdir temp
+   cd temp
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install datascience
+   pip freeze > requirements.txt
+   cat requirements.txt
+   ```
+
+   That last command will display the contents of requirements.txt, and what you are looking for is a line like this:
+
+   ```
+   datascience==0.18.0
+   ```
+   
+9. Find the file `graders/python/requirements.txt` and make the necessary edits.
 
