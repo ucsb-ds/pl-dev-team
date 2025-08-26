@@ -218,6 +218,16 @@ Steps:
     git push origin master
     ```
 11. Now, we need to create or update our docker images.  In these instructions, we'll update `phtcon/grader-python`.
-    
+
+    To do this, starting from the root directory of the PrarieLearn repo, we do the following:
+
+    ```
+    pwd
+    cd graders/python
+    docker buildx build --platform linux/amd64,linux/arm64 -t phtcon/grader-python:latest --push .
+    ```
+
+    > 🔥 **Important:** The `--platform linux/amd64` flag is **required** for PrairieLearn compatibility.    
+    > The `linux/arm64` is optional for Apple Silicon (M1/M2) compatibility.
 
     
