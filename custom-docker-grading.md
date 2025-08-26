@@ -240,4 +240,10 @@ Steps:
     /Users/pconrad/github/ucsb-ds/PrairieLearn/graders/python
     % docker buildx build --platform linux/amd64,linux/arm64 -t phtcon/grader-python:latest --push .
     ```
+
+12. To test whether it worked:
+
+    Go to a question that uses the image you created for its external grader.  For example, one
+    with this in the `question.json` file:
+
     
