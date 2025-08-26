@@ -125,4 +125,11 @@ The intent is to move eventually to one called `ucsb-ds/grader-python` managed b
 We needed to update this image because there was a new version of the `datascience` module from UC Berkeley that fixes a deprecation notice.   Here, we document the steps we took.
 Later, our intent is to clean up this documentation and turn it into something that's more generic to "how do you keep the docker image up to date".  For today, this is just a brain dump and documenting what we did.
 
+Steps:
+1. Open a terminal on a machine where Docker is installed.
+2. Do `docker login` to ensure you are logged in
+3. cd into a directory where the https://github.com/ucsb-ds/PrairieLearn (or is it PrairieLearn/pl-ucsb-cmpsc5a ? )
+4. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
+5. Look to see whether we pinned a specific version, or whether we just pull the "latest" version.   If it's a specfic version, we should update that.  If it's always the "latest" version, then we may be able to remove suppressing the warning from some of our materials.
+
 
