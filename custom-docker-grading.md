@@ -217,6 +217,7 @@ Steps:
     git commit -m "pc - add datascience==0.18.0 to requirements.txt"
     git push origin master
     ```
-11. Now, we need to create or update our docker images.  We want to update phtcon/grader-python
+11. Now, we need to create or update our docker images.  In these instructions, we'll update `phtcon/grader-python`.
+    
 
     
