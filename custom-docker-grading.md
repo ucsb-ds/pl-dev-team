@@ -244,6 +244,15 @@ Steps:
 12. To test whether it worked:
 
     Go to a question that uses the image you created for its external grader.  For example, one
-    with this in the `question.json` file:
+    with this in the `info.json` file:
+
+    ```json
+     "externalGradingOptions": {
+       "enabled": true,
+       "image": "rachit182/grader-python:latest",
+       "entrypoint": "/python_autograder/run.sh",
+       "timeout": 20
+    }
+    ```
 
     
