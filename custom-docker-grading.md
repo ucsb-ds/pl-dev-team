@@ -240,8 +240,20 @@ Steps:
     /Users/pconrad/github/ucsb-ds/PrairieLearn/graders/python
     % docker buildx build --platform linux/amd64,linux/arm64 -t phtcon/grader-python:latest --push .
     ```
+12. Just to be sure that it pushed to Dockerhub, push it again:
+    ```
+    docker push phtcon/grader-python
+    ```
 
-12. To test whether it worked:
+13. Now, you need to sync this new image in PrarieLearn.  Go to the sync tab:
+
+    <img width="429" height="659" alt="image" src="https://github.com/user-attachments/assets/c4e58f7c-b94a-4401-aff8-8cfc5907d815" />
+
+    Then, find the image you want to sync on that page:
+
+    <img width="1144" height="667" alt="image" src="https://github.com/user-attachments/assets/6047d7bf-a19e-44b8-ae97-b2e5f2c2ddf3" />
+
+14. To test whether it worked:
 
     Go to a question that uses the image you created for its external grader.  For example, one
     with this in the `info.json` file:
@@ -259,7 +271,16 @@ Steps:
     ```
     Could not pull Docker image phtcon/grader-python:latest.
     ```
-    <img width="699" height="255" alt="image" src="https://github.com/user-attachments/assets/d523d8b0-c79b-4482-bfca-b83e7f16a4fa" />
+    <img width="350" height="128" alt="image" src="https://github.com/user-attachments/assets/d523d8b0-c79b-4482-bfca-b83e7f16a4fa" />
+
+    But if it grades correctly, like these examples, then it worked!
+
+    <img width="335" height="225" alt="image" src="https://github.com/user-attachments/assets/4440747e-0208-43e6-a0bf-320c27674e5a" /><img width="341" height="191" alt="image" src="https://github.com/user-attachments/assets/814e7923-229a-4d8d-929e-fb3ff7c2fbbe" />
+
+
+    
+
+
 
 
 
