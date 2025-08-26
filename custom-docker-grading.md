@@ -209,5 +209,14 @@ Steps:
    datascience==0.18.0
    ```
    
-9. Find the file `graders/python/requirements.txt` and make the necessary edits.
+9. Find the file `datascience==0.18.0 and make the necessary edits in `graders/python/requirements.txt`
+10. Make a commit for these edits and push it to the `origin` remote on the `master` branch:
 
+    ```
+    git add graders/python/requirements.txt
+    git commit -m "pc - add datascience==0.18.0 to requirements.txt"
+    git push origin master
+    ```
+11. Now, we need to create or update our docker images.  We want to update phtcon/grader-python
+
+    
