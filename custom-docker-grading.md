@@ -255,4 +255,12 @@ Steps:
     }
     ```
 
+    If you see this, it didn't work:
+    ```
+    Could not pull Docker image phtcon/grader-python:latest.
+    ```
+    <img width="699" height="255" alt="image" src="https://github.com/user-attachments/assets/d523d8b0-c79b-4482-bfca-b83e7f16a4fa" />
+
+
+
     
