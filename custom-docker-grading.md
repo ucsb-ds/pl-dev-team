@@ -181,6 +181,8 @@ Steps:
    ```
    git pull PL master
    ```
+   This command might throw you into an editor such `vim` to enter a commit message.  If you end up in vim, the
+   way to save an exit is to press `<esc>` then type `:wq` then press `<enter>`.
    
 9. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
 10. Look to see whether we pinned a specific version, or whether we just pull the "latest" version.   If it's a specfic version, we should update that.  If it's always the "latest" version, then we may be able to remove suppressing the warning from some of our materials.
