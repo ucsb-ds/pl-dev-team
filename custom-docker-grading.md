@@ -167,9 +167,22 @@ Steps:
    git fetch PL
    git fetch origin
    ```
+7. Now put yourself on the default branch, which is still called `master` rather than `main`
+
+   ```
+   git checkout master
+   git pull origin master
+   ```
+
+   Then, pull in the changes from the PL repo.  You may get merge conflicts, but it is not likely.
+   If you do, they should only be in the parts of the repo that have been customized for UCSB, and
+   it should be easy to resolve.
+
+   ```
+   git pull PL master
+   ```
    
-   
-8. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
-9. Look to see whether we pinned a specific version, or whether we just pull the "latest" version.   If it's a specfic version, we should update that.  If it's always the "latest" version, then we may be able to remove suppressing the warning from some of our materials.
+9. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
+10. Look to see whether we pinned a specific version, or whether we just pull the "latest" version.   If it's a specfic version, we should update that.  If it's always the "latest" version, then we may be able to remove suppressing the warning from some of our materials.
 
 
