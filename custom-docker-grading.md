@@ -128,8 +128,39 @@ Later, our intent is to clean up this documentation and turn it into something t
 Steps:
 1. Open a terminal on a machine where Docker is installed.
 2. Do `docker login` to ensure you are logged in
-3. cd into a directory where the https://github.com/ucsb-ds/PrairieLearn 
-4. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
-5. Look to see whether we pinned a specific version, or whether we just pull the "latest" version.   If it's a specfic version, we should update that.  If it's always the "latest" version, then we may be able to remove suppressing the warning from some of our materials.
+3. cd into a directory where the https://github.com/ucsb-ds/PrairieLearn
+4. Be sure that your `origin` remote points to `https://github.com/ucsb-ds/PrairieLearn` by doing `git remote -v`
+   For example:
+   ```
+   % git remote -v
+   origin	https://github.com/ucsb-ds/PrairieLearn (fetch)
+   origin	https://github.com/ucsb-ds/PrairieLearn (push)
+   % 
+   ```
+5. Be sure that you have a remote that points to the PrairieLearn original repo.  You can add one like this:
+   ```
+   git remote add PL https://github.com/PrairieLearn/PrairieLearn
+   ```
+   And then confirm that you have it by using `git remote -v` again.  If you had it already, you don't need to
+   add it again.
+   ```
+   git remote -v
+   ```
+   % git remote -v
+   PL	https://github.com/PrairieLearn/PrairieLearn (fetch)
+   PL	https://github.com/PrairieLearn/PrairieLearn (push)
+   origin	https://github.com/ucsb-ds/PrairieLearn (fetch)
+   origin	https://github.com/ucsb-ds/PrairieLearn (push)
+   %
+   ```
+
+6. Before making changes to the UCSB specific part of the grader, pull in all of the latest changes from the `PL`
+   remote.  The idea is that our UCSB fork is a snapsnot of what the PL repo looked like at a certain point in time,
+   but no doubt they continue to make upgrades and changes.  We want ours to stay in sync with those changes, while
+   retaining the parts that make it distinct (specficially, maintaining `datascience` in the `requirements.txt` file.
+   
+   
+8. Inside the `ucsb-ds/PrairieLearn` repo, locate the directory for the python grader, where we have made a change vs. the main PrairieLearn repo, i.e. to include the `datascience` module as a dependency.
+9. Look to see whether we pinned a specific version, or whether we just pull the "latest" version.   If it's a specfic version, we should update that.  If it's always the "latest" version, then we may be able to remove suppressing the warning from some of our materials.
 
 
