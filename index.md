@@ -33,3 +33,7 @@ This documentation exists to:
 ---
 
 **Repository**: [ucsb-ds/pl-dev-team](https://github.com/ucsb-ds/pl-dev-team)
+
+## Resources
+
+* Guide to PL by E. Weisenberg (TA to Briana Morrison): <https://eweisenberg.github.io/prairielearn-guide/>
