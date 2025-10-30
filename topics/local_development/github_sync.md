@@ -1,12 +1,16 @@
 ---
-title: Syncing Your PrairieLearn Course with Remote Git
-nav_order: 2
+parent: "Local Development"
+grand_parent: Topics
+layout: default
+title: "GitHub sync"
+description:  "Syncing Your PrairieLearn Course with Remote Git"
 ---
+
 
 # Running PrairieLearn Locally with Docker
+
 We edit locally (via Docker) and push to GitHub. Before using PrairieLearn each time, pull the latest changes and then sync inside PL.
 
----
 
 ## Update your local clone
 In your course repository folder:
@@ -16,7 +20,6 @@ In your course repository folder:
    ```
 This ensures your local files match the remote (e.g., `origin/main`).
 
----
 
 ## Pull from remote in the PL UI
 
@@ -28,7 +31,6 @@ In the PrairieLearn web interface:
 
 This refreshes the course view that PL serves from your mounted repo
 
----
 
 ## Notes & Tips 
 - SSH vs HTTPS: If using `git@github.com:...`, make sure your machine has the right SSH keys set up. HTTPS works fine for public repos.
