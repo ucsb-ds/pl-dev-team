@@ -34,17 +34,18 @@ These are one-time setup steps.
      
    ```bash
    git clone git@github.com:PrairieLearn/pl-ucsb-cmpsc110.git
-   cd YOUR-COURSE-REPO
+   cd pl-ucsb-cmpsc110
    ```
 
 
 ## Run PrairieLearn
 
 
-First, cd into the directory where you cloned the PrairieLearn course repo 
+First, cd into the directory where you cloned the PrairieLearn course repo,
+and update the main branch.
 
 ```bash
-cd YOUR-COURSE-REPO
+cd pl-ucsb-cmpsc110
 git pull origin main
 ```
 
