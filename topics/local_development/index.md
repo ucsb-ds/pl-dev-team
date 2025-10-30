@@ -66,7 +66,14 @@ info: Go to http://localhost:3000
 ```
 
 * Open your browser and go to [http://localhost:3000](http://localhost:3000)
-* Click the `Load from Disk` button upper right.
+* Click the `Load from Disk` button upper right:
+
+  <img width="112" height="34" alt="image" src="https://github.com/user-attachments/assets/497111be-5ce7-4a31-8339-dc2b3d29a69c" />
+
+* After the course loads, click the `Back to Previous Page` button upper left:
+
+  <img width="203" height="43" alt="image" src="https://github.com/user-attachments/assets/a3f6943a-9a82-43dd-9564-0f952cad24f6" />
+
 * Then you should see your course, and be able to try questions.
 
 
