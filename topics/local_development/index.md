@@ -1,13 +1,14 @@
 ---
-title: Running PrairieLearn Locally with Docker
-nav_order: 1
+parent: Topics
+layout: default
+title: "Local Development"
+description:  "Developing with a local copy of PrairieLearn"
 ---
 
-# Running PrairieLearn Locally with Docker
+# {{page.title}} - {{page.description}}
+
 
 Use these instructions to launch PrairieLearn on your local machine using Docker.
-
----
 
 ## Prerequisites
 
@@ -26,8 +27,6 @@ Use these instructions to launch PrairieLearn on your local machine using Docker
    cd YOUR-COURSE-REPO
    ```
 
----
-
 ## Run PrairieLearn
 
 Use the following command to run PrairieLearn using your local course directory:
@@ -42,8 +41,6 @@ docker run -it --rm -p 3000:3000 -v `pwd`:/course prairielearn/prairielearn
 > docker run -it --rm -p 3000:3000 -v ~/iCloudDrive/PL/pl-ucsb-cmpsc5a:/course prairielearn/prairielearn
 > ```
 
----
-
 ## Access PrairieLearn in Browser
 
 Once you see this message:
@@ -54,8 +51,6 @@ info: Go to http://localhost:3000
 ```
 
 → Open your browser and go to [http://localhost:3000](http://localhost:3000)
-
----
 
 ## Common Error: Docker Daemon Not Running
 
@@ -70,7 +65,6 @@ Cannot connect to the Docker daemon at unix:///Users/.../.docker/run/docker.sock
 - Wait for it to fully start (🐳 whale icon turns green)
 - Then retry the `docker run` command
 
----
 
 ## Note About External Graders
 
