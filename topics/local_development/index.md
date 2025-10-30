@@ -41,7 +41,7 @@ These are one-time setup steps.
 ## Run PrairieLearn (no external grader)
 
 * Note that many courses *do* use an external grader, including CMPSC 5A.
-* For courses with an external grader, see the instructions later in this document.
+* For courses with an external grade, follow [these instrucitons instead of this step](https://ucsb-ds.github.io/pl-dev-team/topics/local_development/external_grader.html).
 
 First, cd into the directory where you cloned the PrairieLearn course repo,
 and update the main branch.
