@@ -54,12 +54,6 @@ Then start docker:
 docker run -it --rm -p 3000:3000 -v `pwd`:/course prairielearn/prairielearn
 ```
 
-> Example:
->
-> ```bash
-> docker run -it --rm -p 3000:3000 -v ~/iCloudDrive/PL/pl-ucsb-cmpsc5a:/course prairielearn/prairielearn
-> ```
-
 ## Access PrairieLearn in Browser
 
 Once you see this message:
