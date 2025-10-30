@@ -38,8 +38,10 @@ These are one-time setup steps.
    ```
 
 
-## Run PrairieLearn
+## Run PrairieLearn (no external grader)
 
+* Note that many courses *do* use an external grader, including CMPSC 5A.
+* For courses with an external grader, see the instructions later in this document.
 
 First, cd into the directory where you cloned the PrairieLearn course repo,
 and update the main branch.
@@ -63,7 +65,10 @@ info: PrairieLearn server ready, press Control-C to quit
 info: Go to http://localhost:3000
 ```
 
-→ Open your browser and go to [http://localhost:3000](http://localhost:3000)
+* Open your browser and go to [http://localhost:3000](http://localhost:3000)
+* Click the `Load from Disk` button upper right.
+* Then you should see your course, and be able to try questions.
+
 
 ## Common Error: Docker Daemon Not Running
 
