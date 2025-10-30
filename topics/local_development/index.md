@@ -91,14 +91,3 @@ Cannot connect to the Docker daemon at unix:///Users/.../.docker/run/docker.sock
 - Then retry the `docker run` command
 
 
-## Note About External Graders
-
-You may see:
-
-```
-Running PrairieLearn without support for external graders and workspaces.
-```
-
-This is fine for most local testing. To enable full support (e.g., for custom Docker grader images), follow:
-
-[https://prairielearn.readthedocs.io/en/latest/installing/#support-for-external-graders-and-workspaces](https://prairielearn.readthedocs.io/en/latest/installing/#support-for-external-graders-and-workspaces)
