@@ -27,7 +27,7 @@ First, create an empty directory to use to share job data between containers. Th
 You can create this directory using a command like:
 
 ```
-mkdir "$HOME/pl_ag_jobs"
+mkdir -p "$HOME/pl_ag_jobs"
 ```
 
 You also need to have done the one time setup steps described here:
