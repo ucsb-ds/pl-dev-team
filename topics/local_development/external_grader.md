@@ -58,3 +58,6 @@ docker run -it --rm -p 3000:3000 \
   --add-host=host.docker.internal:172.17.0.1 \
   prairielearn/prairielearn
 ```
+
+Then return to these instructions:
+* <https://ucsb-ds.github.io/pl-dev-team/topics/local_development/#access-prairielearn-in-browser>
