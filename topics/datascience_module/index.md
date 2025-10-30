@@ -1,9 +1,12 @@
 ---
-title: datascience, the UC Berkeley Data 8 library
-nav_order: 1
+parent: Topics
+layout: default
+title: "datascience module
+description:  "The datascience module from Berkeley used in Data 8 style courses"
 ---
 
-# {{page.title}}
+
+# {{page.title}} - {{page.description}}
 
 CMPSC 5A at UCSB is based on Data 8 from UC Berkeley, which uses a specfic Python library called `datascience`.
 
@@ -24,4 +27,3 @@ warnings.filterwarnings("ignore", category=UserWarning)
 This likely comes from a period during Summer 2025 when the `datascience` library was throwing warnings
 about deprecation.   We beleive that starting from version 0.18, this no longer happens, so these warnings can
 be removed.
-

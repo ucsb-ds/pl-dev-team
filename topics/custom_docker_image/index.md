@@ -1,14 +1,15 @@
 ---
-title: Custom Docker Image
-nav_order: 1
+parent: Topics
 layout: default
+title: "Custom Docker Image"
+description:  "When you need additional Python modules"
 ---
+
 
 # Custom Docker Images for PrairieLearn Grading
 
 This page documents how to create and use custom Docker images for grading Python-based PrairieLearn questions using the PrairieLearn repository — with support for libraries like [`datascience`](https://www.data8.org), used in CMPSC 5A/5B.
 
----
 
 ## Why Use a Custom Docker Image?
 
@@ -16,7 +17,6 @@ The default PrairieLearn Python grading image does **not** include many librarie
 
 > [Link to list of preinstalled libraries goes here](https://github.com/PrairieLearn/PrairieLearn/blob/master/graders/python/requirements.txt)
 
----
 
 ## Setup Prerequisites
 
@@ -30,7 +30,6 @@ The default PrairieLearn Python grading image does **not** include many librarie
 docker login
 ```
 
----
 
 ## Cloning & Editing the Grader
 
@@ -58,7 +57,6 @@ pip install your-package
 pip freeze
 ```
 
----
 
 ## 🔧 Build and Push the Docker Image
 
@@ -71,7 +69,6 @@ docker buildx build --platform linux/amd64,linux/arm64 -t yourusername/grader-py
 > 🔥 **Important:** The `--platform linux/amd64` flag is **required** for PrairieLearn compatibility.  
 > The `linux/arm64` is optional for Apple Silicon (M1/M2) compatibility.
 
----
 
 ## 📦 Use the Image in PrairieLearn
 
@@ -88,7 +85,6 @@ In any PrairieLearn question that uses Python grading, update the `info.json` to
 
 ✅ This ensures PrairieLearn will use your custom image when grading.
 
----
 
 ## 👥 Sharing the Docker Image with Team
 
@@ -104,7 +100,6 @@ To add collaborators:
 
 > 🧑‍💻 *Note:* Docker does **not** allow creating "Organizations" on free plans (unlike GitHub), so choose a stable personal account as the image owner.
 
----
 
 ## 📚 Background on UCSB Fork
 
