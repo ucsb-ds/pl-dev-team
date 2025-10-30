@@ -10,7 +10,9 @@ description:  "Developing with a local copy of PrairieLearn"
 
 Use these instructions to launch PrairieLearn on your local machine using Docker.
 
-## Prerequisites
+## Prerequisites 
+
+These are one-time setup steps.
 
 1. **Install Docker Desktop**
    - Download from: [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
@@ -22,16 +24,32 @@ Use these instructions to launch PrairieLearn on your local machine using Docker
    ```
 
 3. **Clone your course repo**
+
+   Your course repo is, for example:
+   * <https://github.com/PrairieLearn/pl-ucsb-cmpsc5a/>
+   * <https://github.com/PrairieLearn/pl-ucsb-cmpsc8/>
+   * <https://github.com/PrairieLearn/pl-ucsb-cmpsc110/>
+   * <https://github.com/PrairieLearn/pl-ucsb-cmpsc156/>
+   * etc.
+     
    ```bash
-   git clone https://github.com/YOUR-ORG/YOUR-COURSE-REPO.git
+   git clone git@github.com:PrairieLearn/pl-ucsb-cmpsc110.git
    cd YOUR-COURSE-REPO
    ```
 
+
 ## Run PrairieLearn
 
-Use the following command to run PrairieLearn using your local course directory:
+
+First, cd into the directory where you cloned the PrairieLearn course repo 
 
 ```bash
+cd YOUR-COURSE-REPO
+git pull origin main
+```
+
+Then start docker:
+```
 docker run -it --rm -p 3000:3000 -v `pwd`:/course prairielearn/prairielearn
 ```
 
