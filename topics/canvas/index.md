@@ -82,9 +82,62 @@ To make things more clear, let's rename these tabs to `from-canvas` and `from-pr
 
 ## 6. Configure the column in the Canvas sheet in the spreadsheet to pull the grades from the other sheet using `VLOOKUP`
 
-Now, find the column in the `from-canvas` spreadsheet for your Exam.
+Now, find the column in the `from-canvas` spreadsheet for your Exam.  In the example, it's column `AN`, but it will likely be different in your sheet.
+
+Note that the third row has `100` in it; this is important.  This should match the "possible points" (i.e. maximum grade) for your assessment.  If it doesn't, fix that in Canvas and here before proceeding.
+
+<img width="137" height="219" alt="image" src="https://github.com/user-attachments/assets/94449701-a98f-4753-a5cd-d72f2c62f8fc" />
+
+Now, in the cell under the `100`, the cell on the fourth line down, we'll put a formula to populate the grade.
+
+For FERPA reasons, I'm not showing the values in my spreadsheet, but verify for yourself that:
+* Row 4 has data for the first student
+* Their UCSBNetId (i.e. their email without the `@ucsb.edu` part appears in column C and column D).
+
+The formula we need is going to use that value to look up their grade and put it in the cell.
+
+Verify that on your `from-prairielearn` tab, you have these column headings:
+
+<img width="1158" height="60" alt="image" src="https://github.com/user-attachments/assets/f8f5f1cd-8fe1-4bb1b252-5f3fd0d9d6c5" />
+
+You will see that:
+* columm C (`Username`) on the `from-prairielearn` sheet matches column C on the `from-canvas` spreadsheet
+* columns J and K on the `from-prairielearn` sheet have the score as a percentage and as a raw score.
+
+So the formula for the basic score is this:
+
+```
+=VLOOKUP(C4,'from-prairielearn'!C:K,8,false)
+```
+Note:
+* The `8` here signifies that column J is 8 columns over from column C where we started, so this pulls in the value of column J (percentage).  If we wanted column K (raw score), we'd use a `9`  in the formula instead.
+* The `false` is important; it says that if we don't find an exact match, the value `N/A` will be reported.
+
+The problem with this formula is that it will give us N/A values, which Canvas won't like.  So here's a slightly more complex formula that gets the job done.  
+
+```
+=IF(ISNA(VLOOKUP(C4,'from-prairielearn'!C:K,8,false)),0,VLOOKUP(C4,'from-prairielearn'!C:K,8,false))
+```
+
+It means this:
+
+* If the value we looked up is NA, use 0, otherwise use the value.
+
+Put this formulas into the 4th cell, and then drag it down to the bottom of the spreadsheet to the last student row.
+
+You should now see that the values are populated correctly for the students.
 
 ## 7. Export that sheet as a CSV
 
+Now, export this as a CSV, using the `File`/`Download`/`Comma Separated Values (.csv)` menu option in Google Sheets:
+
+<img width="704" height="561" alt="image" src="https://github.com/user-attachments/assets/0f5c75f4-ebd3-460d-a898-c0f050bd3fc0" />
+
+
 ## 8. Import that final CSV into Canvas.
 
+Now, return to Canvas to the Grades screen.   Use the Import button:
+
+<img width="1139" height="156" alt="image" src="https://github.com/user-attachments/assets/602618ad-044f-4075-82bc-6bd3eccebbbc" />
+
+This should import your grades into the Canvas grades spreadsheet.  Note that it can take 2-3 minutes for all of the grades to populate, so you may need to refresh the page a few times after the upload is complete.
