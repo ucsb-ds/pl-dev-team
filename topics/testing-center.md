@@ -26,4 +26,12 @@ Giving it a start date in `infoCourseInstance.json`
 is sufficient, e.g. "2015-01-19T00:00:01"
 as per the documentation: <https://prairielearn.readthedocs.io/en/latest/courseInstance/>
 
- 
+## Rebooking is possible but only up to 1 hour before the slot
+
+Communicate this to students:
+
+* If you book a quiz/exam slot, and it turns out you can't make it, you may cancel up until *one hour before* the scheduled slot.  Once you cancel, you can book a new time, assuming that times are available.
+* If you wait until after 1 hour hour before the scheduled slot to try to cancel, you will not be able to. That slot *is now the only slot* in which you can take the exam. Missing it is just like missing a regular in-class exam; there is no make up at that point.
+
+Exceptions are possible for "true emergencies".  True emergencies are the kind of thing that a student would be reporting to the Dean of Student's office such as "you were in a car accident and are in the hospital" or "you had to fly home to be at the beside of a dying relative", where you are missing all of your classes, for an extended time, for a signficant event beyond your control.  In this case, the testing center is able to delete a reservations, which allows a student to rebook a new session; however, the testing center generally won't do this unless it is a true emergency.
+
