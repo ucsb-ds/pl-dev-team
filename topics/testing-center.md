@@ -35,3 +35,25 @@ Communicate this to students:
 
 Exceptions are possible for "true emergencies".  True emergencies are the kind of thing that a student would be reporting to the Dean of Student's office such as "you were in a car accident and are in the hospital" or "you had to fly home to be at the beside of a dying relative", where you are missing all of your classes, for an extended time, for a signficant event beyond your control.  In this case, the testing center is able to delete a reservations, which allows a student to rebook a new session; however, the testing center generally won't do this unless it is a true emergency.
 
+## When students report "bugs"
+
+It is not uncommon for students to report bugs with PrairieLearn problems.
+
+It is also very common for these "bugs" to end up being student errors rather than PrarieLearn bugs. The student will claim that they put in a correct answer, and then PrairieLearn marked it incorrect.  Then they put in "exactly the same answer again", and it marked it correct.
+
+The student often, in good faith *thinks* this is what happened.  But when you look at the submission, you see the error in their first answer.  So you may need to  patiently take a screenshot of their first answer (which is available; PrarieLearn saves this) and then point out their mistake.
+
+Having said that, every now and then, there *is* a legitimate problem with the question.   In that case, you can apologize to the student, update the student's grade, and then fix the problem so it doesn't reoccur the next time.  But this is not as common as the case of students simply making errors and attributing it to PrairieLearn.
+
+## Encourage student to report "bugs" using the `Report an error in this question` button
+
+There is a button on each problem in PrairieLearn in the student facing interface that looks like this:
+
+<img width="534" height="99" alt="image" src="https://github.com/user-attachments/assets/7f4f1694-3828-4707-a086-f9d2bb0d0c87" />
+
+It may be helpful to communicate to students:
+
+> Please use the `Report an error in this question` button if you perceive that there is a problem with the question or with the grading of the question. That is the *only* way that I can review the question and possibly give you credit if the question  was graded incorrectly.
+
+When the student does that, you get a snapshot of everything going on with that question, as opposed to just disconnected emails 
+where they "claim" something went wrong, but you have no easy way to look into, check the accuracy of their report, and give them credit if their report uncovers a legitimate problem.
