@@ -63,10 +63,15 @@ where they "claim" something went wrong, but you have no easy way to look into, 
 If you want to remind students that have not made a reservation yet to do so:
 
 * Navigate to <https://us.prairietest.com>
-* Select your course, e.g. at the link <img width="1170" height="124" alt="image" src="https://github.com/user-attachments/assets/fd05c923-eb24-4a4f-b30c-5f7e7126f19b" />
-* Select your assessment, e.g. by clicking on "Final" in the screenshot: <img width="362" height="412" alt="image" src="https://github.com/user-attachments/assets/70c732a6-5202-4767-a473-cb13e17ab71e" />
-* Select `Reservations` as shown here: <img width="895" height="439" alt="image" src="https://github.com/user-attachments/assets/f8c0e8c3-dddb-4a69-aa60-3c22ebc7efbc" />
-* In tab at right hand side of page, click `Actions for all Students` then, `Export Reservations` <img width="322" height="298" alt="image" src="https://github.com/user-attachments/assets/d3a3a2aa-0b8a-49ac-aa7c-7aa05b95d986" />
+* Select your course, e.g. at the link
+  <img width="1170" height="124" alt="image" src="https://github.com/user-attachments/assets/fd05c923-eb24-4a4f-b30c-5f7e7126f19b" />
+* Select your assessment, e.g. by clicking on "Final" in the screenshot: 
+  
+  <img width="362" height="412" alt="image" src="https://github.com/user-attachments/assets/70c732a6-5202-4767-a473-cb13e17ab71e" />
+* Select `Reservations` as shown here:
+  <img width="895" height="439" alt="image" src="https://github.com/user-attachments/assets/f8c0e8c3-dddb-4a69-aa60-3c22ebc7efbc" />
+* In tab at right hand side of page, click `Actions for all Students` then, `Export Reservations`
+  <img width="322" height="298" alt="image" src="https://github.com/user-attachments/assets/d3a3a2aa-0b8a-49ac-aa7c-7aa05b95d986" />
 * Now you can upload this CSV file to a spreadsheet program and sort to get the emails of the students that have not yet made a reservations, and contact them via bcc to remind them that if they do not make a reservation, they will be unable to take the exam, and will receive a zero, or however you want to phrase it.    Sending this out is "handholding", but it's also insurance; if they claim ignorance, you can point out that they "could have known, and should have known" that they needed to make a reservation.
 
 
