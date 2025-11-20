@@ -74,6 +74,33 @@ If you want to remind students that have not made a reservation yet to do so:
   <img width="322" height="298" alt="image" src="https://github.com/user-attachments/assets/d3a3a2aa-0b8a-49ac-aa7c-7aa05b95d986" />
 * Now you can upload this CSV file to a spreadsheet program and sort to get the emails of the students that have not yet made a reservations, and contact them via bcc to remind them that if they do not make a reservation, they will be unable to take the exam, and will receive a zero, or however you want to phrase it.    Sending this out is "handholding", but it's also insurance; if they claim ignorance, you can point out that they "could have known, and should have known" that they needed to make a reservation.
 
+Sample Email:
 
+```
+Dear Students:
 
+Most students in CMPSC 5A have already made a reservation at the testing center
+for the final exam, but you have not yet done so.
+
+Please make a reservation for the CMPSC 5A final as soon as possible.  
+Here's the link:
+
+https://us.prairietest.com/
+
+You can change your reservation up to 1 hour before the scheduled time if needed.
+
+However, if either of these occurs:
+
+* you fail to make a reservation at all
+* you make a reservation, but are a no-show for any reason other
+  than a well-documented true emergency outside of your control
+
+Then you will receive a score of zero for the final exam,
+which represents 15% of your final course grade.
+
+So, please fix this today!
+
+Regards,
+Phill Conrad
+```
 
