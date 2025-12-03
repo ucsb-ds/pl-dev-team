@@ -4,13 +4,9 @@ layout: home
 nav_order: 1
 ---
 
-# CMPSC 5A – PrairieLearn Dev Team
+# PrairieLearn Dev Team
 
-Welcome to the official documentation site for the **CMPSC 5A PrairieLearn Dev Team, Summer 2025**.
-
-This site supports our work on creating and maintaining PrairieLearn content for UCSB’s CMPSC 5A course.
-
----
+This documentation is maintained by the PrairieLearn Dev Team at UCSB.
 
 ## Purpose
 
@@ -20,8 +16,6 @@ This documentation exists to:
 - Explain team workflows, review processes, and testing practices.
 - Provide guidelines for contributors and instructors.
 
----
-
 ## Sections (coming soon)
 
 - Getting Started
@@ -30,10 +24,18 @@ This documentation exists to:
 - Style Guide
 - Troubleshooting & Testing
 
----
 
 **Repository**: [ucsb-ds/pl-dev-team](https://github.com/ucsb-ds/pl-dev-team)
 
 ## Resources
 
 * Guide to PL by E. Weisenberg (TA to Briana Morrison): <https://eweisenberg.github.io/prairielearn-guide/>
+
+# Team Roster
+
+| Name | Role | Active |
+|-|-|-|
+| Phill Conrad | Team Leader | June 2025 - present |
+| Stacy Callahan |  Contributor | June 2025 - September 2025 |
+| Rachit Gupta |  Contributor | June 2025 - September 2025 |
+
