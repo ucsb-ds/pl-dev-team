@@ -64,3 +64,13 @@ We need `values` inside the file `tests/setup_code.py`.   To get the values out,
 values = data["params"]["values"]["_value"]
 ```
 
+This gets you only part of the way there, however, because values is *not* necessarily at this point what we started with; that is,
+it is not a `np.ndarray` of `np.float64` values.  Instead, it is an ordinary python list.
+
+So, instead, we may need something more like this:
+
+```
+    valuesAsNumpyFloat64 = list(map(np.float64, values))
+    return np.array(valuesAsNumpyFloat64)
+```
+
