@@ -61,7 +61,7 @@ def generate(data):
 We need `values` inside the file `tests/setup_code.py`.   To get the values out, we can use this trick:
 
 ```
-
+  values = data["params"]["values"]["_value"]
 ```
 
 This gets you only part of the way there, however, because values is *not* necessarily at this point what we started with; that is,
@@ -70,8 +70,7 @@ it is not a `np.ndarray` of `np.float64` values.  Instead, it is an ordinary pyt
 So, instead, we may need something more like this:
 
 ```
-    raw_values = data["params"]["values"]["_value"]
-    valuesAsNumpyFloat64 = list(map(np.float64, raw_values))
-    values = np.array(valuesAsNumpyFloat64)
+  raw_values = data["params"]["values"]["_value"]
+  values = np.array(raw_values, dtype=np.float64)
 ```
 
