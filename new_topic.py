@@ -5,6 +5,7 @@ import sys
 
 
 def index_md_file(topic):
+    header_line = "# {{page.title}} - {{page.description}}"
     return f"""---
 parent: Topics
 layout: default
@@ -12,7 +13,7 @@ title: "{topic}"
 description:  "TODO: Add description for {topic}"
 ---
 
-# {{page.title}} - {{page.description}}
+{header_line}
     """
     
 
@@ -31,7 +32,7 @@ if __name__ == "__main__":
         print("No topic provided.")
         sys.exit(1)
 
-    topic_dir = Path("topics") / safe_name
+    topic_dir = Path("topics") / safe_name.lower().replace(" ", "_")
     topic_dir.mkdir(parents=True, exist_ok=True)
 
     # Create index.md inside topic_dir
