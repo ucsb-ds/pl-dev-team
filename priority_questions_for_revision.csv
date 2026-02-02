@@ -1,0 +1,6 @@
+question,topic,priority_score,high_severity,medium_severity,total_smells
+Assignment Statements,3.2 Names,1,0,0,1
+Selecting columns from a Table (with variants),3.4 Introduction to Tables,1,0,0,1
+How many rows in the table,3.4 Introduction to Tables,1,0,0,1
+Define a string variable (with randomization),Default,1,0,0,1
+Name Assignment,3.2 Names,1,0,0,1

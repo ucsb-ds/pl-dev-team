@@ -1,0 +1,11 @@
+Question title,Question topic,first_sub_score,discrimination,avg_attempts,perfect_rate,zero_rate,Q1_score,Q5_score
+Assignment Statements,3.2 Names,99.1,66.8,1.0,97.7,0.8,91.9,100.0
+Calculating the mean of an np.array,5.1 Arrays,96.4,68.5,1.0,95.5,3.8,78.5,100.0
+Calculating the max of an np.array,5.1 Arrays,95.2,69.9,1.0,94.0,3.8,72.6,100.0
+Convert Date Function,8. Functions and Tables,96.2,73.1,1.0,95.5,4.5,77.8,100.0
+Create a new Table with given Columns,3.4 Introduction to Tables,93.8,52.4,1.0,90.2,6.0,65.9,100.0
+Selecting columns from a Table as an array,3.4 Introduction to Tables,95.9,78.9,1.0,94.7,3.0,76.3,100.0
+Selecting columns from a Table (with variants),3.4 Introduction to Tables,99.2,58.2,1.0,98.5,1.5,92.6,100.0
+How many rows in the table,3.4 Introduction to Tables,97.9,68.5,1.0,97.0,2.3,85.9,100.0
+Define a string variable (with randomization),Default,100.0,53.7,1.0,98.5,1.5,92.6,100.0
+Name Assignment,3.2 Names,99.2,70.6,1.0,99.2,0.8,96.3,100.0
