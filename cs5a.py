@@ -213,17 +213,5 @@ priority_output_path = os.path.join(output_dir, 'priority_questions_for_revision
 question_scores_df.to_csv(priority_output_path, index=False)
 print(f"Saved priority questions for revision to: {priority_output_path}")
 
-"""### Download Instructions
-
-1.  **Download the generated CSV files:**
-    *   You can find the saved files (`question_performance_summary.csv` and `priority_questions_for_revision.csv`) in the `analysis_output` folder in the Colab file browser (left sidebar, folder icon).
-    *   Right-click on each file and select 'Download'.
-
-2.  **Download the Colab Notebook (.ipynb):**
-    *   Go to `File > Download > Download .ipynb` from the Colab menu bar to save this notebook.
-
-After downloading, you can upload these files to your GitHub repository.
-"""
-
 from google.colab import drive
 drive.mount('/content/drive')
