@@ -53,7 +53,7 @@ git pull origin main
 
 Then start docker:
 ```
-docker run -it --rm -p 3000:3000 -v `pwd`:/course prairielearn/prairielearn
+docker run -it --rm -p 3000:3000 --pull=always -v `pwd`:/course prairielearn/prairielearn:us-prod-live
 ```
 
 ## Access PrairieLearn in Browser
