@@ -37,6 +37,26 @@ These are one-time setup steps.
    cd pl-ucsb-cmpsc110
    ```
 
+## Run PrairieLearn with script (if present)
+
+Many of the repos used with PrairieLearn at UCSB have a script inside called `ucsb-pl.sh`.
+
+If your repo doesn't, skip ahead to the next heading ("Run PrairieLearn (no external grader)")
+
+Once you've installed Docker (as described above) to start up PrairieLearn in local mode in these repos, simply navigate to the repo, and run the script.
+
+For example:
+
+```
+git clone git@github.com:PrairieLearn/pl-ucsb-cmpsc5a.git
+cd pl-ucsb-cmpsc5a
+./ucsb-pl.sh
+```
+
+Wait for the message that the server is running on localhost:3000, then navigate to <http://localhost:3000>.  
+
+Click "Load From Disk", and then access your course.
+
 
 ## Run PrairieLearn (no external grader)
 
