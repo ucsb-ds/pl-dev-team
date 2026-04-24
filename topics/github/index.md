@@ -3,6 +3,7 @@ parent: Topics
 layout: default
 title: "Github"
 description:  "Using PrairieLearn with Github"
+has_children: true
 ---
 
 # {{page.title}} - {{page.description}}
