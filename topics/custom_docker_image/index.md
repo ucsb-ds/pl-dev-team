@@ -141,6 +141,7 @@ Steps:
    ```
    git remote -v
    ```
+   ```
    % git remote -v
    PL	https://github.com/PrairieLearn/PrairieLearn (fetch)
    PL	https://github.com/PrairieLearn/PrairieLearn (push)
@@ -270,7 +271,8 @@ Steps:
 
     But if it grades correctly, like these examples, then it worked!
 
-    <img width="335" height="225" alt="image" src="https://github.com/user-attachments/assets/4440747e-0208-43e6-a0bf-320c27674e5a" /><img width="341" height="191" alt="image" src="https://github.com/user-attachments/assets/814e7923-229a-4d8d-929e-fb3ff7c2fbbe" />
+    <img width="335" height="225" alt="image" src="https://github.com/user-attachments/assets/4440747e-0208-43e6-a0bf-320c27674e5a" />
+    <img width="341" height="191" alt="image" src="https://github.com/user-attachments/assets/814e7923-229a-4d8d-929e-fb3ff7c2fbbe" />
 
 
     
