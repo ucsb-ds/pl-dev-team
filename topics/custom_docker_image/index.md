@@ -10,6 +10,22 @@ description:  "When you need additional Python modules"
 
 This page documents how to create and use custom Docker images for grading Python-based PrairieLearn questions using the PrairieLearn repository — with support for libraries like [`datascience`](https://www.data8.org), used in CMPSC 5A/5B.
 
+# Update: repo for custom docker images
+
+There is now a public repo that maintains two custom docker images here:
+* <https://github.com/ucsb-cs/docker>
+
+This repo contains a github actions script that runs every Sunday at midnight (UTC) to update two images:
+
+| UCSB Custom Image | Based on this image from PrairieLearn |
+|-|-|
+| `ucsbcs/grader-python-datascience:latest`| `prairielearn/grader-python:latest`|
+| `ucsbcs/workspace-jupyterlab-python-datascience:latest`| `prairielearn/workspace-jupyterlab-python:latest`|
+
+
+The rest of the information on this page (below this) may be obsolete now that this new repo has been created.
+
+TODO: Come back and clean this up.
 
 ## Why Use a Custom Docker Image?
 
